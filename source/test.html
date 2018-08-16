@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<script type="text/javascript" src="https://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+	<script type="text/javascript">
+		//swipe example 
+touch.on('body', 'swipeleft swiperight', function(ev){
+	var t = document.createTextNode(ev.type);
+    document.getElementById('log').innerHtml = t;
+});
+	</script>
+</head>
+<body style="height: 800px;">
+<div id="log"></div>
+</body>
+</html>
