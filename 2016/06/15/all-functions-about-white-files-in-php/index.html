@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="最近在学习composer的原理，其中有一步是将根据命名空间解析好的文件加载路径统一写入到一个文件里，这样以后只要检测到这个文件没有变化，那么就可以通过这个文件里面的记录直接进行文件加载了。在这一步里就牵涉到了文件写入的问题，在php中，针对文件写入功能，提供了很多相关的函数。之前自己一直都理解的很笼统，所以打算认真的归纳一下。php中操作文件分三步。先上一段示例代码。12345678910//打">
+<meta property="og:type" content="article">
+<meta property="og:title" content="细解php文件写入">
+<meta property="og:url" content="https://liuhd.github.io/2016/06/15/all-functions-about-white-files-in-php/index.html">
+<meta property="og:site_name" content="心之所向">
+<meta property="og:description" content="最近在学习composer的原理，其中有一步是将根据命名空间解析好的文件加载路径统一写入到一个文件里，这样以后只要检测到这个文件没有变化，那么就可以通过这个文件里面的记录直接进行文件加载了。在这一步里就牵涉到了文件写入的问题，在php中，针对文件写入功能，提供了很多相关的函数。之前自己一直都理解的很笼统，所以打算认真的归纳一下。php中操作文件分三步。先上一段示例代码。12345678910//打">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://7xsmk5.com1.z0.glb.clouddn.com/16-6-15/57618793.jpg">
+<meta property="og:updated_time" content="2022-05-13T03:55:53.625Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="细解php文件写入">
+<meta name="twitter:description" content="最近在学习composer的原理，其中有一步是将根据命名空间解析好的文件加载路径统一写入到一个文件里，这样以后只要检测到这个文件没有变化，那么就可以通过这个文件里面的记录直接进行文件加载了。在这一步里就牵涉到了文件写入的问题，在php中，针对文件写入功能，提供了很多相关的函数。之前自己一直都理解的很笼统，所以打算认真的归纳一下。php中操作文件分三步。先上一段示例代码。12345678910//打">
+<meta name="twitter:image" content="http://7xsmk5.com1.z0.glb.clouddn.com/16-6-15/57618793.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liuhd.github.io/2016/06/15/all-functions-about-white-files-in-php/">
+
+
+
+
+
+  <title>细解php文件写入 | 心之所向</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dc59673475328fecd66f85c33c7f0017";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">心之所向</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">后端开发</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/06/15/all-functions-about-white-files-in-php/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Martin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="心之所向">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">细解php文件写入</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-06-15T00:00:00+08:00">
+                2016-06-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="http://7xsmk5.com1.z0.glb.clouddn.com/16-6-15/57618793.jpg" alt="img"><br>最近在学习composer的原理，其中有一步是将根据命名空间解析好的文件加载路径统一写入到一个文件里，这样以后只要检测到这个文件没有变化，那么就可以通过这个文件里面的记录直接进行文件加载了。在这一步里就牵涉到了文件写入的问题，在php中，针对文件写入功能，提供了很多相关的函数。之前自己一直都理解的很笼统，所以打算认真的归纳一下。<br>php中操作文件分三步。<br>先上一段示例代码。<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//打开文件名为test.txt的文件</span></span><br><span class="line">$fp=fopen(<span class="string">'test.txt'</span>,<span class="string">'w+'</span>);</span><br><span class="line"><span class="comment">//锁定文件，避免多个程序同时对文件进行操作</span></span><br><span class="line">flock($fp,LOCK_EX);</span><br><span class="line"><span class="comment">//将“Hello world”写入到test.txt中</span></span><br><span class="line">fwrite($fp,<span class="string">'Hello world'</span>);</span><br><span class="line"><span class="comment">//解锁文件</span></span><br><span class="line">flock($fp,LOCK_UN);</span><br><span class="line"><span class="comment">//关闭文件，释放资源</span></span><br><span class="line">fclose($fp);</span><br></pre></td></tr></table></figure></p>
+<p>下面开始细解。</p>
+<h3 id="​第一步，打开文件，调用fopen"><a href="#​第一步，打开文件，调用fopen" class="headerlink" title="​第一步，打开文件，调用fopen();"></a>​第一步，打开文件，调用<code>fopen()</code>;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resource  fopen ( string  $filename , string  $mode [, bool $use_include_path = false [, resource $context ]] )</span><br></pre></td></tr></table></figure>
+<p>​例如，打开一个名为a.txt的文件，只需调用<code>fopen(&#39;a.txt&#39;,&#39;r+&#39;)</code>；函数会返回一个资源类型的变量。其中传入的第二个参数是打开文件选用的模式，有<code>r</code>,<code>r+</code>,<code>w</code>,<code>w+</code>等，具体的可以参考<a href="http://php.net/manual/zh/function.fopen.php" target="_blank" rel="noopener">php.net</a>中的定义。</p>
+<h3 id="第二步，操作文件，调用fwrite-fread-feof-fgets等函数进行操作"><a href="#第二步，操作文件，调用fwrite-fread-feof-fgets等函数进行操作" class="headerlink" title="第二步，操作文件，调用fwrite,fread,feof,fgets等函数进行操作"></a>第二步，操作文件，调用<code>fwrite</code>,<code>fread</code>,<code>feof</code>,<code>fgets</code>等函数进行操作</h3><p>写入文件–fwrite<br>读取文件–fread<br>读取文件内容的一部分–fgets<br>锁定文件–flock</p>
+<h3 id="第三步，关闭文件-调用fclose"><a href="#第三步，关闭文件-调用fclose" class="headerlink" title="第三步，关闭文件,调用fclose;"></a>第三步，关闭文件,调用<code>fclose</code>;</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/19/I-should-continue-to-write-blogs/" rel="next" title="我应该坚持更新博客，坚持读书">
+                <i class="fa fa-chevron-left"></i> 我应该坚持更新博客，坚持读书
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/10/git-docs-learning-note/" rel="prev" title="Git官方文档阅读笔记">
+                Git官方文档阅读笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjMwMi8xMjgzNw=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Martin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LiuHD" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liuhuidong8230@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#​第一步，打开文件，调用fopen"><span class="nav-number">1.</span> <span class="nav-text">​第一步，打开文件，调用fopen();</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步，操作文件，调用fwrite-fread-feof-fgets等函数进行操作"><span class="nav-number">2.</span> <span class="nav-text">第二步，操作文件，调用fwrite,fread,feof,fgets等函数进行操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步，关闭文件-调用fclose"><span class="nav-number">3.</span> <span class="nav-text">第三步，关闭文件,调用fclose;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Martin</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

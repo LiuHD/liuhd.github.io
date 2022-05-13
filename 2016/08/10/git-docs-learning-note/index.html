@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="git,笔记,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="高级命令 git rm –cached filename   只从git的track列表中删除   git rm filename   从git的track列表以及硬盘中删除   git rm -f filename   如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f   git diff   查看未加入暂存区的修改   git diff –cached(or stage">
+<meta name="keywords" content="git,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git官方文档阅读笔记">
+<meta property="og:url" content="https://liuhd.github.io/2016/08/10/git-docs-learning-note/index.html">
+<meta property="og:site_name" content="心之所向">
+<meta property="og:description" content="高级命令 git rm –cached filename   只从git的track列表中删除   git rm filename   从git的track列表以及硬盘中删除   git rm -f filename   如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f   git diff   查看未加入暂存区的修改   git diff –cached(or stage">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2022-05-13T03:55:53.626Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Git官方文档阅读笔记">
+<meta name="twitter:description" content="高级命令 git rm –cached filename   只从git的track列表中删除   git rm filename   从git的track列表以及硬盘中删除   git rm -f filename   如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f   git diff   查看未加入暂存区的修改   git diff –cached(or stage">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liuhd.github.io/2016/08/10/git-docs-learning-note/">
+
+
+
+
+
+  <title>Git官方文档阅读笔记 | 心之所向</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dc59673475328fecd66f85c33c7f0017";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">心之所向</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">后端开发</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/08/10/git-docs-learning-note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Martin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="心之所向">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Git官方文档阅读笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-08-10T00:00:00+08:00">
+                2016-08-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="高级命令"><a href="#高级命令" class="headerlink" title="高级命令"></a>高级命令</h3><ul>
+<li>git rm –cached filename</li>
+</ul>
+<blockquote>
+<p>只从git的track列表中删除</p>
+</blockquote>
+<ul>
+<li>git rm filename</li>
+</ul>
+<blockquote>
+<p>从git的track列表以及硬盘中删除</p>
+</blockquote>
+<ul>
+<li>git rm -f filename</li>
+</ul>
+<blockquote>
+<p>如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f</p>
+</blockquote>
+<ul>
+<li>git diff</li>
+</ul>
+<blockquote>
+<p>查看未加入暂存区的修改</p>
+</blockquote>
+<ul>
+<li>git diff –cached(or staged)</li>
+</ul>
+<blockquote>
+<p>查看已经加入暂存区的修改</p>
+</blockquote>
+<ul>
+<li>git mv old_name new_name</li>
+</ul>
+<blockquote>
+<p>rename操作</p>
+</blockquote>
+<ul>
+<li>git reset HEAD filename</li>
+</ul>
+<blockquote>
+<p>把一个已经暂存的文件标记为未暂存状态，便于分开提交，工作区修改不会丢失</p>
+</blockquote>
+<ul>
+<li>git checkout filename</li>
+</ul>
+<blockquote>
+<p>丢弃工作区的修改</p>
+</blockquote>
+<ul>
+<li>git commit –amend</li>
+</ul>
+<blockquote>
+<p>修改上一次的提交信息，并把暂存区的未提交的修改都提交到这个commit</p>
+</blockquote>
+<ul>
+<li>git remote add <shortname> <url></url></shortname></li>
+</ul>
+<blockquote>
+<p>添加远程库</p>
+</blockquote>
+<ul>
+<li><p>git remote rename &lt;old_name&gt; &lt;new_name&gt;</p>
+</li>
+<li><p>git remote show <remote></remote></p>
+</li>
+</ul>
+<blockquote>
+<p>这个命令列出了当你在特定的分支上执行 git push 会自动地推送到哪一个远程分支。 它也同样地列出了哪些远程分支不在你的本地，哪些远程分支已经从服务器上移除了，还有当你执行 git pull 时哪些分支会自动合并。</p>
+</blockquote>
+<ul>
+<li>git remote -v</li>
+</ul>
+<blockquote>
+<p>展示各remote详细链接</p>
+</blockquote>
+<ul>
+<li><p>git tag命令<a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener">相关</a></p>
+</li>
+<li><p>git fetch remote branch</p>
+</li>
+</ul>
+<blockquote>
+<p>git fetch操作会拉取远程库到本地，如果本地存在关联的分支，两个分支也不会合并，git pull相当于git fetch与git merge，大牛的操作都是使用fetch然后merge而不是直接pull，因为这样可以把合并的过程掌握在自己的手里</p>
+</blockquote>
+<ul>
+<li>git fetch –all</li>
+</ul>
+<blockquote>
+<p>抓取所有远程库</p>
+</blockquote>
+<ul>
+<li>git pull –rebase</li>
+</ul>
+<blockquote>
+<p>解决push操作时，本地无法提交，因为远程有新的提交，而又无法pull，因为远程的提交里面有晚于本地提交的情况，加入–rebase参数，可以把pull的基点调整为最新的远程仓库，而非本地的版本，将远程代码pull下来后，再将本地未提交的commit放在远程代码commit的后面</p>
+</blockquote>
+<ul>
+<li>git stash list</li>
+</ul>
+<blockquote>
+<p>列出已经暂存的东西</p>
+</blockquote>
+<ul>
+<li>git config –global alias.<alias> <full name directive> </full></alias></li>
+</ul>
+<blockquote>
+<p>eg:<code>git config --global alias.co checkout</code>(为git checkout操作设置别名为git co)<br>一个比较有用的别名设置 <code>git config --global alias.unstage &#39;reset HEAD --&#39;; git config --global alias.visual &#39;!gitk&#39;</code></p>
+</blockquote>
+<ul>
+<li>git checkout -b <new branch name> <branch based on></branch></new></li>
+</ul>
+<blockquote>
+<p>在指定的分支(branch based on)基础上新建一个名称为new branch name的分支</p>
+</blockquote>
+<ul>
+<li>git checkout –track <remote branch name></remote></li>
+</ul>
+<blockquote>
+<p>创建一个跟踪远程分支的本地分支</p>
+</blockquote>
+<ul>
+<li>git branch -u remote/branch</li>
+</ul>
+<blockquote>
+<p>设置当前分支跟踪的远程分支.<br>当设置好跟踪分支后，可以通过 @{upstream} 或 @{u} 快捷方式来引用它。 所以在 master 分支时并且它正在跟踪 origin/master 时，如果愿意的话可以使用 git merge @{u} 来取代 git merge origin/master。</p>
+</blockquote>
+<ul>
+<li>git branch -vv</li>
+</ul>
+<blockquote>
+<p>关于分支的更多信息</p>
+</blockquote>
+<ul>
+<li>git push origin –delete branch</li>
+</ul>
+<blockquote>
+<p>删除远程分支</p>
+</blockquote>
+<ul>
+<li>git rebase master</li>
+</ul>
+<blockquote>
+<p>变基操作，它的原理是首先找到这两个分支（即当前分支 experiment、变基操作的目标基底分支 master）的最近共同祖先 C2，然后对比当前分支相对于该祖先的历次提交，提取相应的修改并存为临时文件，然后将当前分支指向目标基底 C3, 最后以此将之前另存为临时文件的修改依序应用。<a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA" target="_blank" rel="noopener">详情</a></p>
+</blockquote>
+<ul>
+<li>git rebase –onto master server client</li>
+</ul>
+<blockquote>
+<p>以上命令的意思是：“取出 client 分支，找出处于 client 分支和 server 分支的共同祖先之后的修改，然后把它们在 master 分支上重演一遍”</p>
+</blockquote>
+<ul>
+<li>git rebase [basebranch] [topicbranch]</li>
+</ul>
+<blockquote>
+<p>不切换的目标分支，直接执行变基命令，直接将特性分支topicbranch变基到目标分支basebranch</p>
+<ul>
+<li>git merge branch</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>合并一个分支到当前分支，fast-forward merge(快进合并)</p>
+</blockquote>
+<h3 id="文件-gitignore-的格式规范如下："><a href="#文件-gitignore-的格式规范如下：" class="headerlink" title="文件 .gitignore 的格式规范如下："></a>文件 <code>.gitignore</code> 的格式规范如下：</h3><ul>
+<li>所有空行或者以 ＃ 开头的行都会被 Git 忽略。</li>
+<li>可以使用标准的 glob 模式匹配。</li>
+<li>匹配模式可以以（/）开头防止递归。</li>
+<li>匹配模式可以以（/）结尾指定目录。</li>
+<li>要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。</li>
+</ul>
+<blockquote>
+<p>所谓的 glob 模式是指 shell 所使用的简化了的正则表达式。<br>星号（<em>）匹配零个或多个任意字符；<br>[abc] 匹配任何一个列在方括号中的字符（这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）；<br>问号（?）只匹配一个任意字符；<br>如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如 [0-9] 表示匹配所有 0 到 9 的数字）。<br>使用两个星号（</em>) 表示匹配任意中间目录，比如a/**/z 可以匹配 a/z, a/b/z 或 a/b/c/z等。</p>
+</blockquote>
+<p>git log 后可跟很多参数，不过大多数都属于定制显示日志的样式或者限制日期，描述长短等，具体参考:<a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2" target="_blank" rel="noopener">点我</a></p>
+<ul>
+<li>git log –graph</li>
+</ul>
+<p>不懂git文件快照存储原理？看<a href="http://liuhui998.com/2011/03/17/git-adventures-index-commit/" target="_blank" rel="noopener">这篇</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/git/" rel="tag"># git</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/15/all-functions-about-white-files-in-php/" rel="next" title="细解php文件写入">
+                <i class="fa fa-chevron-left"></i> 细解php文件写入
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/24/install-psysh-on-linux-with-composer/" rel="prev" title="在linux上安装psysh">
+                在linux上安装psysh <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjMwMi8xMjgzNw=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Martin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LiuHD" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liuhuidong8230@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#高级命令"><span class="nav-number">1.</span> <span class="nav-text">高级命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件-gitignore-的格式规范如下："><span class="nav-number">2.</span> <span class="nav-text">文件 .gitignore 的格式规范如下：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Martin</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

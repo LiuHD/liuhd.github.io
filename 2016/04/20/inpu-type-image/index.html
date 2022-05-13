@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="神奇的图片类型 input type=image这两天的工作是给一个客户的项目改bug，项目是用laravel框架做的，还挺大，本来以为正在学习lel的我能学到不少东西，然而，图样！拿到代码的我看了一晌就欲哭无泪了， 我擦！这代码怎么能这么乱？！是坨屎么！！！ 我擦！这种写法也行？！ 我擦！这中英文混合命名法是怎么做到这么切换自如的？！ 天哪，这神奇的代码是怎么跑了这么久的啊！？ 然而，这一切都不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="神奇的图片类型input type=image">
+<meta property="og:url" content="https://liuhd.github.io/2016/04/20/inpu-type-image/index.html">
+<meta property="og:site_name" content="心之所向">
+<meta property="og:description" content="神奇的图片类型 input type=image这两天的工作是给一个客户的项目改bug，项目是用laravel框架做的，还挺大，本来以为正在学习lel的我能学到不少东西，然而，图样！拿到代码的我看了一晌就欲哭无泪了， 我擦！这代码怎么能这么乱？！是坨屎么！！！ 我擦！这种写法也行？！ 我擦！这中英文混合命名法是怎么做到这么切换自如的？！ 天哪，这神奇的代码是怎么跑了这么久的啊！？ 然而，这一切都不">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2022-05-13T03:55:53.625Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="神奇的图片类型input type=image">
+<meta name="twitter:description" content="神奇的图片类型 input type=image这两天的工作是给一个客户的项目改bug，项目是用laravel框架做的，还挺大，本来以为正在学习lel的我能学到不少东西，然而，图样！拿到代码的我看了一晌就欲哭无泪了， 我擦！这代码怎么能这么乱？！是坨屎么！！！ 我擦！这种写法也行？！ 我擦！这中英文混合命名法是怎么做到这么切换自如的？！ 天哪，这神奇的代码是怎么跑了这么久的啊！？ 然而，这一切都不">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://liuhd.github.io/2016/04/20/inpu-type-image/">
+
+
+
+
+
+  <title>神奇的图片类型input type=image | 心之所向</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dc59673475328fecd66f85c33c7f0017";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">心之所向</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">后端开发</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/inpu-type-image/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Martin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="心之所向">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">神奇的图片类型input type=image</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-20T00:00:00+08:00">
+                2016-04-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="神奇的图片类型-input-type-image"><a href="#神奇的图片类型-input-type-image" class="headerlink" title="神奇的图片类型 input type=image"></a>神奇的图片类型 input type=image</h1><p>这两天的工作是给一个客户的项目改bug，项目是用laravel框架做的，还挺大，本来以为正在学习lel的我能学到不少东西，然而，图样！拿到代码的我看了一晌就欲哭无泪了，</p>
+<p>我擦！这代码怎么能这么乱？！是坨屎么！！！</p>
+<p>我擦！这种写法也行？！</p>
+<p>我擦！这中英文混合命名法是怎么做到这么切换自如的？！</p>
+<p>天哪，这神奇的代码是怎么跑了这么久的啊！？</p>
+<p>然而，这一切都不及我发现的原作者的表单写法。到目前为止，所有的表单提交，一个<code>type=&quot;submit&quot;</code>的<code>input</code>或<code>button</code>我都没有看到，但是这些表单竟然都神奇的工作的好好的，我们一起来膜拜一下大神的代码：</p>
+<blockquote>
+<p>大牛的前端表单代码</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">"width:102.4px; height:38.4px;"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">name</span>=<span class="string">"imageField3"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">type</span>=<span class="string">"image"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">id</span>=<span class="string">"imageField3"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"/p-explorer/img/del.jpg"</span> <span class="attr">onClick</span>=<span class="string">'return confirm("确认删除吗?" +</span></span></span><br><span class="line"><span class="tag"><span class="string">               "此操作将会产生以下影响:\n"+"1.修改楼盘对接经理\n"+"2.修改成员归属");'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">"width:102.4px; height:38.4px;"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">name</span>=<span class="string">"clientlist"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">type</span>=<span class="string">"image"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">id</span>=<span class="string">"clientlist"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"/p-explorer/img/khlb.jpg"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">"width:102.4px; height:38.4px;"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">name</span>=<span class="string">"imageField"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">type</span>=<span class="string">"image"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">id</span>=<span class="string">"imageField"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"/p-explorer/img/save.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>大牛的后台表单处理代码:</p>
+</blockquote>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>($request-&gt;has(<span class="string">'imageField3_x'</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>($request-&gt;input(<span class="string">'clientlist_x'</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>($request-&gt;input(<span class="string">'imageField_x'</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>点击任意一个图片后台都能做出相应的响应，而我们却没有找到明显的提交的入口，是不是很神奇？<br>其实，<code>&amp;lt;input&amp;gt;</code>标签的<code>type</code>属性有一个<code>image</code>的可取值，当取值为<code>image</code>时，<code>&amp;lt;input&amp;gt;</code>被称作图片按钮，点击这些图片，表单就会立即提交，且提交的数据中除了正常的表单项还有鼠标单击时在该图片上的水平和垂直偏移量，也就是我们看到的后端处理代码中的<code>imageField3_x</code>等表单中本不存在的项。<br>引自<a href="http://www.w3school.com.cn/tags/att_input_type.asp" target="_blank" rel="noopener">W3School</a>的解释:</p>
+<blockquote>
+<p>如果 type 属性设置为 image，当用户单击图像时，浏览器将以像素为单位，将鼠标相对于图像边界的偏移量发送到服务器，其中包括从图像左边界开始的水平偏移量，以及从图像上边界开始的垂直偏移量。</p>
+</blockquote>
+<p>对于这种用法，其实比较适合一个表单有多种动作，将form的<code>action</code>置空，表单默认提交到<strong>自身地址</strong>之后，在后端逻辑代码中像上面代码中那样根据图片水平或垂直偏移量是否存在来判断具体要执行什么动作。这虽然不是什么冷门知识，但是我是真的第一次知道，只怪当初没有完全的看一遍标签属性。希望你们不会遇到这样的坑。。。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/20/laravel-soft-delete-problem/" rel="next" title="关于Laravel中使用orWhere查询会返回已删除条目的问题">
+                <i class="fa fa-chevron-left"></i> 关于Laravel中使用orWhere查询会返回已删除条目的问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/20/css-definitive-guide-learning-note-first/" rel="prev" title="《CSS权威指南》学习笔记一">
+                《CSS权威指南》学习笔记一 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjMwMi8xMjgzNw=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Martin</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/LiuHD" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:liuhuidong8230@163.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#神奇的图片类型-input-type-image"><span class="nav-number">1.</span> <span class="nav-text">神奇的图片类型 input type=image</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Martin</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
