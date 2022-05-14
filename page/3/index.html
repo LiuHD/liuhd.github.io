@@ -378,139 +378,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/css-definitive-guide-learning-note-first/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Martin">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="心之所向">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/04/20/css-definitive-guide-learning-note-first/" itemprop="url">《CSS权威指南》学习笔记一</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-20T00:00:00+08:00">
-                2016-04-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>css的全拼为<code>cascade style sheet</code>,直译为层叠样式表。CSS通过为具有相同特征的html元素在文档中的一个位置统一定义样式，取代html的原始时代为每个元素单独描述样式，以及将样式描述与元素结构混合的模式。层叠即，当多个css定义项为同一html元素定义了同一种样式时（例如A定义项与B定义项都为某一p元素定义了颜色属性），这些定义项在同一元素上发生层叠，根据特定标准确定的权重，判断究竟将哪个定义项应用于该元素。</p>
-</blockquote>
-<blockquote>
-<p>css的核心之一就是选择器。选择器总结，元素选-&gt;p,样式类选-&gt;.class_name,id选-&gt;#id,attribute选：=，部分attribute选：~=、*=、|=、^=、$=</p>
-</blockquote>
-<ol>
-<li>子块级元素的追评margin+border+padding+width必然等于父级块元素的width.</li>
-<li>在css中,水平方向上，width只能是content的宽度，不包括margin,border以及padding。</li>
-<li>对于块级元素的水平宽度属性，只有width以及margin可设置为auto，其他的要么设置成具体值，要么默认为0.</li>
-<li>width，padding不能为负值，margin可以，可以用负值的margin做一些神奇的效果</li>
-<li>css中有一个标准是允许浏览器设定一个width的最小值，元素的width不能比这个小，而这个最小值具体是多少却是因浏览器而异。</li>
-<li>如果width和margin都设置为具体值，即过分受限，则用户代理将把margin-right重置为auto.</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/css-definitive-guide-learning-note-second/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -797,7 +664,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/laravel-soft-delete-problem/">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/css-definitive-guide-learning-note-first/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Martin">
@@ -816,7 +683,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/04/20/laravel-soft-delete-problem/" itemprop="url">关于Laravel中使用orWhere查询会返回已删除条目的问题</a></h1>
+                <a class="post-title-link" href="/2016/04/20/css-definitive-guide-learning-note-first/" itemprop="url">《CSS权威指南》学习笔记一</a></h1>
         
 
         <div class="post-meta">
@@ -868,63 +735,20 @@
       
         
           
-            <p>在laravel的model中，可以引入并使用<code>Softdeletes</code>，即软删除功能，所谓软删除就是当程序对数据库中的一条记录执行删除操作时，并不是真的将这条记录从数据库中删除掉，而是相应的在这个记录的事先指定的字段中添加标识，表明该字段已被软删除，而程序之后访问数据库所执行的查询都会跳过这些记录，在laravel中，一般我们都定义这一功能所对应的字段为<code>deleted_at</code>。</p>
-<p>我们以<code>User</code>类为例，在定义这个model时引入<code>softDelete</code>,代码如下：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">extends</span> <span class="title">Model</span></span>&#123;</span><br><span class="line"><span class="keyword">use</span> <span class="title">SoftDeletes</span>;</span><br><span class="line">dates=[<span class="string">'deleted_at'</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><strong>除此之外还要在数据库users表中增加deleted_at字段，并设置为时间戳类型，可为空**</strong>，这样就添加了软删除功能，可以进行软删除了。</p>
-<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>当执行对一个User实例<code>$user</code>执行删除操作时，laravel程序自动对数据库中对应记录的<code>deleted_at</code>字段赋值，标识它已被删除，接下来进行的查询就会自动跳过该字段。</p>
-<p>而我们的问题恰恰就出在这里，对于已经添加<code>SoftDelete</code>(即软删除)的Model，如果使用Eloquent ORM进行<code>orWhere</code>查询，有时会出现已经被删除的字段出现在我们的搜索结果中，是不是很惊讶呢？<br>博主也是一样的，还以为发现了什么bug，最后发现其实这与laravelEloquentORM查询的实现有关，让我们从一个简单地Eloquent 查询开始。</p>
-<p>我们首先在数据库中准备好一下两条数据</p>
-<h4 id="我是用户表"><a href="#我是用户表" class="headerlink" title="我是用户表"></a>我是用户表</h4><table>
-<thead>
-<tr>
-<th>name</th>
-<th>mobile</th>
-<th>deleted_at</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Martin</td>
-<td>87654321</td>
-<td></td>
-</tr>
-<tr>
-<td>John</td>
-<td>12345678</td>
-<td>2015-12-06 16:23:34</td>
-</tr>
-</tbody>
-</table>
-<p>我们对User类执行查询如下：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$users=User::where(<span class="string">'name'</span>,<span class="string">'liuhuidong'</span>)-&gt;first();</span><br></pre></td></tr></table></figure>
-<p>这种情况下出来的结果是正常的，会返回相应的结果，我们分析一下这个语句。<br>在这条语句中，为了表示方便，我们暂且称“-&gt;”符号为“链”，在链之前查询语句</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">User::where(&apos;name&apos;,&apos;liuhuidong&apos;)</span><br></pre></td></tr></table></figure>
-<p>被称为查询构造器的条件构建部分，在链之后的部分<code>first()</code>被称为获取器，其实在获取器之前，语句返回的是一个查询构造器的类，为QueryBuilder,在laravel项目中的完整路径是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Illuminate\Database\Query\Builder</span><br></pre></td></tr></table></figure>
-<p>这个类有一个函数很实用，即<code>toSql()</code>，这个函数可以返回我们用Eloquent ORM构造的查询真正执行的sql语句，</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> User::where(<span class="string">'name'</span>,<span class="string">'Martin'</span>)-&gt;toSql();</span><br></pre></td></tr></table></figure>
-<p>结果如下：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> <span class="string">`name`</span> = <span class="string">'Martin'</span></span><br></pre></td></tr></table></figure>
-<p>然后我们加入<code>orWhere</code></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$users=User::where(<span class="string">'name'</span>,<span class="string">'Martin'</span>)-&gt;orWhere(<span class="string">'mobile'</span>,<span class="string">'12345678'</span>)-&gt;first();</span><br></pre></td></tr></table></figure>
-<p>这时我们发现已经被删除的第二条字段也出现在了查询结果中。Why？别着急，我们对这个查询同样进行sql语句打印，结果如下</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> <span class="string">`name`</span> = <span class="string">'Martin'</span> <span class="keyword">or</span> <span class="string">`mobile`</span> = <span class="string">'12345678'</span></span><br></pre></td></tr></table></figure>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>看到这个sql语句我们就知道原因出在哪里了，原因就在于QueryBuilder生成的sql语句的过程是先生成一个</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`table`.'deleted_at'=null</span><br></pre></td></tr></table></figure>
-<p>然后后面再添加上其他的语句，如果用的是where筛选，就用and连接，如果用orWhere筛选，就用or连接，由于sql语句中，and的执行优先级大于or，因此上句中</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`deleted_at` is null and `name` = 'Martin' 和`mobile` = '12345678'</span><br></pre></td></tr></table></figure>
-<p>会分别执行，然后再把两者的结果集合。（sql查询的实现过程可能并非如此，但是我们这样理解有利于解释我们的问题），这就导致了这样的结果。<br>知道了原因，我们就能知道破解问题的办法了，</p>
-<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>我们可以把sql语句改成</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> (<span class="string">`name`</span> = <span class="string">'John'</span> <span class="keyword">or</span> <span class="string">`mobile`</span> = <span class="string">'13817037826'</span>)</span><br></pre></td></tr></table></figure>
-<p>根据这个我们就可以设计eloquent查询语句了。可以使用eloquent的高级where群组化参数查询</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">User::where(<span class="function"><span class="keyword">function</span><span class="params">($query)</span>)</span>&#123;</span><br><span class="line">$query-&gt;where(<span class="string">'name'</span>,<span class="string">'='</span>.<span class="string">'Martin'</span>)</span><br><span class="line">-&gt;orwhere(<span class="string">'mobile'</span>,<span class="string">'like'</span>,<span class="string">'12345678'</span>);&#125;)</span><br><span class="line">-&gt;get();</span><br></pre></td></tr></table></figure>
-<p>我们再次打印sql语句：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> (<span class="string">`name`</span> = <span class="string">'Martin'</span> <span class="keyword">or</span> <span class="string">`mobile`</span> =<span class="string">'12345678'</span>)</span><br></pre></td></tr></table></figure>
-<p>可以看到，除了Eoquent查询自带<code>的deleted_at</code>筛选条件之外语句的其他部分已经被括号括了起来，保证了它们的优先执行，这样问题就迎刃而解了。</p>
-<p>注：这里用到了php闭包函数的用法，博主也是刚刚了解，有兴趣的朋友可以深入了解一下。具体如何在其中引入参数，是的查询的参数变为动态的，可以参看这篇文章下FiveSay的回答。</p>
-<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>laravel的创始人Taylorotweel并不认为这是个bug，而认为这是基于sql语句查询中<code>or</code>和<code>and`</code>作用优先级不同导致的无法避免的事，但是，发现该问题的开发者依然要求Taylor在文档中添加相关解释，最后，Taylor做出了妥协，博主已经确认过，在最新的laravel5.1的Eloquent ORM 入门一节，已经有了这一问题的note，有兴趣的朋友可以去看看:<a href="http://www.golaravel.com/laravel/docs/5.1/eloquent/#querying-soft-deleted-models" target="_blank" rel="noopener">传送门</a></p>
-<p>放上github上该issue的讨论:<a href="https://github.com/laravel/framework/issues/1945" target="_blank" rel="noopener">点我</a></p>
+            <blockquote>
+<p>css的全拼为<code>cascade style sheet</code>,直译为层叠样式表。CSS通过为具有相同特征的html元素在文档中的一个位置统一定义样式，取代html的原始时代为每个元素单独描述样式，以及将样式描述与元素结构混合的模式。层叠即，当多个css定义项为同一html元素定义了同一种样式时（例如A定义项与B定义项都为某一p元素定义了颜色属性），这些定义项在同一元素上发生层叠，根据特定标准确定的权重，判断究竟将哪个定义项应用于该元素。</p>
+</blockquote>
+<blockquote>
+<p>css的核心之一就是选择器。选择器总结，元素选-&gt;p,样式类选-&gt;.class_name,id选-&gt;#id,attribute选：=，部分attribute选：~=、*=、|=、^=、$=</p>
+</blockquote>
+<ol>
+<li>子块级元素的追评margin+border+padding+width必然等于父级块元素的width.</li>
+<li>在css中,水平方向上，width只能是content的宽度，不包括margin,border以及padding。</li>
+<li>对于块级元素的水平宽度属性，只有width以及margin可设置为auto，其他的要么设置成具体值，要么默认为0.</li>
+<li>width，padding不能为负值，margin可以，可以用负值的margin做一些神奇的效果</li>
+<li>css中有一个标准是允许浏览器设定一个width的最小值，元素的width不能比这个小，而这个最小值具体是多少却是因浏览器而异。</li>
+<li>如果width和margin都设置为具体值，即过分受限，则用户代理将把margin-right重置为auto.</li>
+</ol>
 
           
         
@@ -1053,6 +877,182 @@
 <li>isset + empty</li>
 <li>empty</li>
 </ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/laravel-soft-delete-problem/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Martin">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="心之所向">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/04/20/laravel-soft-delete-problem/" itemprop="url">关于Laravel中使用orWhere查询会返回已删除条目的问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-04-20T00:00:00+08:00">
+                2016-04-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在laravel的model中，可以引入并使用<code>Softdeletes</code>，即软删除功能，所谓软删除就是当程序对数据库中的一条记录执行删除操作时，并不是真的将这条记录从数据库中删除掉，而是相应的在这个记录的事先指定的字段中添加标识，表明该字段已被软删除，而程序之后访问数据库所执行的查询都会跳过这些记录，在laravel中，一般我们都定义这一功能所对应的字段为<code>deleted_at</code>。</p>
+<p>我们以<code>User</code>类为例，在定义这个model时引入<code>softDelete</code>,代码如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">User</span> <span class="keyword">extends</span> <span class="title">Model</span></span>&#123;</span><br><span class="line"><span class="keyword">use</span> <span class="title">SoftDeletes</span>;</span><br><span class="line">dates=[<span class="string">'deleted_at'</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>除此之外还要在数据库users表中增加deleted_at字段，并设置为时间戳类型，可为空**</strong>，这样就添加了软删除功能，可以进行软删除了。</p>
+<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>当执行对一个User实例<code>$user</code>执行删除操作时，laravel程序自动对数据库中对应记录的<code>deleted_at</code>字段赋值，标识它已被删除，接下来进行的查询就会自动跳过该字段。</p>
+<p>而我们的问题恰恰就出在这里，对于已经添加<code>SoftDelete</code>(即软删除)的Model，如果使用Eloquent ORM进行<code>orWhere</code>查询，有时会出现已经被删除的字段出现在我们的搜索结果中，是不是很惊讶呢？<br>博主也是一样的，还以为发现了什么bug，最后发现其实这与laravelEloquentORM查询的实现有关，让我们从一个简单地Eloquent 查询开始。</p>
+<p>我们首先在数据库中准备好一下两条数据</p>
+<h4 id="我是用户表"><a href="#我是用户表" class="headerlink" title="我是用户表"></a>我是用户表</h4><table>
+<thead>
+<tr>
+<th>name</th>
+<th>mobile</th>
+<th>deleted_at</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Martin</td>
+<td>87654321</td>
+<td></td>
+</tr>
+<tr>
+<td>John</td>
+<td>12345678</td>
+<td>2015-12-06 16:23:34</td>
+</tr>
+</tbody>
+</table>
+<p>我们对User类执行查询如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$users=User::where(<span class="string">'name'</span>,<span class="string">'liuhuidong'</span>)-&gt;first();</span><br></pre></td></tr></table></figure>
+<p>这种情况下出来的结果是正常的，会返回相应的结果，我们分析一下这个语句。<br>在这条语句中，为了表示方便，我们暂且称“-&gt;”符号为“链”，在链之前查询语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">User::where(&apos;name&apos;,&apos;liuhuidong&apos;)</span><br></pre></td></tr></table></figure>
+<p>被称为查询构造器的条件构建部分，在链之后的部分<code>first()</code>被称为获取器，其实在获取器之前，语句返回的是一个查询构造器的类，为QueryBuilder,在laravel项目中的完整路径是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Illuminate\Database\Query\Builder</span><br></pre></td></tr></table></figure>
+<p>这个类有一个函数很实用，即<code>toSql()</code>，这个函数可以返回我们用Eloquent ORM构造的查询真正执行的sql语句，</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> User::where(<span class="string">'name'</span>,<span class="string">'Martin'</span>)-&gt;toSql();</span><br></pre></td></tr></table></figure>
+<p>结果如下：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> <span class="string">`name`</span> = <span class="string">'Martin'</span></span><br></pre></td></tr></table></figure>
+<p>然后我们加入<code>orWhere</code></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$users=User::where(<span class="string">'name'</span>,<span class="string">'Martin'</span>)-&gt;orWhere(<span class="string">'mobile'</span>,<span class="string">'12345678'</span>)-&gt;first();</span><br></pre></td></tr></table></figure>
+<p>这时我们发现已经被删除的第二条字段也出现在了查询结果中。Why？别着急，我们对这个查询同样进行sql语句打印，结果如下</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> <span class="string">`name`</span> = <span class="string">'Martin'</span> <span class="keyword">or</span> <span class="string">`mobile`</span> = <span class="string">'12345678'</span></span><br></pre></td></tr></table></figure>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>看到这个sql语句我们就知道原因出在哪里了，原因就在于QueryBuilder生成的sql语句的过程是先生成一个</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`table`.'deleted_at'=null</span><br></pre></td></tr></table></figure>
+<p>然后后面再添加上其他的语句，如果用的是where筛选，就用and连接，如果用orWhere筛选，就用or连接，由于sql语句中，and的执行优先级大于or，因此上句中</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`deleted_at` is null and `name` = 'Martin' 和`mobile` = '12345678'</span><br></pre></td></tr></table></figure>
+<p>会分别执行，然后再把两者的结果集合。（sql查询的实现过程可能并非如此，但是我们这样理解有利于解释我们的问题），这就导致了这样的结果。<br>知道了原因，我们就能知道破解问题的办法了，</p>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p>我们可以把sql语句改成</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> (<span class="string">`name`</span> = <span class="string">'John'</span> <span class="keyword">or</span> <span class="string">`mobile`</span> = <span class="string">'13817037826'</span>)</span><br></pre></td></tr></table></figure>
+<p>根据这个我们就可以设计eloquent查询语句了。可以使用eloquent的高级where群组化参数查询</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">User::where(<span class="function"><span class="keyword">function</span><span class="params">($query)</span>)</span>&#123;</span><br><span class="line">$query-&gt;where(<span class="string">'name'</span>,<span class="string">'='</span>.<span class="string">'Martin'</span>)</span><br><span class="line">-&gt;orwhere(<span class="string">'mobile'</span>,<span class="string">'like'</span>,<span class="string">'12345678'</span>);&#125;)</span><br><span class="line">-&gt;get();</span><br></pre></td></tr></table></figure>
+<p>我们再次打印sql语句：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> <span class="string">`users`</span> <span class="keyword">where</span> <span class="string">`deleted_at`</span> <span class="keyword">is</span> <span class="literal">null</span> <span class="keyword">and</span> (<span class="string">`name`</span> = <span class="string">'Martin'</span> <span class="keyword">or</span> <span class="string">`mobile`</span> =<span class="string">'12345678'</span>)</span><br></pre></td></tr></table></figure>
+<p>可以看到，除了Eoquent查询自带<code>的deleted_at</code>筛选条件之外语句的其他部分已经被括号括了起来，保证了它们的优先执行，这样问题就迎刃而解了。</p>
+<p>注：这里用到了php闭包函数的用法，博主也是刚刚了解，有兴趣的朋友可以深入了解一下。具体如何在其中引入参数，是的查询的参数变为动态的，可以参看这篇文章下FiveSay的回答。</p>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p>laravel的创始人Taylorotweel并不认为这是个bug，而认为这是基于sql语句查询中<code>or</code>和<code>and`</code>作用优先级不同导致的无法避免的事，但是，发现该问题的开发者依然要求Taylor在文档中添加相关解释，最后，Taylor做出了妥协，博主已经确认过，在最新的laravel5.1的Eloquent ORM 入门一节，已经有了这一问题的note，有兴趣的朋友可以去看看:<a href="http://www.golaravel.com/laravel/docs/5.1/eloquent/#querying-soft-deleted-models" target="_blank" rel="noopener">传送门</a></p>
+<p>放上github上该issue的讨论:<a href="https://github.com/laravel/framework/issues/1945" target="_blank" rel="noopener">点我</a></p>
 
           
         
