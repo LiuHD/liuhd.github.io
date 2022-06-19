@@ -378,7 +378,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/css-definitive-guide-learning-note-first/">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/all-functions-my-blog-should-have/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Martin">
@@ -397,7 +397,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/04/20/css-definitive-guide-learning-note-first/" itemprop="url">《CSS权威指南》学习笔记一</a></h1>
+                <a class="post-title-link" href="/2016/04/20/all-functions-my-blog-should-have/" itemprop="url">我的博客要有的功能</a></h1>
         
 
         <div class="post-meta">
@@ -449,20 +449,37 @@
       
         
           
-            <blockquote>
-<p>css的全拼为<code>cascade style sheet</code>,直译为层叠样式表。CSS通过为具有相同特征的html元素在文档中的一个位置统一定义样式，取代html的原始时代为每个元素单独描述样式，以及将样式描述与元素结构混合的模式。层叠即，当多个css定义项为同一html元素定义了同一种样式时（例如A定义项与B定义项都为某一p元素定义了颜色属性），这些定义项在同一元素上发生层叠，根据特定标准确定的权重，判断究竟将哪个定义项应用于该元素。</p>
-</blockquote>
-<blockquote>
-<p>css的核心之一就是选择器。选择器总结，元素选-&gt;p,样式类选-&gt;.class_name,id选-&gt;#id,attribute选：=，部分attribute选：~=、*=、|=、^=、$=</p>
-</blockquote>
-<ol>
-<li>子块级元素的追评margin+border+padding+width必然等于父级块元素的width.</li>
-<li>在css中,水平方向上，width只能是content的宽度，不包括margin,border以及padding。</li>
-<li>对于块级元素的水平宽度属性，只有width以及margin可设置为auto，其他的要么设置成具体值，要么默认为0.</li>
-<li>width，padding不能为负值，margin可以，可以用负值的margin做一些神奇的效果</li>
-<li>css中有一个标准是允许浏览器设定一个width的最小值，元素的width不能比这个小，而这个最小值具体是多少却是因浏览器而异。</li>
-<li>如果width和margin都设置为具体值，即过分受限，则用户代理将把margin-right重置为auto.</li>
-</ol>
+            <h3 id="导航栏"><a href="#导航栏" class="headerlink" title="导航栏"></a>导航栏</h3><ul>
+<li>首页</li>
+<li>关于</li>
+<li>作品展示</li>
+</ul>
+<h3 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h3><ul>
+<li>发布文章</li>
+<li>删除文章</li>
+<li>修改文章</li>
+<li>保存草稿</li>
+<li><p>回复评论</p>
+</li>
+<li><p>文章附件下载</p>
+</li>
+<li>文章评论</li>
+<li>文章访问统计</li>
+</ul>
+<h3 id="文章归档"><a href="#文章归档" class="headerlink" title="文章归档"></a>文章归档</h3><ul>
+<li>文章根据目录分类</li>
+<li>文章根据月份分类</li>
+<li>文章根据标签分类</li>
+</ul>
+<ul>
+<li>文章转载，平台包括微信，微博，扣扣空间</li>
+<li>文章元素包括：标题，文章内荣，简介，出处</li>
+<li>个人作品展示</li>
+<li>文章内容页，返回页首</li>
+<li>友情链接</li>
+<li>文章搜索功能</li>
+<li>好看的侧边栏，字体，以及字体背景</li>
+</ul>
 
           
         
@@ -659,7 +676,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/inpu-type-image/">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2016/04/20/css-definitive-guide-learning-note-first/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Martin">
@@ -678,7 +695,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2016/04/20/inpu-type-image/" itemprop="url">神奇的图片类型input type=image</a></h1>
+                <a class="post-title-link" href="/2016/04/20/css-definitive-guide-learning-note-first/" itemprop="url">《CSS权威指南》学习笔记一</a></h1>
         
 
         <div class="post-meta">
@@ -730,25 +747,20 @@
       
         
           
-            <h1 id="神奇的图片类型-input-type-image"><a href="#神奇的图片类型-input-type-image" class="headerlink" title="神奇的图片类型 input type=image"></a>神奇的图片类型 input type=image</h1><p>这两天的工作是给一个客户的项目改bug，项目是用laravel框架做的，还挺大，本来以为正在学习lel的我能学到不少东西，然而，图样！拿到代码的我看了一晌就欲哭无泪了，</p>
-<p>我擦！这代码怎么能这么乱？！是坨屎么！！！</p>
-<p>我擦！这种写法也行？！</p>
-<p>我擦！这中英文混合命名法是怎么做到这么切换自如的？！</p>
-<p>天哪，这神奇的代码是怎么跑了这么久的啊！？</p>
-<p>然而，这一切都不及我发现的原作者的表单写法。到目前为止，所有的表单提交，一个<code>type=&quot;submit&quot;</code>的<code>input</code>或<code>button</code>我都没有看到，但是这些表单竟然都神奇的工作的好好的，我们一起来膜拜一下大神的代码：</p>
-<blockquote>
-<p>大牛的前端表单代码</p>
+            <blockquote>
+<p>css的全拼为<code>cascade style sheet</code>,直译为层叠样式表。CSS通过为具有相同特征的html元素在文档中的一个位置统一定义样式，取代html的原始时代为每个元素单独描述样式，以及将样式描述与元素结构混合的模式。层叠即，当多个css定义项为同一html元素定义了同一种样式时（例如A定义项与B定义项都为某一p元素定义了颜色属性），这些定义项在同一元素上发生层叠，根据特定标准确定的权重，判断究竟将哪个定义项应用于该元素。</p>
 </blockquote>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">"width:102.4px; height:38.4px;"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">name</span>=<span class="string">"imageField3"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">type</span>=<span class="string">"image"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">id</span>=<span class="string">"imageField3"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"/p-explorer/img/del.jpg"</span> <span class="attr">onClick</span>=<span class="string">'return confirm("确认删除吗?" +</span></span></span><br><span class="line"><span class="tag"><span class="string">               "此操作将会产生以下影响:\n"+"1.修改楼盘对接经理\n"+"2.修改成员归属");'</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">"width:102.4px; height:38.4px;"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">name</span>=<span class="string">"clientlist"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">type</span>=<span class="string">"image"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">id</span>=<span class="string">"clientlist"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"/p-explorer/img/khlb.jpg"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">style</span>=<span class="string">"width:102.4px; height:38.4px;"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">name</span>=<span class="string">"imageField"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">type</span>=<span class="string">"image"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">id</span>=<span class="string">"imageField"</span> </span></span><br><span class="line"><span class="tag">            <span class="attr">src</span>=<span class="string">"/p-explorer/img/save.jpg"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>大牛的后台表单处理代码:</p>
+<p>css的核心之一就是选择器。选择器总结，元素选-&gt;p,样式类选-&gt;.class_name,id选-&gt;#id,attribute选：=，部分attribute选：~=、*=、|=、^=、$=</p>
 </blockquote>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>($request-&gt;has(<span class="string">'imageField3_x'</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>($request-&gt;input(<span class="string">'clientlist_x'</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>($request-&gt;input(<span class="string">'imageField_x'</span>))</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>点击任意一个图片后台都能做出相应的响应，而我们却没有找到明显的提交的入口，是不是很神奇？<br>其实，<code>&amp;lt;input&amp;gt;</code>标签的<code>type</code>属性有一个<code>image</code>的可取值，当取值为<code>image</code>时，<code>&amp;lt;input&amp;gt;</code>被称作图片按钮，点击这些图片，表单就会立即提交，且提交的数据中除了正常的表单项还有鼠标单击时在该图片上的水平和垂直偏移量，也就是我们看到的后端处理代码中的<code>imageField3_x</code>等表单中本不存在的项。<br>引自<a href="http://www.w3school.com.cn/tags/att_input_type.asp" target="_blank" rel="noopener">W3School</a>的解释:</p>
-<blockquote>
-<p>如果 type 属性设置为 image，当用户单击图像时，浏览器将以像素为单位，将鼠标相对于图像边界的偏移量发送到服务器，其中包括从图像左边界开始的水平偏移量，以及从图像上边界开始的垂直偏移量。</p>
-</blockquote>
-<p>对于这种用法，其实比较适合一个表单有多种动作，将form的<code>action</code>置空，表单默认提交到<strong>自身地址</strong>之后，在后端逻辑代码中像上面代码中那样根据图片水平或垂直偏移量是否存在来判断具体要执行什么动作。这虽然不是什么冷门知识，但是我是真的第一次知道，只怪当初没有完全的看一遍标签属性。希望你们不会遇到这样的坑。。。</p>
+<ol>
+<li>子块级元素的追评margin+border+padding+width必然等于父级块元素的width.</li>
+<li>在css中,水平方向上，width只能是content的宽度，不包括margin,border以及padding。</li>
+<li>对于块级元素的水平宽度属性，只有width以及margin可设置为auto，其他的要么设置成具体值，要么默认为0.</li>
+<li>width，padding不能为负值，margin可以，可以用负值的margin做一些神奇的效果</li>
+<li>css中有一个标准是允许浏览器设定一个width的最小值，元素的width不能比这个小，而这个最小值具体是多少却是因浏览器而异。</li>
+<li>如果width和margin都设置为具体值，即过分受限，则用户代理将把margin-right重置为auto.</li>
+</ol>
 
           
         
