@@ -249,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2017/05/19/html-width-height/">
+    <link itemprop="mainEntityOfPage" href="https://liuhd.github.io/2017/05/19/aliyun-ftp-mysql-config/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Martin">
@@ -268,7 +268,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/05/19/html-width-height/" itemprop="url">关于width和height的html属性总结</a></h1>
+                <a class="post-title-link" href="/2017/05/19/aliyun-ftp-mysql-config/" itemprop="url">阿里云ecs配置ftp服务及mysql远程连接</a></h1>
         
 
         <div class="post-meta">
@@ -319,19 +319,27 @@
 
       
         
-          <h3 id="element"><a href="#element" class="headerlink" title="element"></a>element</h3><p>offsetHeight Height including padding and border<br>offsetWidth Width including padding and border</p>
-<p>clientHeight Height with padding<br>clientWidth Width with padding</p>
-<p>scrollWidth entire width of an element with padding<br>scrollHeight entire height of an element with padding<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/05/19/html-width-height/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <h2 id="ftp服务"><a href="#ftp服务" class="headerlink" title="ftp服务"></a>ftp服务</h2><ul>
+<li>使用filezilla server软件搭建<br>  参考文章：<a href="http://www.5xiaobo.com/?id=528" target="_blank" rel="noopener">http://www.5xiaobo.com/?id=528</a></li>
+<li>记得配置filezillaserver 的passive mode ，由于filezilla搭建的ftp服务器将命令与数据使用不同的端口进行传输，所以只打开配置允许21，23端口访问是不够的<br><img src="http://ww1.sinaimg.cn/large/82cec9c6ly1fg1a28ru6cj20zm0blta6.jpg" alt><br><img src="http://ww1.sinaimg.cn/large/82cec9c6ly1fg1a6qmlazj20e003ujr9.jpg" alt></li>
+</ul>
+<h2 id="mysql-远程连接配置"><a href="#mysql-远程连接配置" class="headerlink" title="mysql 远程连接配置"></a>mysql 远程连接配置</h2><ul>
+<li>打开安全组策略，在公网规则下新建允许3306端口的访问<br><img src="http://ww1.sinaimg.cn/large/82cec9c6ly1fg1a8dbls1j20or017a9w.jpg" alt></li>
+<li><p>在mysql中执行sql语句，解除用户只能在本地访问的限制,(以root用户为例)</p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> host=<span class="string">'%'</span> <span class="keyword">where</span> <span class="keyword">user</span>=<span class="string">'root'</span> <span class="keyword">and</span> host=<span class="string">'localhost'</span>;</span><br><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;        <span class="comment">#刷新权限表，使配置生效</span></span><br></pre></td></tr></table></figure>
+<p>  或者新建一个用户</p>
+  <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">all</span> <span class="keyword">on</span> *.* <span class="keyword">to</span> <span class="string">'yourname'</span>@<span class="string">'%'</span> <span class="keyword">identified</span> <span class="keyword">by</span> <span class="string">'password'</span>;</span><br><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如发现已打开端口3306的情况下依然不能访问，可以检查是否在ecs主机中打开了防火墙，如果打开了，则需要在防火墙中添加允许3306端口访问的规则</p>
+</li>
+</ul>
+<p>然后就可以远程连接到ecs中的mysql服务了</p>
+
+          
         
       
-    </p></div>
+    </div>
     
     
     
