@@ -780,7 +780,7 @@ function renderArchivePage(digests) {
 
 function renderShell({ title, canonical, description, bodyClass, content }) {
   return `<!DOCTYPE html>
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next pisces" lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -794,6 +794,19 @@ function renderShell({ title, canonical, description, bodyClass, content }) {
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
   <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
   <link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
+  <style>
+    .post-block,
+    .post-header,
+    .post-body,
+    .posts-expand .post,
+    .posts-expand .post-block,
+    .posts-expand .post-body,
+    .posts-expand .post-header {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+    }
+  </style>
   <link rel="canonical" href="${escapeAttribute(canonical)}">
   <title>${escapeHtml(title)} | LiuHD</title>
 </head>
