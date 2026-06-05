@@ -10,10 +10,14 @@ const DIGESTS_INDEX_PATH = path.join(DATA_ROOT, "digests.json");
 const TIME_ZONE = "Asia/Shanghai";
 const USER_AGENT =
   "Mozilla/5.0 (compatible; LiuHDAIDailyBot/1.0; +https://github.com/LiuHD/liuhd.github.io)";
+const OPENAI_API_KEY =
+  process.env.OPENAI_API_KEY || process.env.AI_DAILY_OPENAI_API_KEY || "";
+const AI_DAILY_MODEL = process.env.AI_DAILY_MODEL || "gpt-4o-mini";
 const DRY_RUN = process.argv.includes("--dry-run");
 const NOW = getRunDate();
 const DATE_STAMP = formatDate(NOW);
 const ISO_STAMP = NOW.toISOString();
+const MAX_DETAIL_CHARS = 2800;
 
 const SOURCES = [
   {
@@ -199,7 +203,8 @@ async function main() {
   }
 
   const curated = curateItems(collected);
-  const digest = buildDigest(curated, sourceStatus);
+  const enriched = await enrichItemsForChinese(curated);
+  const digest = buildDigest(enriched, sourceStatus);
 
   const dailyJsonPath = path.join(DATA_ROOT, `${DATE_STAMP}.json`);
   const dailyPagePath = path.join(
@@ -230,7 +235,8 @@ async function main() {
       {
         date: DATE_STAMP,
         itemsFetched: collected.length,
-        curatedItems: curated.length,
+        curatedItems: enriched.length,
+        aiEnhanced: OPENAI_API_KEY ? enriched.filter((item) => item.translationMode === "ai").length : 0,
         written: !DRY_RUN,
         sourceStatus
       },
@@ -546,6 +552,188 @@ function curateItems(items) {
   return capped;
 }
 
+async function enrichItemsForChinese(items) {
+  const detailedItems = await Promise.all(items.map(fetchDetailContext));
+  if (OPENAI_API_KEY) {
+    return summarizeItemsInChinese(detailedItems);
+  }
+  return detailedItems.map(applyFallbackChineseCopy);
+}
+
+async function fetchDetailContext(item) {
+  try {
+    const html = await fetchText(item.url);
+    const detail = extractDetailText(html);
+    return {
+      ...item,
+      detailText: detail,
+      translationMode: "fallback"
+    };
+  } catch {
+    return {
+      ...item,
+      detailText: item.description || "",
+      translationMode: "fallback"
+    };
+  }
+}
+
+function extractDetailText(html) {
+  const metaDescription =
+    html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i)?.[1] ||
+    html.match(/<meta[^>]+property=["']og:description["'][^>]+content=["']([^"']+)["']/i)?.[1] ||
+    "";
+
+  const paragraphs = [...html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+    .map((match) => normalizeWhitespace(decodeEntities(stripTags(match[1] || ""))))
+    .filter((text) => text.length >= 40 && text.length <= 500);
+
+  const merged = [metaDescription, ...paragraphs].filter(Boolean).join("\n");
+  return merged.slice(0, MAX_DETAIL_CHARS);
+}
+
+async function summarizeItemsInChinese(items) {
+  const batches = chunk(items, 6);
+  const translated = [];
+
+  for (const batch of batches) {
+    try {
+      const result = await callOpenAIForBatch(batch);
+      const mapped = new Map(result.map((entry) => [entry.id, entry]));
+      for (const item of batch) {
+        const localized = mapped.get(item.url);
+        if (localized?.zhTitle && localized?.zhSummary) {
+          translated.push({
+            ...item,
+            zhTitle: normalizeWhitespace(localized.zhTitle),
+            zhSummary: normalizeWhitespace(localized.zhSummary),
+            translationMode: "ai"
+          });
+        } else {
+          translated.push(applyFallbackChineseCopy(item));
+        }
+      }
+    } catch {
+      translated.push(...batch.map(applyFallbackChineseCopy));
+    }
+  }
+
+  return translated;
+}
+
+async function callOpenAIForBatch(items) {
+  const system = [
+    "你是中文科技媒体编辑，服务对象是中国投资者和开发者。",
+    "请将输入条目统一改写成中文标题和中文摘要。",
+    "标题要短，突出产品、商业、开发者价值，不要逐字翻译腔。",
+    "摘要控制在2句内，优先说明发生了什么、为什么值得关注。",
+    "保留必要的产品名、公司名、模型名英文专有名词。"
+  ].join(" ");
+
+  const payload = items.map((item) => ({
+    id: item.url,
+    source: item.source,
+    category: item.category,
+    title: item.title,
+    description: item.description,
+    detailText: item.detailText,
+    takeaway: buildTakeaway(item)
+  }));
+
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      authorization: `Bearer ${OPENAI_API_KEY}`
+    },
+    body: JSON.stringify({
+      model: AI_DAILY_MODEL,
+      response_format: { type: "json_object" },
+      messages: [
+        { role: "system", content: system },
+        {
+          role: "user",
+          content: JSON.stringify({
+            task: "为每条新闻生成中文标题和中文摘要，返回 JSON 对象，键为 items，值为数组；每项包含 id、zhTitle、zhSummary。",
+            items: payload
+          })
+        }
+      ]
+    })
+  });
+
+  if (!response.ok) {
+    throw new Error(`OpenAI summarize failed: ${response.status}`);
+  }
+
+  const json = await response.json();
+  const content = json?.choices?.[0]?.message?.content || "{}";
+  const parsed = JSON.parse(content);
+  return Array.isArray(parsed.items) ? parsed.items : [];
+}
+
+function applyFallbackChineseCopy(item) {
+  const topic = inferChineseTopic(item);
+  const action = inferChineseAction(item);
+  const sourceLabel = item.source;
+  const zhTitle = item.region === "cn" && looksMostlyChinese(item.title)
+    ? item.title
+    : `${sourceLabel}${action}${topic}`;
+  const detailBasis = normalizeWhitespace(item.detailText || item.description || item.title);
+  const shortDetail = detailBasis
+    ? trimSentence(detailBasis, 90)
+    : `${sourceLabel}${action}${topic}，重点可结合原文判断具体产品节奏与商业化方向。`;
+  const zhSummary = looksMostlyChinese(shortDetail)
+    ? shortDetail
+    : `${sourceLabel}${action}${topic}，重点涉及${topic}相关能力更新。建议重点关注其对开发者接入、企业落地或产业节奏的影响。`;
+
+  return {
+    ...item,
+    zhTitle,
+    zhSummary,
+    translationMode: "fallback"
+  };
+}
+
+function inferChineseAction(item) {
+  const haystack = `${item.title} ${item.description} ${item.detailText || ""}`.toLowerCase();
+  if (containsOneOf(haystack, ["funding", "raises", "series", "融资", "并购"])) return "披露了";
+  if (containsOneOf(haystack, ["partner", "partnership", "合作"])) return "公布了";
+  if (containsOneOf(haystack, ["launch", "released", "introducing", "update", "发布", "上线"])) return "发布了";
+  if (containsOneOf(haystack, ["open source", "开源"])) return "开源了";
+  return "带来了";
+}
+
+function inferChineseTopic(item) {
+  const haystack = `${item.title} ${item.description} ${item.detailText || ""}`.toLowerCase();
+  if (containsOneOf(haystack, ["agent", "workflow"])) return "Agent 能力更新";
+  if (containsOneOf(haystack, ["api", "sdk", "developer"])) return "开发者工具更新";
+  if (containsOneOf(haystack, ["funding", "series", "融资"])) return "融资进展";
+  if (containsOneOf(haystack, ["chip", "mtia", "gpu", "算力"])) return "算力与基础设施进展";
+  if (containsOneOf(haystack, ["partner", "customer", "enterprise", "合作", "客户", "企业"])) return "企业合作与落地进展";
+  if (containsOneOf(haystack, ["model", "gemini", "claude", "llama", "qwen", "豆包", "混元", "千帆"])) return "模型与平台进展";
+  return "AI 产品新动态";
+}
+
+function looksMostlyChinese(text) {
+  const chinese = (text.match(/[\u4e00-\u9fff]/g) || []).length;
+  return chinese >= Math.max(8, Math.floor(text.length * 0.2));
+}
+
+function trimSentence(text, maxLength) {
+  const normalized = normalizeWhitespace(text);
+  if (normalized.length <= maxLength) return normalized;
+  return `${normalized.slice(0, Math.max(0, maxLength - 1)).trim()}…`;
+}
+
+function chunk(items, size) {
+  const result = [];
+  for (let i = 0; i < items.length; i += size) {
+    result.push(items.slice(i, i + size));
+  }
+  return result;
+}
+
 function buildDigest(items, sourceStatus) {
   const groups = new Map();
   for (const rule of CATEGORY_RULES) {
@@ -557,7 +745,9 @@ function buildDigest(items, sourceStatus) {
     if (bucket.length < 5) {
       bucket.push({
         ...item,
-        takeaway: buildTakeaway(item)
+        takeaway: buildTakeaway(item),
+        displayTitle: item.zhTitle || item.title,
+        displaySummary: item.zhSummary || item.description || ""
       });
     }
   }
@@ -588,7 +778,8 @@ function buildDigest(items, sourceStatus) {
       successfulSources: sourceStatus.filter((item) => item.ok).length,
       curatedItems: items.length,
       domesticItems: items.filter((item) => item.region === "cn").length,
-      officialItems: items.filter((item) => item.kind === "official").length
+      officialItems: items.filter((item) => item.kind === "official").length,
+      aiEnhancedItems: items.filter((item) => item.translationMode === "ai").length
     },
     pagePath: `/ai-daily/${dateParts.year}/${pad2(dateParts.month)}/${pad2(dateParts.day)}/`
   };
@@ -600,9 +791,10 @@ function buildHeroSummary(items) {
   }
 
   const topSources = [...new Set(items.slice(0, 6).map((item) => item.source))].slice(0, 3);
+  const enhancementText = OPENAI_API_KEY ? "并已自动生成中文标题与摘要" : "当前未接入模型改写，部分摘要为规则生成";
   return `今天共筛出 ${items.length} 条高相关动态，重点偏向${topSources
     .map((source) => `${source}`)
-    .join("、")}。整体上继续优先关注大公司产品上线、国内平台接入进展和开发者生态变化。`;
+    .join("、")}，${enhancementText}。整体上继续优先关注大公司产品上线、国内平台接入进展和开发者生态变化。`;
 }
 
 function buildTakeaway(item) {
@@ -664,7 +856,7 @@ function renderDailyPage(digest) {
             <header class="post-header">
               <h3 class="post-title" style="font-size: 24px; margin-bottom: 8px;">
                 <a class="post-title-link" href="${escapeAttribute(item.url)}" target="_blank" rel="noopener">${escapeHtml(
-                  item.title
+                  item.displayTitle
                 )}</a>
               </h3>
               <div class="post-meta">
@@ -676,7 +868,7 @@ function renderDailyPage(digest) {
               </div>
             </header>
             <div class="post-body">
-              <p>${escapeHtml(item.description || "源页面未提供摘要，建议打开原文查看完整上下文。")}</p>
+              <p>${escapeHtml(item.displaySummary || "当前未能生成摘要，建议打开原文查看完整上下文。")}</p>
               <blockquote style="margin: 12px 0; padding: 8px 16px; border-left: 4px solid #222; background: #fafafa;">
                 <strong>为什么值得看：</strong> ${escapeHtml(item.takeaway)}
               </blockquote>
@@ -729,6 +921,7 @@ function renderDailyPage(digest) {
           <li>数据源总数：${digest.stats.totalSources}</li>
           <li>成功抓取：${digest.stats.successfulSources}</li>
           <li>官方来源：${digest.stats.officialItems}</li>
+          <li>AI 中文改写：${digest.stats.aiEnhancedItems}</li>
           <li>说明：当前摘要由规则生成，方便你再做二次编辑。</li>
         </ul>
         <ul>${sourceStatusHtml}</ul>

@@ -7,6 +7,13 @@ This automation generates a daily AI digest for investors and developers, with e
 - big-tech strategic moves
 - China market and domestic platform updates
 
+For Chinese titles and summaries, set:
+
+- `OPENAI_API_KEY`: required for AI-generated Chinese rewriting
+- `AI_DAILY_MODEL`: optional, for example `gpt-4o-mini`
+
+Without an API key, the generator still runs, but falls back to rule-based Chinese copy.
+
 Run locally:
 
 ```bash

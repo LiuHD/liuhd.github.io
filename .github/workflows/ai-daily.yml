@@ -23,6 +23,8 @@ jobs:
       - name: Generate AI Daily
         env:
           TZ: Asia/Shanghai
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          AI_DAILY_MODEL: ${{ vars.AI_DAILY_MODEL }}
         run: npm run ai-daily
 
       - name: Commit and push changes
