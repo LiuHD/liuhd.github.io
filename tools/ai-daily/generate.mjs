@@ -673,46 +673,123 @@ async function callOpenAIForBatch(items) {
 }
 
 function applyFallbackChineseCopy(item) {
-  const topic = inferChineseTopic(item);
-  const action = inferChineseAction(item);
-  const sourceLabel = item.source;
+  const signals = extractSignalsFromItem(item);
   const zhTitle = item.region === "cn" && looksMostlyChinese(item.title)
-    ? item.title
-    : `${sourceLabel}${action}${topic}`;
-  const detailBasis = normalizeWhitespace(item.detailText || item.description || item.title);
-  const shortDetail = detailBasis
-    ? trimSentence(detailBasis, 90)
-    : `${sourceLabel}${action}${topic}，重点可结合原文判断具体产品节奏与商业化方向。`;
-  const zhSummary = looksMostlyChinese(shortDetail)
-    ? shortDetail
-    : `${sourceLabel}${action}${topic}，重点涉及${topic}相关能力更新。建议重点关注其对开发者接入、企业落地或产业节奏的影响。`;
+    ? trimSentence(item.title, 34)
+    : buildFallbackTitle(item, signals);
+  const zhSummary = buildFallbackSummary(item, signals);
 
   return {
     ...item,
     zhTitle,
     zhSummary,
-    translationMode: "fallback"
+    translationMode: "fallback",
+    keySignals: signals.highlights
   };
 }
 
-function inferChineseAction(item) {
-  const haystack = `${item.title} ${item.description} ${item.detailText || ""}`.toLowerCase();
-  if (containsOneOf(haystack, ["funding", "raises", "series", "融资", "并购"])) return "披露了";
-  if (containsOneOf(haystack, ["partner", "partnership", "合作"])) return "公布了";
-  if (containsOneOf(haystack, ["launch", "released", "introducing", "update", "发布", "上线"])) return "发布了";
-  if (containsOneOf(haystack, ["open source", "开源"])) return "开源了";
-  return "带来了";
+function extractSignalsFromItem(item) {
+  const haystack = `${item.title} ${item.description} ${item.detailText || ""}`;
+  const lower = haystack.toLowerCase();
+  const subject = localizePhrase(extractSubjectName(item.title, item.source));
+  const topic = inferChineseTopicFromSignals(lower, item);
+  const action = inferChineseActionFromSignals(lower);
+  const amount = extractMoneySignal(haystack);
+  const metrics = extractMetricSignals(haystack).slice(0, 2);
+  const availability = extractAvailabilitySignals(lower);
+  const features = extractFeatureSignals(haystack).slice(0, 3);
+  const highlights = [
+    amount ? `金额或规模：${amount}` : "",
+    availability ? `上线状态：${availability}` : "",
+    features.length ? `能力重点：${features.join("、")}` : "",
+    metrics.length ? `关键指标：${metrics.join("、")}` : ""
+  ].filter(Boolean).slice(0, 3);
+
+  return {
+    subject,
+    topic,
+    action,
+    amount,
+    metrics,
+    availability,
+    features,
+    highlights
+  };
 }
 
-function inferChineseTopic(item) {
-  const haystack = `${item.title} ${item.description} ${item.detailText || ""}`.toLowerCase();
-  if (containsOneOf(haystack, ["agent", "workflow"])) return "Agent 能力更新";
-  if (containsOneOf(haystack, ["api", "sdk", "developer"])) return "开发者工具更新";
-  if (containsOneOf(haystack, ["funding", "series", "融资"])) return "融资进展";
-  if (containsOneOf(haystack, ["chip", "mtia", "gpu", "算力"])) return "算力与基础设施进展";
-  if (containsOneOf(haystack, ["partner", "customer", "enterprise", "合作", "客户", "企业"])) return "企业合作与落地进展";
-  if (containsOneOf(haystack, ["model", "gemini", "claude", "llama", "qwen", "豆包", "混元", "千帆"])) return "模型与平台进展";
-  return "AI 产品新动态";
+function buildFallbackTitle(item, signals) {
+  if (signals.amount && containsOneOf(`${item.title} ${item.detailText || ""}`.toLowerCase(), ["funding", "series", "融资"])) {
+    return `${item.source}披露新一轮融资进展`;
+  }
+  const cleanedSubject = cleanHeadlineSubject(signals.subject, item.source);
+  if (cleanedSubject && shouldUseSubjectAsHeadline(cleanedSubject, item.source)) {
+    return `${item.source}${signals.action}${trimSentence(cleanedSubject, 24)}`;
+  }
+  return `${item.source}${signals.action}${signals.topic}`;
+}
+
+function buildFallbackSummary(item, signals) {
+  const lines = [];
+  const introSubject = cleanSummarySubject(signals.subject, item.source);
+  const isFundingItem = containsWholeTerm(`${item.title} ${item.description} ${item.detailText || ""}`.toLowerCase(), [
+    "funding",
+    "series",
+    "post-money",
+    "financing"
+  ]) || `${item.title} ${item.description}`.includes("融资");
+  const introTarget = isFundingItem ? "新一轮融资与估值更新" : (introSubject || signals.topic);
+  lines.push(`${item.source}${signals.action}${introTarget}，重点落在${signals.topic}。`);
+
+  const evidenceSentence = buildEvidenceSentence(signals);
+  if (evidenceSentence) {
+    lines.push(evidenceSentence);
+  }
+
+  const contextSentence = buildContextSentence(item, signals);
+  if (contextSentence) {
+    lines.push(contextSentence);
+  }
+
+  lines.push(`${buildTakeaway(item)}`);
+  return lines.join("");
+}
+
+function buildEvidenceSentence(signals) {
+  const clauses = [];
+  if (signals.features.length) clauses.push(`这次变化主要覆盖${signals.features.join("、")}`);
+  if (signals.availability) clauses.push(`目前${signals.availability}`);
+  if (signals.amount) clauses.push(`披露的金额或规模为${signals.amount}`);
+  if (signals.metrics.length) clauses.push(`文中出现的关键指标包括${signals.metrics.join("、")}`);
+
+  if (!clauses.length) return "";
+  return `${clauses.slice(0, 3).join("，")}。`;
+}
+
+function buildContextSentence(item, signals) {
+  const details = extractDetailHighlights(item.detailText, signals);
+  if (details.length) {
+    return `进一步看，${details.slice(0, 2).join("；")}。`;
+  }
+  const inferred = buildHeuristicContextSentence(item, signals);
+  return inferred ? `进一步看，${inferred}。` : "";
+}
+
+function inferChineseActionFromSignals(lower) {
+  if (containsOneOf(lower, ["funding", "raises", "series", "融资", "并购"])) return "披露";
+  if (containsOneOf(lower, ["partner", "partnership", "合作", "hub", "network"])) return "公布";
+  if (containsOneOf(lower, ["open source", "开源"])) return "开源";
+  if (containsOneOf(lower, ["launch", "released", "introducing", "update", "preview", "api", "发布", "上线"])) return "推出";
+  return "带来";
+}
+
+function inferChineseTopicFromSignals(lower, item) {
+  if (containsOneOf(lower, ["funding", "series", "融资"])) return "融资与资本动作";
+  if (containsOneOf(lower, ["chip", "mtia", "gpu", "infrastructure", "data center", "算力"])) return "算力与基础设施进展";
+  if (containsOneOf(lower, ["partner", "customer", "enterprise", "部署", "落地", "合作", "客户"])) return "企业落地与生态合作";
+  if (containsOneOf(lower, ["agent", "workflow", "tool-use", "multi-agent"])) return "Agent 能力升级";
+  if (containsOneOf(lower, ["api", "sdk", "developer", "studio"])) return "开发者平台更新";
+  if (containsOneOf(lower, ["model", "gemini", "claude", "llama", "qwen", "豆包", "混元", "千帆"])) return "模型与平台升级";
+  return item.region === "cn" ? "国内 AI 产业动态" : "全球 AI 产品动态";
 }
 
 function looksMostlyChinese(text) {
@@ -734,6 +811,246 @@ function chunk(items, size) {
   return result;
 }
 
+function slugify(text) {
+  return normalizeWhitespace(text)
+    .toLowerCase()
+    .replace(/[^\w\u4e00-\u9fff-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function extractSubjectName(title, source) {
+  const cleaned = normalizeWhitespace(title.replace(/^[A-Z][a-z]{2,8}\s+\d{1,2},\s+\d{4}\s+/, ""));
+  const patterns = [
+    /Introducing\s+(.+)/i,
+    /Announcing\s+(.+)/i,
+    /has\s+released\s+(.+)/i,
+    /launch(?:es|ed|ing)?\s+(.+)/i,
+    /release(?:s|d)?\s+(.+)/i
+  ];
+  for (const pattern of patterns) {
+    const match = cleaned.match(pattern);
+    if (match?.[1]) return match[1].split(":")[0].trim();
+  }
+  if (cleaned.includes(":")) return cleaned.split(":")[0].trim();
+  return cleaned.replace(source, "").trim() || cleaned;
+}
+
+function shouldUseSubjectAsHeadline(subject, source) {
+  if (!subject) return false;
+  const normalized = normalizeWhitespace(subject);
+  if (!normalized || normalized === source) return false;
+  if (normalized.length > 28) return false;
+  if (/\b(the|and|of|for|with)\b/i.test(normalized) && !/[A-Z]{2,}/.test(normalized)) return false;
+  return true;
+}
+
+function extractMoneySignal(text) {
+  return (
+    text.match(/\$\s?\d+(?:\.\d+)?\s?(?:B|M|K)\b/i)?.[0] ||
+    text.match(/\d+(?:\.\d+)?\s?(?:亿美元|亿元人民币|亿元|万亿元|亿美元)/)?.[0] ||
+    text.match(/\d+\s?billion/i)?.[0] ||
+    ""
+  );
+}
+
+function extractMetricSignals(text) {
+  return [...new Set((text.match(/\b\d+(?:\.\d+)?\s?(?:x|×|%|trillion|billion|million)\b/gi) || []).map((item) => item.trim()))];
+}
+
+function extractAvailabilitySignals(lower) {
+  const labels = [];
+  if (containsOneOf(lower, ["available today", "available now", "上线", "已发布"])) labels.push("已正式上线");
+  if (containsOneOf(lower, ["preview", "private api preview", "预览"])) labels.push("开放预览");
+  if (containsOneOf(lower, ["api", "via the api"])) labels.push("支持 API 接入");
+  if (containsOneOf(lower, ["app", "studio", "claude.ai", "meta.ai"])) labels.push("已进入产品端");
+  return labels.slice(0, 2).join("，");
+}
+
+function extractFeatureSignals(text) {
+  const source = localizePhrase(text);
+  const phrases = [];
+  const supportMatch = source.match(/支持([^。；\n]{6,80})/);
+  if (supportMatch?.[1]) phrases.push(trimSentence(`支持${supportMatch[1]}`, 28));
+
+  const keywords = [
+    ["tool-use", "工具调用"],
+    ["multi-agent orchestration", "多 Agent 编排"],
+    ["visual chain of thought", "视觉链路推理"],
+    ["managed agents", "托管 Agents"],
+    ["linux environment", "隔离 Linux 运行环境"],
+    ["dynamic workflows", "动态工作流"],
+    ["partner hub", "伙伴门户"],
+    ["services track", "服务分层"],
+    ["private api preview", "私有 API 预览"],
+    ["health reasoning", "健康推理能力"],
+    ["multimodal", "多模态能力"],
+    ["inference", "推理能力"],
+    ["training", "训练能力"]
+  ];
+
+  for (const [needle, label] of keywords) {
+    if (text.toLowerCase().includes(needle) && !phrases.includes(label)) {
+      phrases.push(label);
+    }
+  }
+
+  return [...new Set(phrases)];
+}
+
+function buildChineseSentenceFromDetail(text) {
+  const localized = localizePhrase(text);
+  const firstSentence = localized.split(/[\.\n。！!？?]/).find((line) => normalizeWhitespace(line).length >= 18) || localized;
+  return trimSentence(normalizeWhitespace(firstSentence), 80);
+}
+
+function extractDetailHighlights(detailText, signals) {
+  if (!detailText) return [];
+  const localized = localizePhrase(detailText);
+  const rawSentences = localized
+    .split(/[\.\n。！!？?]+/)
+    .map((line) => normalizeWhitespace(line))
+    .filter((line) => line.length >= 20 && line.length <= 110);
+
+  const filtered = [];
+  for (const sentence of rawSentences) {
+    if (filtered.length >= 3) break;
+    if (looksLikeBoilerplate(sentence)) continue;
+    if (isMostlyLatin(sentence)) continue;
+    if (sentence.includes("今天上线") || sentence.includes("现已上线")) continue;
+    if (signals.features.some((feature) => sentence.includes(feature)) && sentence.length < 26) continue;
+    filtered.push(tightenChineseSentence(sentence));
+  }
+  return [...new Set(filtered)];
+}
+
+function buildHeuristicContextSentence(item, signals) {
+  const lower = `${item.title} ${item.description} ${item.detailText || ""}`.toLowerCase();
+
+  if (containsWholeTerm(lower, ["funding", "series", "post-money", "financing"]) || lower.includes("融资")) {
+    return "原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入";
+  }
+  if (containsOneOf(lower, ["partner", "certification", "enterprise", "production", "deployment"])) {
+    return "原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛";
+  }
+  if (containsOneOf(lower, ["chip", "bandwidth", "flops", "inference", "training", "data center", "mtia"])) {
+    return "原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键";
+  }
+  if (containsOneOf(lower, ["agent", "workflow", "tool-use", "multi-agent"])) {
+    return "原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要";
+  }
+  if (containsOneOf(lower, ["model", "opus", "gemini", "llama", "muse spark", "qwen"])) {
+    return "原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景";
+  }
+  if (containsOneOf(lower, ["customer", "business", "adoption", "commercial"])) {
+    return "原文更在意商业采用节奏，说明厂商正在把产品能力转成客户签约和付费扩张";
+  }
+  return "";
+}
+
+function looksLikeBoilerplate(text) {
+  return containsOneOf(text.toLowerCase(), [
+    "learn more",
+    "read more",
+    "for more details",
+    "see our methodology",
+    "click here",
+    "了解更多",
+    "更多详情"
+  ]);
+}
+
+function tightenChineseSentence(text) {
+  return trimSentence(
+    text
+      .replace(/^today[,，]?\s*/i, "")
+      .replace(/^we\s+(are|re|\'re)\s+/i, "")
+      .replace(/^in this post[,，]?\s*/i, "")
+      .replace(/^the company says[,，]?\s*/i, "")
+      .replace(/^原文提到[,，]?\s*/, "")
+      .replace(/^\W+/, ""),
+    96
+  );
+}
+
+function isMostlyLatin(text) {
+  const latin = (text.match(/[A-Za-z]/g) || []).length;
+  const chinese = (text.match(/[\u4e00-\u9fff]/g) || []).length;
+  return latin > 0 && latin > chinese * 1.5;
+}
+
+function cleanHeadlineSubject(subject, source) {
+  if (!subject) return "";
+  return normalizeWhitespace(
+    localizePhrase(subject)
+      .replace(new RegExp(`^${escapeForRegExp(source)}\\s*`, "i"), "")
+      .replace(/^[Tt]he\s+/, "")
+      .replace(/^(a|an)\s+/i, "")
+      .replace(/^(has\s+)?released\s+/i, "")
+      .replace(/^has\s+/i, "")
+      .replace(/\b(of|for|with|to)\b.*$/i, "")
+      .replace(/\band\b/gi, "与")
+      .replace(/\s+与\s+/g, "与")
+      .replace(/[,:：-]\s*$/, "")
+  );
+}
+
+function cleanSummarySubject(subject, source) {
+  const cleaned = cleanHeadlineSubject(subject, source);
+  if (!cleaned) return "";
+  if (/\b(the|and|of|for|with|to)\b/i.test(cleaned)) return "";
+  return cleaned;
+}
+
+function localizePhrase(text) {
+  let output = `${text}`;
+  const replacements = [
+    [/intelligent O&M Agent/gi, "智能运维 Agent"],
+    [/Evolution of the Agent Developer Paradigm/gi, "Agent 开发范式演进"],
+    [/Ontology Is Trending Again/gi, "本体工程重新升温"],
+    [/Bastion Host/gi, "堡垒机"],
+    [/Managed Agents/gi, "托管 Agents"],
+    [/Partner Network/gi, "合作伙伴网络"],
+    [/Partner Hub/gi, "伙伴门户"],
+    [/Services Track/gi, "服务分层"],
+    [/tool-use/gi, "工具调用"],
+    [/multi-agent orchestration/gi, "多 Agent 编排"],
+    [/visual chain of thought/gi, "视觉链路推理"],
+    [/reasoning model/gi, "推理模型"],
+    [/private API preview/gi, "私有 API 预览"],
+    [/preview/gi, "预览"],
+    [/available today/gi, "今天上线"],
+    [/available now/gi, "现已上线"],
+    [/dynamic workflows/gi, "动态工作流"],
+    [/cloud sandbox/gi, "云端沙箱"],
+    [/multimodal/gi, "多模态"],
+    [/inference/gi, "推理"],
+    [/training/gi, "训练"],
+    [/deployment/gi, "部署"],
+    [/production/gi, "生产环境"],
+    [/enterprise/gi, "企业"],
+    [/developers?/gi, "开发者"],
+    [/customers?/gi, "客户"],
+    [/consultants?/gi, "顾问"],
+    [/deploy(?:ed|ment|ments)?/gi, "部署"],
+    [/certification/gi, "认证"],
+    [/certified/gi, "已认证"],
+    [/portal/gi, "门户"],
+    [/tiered structure/gi, "分层体系"],
+    [/ecosystem/gi, "生态体系"],
+    [/capabilities/gi, "能力"],
+    [/feature/gi, "功能"],
+    [/features/gi, "功能"],
+    [/partnerships?/gi, "合作"],
+    [/funding/gi, "融资"],
+    [/infrastructure/gi, "基础设施"]
+  ];
+  for (const [pattern, replacement] of replacements) {
+    output = output.replace(pattern, replacement);
+  }
+  return normalizeWhitespace(output);
+}
+
 function buildDigest(items, sourceStatus) {
   const groups = new Map();
   for (const rule of CATEGORY_RULES) {
@@ -743,11 +1060,13 @@ function buildDigest(items, sourceStatus) {
   for (const item of items) {
     const bucket = groups.get(item.category) ?? groups.get("开发者信号");
     if (bucket.length < 5) {
+      const fallbackSignals = extractSignalsFromItem(item);
       bucket.push({
         ...item,
         takeaway: buildTakeaway(item),
         displayTitle: item.zhTitle || item.title,
-        displaySummary: item.zhSummary || item.description || ""
+        displaySummary: item.zhSummary || item.description || "",
+        keySignals: item.keySignals?.length ? item.keySignals : fallbackSignals.highlights
       });
     }
   }
@@ -787,32 +1106,32 @@ function buildDigest(items, sourceStatus) {
 
 function buildHeroSummary(items) {
   if (items.length === 0) {
-    return "今天没有抓到足够高置信度的新内容，建议手动补充重点公司财报、产品发布或企业落地案例。";
+    return "今天没有抓到足够高置信度的新内容，建议优先手动补充大公司发布、融资事件和企业落地案例。";
   }
 
   const topSources = [...new Set(items.slice(0, 6).map((item) => item.source))].slice(0, 3);
-  const enhancementText = OPENAI_API_KEY ? "并已自动生成中文标题与摘要" : "当前未接入模型改写，部分摘要为规则生成";
-  return `今天共筛出 ${items.length} 条高相关动态，重点偏向${topSources
-    .map((source) => `${source}`)
-    .join("、")}，${enhancementText}。整体上继续优先关注大公司产品上线、国内平台接入进展和开发者生态变化。`;
+  const enhancementText = OPENAI_API_KEY
+    ? "本期已完成 AI 中文编译，可直接作为面向中文用户的晨报底稿。"
+    : "当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。";
+  return `今天共筛出 ${items.length} 条高相关动态，信息最密集的来源集中在${topSources.join("、")}。${enhancementText}整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。`;
 }
 
 function buildTakeaway(item) {
   const lower = `${item.title} ${item.description}`.toLowerCase();
 
   if (containsOneOf(lower, ["funding", "revenue", "融资", "并购", "acquisition"])) {
-    return "偏资本与产业信号，适合观察行业集中度和商业化节奏。";
+    return "更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。";
   }
   if (containsOneOf(lower, ["api", "sdk", "agent", "workflow", "integration", "接入", "部署", "开源"])) {
-    return "偏开发者和工程落地信号，适合关注接入门槛与平台能力变化。";
+    return "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。";
   }
   if (containsOneOf(lower, ["customer", "customers", "enterprise", "business", "企业", "客户", "合作", "落地"])) {
-    return "偏企业落地信号，适合判断真实需求和付费场景。";
+    return "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。";
   }
   if (item.region === "cn") {
-    return "偏国内市场观察，适合跟踪中国平台生态和企业采用趋势。";
+    return "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。";
   }
-  return "偏大公司战略动作，适合持续跟踪产品节奏与生态布局。";
+  return "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。";
 }
 
 function categorizeItem(title, description, source) {
@@ -844,39 +1163,51 @@ function scoreItem(title, description, source) {
 }
 
 function renderDailyPage(digest) {
+  const sectionNav = digest.sections
+    .map((section) => `<a class="section-link" href="#section-${slugify(section.name)}">${escapeHtml(section.name)}</a>`)
+    .join("");
+
   const sectionsHtml = digest.sections
     .map(
       (section) => `
-      <section class="post-block archive">
-        <h2 class="post-title" style="margin-top: 0;">${escapeHtml(section.name)}</h2>
+      <section class="daily-section" id="section-${slugify(section.name)}">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">今日栏目</p>
+            <h2 class="section-title">${escapeHtml(section.name)}</h2>
+          </div>
+          <span class="section-count">${section.items.length} 条</span>
+        </div>
+        <div class="entry-grid">
         ${section.items
           .map(
             (item) => `
-          <article class="post post-type-normal" style="margin-bottom: 32px;">
-            <header class="post-header">
-              <h3 class="post-title" style="font-size: 24px; margin-bottom: 8px;">
-                <a class="post-title-link" href="${escapeAttribute(item.url)}" target="_blank" rel="noopener">${escapeHtml(
-                  item.displayTitle
-                )}</a>
-              </h3>
-              <div class="post-meta">
-                <span class="post-time"><i class="fa fa-calendar-o"></i> ${escapeHtml(item.date || "日期未标注")}</span>
-                <span class="post-meta-divider">|</span>
-                <span><i class="fa fa-building-o"></i> ${escapeHtml(item.source)}</span>
-                <span class="post-meta-divider">|</span>
-                <span><i class="fa fa-map-marker"></i> ${item.region === "cn" ? "国内" : "海外"}</span>
-              </div>
-            </header>
-            <div class="post-body">
-              <p>${escapeHtml(item.displaySummary || "当前未能生成摘要，建议打开原文查看完整上下文。")}</p>
-              <blockquote style="margin: 12px 0; padding: 8px 16px; border-left: 4px solid #222; background: #fafafa;">
-                <strong>为什么值得看：</strong> ${escapeHtml(item.takeaway)}
-              </blockquote>
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">${escapeHtml(item.source)}</span>
+              <span class="meta-inline">${escapeHtml(item.date || "日期未标注")}</span>
+              <span class="meta-inline">${item.region === "cn" ? "国内" : "海外"}</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="${escapeAttribute(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.displayTitle)}</a>
+            </h3>
+            <p class="entry-summary">${escapeHtml(item.displaySummary || "当前未能生成摘要，建议打开原文查看完整上下文。")}</p>
+            ${
+              item.keySignals?.length
+                ? `<div class="signal-list">${item.keySignals
+                    .map((signal) => `<span class="signal-chip">${escapeHtml(signal)}</span>`)
+                    .join("")}</div>`
+                : ""
+            }
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>${escapeHtml(item.takeaway)}</p>
+              <a class="entry-link" href="${escapeAttribute(item.url)}" target="_blank" rel="noopener">查看原文</a>
             </div>
           </article>
         `
           )
           .join("")}
+        </div>
       </section>
     `
     )
@@ -884,7 +1215,13 @@ function renderDailyPage(digest) {
 
   const sourceStatusHtml = digest.sourceStatus
     .map(
-      (item) => `<li>${escapeHtml(item.source)}: ${item.ok ? `抓取 ${item.count} 条` : `失败 - ${item.error}`}</li>`
+      (item) => `
+        <div class="status-card">
+          <div class="status-name">${escapeHtml(item.source)}</div>
+          <div class="status-value">${item.ok ? `抓取 ${item.count} 条` : `抓取失败`}</div>
+          <div class="status-note">${escapeHtml(item.ok ? item.url : item.error || item.url)}</div>
+        </div>
+      `
     )
     .join("");
 
@@ -892,39 +1229,36 @@ function renderDailyPage(digest) {
     title: digest.title,
     canonical: `https://liuhd.github.io${digest.pagePath}`,
     description: digest.heroSummary,
-    bodyClass: "page-post-detail",
+    bodyClass: "daily-page",
     content: `
-      <article class="post post-type-normal">
-        <div class="post-block">
-          <header class="post-header">
-            <h1 class="post-title" style="text-align: center;">${escapeHtml(digest.title)}</h1>
-            <div class="post-meta" style="text-align: center;">
-              <span><i class="fa fa-calendar-o"></i> ${escapeHtml(digest.date)}</span>
-              <span class="post-meta-divider">|</span>
-              <span><i class="fa fa-signal"></i> ${digest.stats.curatedItems} 条重点动态</span>
-              <span class="post-meta-divider">|</span>
-              <span><i class="fa fa-flag"></i> 国内 ${digest.stats.domesticItems} 条</span>
-            </div>
-          </header>
-          <div class="post-body">
-            <p>${escapeHtml(digest.heroSummary)}</p>
-            <p>
-              <a href="/ai-daily/">查看历史 AI 日报</a>
-            </p>
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="hero-kicker">Investor + Developer Daily</p>
+          <h1 class="hero-title">${escapeHtml(digest.title)}</h1>
+          <p class="hero-summary">${escapeHtml(digest.heroSummary)}</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="/ai-daily/">查看历史日报</a>
+            <a class="secondary-link" href="#digest-sections">跳到正文</a>
           </div>
         </div>
-      </article>
-      ${sectionsHtml}
-      <section class="post-block archive">
-        <h2 class="post-title" style="margin-top: 0;">抓取概况</h2>
-        <ul>
-          <li>数据源总数：${digest.stats.totalSources}</li>
-          <li>成功抓取：${digest.stats.successfulSources}</li>
-          <li>官方来源：${digest.stats.officialItems}</li>
-          <li>AI 中文改写：${digest.stats.aiEnhancedItems}</li>
-          <li>说明：当前摘要由规则生成，方便你再做二次编辑。</li>
-        </ul>
-        <ul>${sourceStatusHtml}</ul>
+        <div class="hero-stats">
+          <div class="stat-card"><span class="stat-label">重点动态</span><strong>${digest.stats.curatedItems}</strong></div>
+          <div class="stat-card"><span class="stat-label">国内占比</span><strong>${digest.stats.domesticItems}</strong></div>
+          <div class="stat-card"><span class="stat-label">官方来源</span><strong>${digest.stats.officialItems}</strong></div>
+          <div class="stat-card"><span class="stat-label">AI 编译</span><strong>${digest.stats.aiEnhancedItems}</strong></div>
+        </div>
+      </section>
+      <section class="section-nav">${sectionNav}</section>
+      <div id="digest-sections">${sectionsHtml}</div>
+      <section class="status-panel">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">运行状态</p>
+            <h2 class="section-title">抓取概况</h2>
+          </div>
+        </div>
+        <p class="status-summary">当前日报以大公司产品、开发者平台和国内产业动作为主线。若配置 \`OPENAI_API_KEY\`，后续会自动升级为更自然的中文编译版。</p>
+        <div class="status-grid">${sourceStatusHtml}</div>
       </section>
     `
   });
@@ -935,22 +1269,14 @@ function renderArchivePage(digests) {
     .slice(0, 30)
     .map(
       (digest) => `
-      <article class="post post-type-normal" style="margin-bottom: 30px;">
-        <header class="post-header">
-          <h2 class="post-title" style="font-size: 28px;">
-            <a class="post-title-link" href="${escapeAttribute(digest.pagePath)}">${escapeHtml(digest.title)}</a>
-          </h2>
-          <div class="post-meta">
-            <span><i class="fa fa-calendar-o"></i> ${escapeHtml(digest.date)}</span>
-            <span class="post-meta-divider">|</span>
-            <span><i class="fa fa-list-ul"></i> ${digest.stats.curatedItems} 条精选</span>
-            <span class="post-meta-divider">|</span>
-            <span><i class="fa fa-flag"></i> 国内 ${digest.stats.domesticItems} 条</span>
-          </div>
-        </header>
-        <div class="post-body">
-          <p>${escapeHtml(digest.heroSummary)}</p>
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">${escapeHtml(digest.date)}</span>
+          <span class="meta-inline">${digest.stats.curatedItems} 条</span>
+          <span class="meta-inline">国内 ${digest.stats.domesticItems} 条</span>
         </div>
+        <h2 class="archive-title"><a href="${escapeAttribute(digest.pagePath)}">${escapeHtml(digest.title)}</a></h2>
+        <p class="archive-summary">${escapeHtml(digest.heroSummary)}</p>
       </article>
     `
     )
@@ -960,91 +1286,197 @@ function renderArchivePage(digests) {
     title: "AI 日报",
     canonical: "https://liuhd.github.io/ai-daily/",
     description: "面向投资者与开发者的 AI 日报，重点关注产品落地、大公司动向和国内生态。",
-    bodyClass: "page-archive",
+    bodyClass: "archive-page",
     content: `
-      <section class="post-block archive">
-        <h1 class="post-title" style="margin-top: 0;">AI 日报</h1>
-        <p>面向投资者和开发者，优先追踪大公司产品发布、企业落地、开发者平台更新和国内生态进展。</p>
+      <section class="hero-card archive-hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">Daily Archive</p>
+          <h1 class="hero-title">AI 日报</h1>
+          <p class="hero-summary">面向投资者和开发者，优先追踪大公司产品发布、企业落地、开发者平台更新和国内生态进展。每一期都尽量把“发生了什么”和“为什么重要”放在同一页里。</p>
+        </div>
       </section>
-      ${rows}
+      <section class="archive-grid">${rows}</section>
     `
   });
 }
 
 function renderShell({ title, canonical, description, bodyClass, content }) {
   return `<!DOCTYPE html>
-<html class="theme-next pisces" lang="zh-CN">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" content="#222">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102033">
   <meta name="description" content="${escapeAttribute(description)}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="${escapeAttribute(title)}">
   <meta property="og:url" content="${escapeAttribute(canonical)}">
   <meta property="og:description" content="${escapeAttribute(description)}">
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-  <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-  <link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
   <style>
-    .post-block,
-    .post-header,
-    .post-body,
-    .posts-expand .post,
-    .posts-expand .post-block,
-    .posts-expand .post-body,
-    .posts-expand .post-header {
-      opacity: 1 !important;
-      visibility: visible !important;
-      transform: none !important;
+    :root {
+      --bg: #f4f8fc;
+      --bg-accent: radial-gradient(circle at top left, rgba(55, 180, 255, 0.22), transparent 26%),
+        radial-gradient(circle at top right, rgba(126, 92, 255, 0.18), transparent 24%),
+        linear-gradient(180deg, #eef6ff 0%, #f6fbff 38%, #f5f7fb 100%);
+      --ink: #15233a;
+      --muted: #56657d;
+      --line: rgba(21, 35, 58, 0.08);
+      --card: rgba(255, 255, 255, 0.88);
+      --card-strong: #ffffff;
+      --accent: #0b84ff;
+      --accent-2: #19c37d;
+      --shadow: 0 24px 60px rgba(16, 32, 51, 0.12);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg-accent);
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page-shell { max-width: var(--max); margin: 0 auto; padding: 24px 20px 72px; }
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      padding: 18px 22px; margin-bottom: 24px;
+      background: rgba(10, 21, 38, 0.9); color: #fff; border-radius: 22px; box-shadow: var(--shadow);
+    }
+    .brand-title { font-size: 28px; font-weight: 700; letter-spacing: 0.02em; }
+    .brand-subtitle { font-size: 14px; color: rgba(255,255,255,0.72); margin-top: 4px; }
+    .topnav { display: flex; gap: 12px; flex-wrap: wrap; }
+    .topnav a {
+      padding: 10px 14px; border-radius: 999px; font-size: 14px;
+      background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.92);
+    }
+    .hero-card, .status-panel, .daily-section, .archive-card {
+      background: var(--card); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.6);
+      box-shadow: var(--shadow);
+    }
+    .hero-card {
+      border-radius: var(--radius-xl); padding: 34px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px;
+      margin-bottom: 18px;
+    }
+    .archive-hero { grid-template-columns: 1fr; }
+    .hero-kicker, .section-kicker {
+      margin: 0 0 8px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+      font-weight: 700;
+    }
+    .hero-title { margin: 0; font-size: clamp(34px, 5vw, 56px); line-height: 1.04; }
+    .hero-summary { margin: 18px 0 0; font-size: 18px; color: var(--muted); max-width: 740px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+    .primary-link, .secondary-link, .entry-link {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; font-weight: 600;
+    }
+    .primary-link { background: linear-gradient(135deg, var(--accent), #5aa7ff); color: #fff; }
+    .secondary-link { background: rgba(11, 132, 255, 0.08); color: var(--accent); }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start;
+    }
+    .stat-card {
+      padding: 18px; border-radius: var(--radius-lg); background: var(--card-strong); border: 1px solid var(--line);
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .stat-card strong { font-size: 36px; line-height: 1; }
+    .stat-label { color: var(--muted); font-size: 13px; }
+    .section-nav {
+      display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 18px;
+    }
+    .section-link {
+      padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.7); border: 1px solid var(--line);
+      color: var(--muted); font-size: 14px; font-weight: 600;
+    }
+    .daily-section, .status-panel {
+      border-radius: var(--radius-xl); padding: 26px; margin-top: 22px;
+    }
+    .section-header {
+      display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 18px;
+    }
+    .section-title { margin: 0; font-size: 30px; line-height: 1.1; }
+    .section-count {
+      background: rgba(11, 132, 255, 0.08); color: var(--accent); border-radius: 999px; padding: 8px 12px; font-weight: 700;
+    }
+    .entry-grid, .archive-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;
+    }
+    .entry-card, .archive-card {
+      border-radius: var(--radius-lg); padding: 22px; background: var(--card-strong); border: 1px solid var(--line);
+    }
+    .entry-topline {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px;
+    }
+    .source-badge, .meta-inline, .signal-chip {
+      border-radius: 999px; padding: 6px 10px; font-size: 12px;
+    }
+    .source-badge { background: linear-gradient(135deg, rgba(25,195,125,0.16), rgba(11,132,255,0.14)); color: #135f46; font-weight: 700; }
+    .meta-inline { background: rgba(21,35,58,0.06); color: var(--muted); }
+    .entry-title, .archive-title { margin: 0; font-size: 30px; line-height: 1.14; letter-spacing: -0.02em; }
+    .entry-title a:hover, .archive-title a:hover { color: var(--accent); }
+    .entry-summary, .archive-summary, .status-summary {
+      margin: 16px 0 0; color: var(--muted); font-size: 16px;
+    }
+    .signal-list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+    .signal-chip { background: #eef5ff; color: #2559a7; }
+    .entry-bottom {
+      display: flex; flex-direction: column; gap: 14px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line);
+    }
+    .entry-takeaway {
+      margin: 0; color: var(--ink); font-size: 15px;
+    }
+    .entry-takeaway span { display: block; margin-bottom: 6px; color: var(--accent); font-weight: 700; }
+    .entry-link {
+      align-self: flex-start; background: rgba(21,35,58,0.06); color: var(--ink);
+    }
+    .status-grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px;
+    }
+    .status-card {
+      border-radius: var(--radius-md); padding: 16px; background: #fff; border: 1px solid var(--line);
+    }
+    .status-name { font-weight: 700; }
+    .status-value { color: var(--accent); margin-top: 6px; font-weight: 600; }
+    .status-note { color: var(--muted); font-size: 13px; margin-top: 8px; word-break: break-word; }
+    .page-footer {
+      margin-top: 28px; padding: 16px 4px; color: var(--muted); font-size: 14px; text-align: center;
+    }
+    @media (max-width: 980px) {
+      .hero-card, .entry-grid, .archive-grid, .status-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (max-width: 640px) {
+      .page-shell { padding: 16px 14px 56px; }
+      .topbar, .hero-card, .daily-section, .status-panel, .archive-card { padding: 18px; border-radius: 18px; }
+      .brand-title { font-size: 22px; }
+      .hero-title { font-size: 32px; }
+      .entry-title, .archive-title, .section-title { font-size: 24px; }
+      .hero-summary { font-size: 16px; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
     }
   </style>
   <link rel="canonical" href="${escapeAttribute(canonical)}">
   <title>${escapeHtml(title)} | LiuHD</title>
 </head>
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-  <div class="container sidebar-position-left ${bodyClass}">
-    <div class="headband"></div>
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner">
-        <div class="site-brand-wrapper">
-          <div class="site-meta">
-            <div class="custom-logo-site-title">
-              <a href="/" class="brand" rel="start">
-                <span class="logo-line-before"><i></i></span>
-                <span class="site-title">LiuHD</span>
-                <span class="logo-line-after"><i></i></span>
-              </a>
-            </div>
-            <p class="site-subtitle">AI Daily Watch</p>
-          </div>
-        </div>
-        <nav class="site-nav">
-          <ul id="menu" class="menu">
-            <li class="menu-item"><a href="/"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li>
-            <li class="menu-item"><a href="/ai-daily/"><i class="menu-item-icon fa fa-fw fa-bolt"></i><br>AI日报</a></li>
-            <li class="menu-item"><a href="/archives/"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li>
-          </ul>
-        </nav>
+<body class="${bodyClass}" itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <div class="brand-title">LiuHD AI Daily</div>
+        <div class="brand-subtitle">给中文投资者和开发者看的高信息密度 AI 日报</div>
       </div>
+      <nav class="topnav">
+        <a href="/">首页</a>
+        <a href="/ai-daily/">日报归档</a>
+        <a href="/archives/">旧文归档</a>
+      </nav>
     </header>
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            <div id="posts" class="posts-expand">
-              ${content}
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">由 GitHub Actions 每日自动更新，时区 ${TIME_ZONE}。</div>
-      </div>
-    </footer>
+    <main>${content}</main>
+    <footer class="page-footer">由 GitHub Actions 每日自动更新，时区 ${TIME_ZONE}。</footer>
   </div>
 </body>
 </html>`;
@@ -1189,6 +1621,14 @@ function normalizeWhitespace(text) {
 
 function containsOneOf(haystack, terms) {
   return terms.some((term) => haystack.includes(term.toLowerCase()));
+}
+
+function escapeForRegExp(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function containsWholeTerm(haystack, terms) {
+  return terms.some((term) => new RegExp(`\\b${escapeForRegExp(term.toLowerCase())}\\b`, "i").test(haystack));
 }
 
 function getRunDate() {
