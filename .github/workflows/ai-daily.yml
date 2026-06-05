@@ -1,0 +1,32 @@
+name: AI Daily
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build-ai-daily:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Generate AI Daily
+        env:
+          TZ: Asia/Shanghai
+        run: npm run ai-daily
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update AI daily"
+          file_pattern: "index.html ai-daily/**"
