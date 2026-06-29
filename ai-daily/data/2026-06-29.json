@@ -1,0 +1,410 @@
+{
+  "title": "AI 日报 2026-06-29",
+  "slug": "ai-daily-2026-06-29",
+  "date": "2026-06-29",
+  "isoDate": "2026-06-29T02:06:25.761Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 6,
+    "day": 29
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.\nAlmost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people&#x27;s work evolves. That&#x27;s why the companies getting AI integration right are doing it with partners who have done it before.\nIn March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they&#x27;ve been trained to build and deploy Claude in production.\nToday we’re announcing two things that make this ecosystem easier for customers to navigate. The Services Track is a tiered structure that reflects what a firm has actually built and delivered with Claude. The Claude Partner Hub is a portal where partners see exactly where they stand against the program&#x27;s requirements, and customers find the firms most qualified for the scope of their project.\nThe best partners have firsthand experience with Claude. They use the newest models for their own work before they put it in front of a client. This way, when they tell a customer what it takes, they’re speaking from experience. The Services Track is built to give customers confidence in a firm’s ability to help them bring Claude into their businesses.\nThe Services Track has three tiers, each reflecting how deep a firm&#x27;s Claude practice runs.\nEvery firm is measured against the same requirements, whether it&#x27;s a ten-person AI-native shop or a global consultancy. Size doesn&#x27;t lower the bar or raise the tier; a smaller firm climbs by growing its certified bench. And because the ladder counts adoption and enablement work, firms that specialize in getting customers live on Claude can qualify early.\nEvery firm&#x27;s dashboard shows the same numbers we see, and we verify standing every quarter. Detailed requirements for each tier are published at claude.com/partners .\nThe Claude Partner Hub allows each partner to see its own standing against the published requirements, refreshed daily. It’s also where customers looking for Claude expertise find the firms most qualified to help. Every partner’s standing—their tier, certified team, customer deployments, and public references—",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布服务分层与伙伴门户",
+          "zhSummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：伙伴门户、服务分层、训练能力",
+            "关键指标：100 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布服务分层与伙伴门户",
+          "displaySummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+          "url": "https://www.anthropic.com/news/introducing-claude-tag",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Claude Tag is a new way for teams to work with Claude.\nClaude Tag is a new way for teams to work with Claude.\nWe’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.\nWe’re launching Claude Tag on Slack, since it’s a natural home for collaborative work between teams and AI, and where much of Anthropic’s day-to-day work already happens. It’s available today in beta for Claude Enterprise and Team customers. Our goal is to expand where it’s available more widely, so that teams can tag @Claude in the many other places they work.\nIf you’ve worked with Claude Code or Cowork before, Claude Tag will feel familiar. Tag @Claude with a request in simple terms and it’ll break its task down into stages and then work through them in turn, using the tools it has access to. Once it’s done, it’ll respond in a Slack thread with what it’s created.\nBut tagging Claude comes with a few new advantages:\n@Claude is multiplayer. Within a given Slack channel, there’s one Claude that interacts with everyone. This means that anyone can see what it’s working on, and can pick up the conversation from where the last person left off. This makes tagging Claude very different from working within a single chat or for a single task—it’s much more like interacting collaboratively with a teammate.\n@Claude learns over time. As Claude follows along with its channel, it builds more context about the work. This means that users don’t need to explain things to it from scratch over and over again. And Claude can even automatically learn from other Slack channels and data sources, if it’s granted permission. (It doesn’t report from private channels.) This gives it the tacit knowledge necessary for it to provide the best possible work.\n@Claude takes initiative. If “ambient” behavior is enabled, Claude will proactively keep you updated about whatever it thinks you might need to know. It’ll flag relevant information from across the channels it’s in and the tools it’s connected to, and follow up on threads or tasks that have gone quiet without being resolved.\n@Claude works asynchronously. Set Claude a task, and you can focus on your other priorities while it works. It can also schedule tasks for itself, pursuing a project autonomously over hours or days. We’ve found this particularly helpful at Anthropic: we now spend much more of our time delegating tasks to many Claudes in parallel.\nYou can also send Claude direct messages: it’ll respond priva",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出企业落地与生态合作",
+          "zhSummary": "Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出企业落地与生态合作",
+          "displaySummary": "Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Fake call detection on Android helps protect you from scammers using AI deepfakes to impersonate your contacts.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.\nMuse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support further scaling, we are making strategic investments across the entire stack — from research and model training to infrastructure, including the Hyperion data center.\nIn this post, we&#039;ll first explore Muse Spark&#039;s new capabilities and applications. After these results, we’ll look behind the curtain at the scaling axes driving our progress toward personal superintelligence.\nMuse Spark is available today at meta.ai and the Meta AI app. We’re opening a private API preview to select users.\nCapabilities for Personal Superintelligence\nMuse Spark offers competitive performance in multimodal perception, reasoning, health, and agentic tasks. We continue to invest in areas with current performance gaps, such as long-horizon agentic systems and coding workflows.\nWith larger models in development, these results demonstrate that our stack is scaling effectively.\nWe’re also releasing Contemplating mode, which orchestrates multiple agents that reason in parallel. This allows Muse Spark to compete with the extreme reasoning modes of frontier models such as Gemini Deep Think and GPT Pro. Contemplating mode provides significant capability improvements in challenging tasks, achieving 58% in Humanity’s Last Exam and 38% in FrontierScience Research.\nMuse Spark is available now, and Contemplating mode will be rolling out gradually in meta.ai .\n*For more details about our evaluations, see our methodology document .\nMuse Spark is the first step toward a personal superintelligence that understands your world. From analyzing your immediate environment to supporting your wellness, the advanced reasoning capabilities of Muse Spark enable powerful, highly personal use cases.\nMultimodal. Muse Spark is built from the ground up to integrate visual information across domains and tools. It achieves strong performance on visual STEM questions, entity recognition, and localization. These capabilities come together to enable interactive experiences like creating fun minigames or troubleshooting your home appliances with dynamic annotations.\nHealth. One major application of personal superintelligence is to help people learn about and improve their health. To improve Muse Spark&#039;s health reasoning capabilities, we collaborated with over 1,000 physicians to curate training data that enables more factual and comprehensive responses. Muse Spark can generate interactive displays that unpack and ex",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark",
+          "zhSummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：工具调用、多 Agent 编排、视觉链路推理"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark",
+          "displaySummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Four MTIA Chips in Two Years: Scaling AI Experiences for Billions",
+          "url": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Serving a wide range of AI models on a global scale, while maintaining the lowest possible costs, is one of the most demanding infrastructure challenges...\nWhile we remain committed to a diverse silicon portfolio and to leveraging the best solutions available — both internally and externally — the Meta Training and Inference Accelerator (MTIA), our family of homegrown AI chips developed in close partnership with Broadcom, has remained and will continue to be an important part of Meta’s AI infrastructure strategy . MTIA plays an important role in cost-effectively powering AI experiences for the billions of people who use Meta’s products.\nWe have published research papers at ISCA’23 and ISCA’25 detailing the first two generations of MTIA chips: MTIA 100 and MTIA 200 (formerly known as MTIA 1 and MTIA 2i). More importantly, we have deployed hundreds of thousands of MTIA chips in production, onboarded numerous internal production models, and tested MTIA with large language models (LLMs) like Llama.\nSince introducing MTIA 100 and 200, we have accelerated MTIA development across four successive generations: MTIA 300, 400, 450, and 500. These new chips have either already been deployed or are scheduled for deployment in 2026 or 2027, expanding workload coverage from ranking and recommendation (R&R) inference to R&R training, general GenAI workloads, and GenAI inference with targeted optimizations.\nFrom MTIA 300 to MTIA 500, the HBM bandwidth increases by 4.5x and the compute FLOPS increases by 25x (from MTIA300’s MX8 to MTIA500’s MX4), as shown in the chip specifications below. This rapid advancement in less than two years highlights the benefits of our velocity strategy.\n*Some vendors report bidirectional bandwidth. Multiply the value in the table by two to obtain the corresponding bidirectional bandwidth.\n**MTIA 300 is configured with a scale-out network with higher bandwidth (200 GB/s) due to its relatively small scale-up domain size and the target R&R workloads.\nCompared with earlier generations , MTIA 300’s distinguishing features include built-in NIC chiplets, dedicated message engines for offloading communication collectives, and near-memory compute for reduction-based collectives. Although initially optimized for R&R training, these low-latency, high-bandwidth communication components have provided the foundation for efficient GenAI inference and training in subsequent MTIA chips.\nMTIA 300 comprises one compute chiplet, two network chiplets, and several HBM stacks. Each compute chiplet comprises a grid of processing elements (PEs), with some redundant PEs to improve yield.\nPlease refer to our ISCA’25 paper for more details on the aforementioned PE components.\nMTIA 450: A Leap Forward for GenAI Inference\nAnticipating the rapid growth in GenAI inferen",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI公布Four MTIA Chips in Two…",
+          "zhSummary": "Meta AI公布Four MTIA Chips in Two Years，重点落在算力与基础设施进展。这次变化主要覆盖推理能力、训练能力，目前支持 API 接入，文中出现的关键指标包括4.5x、25x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：支持 API 接入",
+            "能力重点：推理能力、训练能力",
+            "关键指标：4.5x、25x"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI公布Four MTIA Chips in Two…",
+          "displaySummary": "Meta AI公布Four MTIA Chips in Two Years，重点落在算力与基础设施进展。这次变化主要覆盖推理能力、训练能力，目前支持 API 接入，文中出现的关键指标包括4.5x、25x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "全球杰出企业领导对数据和人工智能采用的经验分享",
+          "url": "https://www.36kr.com/p/3873017681483010",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "数据最小价值单位是决策，谈做好数据决策五要点\n从你能想象到的最小“数据价值”单位开始。那是 一个决策 。有人即将做某件事，而稍微好一点的信息会让这个选择稍微好一点。这就是整个原子价值。\n每一个数据平台、治理计划和人工智能计划，都只是为了让这一刻更频繁、更便宜、更可靠地发生而建立的机制。\n直接聆听那些在全球一些最杰出的组织中构建和扩展数据和人工智能能力的领导者的经验分享。这些组织包括拉丁美洲最大的诊断医学和临床分析公司之一 Dasa ；全球娱乐界最具影响力的公司之一 United Talent Agency ；印度最大的共同基金公司之一 Kotak ；甚至包括 白宫 。\n联合人才经纪公司 (United Talent Agency )的首席数字官 Nehhaa Purohit 分享了一些有趣的经历，因为她为此付出了高昂的代价。\n虽然她的仪表盘显示一切正常，正常运行时间达到 99.99%，延迟低于 50 毫秒，但实际上， 每次推理的收入却连续六个月每月下降 2% ，1400 万美元的损失却无人察觉，因为 智能系统运行正常，但判断却出了问题。\n正常运行时间衡量的是管道是否畅通，而不是管道中传输的数据是否仍然有效。Purohit将这种差距称为“ 上下文债务 ” ：数据在技术上仍然有效，但在语义上已经过时，正在逐渐失效，而所有监控器仍然显示正常。\n一项决策之所以“好”，是因为在有人采取行动的那一刻，数据仍然与现实相符：这比正常运行时间更难保证，而且几乎没有人会衡量它。\n一个经过深思熟虑的决策固然美好。但要想让这个决策在整个团队或一个季度内得以复制，你就会遇到每位领导者都在努力应对的真正难题： 速度与信任的权衡。\n现代数据公司（The Modern Data Company ）首席技术官 阿尼梅什·库马尔（Animesh Kumar） 称，通常对这种现象的解读是一种虚假的拉锯战。公司治理被归类为“防御”，这使得它在公司发展需要资金时首当其冲被削减。\n这完全是本末倒置，因为 不受监管的数据恰恰会拖慢增长速度。 没有人会信任一个无法追溯的数据，所以他们会手动重新验证，这相当于给后续的每一个决策都增加了一层隐形成本。解决之道在于将数据治理作为平台的默认属性，而不是一个需要额外付费的项目。\nHosta公司负责数字化转型的副总裁 Mohamed Amin 也面临着同样的问题，即决策延迟：洞察与行动之间的滞后。他的解决方案是 清晰化、优先级排序和责任归属 ：用能够直接应用于业务的信号代替原始指标，用少量能够驱动决策的关键绩效指标（KPI）代替详尽的报告，并为每个指标指定负责人。\n不同的词汇，相同的等式：可重复性意味着消除下一个决策的阻力，而不仅仅是为当前的决策提供信息。\n有人需要比官方途径更快的答案，于是他们自行开发了一条解决方案。库马尔的解决方法是将问题分解为结构、行为和激励机制，因为如果官方途径比变通方案慢，那么变通方案总是会胜出。\n即使是经过深思熟虑且可重复的决策，也算不上战略，因为高层根本不在乎可重复性本身，他们只关心损益。\nDatafolx AI首席数据与人工智能官 、前白宫企业数据战略家迪亚·亚当斯在此得出了一个明确的结论：\n与其说“我们构建了一个数据湖”，不如说“这通过高度个性化实现了 X 美元的收入，并将客户流失率降低了 Y% ”。她认为应该调整的是营业收入，因为息税前利润 (EBIT) 同时包含了收入增长和成本削减两方面，而董事会已经信任这个数字。\nNebulyx AI的首席执行官Jon Cooke用 防御和进攻的 类比来回答这个问题 。 防御是指 在受监管行业中不可或缺的治理工作：一个版本化、引用规范的知识库意味着，审计人员只需提出一个问题就能知道“你们为什么在三月份做出那个决定？ ”\n进攻策略是一系列用例的组合，每个用例都与一个可直观变化的指标相关联。这些用例会相互叠加，因为干净的数据能够消除质量问题，从而加速进攻，避免下一个用例的推进速度减慢。\nRubicon 的负责人贾斯汀·约克对整个前提提出了质疑。当被问及损益表中哪一项应该调整时，他的回答是： 谨慎地将功劳揽到自己身上，即使你无法追溯到 具体原因。如果销售额增长，这究竟是数据策略的功劳，还是仍然需要有人“去完成销售”？\n通常情况下，很难真正单独评估投资回报率，因为数据涉及方方面面，而更大的信誉风险在于领导者过度吹捧那些在实际工作量和摩擦面前不堪一击的“解决方案”。亚当斯和库克构建了一个充满信心的财务故事；约克则拒绝夸大其词。两者的做法都正确，关键在于这些数字是否具有可归因性。\n即使是经过充分论证、可重复执行且与损益挂钩的决策，也可能在最后一公里功亏一篑：当非技术人员必须根据眼前的洞察采取行动时，决策就会失败。\nDasa公司负责数据治理和人工智能的Gabriel Vernalha Ribeiro认为，问题应该从数据产生的环节入手。他的解决方案是流程改进：所有项目都必须从一开始就制定数据采集计划和成功指标，否则就不能获得批准。\n从一开始就进行结构化的数据“不再是维护成本，而是随时可用的资产”。他的最后一公里原则是： 在人们已经使用的工具中提供洞察 ，用简洁明了的“下一步该做什么”的建议代替需要解读的图表。\nCooke 的“决策胶囊”由 UTA 的 Purohit 独立开发，更进一步：在工作流程中显示单个界面，提示建议的操作、置信区间和主要驱动因素。\nPurohit 的版本在上下文过时时会优雅地降级。它会将决策权交还给人工，而不是自信地给出错误答案，这一设计选择避免了估计 800 万美元的资金浪费。\n里贝罗的总结性观点将一切串联起来： 文化无法强加，必须鼓励培养。 只有当糟糕的数据给团队造成显而易见的损失，并且 与团队自身的关键绩效指标（KPI）挂钩 时，团队才会真正承担起责任。\nPurohit 的招聘筛选方法是第一性原理思维最明确的体现。她将候选人分为 模式匹配者 （擅长稳定状态）和 第一性原理思考者 （擅长从零开始分解高度模糊的问题）。\n她的测试：诊断一个仪表盘显示一切正常，但每次推理的收入却悄然下降的系统。那些只关注延迟和错误率的候选人会被淘汰。他们是在概率问题中寻找确定性的故障。而那些试图解决语义偏差的候选人则能通过。 一位领导者管理系统，另一位领导者创造价值。\n库克通过人工智能代理描述了同样的转变：首席数据官不再是整理已知知识的图书管理员，而是有界决策空间的架构师。在这些领域中，代理在智能约束下行动。\n亚当斯称之为“业务架构师”，取代了“数据管道工”。用词不同，但意图相同：这项工作不再是保持管道畅通，而是在基于现有数据做出决策（无论是人为决策还是系统决策）的那一刻，保持判断的准确性。\n本文来自微信公众号 “数据驱动智能”（ID：Data",
+          "translationMode": "fallback",
+          "zhTitle": "全球杰出企业领导对数据和人工智能采用的经验分享",
+          "zhSummary": "36Kr带来全球杰出企业领导对数据和人工智能采用的经验分享，重点落在企业落地与生态合作。进一步看，。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "全球杰出企业领导对数据和人工智能采用的经验分享",
+          "displaySummary": "36Kr带来全球杰出企业领导对数据和人工智能采用的经验分享，重点落在企业落地与生态合作。进一步看，。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "AI预测世界杯小组赛：混元第一，千问DeepSeek打平",
+          "url": "https://www.36kr.com/p/3872505258916739",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "猜强队稳，猜平局难。\n今天，2026美加墨世界杯72场小组赛全部结束，世界杯的第一阶段落幕。赛场之外，另一场比赛也同步交出了成绩单。\n联想与咪咕联合发起的世界杯预测人机大战中，12家国产大模型与数万名人类玩家同台竞猜，目前的结果是： AI整体命中率约61.9%，人类玩家54.6%。\n在明确分出胜负的比赛中，AI猜中的概率大，但遇到平局，AI预测20场中仅命中11次。AI的优势不在于超越常识，而在于比人更稳定地执行，它们可以不受情绪干扰，也能兼顾更多的信息维度。\n淘汰赛即将开始，留下来的32支球队实力更接近，“送分题”没了，对AI来说，真正的考试才刚刚开始。\n更值得关注的问题是，大模型厂商为什么要集体涌入世界杯预测？它们到底是在展示技术能力，还是在借四年一度的流量做一场营销？当淘汰赛开始、“送分题”消失，这些模型还能保持及格线以上的水平吗？\n世界杯历来是品牌的流量战场，今年多了一类新玩家。国产大模型厂商以猜球切入，借四年一度的流量窗口，让用户直接感受到AI的分析能力。\n规模最大的是联想和咪咕联合发起的“人机大战”，召集了DeepSeek、通义千问、Kimi、腾讯混元等12家国产大模型，与数万名人类选手在同一规则下比命中率。\n单独下场的厂商也不少。千问上线了足球预测AI助手，覆盖全部104场比赛，用户与AI同台竞猜，准确率超过千问的人有机会抽取万元大奖；还同步发起球场计划，用户竞猜积分达到一定数额后，千问将为乡村学校捐建足球场。Kimi搭建了300个Agent，分别负责战术分析、球员状态追踪、赛程计算、赔率监测等方向，生成了一份224页的预测报告。\n只是活动的侧重点各不相同。联想咪咕做的是能力横评，用12个模型同场竞技提升关注度；千问把预测嵌进用户互动和公益，走C端获客路线；Kimi侧重展示Agent处理复杂任务的能力，预测只是载体。\n三场活动中，只有联想咪咕的“人机大战”设置了统一规则、统一评分标准，让12家模型与人类玩家在同一赛道竞争。因此，我们以它的数据为参照，拆解一下这份成绩单。\n截至6月28日，72场小组赛全部结束，12家AI整体命中率为61.9%，人类玩家为54.6%，AI领先约7.3个百分点。\n从排名看，腾讯混元和中移九天并列第一，命中率68.1%，超过三分之二；百度文心、千问、DeepSeek以63.9%打成平手；垫底的阶跃星辰只有43.1%，甚至低于人类选手的平均水平。排名头尾相差25个百分点，差距并不小。\nAI擅长猜确定性高的比赛。在西班牙对战沙特的比赛中，12家AI中11家猜对了输赢；而在德国对战库拉索的比赛中，10家模型都给出了正确的判断。这类比赛的共同特征是强弱分明，模型只要参考世界排名、阵容身价和历史战绩，就能做出正确判断。 越接近“背公式就能答对”的题，AI做得越好。\n某美企AI出海负责人曾小健解释，大模型预测本质上是一台“排序机器”，把球队各项数据加权比较，实力差距越大，排序结果越稳定。\n让AI“翻车”的是平局和冷门，在整个小组赛阶段，平局是AI命中率最低的类型，仅命中11次。\n最典型的例子是西班牙对阵佛得角的比赛。西班牙是夺冠热门，世界排名、阵容身价、历史战绩占优；佛得角则是首次跻身世界杯的非洲新军。赛前，11家大模型都押注西班牙获胜，但比赛结果是0-0平局。佛得角门将的多次关键扑救化解了西班牙的进攻。一个球员的爆发、一次战术的执行，都有可能改变比赛走向，而这些恰恰是数据无法提前量化的。\n为什么平局这么难猜？在世界杯历史上，平局的比例大约在20%到25%之间，本身就是一个低概率事件。模型把更多概率分配给胜或负，从统计角度来说并非错误。\n曾小健认为，平局不是排序结果，而是概率分布中的一个特殊区间。 大模型天然倾向于输出一个明确的答案，即便双方实力接近，它也会选一方做出倾向性判断。 换句话说，模型的机制决定了它必须选边站。\n大模型从业者Hongson则提到，很多时候平局的出现并非偶然，而是强队进攻受阻、弱队成功压缩空间，或者双方都不愿在某个阶段冒险的结果。这些临场策略选择本身就很难提前预判。\n也就是说，AI猜强弱分明的比赛比较准，预测平局和冷门赛事时表现较差。即便AI猜球的命中率超过50%，但不能把这个数字等同于AI很会预测。\n厂商并非不清楚这一点。曾小健认为，预测比赛容易传播，也容易让普通用户感受到AI好像“会分析”。这比单纯展示一个抽象榜单更有话题性。它的实际价值在于教育用户：AI可以做信息整合、情景分析和概率表达。厂商们看中的不是猜球本身，而是世界杯提供了一个人人能看懂的场景，让大模型的能力从抽象的参数变成了具体的表现。\n曾小健认为， AI猜球本质上不是预测，而是复述。 它更接近把足球评论员常说的话重新组织了一遍。这也解释了为什么12家模型的预测结果经常高度一致，它们读的是同一批公开信息，用的是相似的推理逻辑，得出同一个结论并不奇怪。\n最轻量的做法是纯prompt工程，把球队信息塞进提示词，门槛低、传播快。但模型输出看上去很像“专家”，经不起统计检验。\n往上一层是RAG检索增强，解决了信息新鲜度的问题，但检索到的信息可能比较片面，模型只会更有条理地得出一个片面的结论。\n第三种是多智能体协作，像一个小型分析团队在协作，但多个Agent的意见汇总不等于预测精度提升，架构复杂了，准确率未必跟着提高。\n第四种是先用统计工具算概率，再让大模型“翻译”。用Elo评分、泊松进球模型、蒙特卡洛模拟等方式跑出一组概率分布，大模型负责解释和呈现。曾小健认为这是最合理的方式，足球预测首先是数学问题，其次才是语言表达问题。但这条路门槛也最高，需要独立搭建概率模型，大多数厂商不会为一次营销活动做这么重的投入。\nHongson自己搭建的FLUX·10就是走的就是这条路。他把球队实力、攻防状态、阵容等十个维度转化为可计算的变量，先跑出胜平负概率和预期进球，再用大模型将结果转化为普通人看得懂的分析。截至小组赛第三轮前，预测了64场比赛，命中率约为60.9%。\n这四种路径的门槛和准确性逐级递增，但市场上大多数厂商仍在前两层。 归根结底，不管用哪条路径，模型的目标都是一致的：把已有信息整合成一个看上去合理的判断。 路径的差异决定了信息的质量，但没有一条路能够让模型真正预见赛场上尚未发生的事情。\n它们还面临共同的短板。一是预测不够动态，首发阵容公布、核心球员缺阵、赔率异动，都在实时改变概率。但大多数模型做完一次预测就交卷了，没有随着新信息持续更新的机制。\n二是缺少概率校准，模型只是在生产看起来合理的数字，而非真正可靠的概率。没有校准和回测的预测，更像内容产品，不像科学模型。\n对大多数厂商来说，优化预测靠的还是数据工程，喂更多信息、写更好的prompt、接更全的数据源，而不是模型层面的突破。\n这也揭示了",
+          "translationMode": "fallback",
+          "zhTitle": "AI预测世界杯小组赛：混元第一，千问DeepSeek打平",
+          "zhSummary": "36Kr推出AI预测世界杯小组赛：混元第一，千问DeepSeek打平，重点落在Agent 能力升级。目前已正式上线。进一步看，2026美加墨世界杯72场小组赛全部结束，世界杯的第一阶段落幕；12家国产大模型与数万名人类玩家同台竞猜，目前的结果是： AI整体命中率约61。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：已正式上线"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "AI预测世界杯小组赛：混元第一，千问DeepSeek打平",
+          "displaySummary": "36Kr推出AI预测世界杯小组赛：混元第一，千问DeepSeek打平，重点落在Agent 能力升级。目前已正式上线。进一步看，2026美加墨世界杯72场小组赛全部结束，世界杯的第一阶段落幕；12家国产大模型与数万名人类玩家同台竞猜，目前的结果是： AI整体命中率约61。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Alibaba Cloud Releases ANOLISA (Agentic OS): The First Agent-Oriented Operating System",
+          "url": "https://www.alibabacloud.com/blog/alibaba-cloud-releases-anolisa-agentic-os-the-first-agent-oriented-operating-system_603295",
+          "description": "Alibaba Cloud Releases ANOLISA (Agentic OS): The First Agent-Oriented Operating System This article introduces ANOLISA Alibaba Cloud&#039;s new operating system designed specifically for AI agents, which provides built-in skills, a Copilot",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces ANOLISA Alibaba Cloud&#039;s new operating system designed specifically for AI agents, which provides built-in skills, a Copilot Sh.\nOn March 30, 2026, Alibaba Cloud announced that its self-developed operating system Alibaba Cloud Linux has completed a key transition, officially launching the next-generation operating system for AI agents — ANOLISA .\nANOLISA is Alibaba Cloud's first operating system designed specifically for AI agents. Its emergence signifies that the primary user entity of future operating systems is gradually shifting from humans to agents. As a large number of \"AI employees\" become the main productive force, AI is driving fundamental changes in production methods. AI agents are fundamentally different from traditional human usage in decision workflows, reasoning approaches, and interaction patterns.\nTo address these pain points, ANOLISA provides a solution of \"native skill-based encapsulation\":\n• Native skill-based encapsulation : ANOLISA encapsulates complex Linux O&M, deployment, and tuning actions as well as high-frequency skills into standardized Skill modules. These skills cover system administration, performance tuning, security O&M, and foundational skills for common roles. They naturally match the procedural execution features of agents, allowing agents to directly invoke these capabilities without consuming additional compute resources to \"learn\" or \"adapt.\"\n• Measured performance : Within system administration and O&M scenarios, token overhead differs by more than 30% compared with traditional OS environments. Taking the scenario of using OpenClaw for system vulnerability monitoring and fix as an example, during the CVE evaluation phase, ANOLISA saves 60% of token overhead compared with traditional operating systems under the same LLM base.\nIn traditional environments, agent deployment and configuration are complex, initialization takes a long time, and continuous health monitoring is lacking. As a result, \"digital workers\" are prone to disconnection and difficult to maintain.\nTo address this, ANOLISA provides solutions from two dimensions: interaction entry and observability:\n• At the interaction layer, ANOLISA introduces a dual-mode interaction entry (Copilot Shell, or cosh), overriding traditional bash.\n• At the observability layer , ANOLISA provides built-in system-level token statistics. It supports collecting token consumption statistics by different agents and analyzing the proportion of token consumption components, such as the system prompt, skills registry, and history of input tokens. Token observability helps users accurately attribute token consumption, quickly locate abnormal behaviors, and continuously optimize agent running performance.\nWhen agents are granted autonomous execution ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出ANOLISA (Agentic OS)",
+          "zhSummary": "Alibaba Cloud推出ANOLISA (Agentic OS)，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出ANOLISA (Agentic OS)",
+          "displaySummary": "Alibaba Cloud推出ANOLISA (Agentic OS)，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "PolarDB-X Snapshots: The \" Undo Button\" for Agent-Operated Data",
+          "url": "https://www.alibabacloud.com/blog/polardb-x-snapshots-the-undo-button-for-agent-operated-data_603306",
+          "description": "PolarDB-X Snapshots: The \" Undo Button\" for Agent-Operated Data This article introduces practical applications of PolarDB-X columnar snapshots for historical analysis, rapid data recovery, and AI agent version management. ApsaraDB <img src=",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces practical applications of PolarDB-X columnar snapshots for historical analysis, rapid data recovery, and AI agent version management.\nThis article is the second in the Columnar Snapshot series, focusing on practical demonstrations. In the previous article \" Principles of PolarDB-X IMCI and Columnar Snapshots \", we introduced the principles of columnar snapshots—version chains, the Purge mechanism, and the internal implementation of snapshot construction and querying. This article no longer discusses the principles. Instead, this article uses some demonstrations to simulate three typical application scenarios:\nThe core capability of columnar snapshots is to restore the complete picture of data at a certain point in time in the past . For tables such as inventory and user levels that are frequently updated, the old values are lost after modification. However, snapshots allow you to \"go back to the past and take a look\" at any time to query the complete state at that time.\nTaking an e-commerce platform as an example, the data of two types of tables changes frequently:\nInventory table : This table records the current inventory quantity of each product. Every order and every replenishment will directly UPDATE the inventory value. The table always contains only the latest numbers. If you want to know \"what the inventory levels of each warehouse were at the end of last month\" at the beginning of the month, you can only rely on exporting in advance without snapshots. If an Extract, Transform, Load (ETL) fails, the historical data will be interrupted.\nUser table : This table records information such as user levels, membership status, and points. User upgrades, downgrades, and renewals will directly modify these fields. If the operations team wants to analyze the \"membership churn rate over the past three months\", the team needs to know the distribution of membership status at the end of each month. This is also a typical scenario for snapshot queries.\nWith columnar snapshots, you only need to take snapshots regularly (such as daily or monthly). Subsequently, you can restore the complete picture of data at any snapshot moment through SELECT ... AS OF TSO . You do not need ETL exports or additional historical tables.\nAnother increasingly realistic problem is: Who will protect your data from being corrupted with \"good intentions\"?\nToday, as AI agents increasingly participate in database operations, an incorrectly written UPDATE or DELETE may modify the entire table within a few seconds. Manual operations are similar. Almost every database administrator (DBA) has experienced or heard of the classic accident of \"forgetting to add a WHERE condition\".\nThe traditional recovery method is to restore the entire instance from a backup. This means ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud披露PolarDB-X Snapshots",
+          "zhSummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud披露PolarDB-X Snapshots",
+          "displaySummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Fully-managed PolarDB-X Mem0 Service: Enabling Infinite AI Memory Extension and Dual-Use Integration",
+          "url": "https://www.alibabacloud.com/blog/fully-managed-polardb-x-mem0-service-enabling-infinite-ai-memory-extension-and-dual-use-integration_603303",
+          "description": "Fully-managed PolarDB-X Mem0 Service: Enabling Infinite AI Memory Extension and Dual-Use Integration This article introduces the fully-managed PolarDB-X Mem0 service, which provides AI agents with long-term memory through a unified dual-cha",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces the fully-managed PolarDB-X Mem0 service, which provides AI agents with long-term memory through a unified dual-channel architecture for both semantic and structured data.\nAgents are changing the way we interact with software. However, a core pain point has always troubled developers and users: the \"amnesia\" of AI. Every conversation feels like a first meeting. AI is unable to remember user preferences, historical interactions, and business contexts.\nImagine this scenario: You tell the AI customer service that you are a VIP user, you are sensitive to prices, and you prefer Sichuan cuisine. Three days later, when you consult again, it asks you, \"What are your taste preferences?\" This experience not only frustrates the user but also makes the agent miss the opportunity for personalized service.\nTo address this issue, Alibaba Cloud PolarDB-X introduces the new fully managed long-term memory service Mem0. With a unique dual-channel architecture, this service provides a one-stop solution to the AI memory storage problem. This service allows agents to truly possess long-term memory capabilities.\nPolarDB-X Mem0 is not a simple conversation record storage. Instead, it is an intelligent memory operating system.\nIt can automatically fetch key facts and preferences from the conversations between AI and users. For example, if a user says, \"I want to find a Sichuan restaurant with an average cost of about 100,\" the system automatically fetches core facts such as \"the user likes Sichuan cuisine,\" \"the user is sensitive to price,\" and \"the user's city,\" and stores this knowledge as structured data. When the user visits again, the AI can instantly recall all of this and provide truly personalized service.\nAs a cloud-native distributed database, PolarDB-X brings enterprise-level extension capabilities and stability guarantees to Mem0.\nFinally, there are flexible extension methods. Vertically, you can increase single-machine performance by increasing the number of worker processes. Horizontally, you can deploy multiple instances through load balancing and share backend storage to achieve near-linear extension. It also supports Kubernetes automatic scaling to dynamically adjust the number of instances based on payloads. No matter how the business size changes, PolarDB-X Mem0 can handle it with ease.\nIn terms of compatibility , PolarDB-X Mem0 is fully compatible with the open source Mem0 frame, and simultaneously supports the API specifications of the community version and the commercial version. Whether you previously used the open source version for self-hosting or hosting services from other cloud providers, you can migrate to PolarDB-X with zero code changes.\nIn terms of user experience , you do not need to build a vector database, configure ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud开源企业落地与生态合作",
+          "zhSummary": "Alibaba Cloud开源Fully-managed PolarDB-X Mem0 Service，重点落在企业落地与生态合作。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud开源企业落地与生态合作",
+          "displaySummary": "Alibaba Cloud开源Fully-managed PolarDB-X Mem0 Service，重点落在企业落地与生态合作。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "url": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/",
+          "description": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Diagrid has announced the release of Dapr 1.18, introducing what it calls Verifiable Execution, a new set of capabilities designed to bring cryptographic trust, provenance, and tamper-evident executio\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nSpencer Judge discusses the architectural pattern of building a shared core in Rust with language-specific layers on top. Drawing from his work on Temporal's SDKs, he shares lessons on navigating FFI boundaries, bridging async concepts, and managing memory safely. He explains the limitations of native extensions and how emerging tech like WebAssembly can streamline cross-language architecture.\nMartin Kleppmann, an associate professor at Cambridge and author of Designing Data-Intensive Applications, discusses the evolution of data systems over the last decade, mainly the shift from monolithic databases to modular building blocks. Kleppmann underlines the importance of moving from cloud-centric data storage systems to decentralised data storage similar to Bluesky’s AT protocol.\nMichael Webster discusses the rise of headless AI agents and their impact on software delivery pipelines. He shares how massive, AI-generated pull requests create a severe bottleneck for human reviewers and introduce persistent technical debt. Learn how engineering leaders can leverage test impact analysis and automated validation pipelines to verify agentic output without sacrificing stability.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods spoke to Craig McLuckie, co-creator of Kubernetes and CEO of Stacklok, about the impact of AI coding tools on open source communities and engineering teams, designing deliberate organisational culture, and navigating evolving career paths for engineers in the age of AI.\nSean Klein discusses why \"human error\" is a dangerous myth in complex systems. Sharing the inside story of Azure’s 2023 global WAN outage, he explains how modern incident analysis looks past the \"Five Whys\" to uncover systemic issues. Learn how engineering leaders can move away from blame, improve Standard Operating Procedures, and design resilient systems that actively protect their engineers.\nOnline InfoQ AI Engineering Certification\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Register Now.\nWhat's working across AI, architecture, and leadership, from the teams doing it. Register. Early bird ",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源算力与基础设施进展",
+          "zhSummary": "InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI开源算力与基础设施进展",
+          "displaySummary": "InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Pinecone Brings AI Agents Directly to Enterprise Data with Microsoft OneLake Integration",
+          "url": "https://www.infoq.com/news/2026/06/pinecone-ai-agents-onelake/",
+          "description": "Pinecone Brings AI Agents Directly to Enterprise Data with Microsoft OneLake Integration",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Pinecone has announced a new integration between its Nexus knowledge engine and Microsoft OneLake, aiming to fundamentally change how enterprise AI agents access and reason over corporate data.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nSpencer Judge discusses the architectural pattern of building a shared core in Rust with language-specific layers on top. Drawing from his work on Temporal's SDKs, he shares lessons on navigating FFI boundaries, bridging async concepts, and managing memory safely. He explains the limitations of native extensions and how emerging tech like WebAssembly can streamline cross-language architecture.\nMartin Kleppmann, an associate professor at Cambridge and author of Designing Data-Intensive Applications, discusses the evolution of data systems over the last decade, mainly the shift from monolithic databases to modular building blocks. Kleppmann underlines the importance of moving from cloud-centric data storage systems to decentralised data storage similar to Bluesky’s AT protocol.\nMichael Webster discusses the rise of headless AI agents and their impact on software delivery pipelines. He shares how massive, AI-generated pull requests create a severe bottleneck for human reviewers and introduce persistent technical debt. Learn how engineering leaders can leverage test impact analysis and automated validation pipelines to verify agentic output without sacrificing stability.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods spoke to Craig McLuckie, co-creator of Kubernetes and CEO of Stacklok, about the impact of AI coding tools on open source communities and engineering teams, designing deliberate organisational culture, and navigating evolving career paths for engineers in the age of AI.\nSean Klein discusses why \"human error\" is a dangerous myth in complex systems. Sharing the inside story of Azure’s 2023 global WAN outage, he explains how modern incident analysis looks past the \"Five Whys\" to uncover systemic issues. Learn how engineering leaders can move away from blame, improve Standard Operating Procedures, and design resilient systems that actively protect their engineers.\nOnline InfoQ AI Engineering Certification\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Register Now.\nWhat's working across AI, architecture, and leadership, from the teams doing it. Register. Early bird ends Ju",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源算力与基础设施进展",
+          "zhSummary": "InfoQ AI开源Pinecone Brings AI Agents Directly，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI开源算力与基础设施进展",
+          "displaySummary": "InfoQ AI开源Pinecone Brings AI Agents Directly，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+          "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "资本与生态",
+          "detailText": "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.\nWe’ve just opened our Seoul office . Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.\n“What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”\nThis week, senior leaders from Anthropic traveled to Seoul to open the office and meet with partners, customers, and developers building with Claude.\nAnthropic has signed an MOU with Korea’s Ministry of Science and ICT to support the safe and responsible adoption of AI across the public sector. Together, we’ll collaborate on AI safety and cybersecurity, including evaluating model safety in the Korean language with the Korea AI Safety Institute, and exchanging information on AI-enabled cyber threats.\nFrom WRTN to Law&Company , Korean organizations have been working with Claude for years. Today, we are sharing new examples of how Claude is running across the Korean economy.\nSome of the deepest adoption is happening among developers. NAVER, a leader in cloud and AI innovation in Asia, has recently deployed Claude Code across its entire engineering organization. Thousands of NAVER engineers are now using Claude Code to diversify their coding tools and maximize coding productivity. At global online game company Nexon, engineering teams use Claude Code to write, review, and ship code for live-service games played by millions around the world.\nAnd startups are building Claude directly into their products. Channel Corp uses Claude to power Channel Talk, its customer AI platform that resolves customer inquiries and analyzes service and sales data to deliver business insights—used by over 230,000 companies across Korea, Japan, and the United States.\nOur work in Korea also reaches beyond the private sector. To deepen ties with the academic research community, we will work with the National AI Research Lab (NAIRL), a consortium spanning KAIST, Korea University, Yonsei University, and POSTECH. Anthropic will provide Claude access to up to 60 NAIRL-affiliated researchers, supporting work on AI safety, model evaluation, alignment, robustness, and broader frontier AI research.\nIn the nonprofit sector, Good Neighbors Korea—a child rights specialist NGO—is deploying Cla",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "港大教授李弘扬创业做通用全身具身大脑，获真格高榕IDG五源等数亿种子轮融资｜硬氪独家",
+          "url": "https://www.36kr.com/p/3868055841641476",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "资本与生态",
+          "detailText": "“人形不是一个选项，是终局的必然形态。源策要做世界第一的全身具身大脑。”\n硬氪独家获悉，通用全身具身大脑公司「源策未来Archon Robotics」近日完成数亿元种子轮融资，本轮投资方包括真格基金、高榕创投、IDG资本、五源资本等头部美元基金，以及戈壁创投与香港大学联名基金、奇绩创投、上海创智学院等。光源资本担任独家财务顾问。\n本轮资金将主要用于全身人形基础模型研发、多模态全身动作数据采集、人才团队扩充，以及多地研发中心与产业合作生态搭建，加速在今年内实现开源人形基座模型落地。\n源策未来成立于2026年4月，研发总部位于上海市徐汇区漕河泾开发区。公司专注研发通用全身人形基座模型，构建全身智能（Whole-body Intelligence），为人形机器人提供类人全身移动操作的能力，以加快实现具身智能走入千家万户。\n创始人李弘扬博士现任香港大学助理教授、计算与数据科学学院助理院长、上海创智学院导师。他主导的端到端自动驾驶项目UniAD获CVPR 2023最佳论文，是近十年来大陆学术机构唯一获此奖项的工作；2026年获机器人领域国际顶会RSS Early Career Award，成为这一奖项设立20年来的首位华人学者。\n联合创始人兼CEO李天羽博士，为上海创智学院首批毕业生、复旦大学博士，作为核心开发者深度参与华为量产自动驾驶ADS 4.0世界引擎方案研发。联合创始人兼Head of AI陈立博士是UniAD最佳论文的第一作者，本科毕业于上海交通大学致远荣誉工程，曾获香港大学校长博士奖学金。\n源策核心团队均来自香港大学、清华大学、上海交通大学、复旦大学、浙江大学等头部自动驾驶、机器人与大模型研究团队，兼具原创算法突破与超大规模工业系统落地经验。\n具身智能行业正步入一个关键的分化时刻。Omdia等公开数据显示，2026年上半年，国内具身智能及机器人领域共发生288起融资事件，披露融资总额超过460亿元，加快逼近2025年全年554亿元的规模。但巨额融资并未同步带来技术共识的收敛。\n当下多数具身方案存在先天局限：现有训练数据以桌面第一视角视频、单臂或夹爪动作为主，缺失全身重心调整、躯干借力、多肢体协同等人类原生交互逻辑。这意味着，大部分机器人仅能完成固定点位抓取，面对推门、整理床铺、双手持物开关门这类需要全身配合的日常任务，则难以自主适配变量。\n这一局限的根源在于数据基础设施的结构性缺口。源策未来CEO李天羽告诉硬氪，“市面上可获取的具身数据集看似庞大，实际真正对人形全身训练有效的信息却极为有限。”\n第一视角视频数据集仅支持记录人眼所看到的画面，蹲下、俯身、侧身等手部表象之外的关键动作位姿信息缺失。机械臂及夹爪等标注数据，则多集中在平面范畴，只记录末端轨迹，模型可以学习操作器如何移动，却难以理解如何与环境互动。而人形真机数据总量本就极低，采集成本更以数百至近千元每小时计，有关全身多关节耦合的复合任务样本在过去的数据池中近乎空白。\n三类数据各有缺失，指向了同一个问题，人类完成日常动作最核心的信息，即全身如何协调、重心如何转移、力量如何从下肢传导到上肢等，在现有数据中几乎没有被记录过。\n以一个简单的日常场景为例。当人在拉开一扇轻门和重门时，其手部轨迹几乎看不出差别；都是先抓住把手往后拉，无论使用多大力气，其位姿与门的运动始终同步。真正的差异体现在全身维度，面对轻门，人保持直立即可拉开；遇到重门，身体需要倾斜将重心前移，用体重对抗阻力。\n这些重心移动的信息，只有在全身数据中才会被记录下来，并蕴藏着物体物理属性的本质差异。简单来说，如果模型长期仅学习单一维度信息，它或许能完成“拉门”这个动作，却无法理解“门有多重”在人体层面意味着什么。\n“信息的长期缺位，将当前机器人的能力锁定在固定桌面抓取的层面，与真实家庭环境中多样化任务之间，横亘着一道数据断层。”李天羽说，“要突破这层天花板，必须回到源头重新定义数据采集的逻辑。”\n源策团队认为，从轮式底盘搭配双臂的方案向人形机器人迁移，在结构、运动控制、感知维度上均存在本质差异，并非简单的形态升级。当海外企业刚意识到人形任务的复杂性时，他们已率先将目标锁定于此。\n源策未来瞄准了一个几乎无人涉足的领域，做通用全身人形基座模型，其核心理念Human Body Learning，即学习人类全身位姿与协调方式，而非仅仅跟踪末端执行器的轨迹。通过在人类的全身动作中，让机器人习得“四肢协调的智慧”，具备完整的全身交互能力。\n通过将人形机器人的行动“智能”尽可能沉淀在与本体无关的中脑层级，这期间，中脑所学习的能力不绑定某款具体的机器人；它输出的是全身运动轨迹，而非针对某个特定型号的关节角度指令，使模型具备跨不同本体迁移的潜力。随着数据采集越充分、覆盖场景越多样，中脑的表征能力就越强，源策未来具身全身大脑可以迁移到的本体类型也就越广。\n基于这一判断，源策未来将构建一套全新数据采集体系。创始人李弘扬认为，具身数据的演进路径正从真机遥操作向手持设备与第一人称视角迭代，最终目的地是具备人类完整感知要素、并带有全身动作标签的以人为中心（Human-Centric）全人形数据。\n同时，源策未来还将引入触觉等多维感知模态，搭配更高精度的全身与手部捕捉设备。李天羽告诉硬氪，数据多样性与数据质量，比单纯的数据规模更为关键。“一条覆盖了重心移动、躯干角度变化的全身数据，其信息密度远高于一百条只有手部轨迹的桌面数据。”\n数据的采集方式决定了模型能学到什么，模型的能力短板反过来定义了下一次采集的目标。这套“采集-训练-反馈”的闭环一旦运转起来，就会形成一道持续自我强化的数据壁垒：每完成一轮采集和训练，模型能力提升一截，系统对“哪些数据真正有用”的认知也更精准一分，下一轮采集的效率和质量便再上一个台阶。\n它考验的不仅是算法层面的工程能力，更是对“模型究竟需要从物理世界中学习什么”这一根本问题的系统性理解。而这项理解，正是源策未来最核心的判断力所在。\n在源策未来团队看来，人形机器人要真正从实验室走入家庭，需要的不仅是一次完美的单点演示，而是让机器人具备在复杂、动态、非结构化的家庭环境中持续可靠工作的能力。这种能力的上限，从根本上取决于模型对物理世界的理解深度。\n源策未来选择回到具身智能的起点重新回答这个问题：用一个什么样的身体、从什么样的数据中学习，决定了机器人最终能走多远。\n硬氪：当前具身行业尚未进入收敛阶段，源策未来提出做通用全身人形基座模型，这个选择的底层判断是什么？\n第一是硬件形态。源策未来从立项起就锚定完整的人形机器人，核心要解决的是全身多关节联动和重心动态调节问题。大多数团队选择轮式底盘加双臂，从工程角度可以理解，稳定性好、技术门槛相对低、短期内容易出demo。但回到家庭场景，轮式底盘连门槛都过不",
+          "translationMode": "fallback",
+          "zhTitle": "港大教授李弘扬创业做通用全身具身大脑，获真格高榕IDG五源等数亿种…",
+          "zhSummary": "36Kr披露新一轮融资与估值更新，重点落在融资与资本动作。这次变化主要覆盖支持记录人眼所看到的画面，蹲下、俯身、侧身等手部表象之…，披露的金额或规模为460亿元。进一步看，；2026年4月，研发总部位于上海市徐汇区漕河泾开发区。更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。",
+          "keySignals": [
+            "金额或规模：460亿元",
+            "能力重点：支持记录人眼所看到的画面，蹲下、俯身、侧身等手部表象之…"
+          ],
+          "takeaway": "更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。",
+          "displayTitle": "港大教授李弘扬创业做通用全身具身大脑，获真格高榕IDG五源等数亿种…",
+          "displaySummary": "36Kr披露新一轮融资与估值更新，重点落在融资与资本动作。这次变化主要覆盖支持记录人眼所看到的画面，蹲下、俯身、侧身等手部表象之…，披露的金额或规模为460亿元。进一步看，；2026年4月，研发总部位于上海市徐汇区漕河泾开发区。更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 15,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/06/29/"
+}
