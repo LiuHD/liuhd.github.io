@@ -1,0 +1,405 @@
+{
+  "title": "AI 日报 2026-07-05",
+  "slug": "ai-daily-2026-07-05",
+  "date": "2026-07-05",
+  "isoDate": "2026-07-05T05:12:11.219Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 7,
+    "day": 5
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Gemini Spark updates: macOS launch, connected apps and more",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-june-2026/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "The latest Gemini Spark updates brings Spark to the macOS app, connects with your favorite apps and tracks topics in real time.\nWe’re bringing Gemini Spark to macOS app, connecting it with more of your favorite apps, and improving its ability to track your topics in real time\nCheck out the \"Gemini Spark updates\" article to see how it boosts your productivity. You can now use Gemini Spark on macOS to automate tasks across your desktop files. Assign complex tasks to your Mac remotely using your phone while you are away. Connect Gemini Spark to apps like Canva and Dropbox to streamline your daily workflow. Get real-time updates on news, sports, and finance without constantly refreshing your browser.\nYour browser does not support the audio element.\nToday, we’re rolling out updates to Gemini Spark that make it even more helpful, from a new desktop experience to deeper connections with your favorite apps. Here’s a look at what’s new:\nWe’re bringing Spark to the Gemini macOS app to help you automate time-consuming tasks across your desktop.\nAnd coming soon, you’ll even be able to run tasks remotely. You can assign a multi-step task to Gemini Spark from your phone — like asking it to find a specific sales report on your Mac, pull the total revenue number, and email it to you — and let it execute the work on your computer while you're away.\nGemini Spark for macOS is available in Beta to Google AI Ultra subscribers aged 18 and over, starting in the US. Download the app at gemini.google/mac to get started.\nWe’re also rolling out support for custom Model Context Protocol (MCP), giving you the ability to connect your favorite apps directly into Spark to build a more tailored assistant.\nThese updates are rolling out starting today, and we look forward to sharing more about what’s next for Spark this summer.\nYour information will be used in accordance with Google's privacy policy.\nCheck your inbox to confirm your subscription.\nYou are already subscribed to our newsletter.\nYou can also subscribe with a different email address .\nLet’s stay in touch. Get the latest news from Google in your inbox.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出Gemini Spark updates",
+          "zhSummary": "Google AI推出Gemini Spark updates，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI推出Gemini Spark updates",
+          "displaySummary": "Google AI推出Gemini Spark updates，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+          "url": "https://www.anthropic.com/news/introducing-claude-tag",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Claude Tag is a new way for teams to work with Claude.\nClaude Tag is a new way for teams to work with Claude.\nWe’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.\nWe’re launching Claude Tag on Slack, since it’s a natural home for collaborative work between teams and AI, and where much of Anthropic’s day-to-day work already happens. It’s available today in beta for Claude Enterprise and Team customers. Our goal is to expand where it’s available more widely, so that teams can tag @Claude in the many other places they work.\nIf you’ve worked with Claude Code or Cowork before, Claude Tag will feel familiar. Tag @Claude with a request in simple terms and it’ll break its task down into stages and then work through them in turn, using the tools it has access to. Once it’s done, it’ll respond in a Slack thread with what it’s created.\nBut tagging Claude comes with a few new advantages:\n@Claude is multiplayer. Within a given Slack channel, there’s one Claude that interacts with everyone. This means that anyone can see what it’s working on, and can pick up the conversation from where the last person left off. This makes tagging Claude very different from working within a single chat or for a single task—it’s much more like interacting collaboratively with a teammate.\n@Claude learns over time. As Claude follows along with its channel, it builds more context about the work. This means that users don’t need to explain things to it from scratch over and over again. And Claude can even automatically learn from other Slack channels and data sources, if it’s granted permission. (It doesn’t report from private channels.) This gives it the tacit knowledge necessary for it to provide the best possible work.\n@Claude takes initiative. If “ambient” behavior is enabled, Claude will proactively keep you updated about whatever it thinks you might need to know. It’ll flag relevant information from across the channels it’s in and the tools it’s connected to, and follow up on threads or tasks that have gone quiet without being resolved.\n@Claude works asynchronously. Set Claude a task, and you can focus on your other priorities while it works. It can also schedule tasks for itself, pursuing a project autonomously over hours or days. We’ve found this particularly helpful at Anthropic: we now spend much more of our time delegating tasks to many Claudes in parallel.\nYou can also send Claude direct messages: it’ll respond priva",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出企业落地与生态合作",
+          "zhSummary": "Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出企业落地与生态合作",
+          "displaySummary": "Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 30, 2026 Product Introducing Claude Sonnet 5",
+          "url": "https://www.anthropic.com/news/claude-sonnet-5",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Our most agentic Sonnet yet, with top-tier intelligence for coding and everyday professional work.\nClaude Sonnet 5 is built to be the most agentic Sonnet model yet. It can make plans, use tools like browsers and terminals, and run autonomously at a level that, just a few months ago, required larger and more expensive models.\nFor many developers, the agentic AI era began with Sonnet-class models: Claude Sonnet 3.5, 3.6, and 3.7 were the first models that showed impressive skills in coding and tool use. More recently, though, the clearest gains in agentic capabilities have been in our Opus-class models.\nSonnet 5 narrows the gap: its performance is close to that of Opus 4.8, but at lower prices. It’s a substantial improvement over its predecessor, Sonnet 4.6, on important aspects of agentic performance like reasoning, tool use, coding, and knowledge work:\nOur safety assessments found that Sonnet 5 shows an overall lower rate of undesirable behaviors than Sonnet 4.6, and is generally safer to use in agentic contexts. Evaluations also show that it has a much lower ability to perform cybersecurity tasks than our current Opus models.\nFeedback from our early access partners has been consistent: Sonnet 5 is much more agentic than its predecessors. Testers described how it finishes complex tasks where previous Sonnet models would stop short, how it checks its own output without explicitly being asked, and how it does all this agentic work at an attractive price point:\nSince Sonnet 5 is somewhat stronger than its predecessor on these tasks, we’ve launched it with cyber safeguards enabled by default. These safeguards —which detect and block dangerous cyber usage in real time—are the same as those present in Claude Opus 4.7 and 4.8 (because we judged that the overall level of cybersecurity risk from Sonnet 5 was low, the safeguards are less strict than those launched with Fable 5, which block a much wider range of cybersecurity tasks). 1\nOur full assessment of Sonnet 5 across many safety and capability evaluations is reported in the Claude Sonnet 5 System Card .\nClaude Sonnet 5 is available everywhere today at an introductory price of $2 per million input tokens and $10 per million output tokens through August 31, 2026. It then moves to standard pricing at $3 per million input tokens and $15 per million output tokens. 2 We’ve increased rate limits across Chat, Cowork, Claude Code, and the Claude Platform 3 to accommodate the higher token usage of higher effort levels; users can select whichever level makes sense for their particular project.\nEdit June 30, 2026: In the original version of this post, we included a cost-performance chart for the BrowseComp evaluation that was based on data from a simpler methodology that did not reflect the standard methodology we u",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Claude Sonnet 5",
+          "zhSummary": "Anthropic公布Claude Sonnet 5，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布Claude Sonnet 5",
+          "displaySummary": "Anthropic公布Claude Sonnet 5，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Fake call detection on Android helps protect you from scammers using AI deepfakes to impersonate your contacts.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.\nMuse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support further scaling, we are making strategic investments across the entire stack — from research and model training to infrastructure, including the Hyperion data center.\nIn this post, we&#039;ll first explore Muse Spark&#039;s new capabilities and applications. After these results, we’ll look behind the curtain at the scaling axes driving our progress toward personal superintelligence.\nMuse Spark is available today at meta.ai and the Meta AI app. We’re opening a private API preview to select users.\nCapabilities for Personal Superintelligence\nMuse Spark offers competitive performance in multimodal perception, reasoning, health, and agentic tasks. We continue to invest in areas with current performance gaps, such as long-horizon agentic systems and coding workflows.\nWith larger models in development, these results demonstrate that our stack is scaling effectively.\nWe’re also releasing Contemplating mode, which orchestrates multiple agents that reason in parallel. This allows Muse Spark to compete with the extreme reasoning modes of frontier models such as Gemini Deep Think and GPT Pro. Contemplating mode provides significant capability improvements in challenging tasks, achieving 58% in Humanity’s Last Exam and 38% in FrontierScience Research.\nMuse Spark is available now, and Contemplating mode will be rolling out gradually in meta.ai .\n*For more details about our evaluations, see our methodology document .\nMuse Spark is the first step toward a personal superintelligence that understands your world. From analyzing your immediate environment to supporting your wellness, the advanced reasoning capabilities of Muse Spark enable powerful, highly personal use cases.\nMultimodal. Muse Spark is built from the ground up to integrate visual information across domains and tools. It achieves strong performance on visual STEM questions, entity recognition, and localization. These capabilities come together to enable interactive experiences like creating fun minigames or troubleshooting your home appliances with dynamic annotations.\nHealth. One major application of personal superintelligence is to help people learn about and improve their health. To improve Muse Spark&#039;s health reasoning capabilities, we collaborated with over 1,000 physicians to curate training data that enables more factual and comprehensive responses. Muse Spark can generate interactive displays that unpack and ex",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark",
+          "zhSummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：工具调用、多 Agent 编排、视觉链路推理"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark",
+          "displaySummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "赛博菩萨 Cloudflare，AI 爬虫最严厉的父亲",
+          "url": "https://www.36kr.com/p/3882226982842376",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "互联网最大的「保安」，现在要当最大的「收银员」了。\n7 月 1 日，Cloudflare 发了一篇博客，标题很温和，叫「你的网站，你的规则」。但内容一点也不温和——从 9 月 15 日起，所有使用 Cloudflare 的网站，默认屏蔽混合用途的 AI 爬虫。只要你的页面上有广告，AI 的训练爬虫和 Agent 爬虫就进不来。除非你自己去后台手动打开。\n注意这个逻辑翻转：以前是「默认允许，你可以选择屏蔽」，现在是「默认屏蔽，你可以选择允许」。\n做出这个决定的背景是一个标志性的事件，互联网上的 bot 流量，已经超过了人类流量。\nCloudflare CEO Matthew Prince 说，这个里程碑比所有人预期的都来得早，原本预计要到 2027 年才会发生。换句话说，今天你打开的大多数网页，「看」它们的主要不是人，而是机器。\n而如何规范来自 AI 的流量，既有可能决定了所有网站的未来，也决定了网络守门人 Cloudflare 自己的发展轨迹。\n第一类叫「Search」 ，就是为搜索服务建索引的传统爬虫，Google 干了二十多年的那种。\n第二类叫「Agent」 ，是实时代用户去访问网页的 AI 代理，比如你让 ChatGPT 帮你查个信息、填个表单，它背后就有一个 Agent 爬虫在替你跑腿。\n三类分开标注。网站主可以分别对每一类设置「允许」或「屏蔽」。你想让搜索引擎找到你？可以。你想让 AI 代理帮你的用户查信息？也可以。 但你不想让 AI 公司白嫖你的内容去训练模型？那你可以单独把 Training 关掉。\nGoogle 的 Googlebot 是一个典型的「混合爬虫」——它同时为 Google 搜索建索引，也为 Google 的 AI 功能（比如 AI Overviews）采集数据。Google 确实提供了一个叫 Google-Extended 的工具，允许网站选退 AI 训练。但问题在于，Googlebot 这个核心爬虫本身，依然会同时为搜索引擎内置的 AI 功能收集数据。\n这意味着什么？Cloudflare 的数据说得很清楚：因为网站想保持在 Google 搜索中的可见性，就不得不让 Googlebot 进来，而 Googlebot 进来了，AI 训练的数据也就一并拿走了。 Google 因此获得了大约两倍于其他 AI 公司的网页内容访问量。\nCloudflare 这次还加了一条「最严规则优先」的原则。如果一个爬虫同时执行搜索和训练两个功能，那所有适用的规则会同时生效——按最严格的那个来。也就是说，你只要选择屏蔽 Training 爬虫，Googlebot、Applebot、BingBot 这些混合爬虫，统统会被一并屏蔽。\n这刀砍的是「捆绑」——你想被搜索到，就得接受被 AI 训练。Cloudflare 说，这个捆绑不公平，必须拆开。\n一组数据可以说明旧「社会契约」崩坏到了什么程度。Cloudflare 公布了各家 AI 公司的爬取与回流比：Google 大约是 14:1——每爬取 14 个页面，回流 1 次点击。OpenAI 是 1,700:1。Anthropic 是 73,000:1。\n搜索引擎时代的交易是「我爬你的内容，你得到流量」。在 AI 时代，这笔账已经算不过来了。\n如果 Cloudflare 只是帮网站主挡住 AI 爬虫，那这件事的意义就止于「防御」。但 Cloudflare 显然不满足于只当保安。\n去年 7 月，Cloudflare 推出了「Pay Per Crawl」——按爬取次数向 AI 公司收费。今年，它把这个模式升级为「Pay Per Use」。区别在于，不再是爬虫每来一次你收一次钱，而是当你的内容在 AI 系统中真正产生了价值，被用于生成一个回答、出现在一个 AI 搜索结果里，用户才能收到钱。\n从「按次收费」到「按价值收费」，这个转变的野心不小。 它意味着 Cloudflare 想建立的不是一道墙，而是一个市场。\n目前的初始合作伙伴是两家 AI 搜索公司 Ceramic.ai 和 You.com。当出版商选择加入后，他们的内容出现在 Ceramic 的 AI 搜索结果中，或被 You.com 的 Agent 访问时，出版商会收到付款。大出版商们纷纷站台——Condé Nast 的 CEO 说这是「游戏规则的改变」，Reddit 的联合创始人说「整个生态系统都会受益」。\n今年 3 月，Cloudflare 自己发布了一个爬虫 API。你给它一个 URL，它能一次性抓取整个网站，返回 HTML、Markdown 或结构化 JSON。这让一些出版商相当不安——那个一直帮我挡爬虫的公司，怎么自己造了一个爬虫？\n更尴尬的是，有出版商尝试屏蔽 Cloudflare 自己的爬虫时发现，设置不生效。虽然 Cloudflare 后来修复了这个问题，但互联网上的评论已经传开了—— 「我们保护网站不被爬虫抓取……除非是我们自己的爬虫。」\nCloudflare 对此的解释是，它的爬虫是「合规爬虫」，会尊重 robots.txt，会遵守自己的 AI Crawl Control 规则。如果站长选择屏蔽 AI 爬虫，Cloudflare 自己的爬虫也会被挡在门外。用一位开发者的话说，这是一个「两边下注所以永远赢」的策略。\n这就引出了一个根本性的问题：Cloudflare 到底是一个中立的基础设施裁判，还是一个新型的中间商？\n它同时扮演着规则制定者（定义三类爬虫）、规则执行者（在基础设施层拦截爬虫）和市场参与者（运营自己的爬虫和内容交易平台）三个角色。\n这不是说它做的事情没有价值——把 AI 爬虫从「无序掠夺」拉入「明确分类、需要许可」的框架，确实是一个进步。但把 Cloudflare 当成内容创作者的「救世主」，就太天真了。\nCondé Nast、Dotdash Meredith、Reddit——站出来支持 Cloudflare 的，都是大型出版商和平台。它们有内容规模，有法务团队，有谈判筹码。这些公司不需要 Cloudflare 也能跟 AI 公司签许可协议——事实上，过去一年全球已经签了超过 50 份内容许可大单。Cloudflare 对它们来说，是多了一个工具，不是唯一的出路。\n但个人博主呢？一个在 WordPress 上写技术教程的独立开发者呢？一个用公众号写深度分析的自媒体人呢？\n理论上，Cloudflare 的基础设施，可以让小内容主无需逐一跟每家 AI 公司谈判，就能设定权限和获得补偿。 但「理论上」三个字是关键。 Pay Per Use 到现在只有 Ceramic.ai 和 You.com 两个合作伙伴，都是小玩家。OpenAI、Google、Anthropic 这些真正",
+          "translationMode": "fallback",
+          "zhTitle": "赛博菩萨 Cloudflare，AI 爬虫最严厉的父亲",
+          "zhSummary": "36Kr公布赛博菩萨 Cloudflare，AI 爬虫最严厉的父亲，重点落在企业落地与生态合作。这次变化主要覆盖支持 Cloudflare 的，都是大型出版商和平台、训练能力，目前支持 API 接入，已进入产品端。进一步看，；7 月 1 日，Cloudflare 发了一篇博客，标题很温和，叫「你的网站，你的规则」。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：支持 Cloudflare 的，都是大型出版商和平台、训练能力"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "赛博菩萨 Cloudflare，AI 爬虫最严厉的父亲",
+          "displaySummary": "36Kr公布赛博菩萨 Cloudflare，AI 爬虫最严厉的父亲，重点落在企业落地与生态合作。这次变化主要覆盖支持 Cloudflare 的，都是大型出版商和平台、训练能力，目前支持 API 接入，已进入产品端。进一步看，；7 月 1 日，Cloudflare 发了一篇博客，标题很温和，叫「你的网站，你的规则」。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "互联网最大的「保安」，现在要当最大的「收银员」了。",
+          "url": "https://www.36kr.com/p/3882226982842376",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "互联网最大的「保安」，现在要当最大的「收银员」了。\n7 月 1 日，Cloudflare 发了一篇博客，标题很温和，叫「你的网站，你的规则」。但内容一点也不温和——从 9 月 15 日起，所有使用 Cloudflare 的网站，默认屏蔽混合用途的 AI 爬虫。只要你的页面上有广告，AI 的训练爬虫和 Agent 爬虫就进不来。除非你自己去后台手动打开。\n注意这个逻辑翻转：以前是「默认允许，你可以选择屏蔽」，现在是「默认屏蔽，你可以选择允许」。\n做出这个决定的背景是一个标志性的事件，互联网上的 bot 流量，已经超过了人类流量。\nCloudflare CEO Matthew Prince 说，这个里程碑比所有人预期的都来得早，原本预计要到 2027 年才会发生。换句话说，今天你打开的大多数网页，「看」它们的主要不是人，而是机器。\n而如何规范来自 AI 的流量，既有可能决定了所有网站的未来，也决定了网络守门人 Cloudflare 自己的发展轨迹。\n第一类叫「Search」 ，就是为搜索服务建索引的传统爬虫，Google 干了二十多年的那种。\n第二类叫「Agent」 ，是实时代用户去访问网页的 AI 代理，比如你让 ChatGPT 帮你查个信息、填个表单，它背后就有一个 Agent 爬虫在替你跑腿。\n三类分开标注。网站主可以分别对每一类设置「允许」或「屏蔽」。你想让搜索引擎找到你？可以。你想让 AI 代理帮你的用户查信息？也可以。 但你不想让 AI 公司白嫖你的内容去训练模型？那你可以单独把 Training 关掉。\nGoogle 的 Googlebot 是一个典型的「混合爬虫」——它同时为 Google 搜索建索引，也为 Google 的 AI 功能（比如 AI Overviews）采集数据。Google 确实提供了一个叫 Google-Extended 的工具，允许网站选退 AI 训练。但问题在于，Googlebot 这个核心爬虫本身，依然会同时为搜索引擎内置的 AI 功能收集数据。\n这意味着什么？Cloudflare 的数据说得很清楚：因为网站想保持在 Google 搜索中的可见性，就不得不让 Googlebot 进来，而 Googlebot 进来了，AI 训练的数据也就一并拿走了。 Google 因此获得了大约两倍于其他 AI 公司的网页内容访问量。\nCloudflare 这次还加了一条「最严规则优先」的原则。如果一个爬虫同时执行搜索和训练两个功能，那所有适用的规则会同时生效——按最严格的那个来。也就是说，你只要选择屏蔽 Training 爬虫，Googlebot、Applebot、BingBot 这些混合爬虫，统统会被一并屏蔽。\n这刀砍的是「捆绑」——你想被搜索到，就得接受被 AI 训练。Cloudflare 说，这个捆绑不公平，必须拆开。\n一组数据可以说明旧「社会契约」崩坏到了什么程度。Cloudflare 公布了各家 AI 公司的爬取与回流比：Google 大约是 14:1——每爬取 14 个页面，回流 1 次点击。OpenAI 是 1,700:1。Anthropic 是 73,000:1。\n搜索引擎时代的交易是「我爬你的内容，你得到流量」。在 AI 时代，这笔账已经算不过来了。\n如果 Cloudflare 只是帮网站主挡住 AI 爬虫，那这件事的意义就止于「防御」。但 Cloudflare 显然不满足于只当保安。\n去年 7 月，Cloudflare 推出了「Pay Per Crawl」——按爬取次数向 AI 公司收费。今年，它把这个模式升级为「Pay Per Use」。区别在于，不再是爬虫每来一次你收一次钱，而是当你的内容在 AI 系统中真正产生了价值，被用于生成一个回答、出现在一个 AI 搜索结果里，用户才能收到钱。\n从「按次收费」到「按价值收费」，这个转变的野心不小。 它意味着 Cloudflare 想建立的不是一道墙，而是一个市场。\n目前的初始合作伙伴是两家 AI 搜索公司 Ceramic.ai 和 You.com。当出版商选择加入后，他们的内容出现在 Ceramic 的 AI 搜索结果中，或被 You.com 的 Agent 访问时，出版商会收到付款。大出版商们纷纷站台——Condé Nast 的 CEO 说这是「游戏规则的改变」，Reddit 的联合创始人说「整个生态系统都会受益」。\n今年 3 月，Cloudflare 自己发布了一个爬虫 API。你给它一个 URL，它能一次性抓取整个网站，返回 HTML、Markdown 或结构化 JSON。这让一些出版商相当不安——那个一直帮我挡爬虫的公司，怎么自己造了一个爬虫？\n更尴尬的是，有出版商尝试屏蔽 Cloudflare 自己的爬虫时发现，设置不生效。虽然 Cloudflare 后来修复了这个问题，但互联网上的评论已经传开了—— 「我们保护网站不被爬虫抓取……除非是我们自己的爬虫。」\nCloudflare 对此的解释是，它的爬虫是「合规爬虫」，会尊重 robots.txt，会遵守自己的 AI Crawl Control 规则。如果站长选择屏蔽 AI 爬虫，Cloudflare 自己的爬虫也会被挡在门外。用一位开发者的话说，这是一个「两边下注所以永远赢」的策略。\n这就引出了一个根本性的问题：Cloudflare 到底是一个中立的基础设施裁判，还是一个新型的中间商？\n它同时扮演着规则制定者（定义三类爬虫）、规则执行者（在基础设施层拦截爬虫）和市场参与者（运营自己的爬虫和内容交易平台）三个角色。\n这不是说它做的事情没有价值——把 AI 爬虫从「无序掠夺」拉入「明确分类、需要许可」的框架，确实是一个进步。但把 Cloudflare 当成内容创作者的「救世主」，就太天真了。\nCondé Nast、Dotdash Meredith、Reddit——站出来支持 Cloudflare 的，都是大型出版商和平台。它们有内容规模，有法务团队，有谈判筹码。这些公司不需要 Cloudflare 也能跟 AI 公司签许可协议——事实上，过去一年全球已经签了超过 50 份内容许可大单。Cloudflare 对它们来说，是多了一个工具，不是唯一的出路。\n但个人博主呢？一个在 WordPress 上写技术教程的独立开发者呢？一个用公众号写深度分析的自媒体人呢？\n理论上，Cloudflare 的基础设施，可以让小内容主无需逐一跟每家 AI 公司谈判，就能设定权限和获得补偿。 但「理论上」三个字是关键。 Pay Per Use 到现在只有 Ceramic.ai 和 You.com 两个合作伙伴，都是小玩家。OpenAI、Google、Anthropic 这些真正",
+          "translationMode": "fallback",
+          "zhTitle": "互联网最大的「保安」，现在要当最大的「收银员」了。",
+          "zhSummary": "36Kr公布互联网最大的「保安」，现在要当最大的「收银员」了。，重点落在企业落地与生态合作。这次变化主要覆盖支持 Cloudflare 的，都是大型出版商和平台、训练能力，目前支持 API 接入，已进入产品端。进一步看，；7 月 1 日，Cloudflare 发了一篇博客，标题很温和，叫「你的网站，你的规则」。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：支持 Cloudflare 的，都是大型出版商和平台、训练能力"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "互联网最大的「保安」，现在要当最大的「收银员」了。",
+          "displaySummary": "36Kr公布互联网最大的「保安」，现在要当最大的「收银员」了。，重点落在企业落地与生态合作。这次变化主要覆盖支持 Cloudflare 的，都是大型出版商和平台、训练能力，目前支持 API 接入，已进入产品端。进一步看，；7 月 1 日，Cloudflare 发了一篇博客，标题很温和，叫「你的网站，你的规则」。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "汽车零部件巨头们，对人形机器人“上头”了",
+          "url": "https://www.36kr.com/p/3882021170589699",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "现在，Tier1巨头们正在寻求“第二次生命”。\n2050年，全球人形机器人会有多少？摩根士丹利说，10亿台。外加市场规模，7.5万亿美元。\n这是美国投资银行摩根士丹利去年12月发布的经过调整的预测报告中，描绘的宏大愿景。还有更激进的，马斯克曾预测2040年会达到100亿台。今年的访谈中，他更新了看法：觉得那还是个保守数字。真正的瓶颈是金属和供应链，两年内机器人就会“出现一大堆”，五年内从稀缺变为充裕。\n马斯克还说，“Recursive triple exponential growth for humanoid robots.”（人形机器人会迎来三重指数递归式增长。）\n另一家投行高盛2024年将人形机器人市场规模预估从此前的60亿美元提升至380亿美元，上调幅度达六倍。2026年，高盛的乐观上限更是达到了2050亿美元，又翻了4倍多。\n这么大的“蛋糕”，当然得提前布局，争取分一杯羹。所以，现在一批传统汽车零部件巨头们已经行动起来，准备将数十年来在批量制造、功能安全、可靠性工程和机电一体化领域积累的经验，复制到这个诱人的人形机器人赛道。现在，Tier1巨头们正在寻求“第二次生命”。\n面对7.5万亿美元的诱人大蛋糕，汽车零部件企业集体坐不住，纷纷押注人形机器人赛道。\n国际汽车零部件巨头们，正在加速卡位。比如，德国舍弗勒（Schaeffler），出于对人形机器人赛道的战略性重视，已经签下多项合作协议，加强研发，并将机器人部署到自家生产体系中。\n舍弗勒CEO克劳斯·罗森菲尔德（Klaus Rosenfeld）在5月初接受路透社采访时表示，预计到2030年，公司的人形机器人业务订单将达到数亿欧元。\n说这话的背景是，去年11月舍弗勒与Neura达成合作，共同研发并供应人形机器人核心零部件，舍弗勒将为机器人提供行星齿轮执行器，计划在2035年前将数千台人形机器人投入自有工厂。\n今年4月，舍弗勒又与瑞士Hexagon Robotics公司达成技术战略合作，共同开发并量产人形机器人执行器。\n除此之外，舍弗勒入股英国初创企业Humanoid，未来5~6年，舍弗勒计划在全球工厂至少部署1,000台该企业的人形机器人，推进生产自动化、提升生产效率，探索人形机器人工业化大规模应用路径。\n另一家巨头大陆集团，其科技子公司欧摩威（Aumovio）正计划为以色列初创企业Mentee Robotics生产人形机器人。今年年初，Mobileye以9亿美元收购了这家自己人开的机器人初创公司。\nMobileye收购Mentee后，需要匹配自动驾驶级别的精密量产能力，而欧摩威Aumovio则拥有数十年汽车精密机电、传感器、电控规模化制造经验，能保障机器人关节、伺服、机身结构件一致性与耐用性。\n同时，欧摩威Aumovio也通过合作战略拓展物理AI赛道，从自动驾驶延伸至人形机器人整机代工，打通“车轮机器人+双足人形机器人”两条自动化产线。\n从行业来说，这是全球首个自动驾驶Tier1大厂正式切入人形机器人整机代工的合作，区别于传统机器人代工厂，自带车规级精密制造、全球化交付能力。\n同时，也是为了印证Mobileye“物理AI”双赛道战略：自动驾驶车辆+人形机器人共用同一套感知、算力、制造体系，形成技术与产能复用。\n当然，博世也不会掉队。博世在2026年柏林互联世界大会上明确进军具身智能，提供传感器、电驱动等核心软硬件。博世还在今年1月宣布与机器人公司Neura Robotics合作供应零部件。\n另外，法雷奥、采埃孚等分别将车载感知系统和底盘控制技术复用至机器人领域 。而在芯片与核心部件层面，英伟达和三星正积极将自己定位为人形机器人关键芯片的供应商。\n我们可以发现，其实整个汽车零部件行业“静水流深”，都在默默为这个未来做着各种准备。\n我在之前的《“造人”这事，小鹏理想走到一起了》中也说过，人形机器人与如今的汽车在技术架构上存在高度相似性。\n无论是智能汽车还是人形机器人，二者底层技术高度同源，核心逻辑均是通过智能来理解时间与空间，结合控制技术完成移动、操作两大核心任务。业内人士也说过，“车企约70%的技术储备可直接复用于机器人领域。”\n而且，了解汽车供应链的，就会明白，机器人的几乎每一个核心部件，在汽车供应链里都能找到“远房亲戚”。\n当然，有些可以直接复用，像电机电控、热管理，核心原理和工艺路径几乎一致。而像执行器总成、域控制器则需要重新设计，虽然底层逻辑相通，但体积、精度、控制频率的要求完全不同。\n不管怎么说，这样转型比较快。比如，作为特斯拉Optimus的核心一级供应商，热管理龙头三花智控原来的汽车业务，是汽车热管理系统（电子膨胀阀全球市占率第一、冷却板、Chiller等）。而现在，其机器人业务是仿生机器人机电执行器（旋转执行器、线性执行器、灵巧手精密零部件）。\n说到其转型路径，三花智控不是一步跳到执行器，而是从最擅长的阀件出发，先解决关节散热（温升≤5℃ vs 行业平均15℃），再延伸到执行器集成，有一条“制冷阀件→汽车热管理阀件→旋转关节液冷散热→旋转执行器总成→线性执行器+灵巧手”的路径。\n对于这种“近水楼台先得月”，埃森哲全球机器人创新负责人克里斯蒂安·苏什（Christian Souche）指出，汽车零部件制造企业具备得天独厚的优势，包括大批量制造高精尖产品的成熟经验，能完美匹配人形机器人厂商对执行器、电机、关节等核心部件的大规模采购需求。\n比如，跟舍弗勒合作的越南Vingroup集团旗下机器人子公司VinDynamics，其首席技术官阮光荣（Nguyen Quang Vinh）就表示，“新能源汽车与人形机器人拥有大量相通的机电系统，二者都搭载电机、电力电子器件、嵌入式控制系统、传感器与车载计算平台。”\n更重要的是，随着人形机器人行业逐步成熟，实现低成本、稳定的大批量量产会变得愈发关键。\n这方面，舍弗勒负责提供人形机器人配套的行星齿轮箱与执行器技术，双方联合开展产品研发、测试与性能优化，VinDynamics能少走很多弯路。\n阮光荣很清楚，“汽车供应商早已掌握供应链优化、质量管控、产线自动化与成本管控能力，这些经验有着极高的价值。汽车零部件企业通过这类合作，可以提前吃透行业技术门槛，快速验证技术方案，加快研发进度。”\n有机会，还要看有没有能力抓住机会。高德纳（Gartner）研究副总裁佩德罗·帕切科（Pedro Pacheco）就认为，汽车零部件企业确实迎来了人形机器人机遇，但想要拿到可观利润并不容易。\n他表示，众多零部件厂商在金属构件、铝合金结构、线束集成、量产工艺上积累的技术，完全可以复用在机器人制造领域。\n然而，目前行业最大的痛点在于：人形机器人价值最高的环节，始终掌握在机器人企业手中，也就是硬件平台与软件系统。零部件厂商很容",
+          "translationMode": "fallback",
+          "zhTitle": "汽车零部件巨头们，对人形机器人“上头”了",
+          "zhSummary": "36Kr公布汽车零部件巨头们，对人形机器人“上头”了，重点落在算力与基础设施进展。披露的金额或规模为60亿美元。进一步看，Tier1巨头们正在寻求“第二次生命”；12月发布的经过调整的预测报告中，描绘的宏大愿景。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：60亿美元"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "汽车零部件巨头们，对人形机器人“上头”了",
+          "displaySummary": "36Kr公布汽车零部件巨头们，对人形机器人“上头”了，重点落在算力与基础设施进展。披露的金额或规模为60亿美元。进一步看，Tier1巨头们正在寻求“第二次生命”；12月发布的经过调整的预测报告中，描绘的宏大愿景。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Alibaba Cloud Launched a Global Intelligent O&M Platform from \"Passive Fire Fighting\" to \"Active Autonomy\"",
+          "url": "https://www.alibabacloud.com/blog/alibaba-cloud-launched-a-global-intelligent-o%26m-platform-from-passive-fire-fighting-to-active-autonomy_603323",
+          "description": "Alibaba Cloud Launched a Global Intelligent O&M Platform from \"Passive Fire Fighting\" to \"Active Autonomy\" This article introduces Alibaba Cloud&#039;s STAROps, an AI-native intelligent operations platform that leverages autonomous agents t",
+          "date": "",
+          "score": 29,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud&#039;s STAROps, an AI-native intelligent operations platform that leverages autonomous agents to transition IT manage...\nOn May 20, Alibaba Cloud officially released the AI-native global intelligent O&M platform STAROps.\nThe platform uses large model and agent technology as the core engine and Alibaba Cloud observable product system as the data base to deeply integrate cross-domain observable data with large language model reasoning capability. Users only need to define operation and maintenance objectives in natural language , and operation and maintenance agents can independently complete the full closed loop of dynamic planning, safe execution and result verification.\nSTAROps is designed around four capability dimensions: Sense global perception , Target goal orientation , Autonomy autonomous operation and maintenance , and Resilience business continuity . It provides three core functions:\nAt the technical architecture level, the competitiveness of STAROps is reflected in four dimensions.\nUnifies logs, metrics, traces, events, topology, and changes with PB-scale daily ingestion, EB-scale storage, low-latency analysis, multi-AZ deployment, and 99.95% reliability.\nBuilds a unified graph model (UModel) from entities, relationships, observability data, and operational knowledge, helping agents understand systems, trace blast radiuses, and reason about root causes in a shared context.\nSupports anomaly detection, log clustering, trace analysis, performance profiling, and change analysis, reducing the cost of processing massive raw data while improving diagnostic efficiency and result stability.\nBuilds a realistic evaluation loop with simulation, fault injection, diagnostic assessment, and feedback, creating a measurable, roll-back-ready system for continuous agent improvement.\nIn terms of access form, STAROps provides a variety of access solutions such as OpenAPI and MCP integration , page embedding , and mainstream IM access . Enterprises can release value in existing workflows at the lowest migration cost. The built-in manual approval mechanism of the platform ensures that key decision nodes are still under manual control, striking a balance between the efficiency of agent independent execution and security compliance.\nAlong with the product release, Alibaba Cloud synchronizes the open source UModel unified data model project with the RCA-100 evaluation benchmark set , and jointly launched the \"Enterprise Common Semantic Standard Industry Initiative\" with more than 10 industry partners and academic institutions such as the Institute of Information and Communications Technology, Xiaopeng Automobile, and the Software Institute of the Chinese Academy of Sciences.\nCurrently, STAROps has been officially launched on the",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud公布企业落地与生态合作",
+          "zhSummary": "Alibaba Cloud公布Global Intelligent O&M Platform from \"Passive Fire Fighting\"，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud公布企业落地与生态合作",
+          "displaySummary": "Alibaba Cloud公布Global Intelligent O&M Platform from \"Passive Fire Fighting\"，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "The Second Half of the Enterprise Agent Era: How to Make Agents Smarter the More They Are Used?",
+          "url": "https://www.alibabacloud.com/blog/the-second-half-of-the-enterprise-agent-era-how-to-make-agents-smarter-the-more-they-are-used_603319",
+          "description": "The Second Half of the Enterprise Agent Era: How to Make Agents Smarter the More They Are Used? This article introduces AgentLoop, Alibaba Cloud&#039;s one-stop platform that enables enterprise AI agents to continuously self-evolve through",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces AgentLoop, Alibaba Cloud&#039;s one-stop platform that enables enterprise AI agents to continuously self-evolve through full-stack observability and automated evaluation.\nThe evolution flywheel is typically divided into 4 steps: data collection, dataset construction, performance evaluation, and evolutionary asset accumulation. Although the pipeline of the model and Agent evolution flywheel is similar, there are more factors that influence Agent behavior.\nBecause there are more factors affecting Agent behavior, the new engineering difficulties brought by the evolution flywheel are difficult for the previous LLM-as-Judge paradigm to cope with.\nLLM-as-Judge selects prompt-completion pairs from logs, filtering them simply by token length, confidence, and human feedback. A trajectory (execution path) includes:\nStringing this entire sequence together is the Trajectory of this task.\nFor LLM-as-Judge, scoring is done for a single point. In the Agent era, evaluation needs to be conducted on three levels: step-level (whether the tool call in each step is correct), trajectory-level (whether the entire path is reasonable, without detours, rollbacks, or infinite loops), and outcome-level (whether the final delivery meets the requirements).\nThe conclusions across these three levels may be completely inconsistent.\nThe asset forms of models are very clear: SFT data, DPO pairs, and LoRA weights—the industry has a consensus, and the toolchains are mature.\nTherefore, although Agents have gone online and serve more and more users, the evolutionary assets owned by enterprises may not have increased. This has become the true state of enterprise Agent evolution.\nAgentLoop is a one-stop self-evolution platform for enterprise-level Agents launched by Alibaba Cloud. It provides core capabilities such as full-stack Agent observation and auditing, Agent evaluation and experimentation, and Agent asset management and continuous optimization, helping enterprises build an Agent evolution data flywheel.\nTo address the pain points of building an evolution flywheel for enterprise Agents, AgentLoop's solution is:\nThrough LoongSuite's open-source auto-instrumentation framework, AgentLoop upgrades the collection object from a tuple to a complete Trajectory.\nLoongSuite integrates three levels of semantic specifications: the OTel GenAI community standard (including STEP / MCP span extensions contributed by Alibaba), the AgentLoop product-side data contract, and the collection layer's own extensions (exclusive fields for session / turn / step / cost), covering a total of 55 GenAI semantic fields. In a line-by-line comparison with third-party source code, LoongSuite's effective field coverage is 84%, while the highest competing product is only 51%.\nThe Trajectory coll",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出Second Half",
+          "zhSummary": "Alibaba Cloud推出Second Half，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出Second Half",
+          "displaySummary": "Alibaba Cloud推出Second Half，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "From API to AI Agent: Alibaba Cloud CloudMonitor Command-line Interface (CLI) + Agent Skill in Practice",
+          "url": "https://www.alibabacloud.com/blog/from-api-to-ai-agent-alibaba-cloud-cloudmonitor-command-line-interface-cli-%2B-agent-skill-in-practice_603311",
+          "description": "From API to AI Agent: Alibaba Cloud CloudMonitor Command-line Interface (CLI) + Agent Skill in Practice This article introduces the Alibaba Cloud CloudMonitor CLI and Agent Skill to enable AI agents to automate observability O&M workflows.",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces the Alibaba Cloud CloudMonitor CLI and Agent Skill to enable AI agents to automate observability O&amp;M workflows.\nYou can use the official CloudMonitor CLI + Agent Skill to allow an AI Agent to securely execute observability O&M jobs.\nAlibaba Cloud CloudMonitor CLI ( aliyun cms2 ) consolidates capabilities such as integration, configuration, queries, alerting, and management events in the Cloud Monitor Service (CMS) 2.0 console into a unified command line entry. CMS Agent Skill organizes these commands into business workflows for AI Agents.\nIn the past, O&M automation often started from APIs: querying documents, assembling parameters, writing scripts, and invoking APIs. Now, by using the CloudMonitor CLI + Agent Skill, these capabilities can be organized into standardized workflows that AI Agents can understand, execute, and validate.\nFor O&M engineers, its value is not \"one more tool\", but allowing you to describe O&M targets in natural language, and having the AI Agent complete scenario understanding, CLI invocations, API executions, and result validations, transforming repetitive, multi-step, and error-prone observability O&M operations into confirmable, auditable, and reusable automated flows.\nHowever, to allow AI Agents to truly enter the production O&M closed loop, they cannot just stay at the stage of \"understanding problems, generating suggestions, or scripts\". A stable execution entry for CloudMonitor capabilities, standardized realm flows, necessary manual confirmations, and verifiable execution results are also required. The CloudMonitor CLI + Agent Skill is exactly the capability suite built for this requirement.\nMultiple credential types such as AccessKey and Security Token Service token are supported. For more information, see Configure identity credentials for Alibaba Cloud CLI .\nThe Site Reliability Engineering (SRE) team created an ACK cluster to deploy microservices. The SRE team needs to integrate the metrics of the cluster, such as nodes, pods, and containers, into CloudMonitor.\nYou only need to enter the following text in the AI Agent conversation:\nHelp me check which container clusters in Hangzhou do not have observability capabilities, and help me integrate them.\nThe Agent automatically completes the entire integration flow. Users only need to confirm at key steps.\nIntegrate by resource group: You can integrate all Relational Database Service (RDS) instances in the Beijing area under the default resource group into {workspace} of CloudMonitor.\nIntegrate by label: You can integrate all Elastic Compute Service (ECS) instances that match the label key={tagKey} and value={tagValue} into {workspace} of CloudMonitor.\nIntegrate across accounts: You can integrate all AI gateways in the Shanghai area of {resour",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出From API",
+          "zhSummary": "Alibaba Cloud推出From API，重点落在Agent 能力升级。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出From API",
+          "displaySummary": "Alibaba Cloud推出From API，重点落在Agent 能力升级。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Fine Tuning the Enterprise: Reinforcement Learning in Practice",
+          "url": "https://www.infoq.com/presentations/rft-openai-model",
+          "description": "Fine Tuning the Enterprise: Reinforcement Learning in Practice The speakers discuss Agent RFT, OpenAI’s platform for fine-tuning reasoning models via real-time tool interactions and custom reward signals. They explain how reinforcement lear",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Will Hang and Wenjie Zi explain how OpenAI\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nErik Steiger discusses the operational pain of legacy PDF generation in regulated banking and manufacturing. He explains how transitioning from resource-heavy engines like Puppeteer and LaTeX to a serverless Rust architecture powered by Typst can drop render latencies below 2ms. He shares how applying Git and Docker concepts to template registries ensures ironclad compliance and rapid debugging.\nIn this eMag, we try to establish agentic AI architecture as a new type of software architecture that will likely dominate the industry for years to come. The articles, written by industry experts, cover various elements and aspects of agentic AI architecture. We aim to present the latest trends and developments shaping the new type of architecture as it enters the mainstream.\nThe speakers discuss Agent RFT, OpenAI’s platform for fine-tuning reasoning models via real-time tool interactions and custom reward signals. They explain how reinforcement learning solves complex credit assignment challenges within the context window. They share enterprise success stories, showing how Agent RFT eliminates long-tail token loops and drives extreme efficiency.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods spoke to Craig McLuckie, co-creator of Kubernetes and CEO of Stacklok, about the impact of AI coding tools on open source communities and engineering teams, designing deliberate organisational culture, and navigating evolving career paths for engineers in the age of AI.\nSean Klein discusses why \"human error\" is a dangerous myth in complex systems. Sharing the inside story of Azure’s 2023 global WAN outage, he explains how modern incident analysis looks past the \"Five Whys\" to uncover systemic issues. Learn how engineering leaders can move away from blame, improve Standard Operating Procedures, and design resilient systems that actively protect their engineers.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Online. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nWhat's working across AI, architecture, and leadership, from the teams doing it. Register. Early bird ends July 14.\nWhat early-adopter teams have prov",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源算力与基础设施进展",
+          "zhSummary": "InfoQ AI开源算力与基础设施进展，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI开源算力与基础设施进展",
+          "displaySummary": "InfoQ AI开源算力与基础设施进展，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "url": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/",
+          "description": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Diagrid has announced the release of Dapr 1.18, introducing what it calls Verifiable Execution, a new set of capabilities designed to bring cryptographic trust, provenance, and tamper-evident executio\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nErik Steiger discusses the operational pain of legacy PDF generation in regulated banking and manufacturing. He explains how transitioning from resource-heavy engines like Puppeteer and LaTeX to a serverless Rust architecture powered by Typst can drop render latencies below 2ms. He shares how applying Git and Docker concepts to template registries ensures ironclad compliance and rapid debugging.\nIn this eMag, we try to establish agentic AI architecture as a new type of software architecture that will likely dominate the industry for years to come. The articles, written by industry experts, cover various elements and aspects of agentic AI architecture. We aim to present the latest trends and developments shaping the new type of architecture as it enters the mainstream.\nThe speakers discuss Agent RFT, OpenAI’s platform for fine-tuning reasoning models via real-time tool interactions and custom reward signals. They explain how reinforcement learning solves complex credit assignment challenges within the context window. They share enterprise success stories, showing how Agent RFT eliminates long-tail token loops and drives extreme efficiency.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods spoke to Craig McLuckie, co-creator of Kubernetes and CEO of Stacklok, about the impact of AI coding tools on open source communities and engineering teams, designing deliberate organisational culture, and navigating evolving career paths for engineers in the age of AI.\nSean Klein discusses why \"human error\" is a dangerous myth in complex systems. Sharing the inside story of Azure’s 2023 global WAN outage, he explains how modern incident analysis looks past the \"Five Whys\" to uncover systemic issues. Learn how engineering leaders can move away from blame, improve Standard Operating Procedures, and design resilient systems that actively protect their engineers.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Online. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Regist",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源算力与基础设施进展",
+          "zhSummary": "InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI开源算力与基础设施进展",
+          "displaySummary": "InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+          "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "资本与生态",
+          "detailText": "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.\nWe’ve just opened our Seoul office . Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.\n“What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”\nThis week, senior leaders from Anthropic traveled to Seoul to open the office and meet with partners, customers, and developers building with Claude.\nAnthropic has signed an MOU with Korea’s Ministry of Science and ICT to support the safe and responsible adoption of AI across the public sector. Together, we’ll collaborate on AI safety and cybersecurity, including evaluating model safety in the Korean language with the Korea AI Safety Institute, and exchanging information on AI-enabled cyber threats.\nFrom WRTN to Law&Company , Korean organizations have been working with Claude for years. Today, we are sharing new examples of how Claude is running across the Korean economy.\nSome of the deepest adoption is happening among developers. NAVER, a leader in cloud and AI innovation in Asia, has recently deployed Claude Code across its entire engineering organization. Thousands of NAVER engineers are now using Claude Code to diversify their coding tools and maximize coding productivity. At global online game company Nexon, engineering teams use Claude Code to write, review, and ship code for live-service games played by millions around the world.\nAnd startups are building Claude directly into their products. Channel Corp uses Claude to power Channel Talk, its customer AI platform that resolves customer inquiries and analyzes service and sales data to deliver business insights—used by over 230,000 companies across Korea, Japan, and the United States.\nOur work in Korea also reaches beyond the private sector. To deepen ties with the academic research community, we will work with the National AI Research Lab (NAIRL), a consortium spanning KAIST, Korea University, Yonsei University, and POSTECH. Anthropic will provide Claude access to up to 60 NAIRL-affiliated researchers, supporting work on AI safety, model evaluation, alignment, robustness, and broader frontier AI research.\nIn the nonprofit sector, Good Neighbors Korea—a child rights specialist NGO—is deploying Cla",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 15,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/07/05/"
+}
