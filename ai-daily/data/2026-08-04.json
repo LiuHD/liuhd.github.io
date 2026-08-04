@@ -1,0 +1,363 @@
+{
+  "title": "AI 日报 2026-08-04",
+  "slug": "ai-daily-2026-08-04",
+  "date": "2026-08-04",
+  "isoDate": "2026-08-04T04:33:49.642Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 8,
+    "day": 4
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 24, 2026 Product Introducing Claude Opus 5",
+          "url": "https://www.anthropic.com/news/claude-opus-5",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Opus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.\nClaude Opus 5 is available today. It’s a thoughtful and proactive model that comes close to the frontier intelligence of Claude Fable 5 at half the price.\nOn coding and knowledge work evaluations like Frontier-Bench and GDPval-AA , Opus 5 is the new state-of-the-art, though it remains behind Mythos 5 on cybersecurity tasks.\nOpus 5 is designed to be used every day: it works more efficiently than other models. It’s the new default model on Claude Max, and the strongest model on Claude Pro.\nClaude Opus 5 provides greatly improved performance for the same cost as its predecessor, Opus 4.8. The charts in this section show how performance changes according to the model’s effort setting, which customers can use to optimize for intelligence or conserve tokens for faster and cheaper results.\nOpus 5 excels on valuable software engineering tasks. For example, on Frontier-Bench v0.1, Opus 5 surpasses all other models, and more than doubles Opus 4.8’s performance at a lower cost per task. On CursorBench 3.2 , at max effort, the model performs within 0.5% of Fable 5’s peak score, but at half the cost per task; it also achieves greater performance at a given cost than all other models on high, xhigh, and max effort.\nWe see similar results on knowledge work and problem-solving tasks. For example:\nIt’s also our best and most cost-efficient model on several related evaluations:\nFinally, Opus 5 is capable of producing much stronger visual outputs:\nClaude Opus 5 is much stronger at verifying its work and iterating carefully until it succeeds. In evaluations and early-access testing, we and our users found many examples of Opus 5’s agency and thoroughness:\nBelow are further reports from our early-access customers on their experience of working with Opus 5:\nAlignment. During pre-deployment testing, our automated behavioral audit found Opus 5 to be our most aligned model to date (as shown in the graph below). It adheres to Claude’s Constitution better than Opus 4.8, Sonnet 5, or Fable 5; exhibits the lowest rates of deceptive behavior; and is the least susceptible to being tricked into misuse. It’s also our safest model yet in terms of avoiding reckless actions that could have hard-to-reverse side effects.\nSafety. Opus 5 does not advance the frontier in risky, dual-use capabilities. In rigorous evaluations conducted alongside private-sector and government partners, we found it remains behind Mythos 5 in both biology research and offensive cybersecurity. More information about these evaluations can be found in our System Card .\nAs with its predecessor, Opus 4.8, we’ve intentionally avoided training Opus 5 on cyber tasks. The model",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Claude Opus 5",
+          "zhSummary": "Anthropic公布Claude Opus 5，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前已正式上线。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布Claude Opus 5",
+          "displaySummary": "Anthropic公布Claude Opus 5，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前已正式上线。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 14, 2026 Product Introducing Claude for Teachers",
+          "url": "https://www.anthropic.com/news/claude-for-teachers",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nWe&#x27;re introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.\nEarly evidence suggests that while the impact of AI tools for students is mixed and depends on the implementation, AI tools for teachers can strengthen instructional practice and improve student outcomes. This is the aim of Claude for Teachers: support the craft behind great teaching and protect what teachers value most—time with their students.\nClaude for Teachers connects to Learning Commons , giving Claude access to academic standards across all 50 states—and beneath each standard, the smaller learning competencies it&#x27;s built from and the order students typically learn them. So when Claude drafts a lesson plan, it’s scaffolded and aligned to teaching standards. Claude for Teachers also brings in trusted curricular resources like OpenSciEd and IM v.360 from Illustrative Mathematics .\nAs of today, educators can now connect Claude across an entire ecosystem of K-12 tools.\nOnce verified, K-12 educators in the US get access to Claude for Teachers with the Learning Commons connector and a set of tailored teaching skills grounded in learning science. The skills, co-developed with Learning Commons, were designed around the tasks teachers told us mattered most. These were evaluated to ensure rigor, pedagogical alignment, and classroom usability, and refined through early feedback from classroom teachers, including those in schools like Prospect Schools in Brooklyn.\nClaude for Teachers includes Claude Code and Cowork, which means Claude can carry work forward on its own. Some examples:\nLearn more from two teachers , Zac and Karina, explaining how they use Claude for Teachers in their own classrooms.\nClaude for Teachers is for educators only, consistent with Claude&#x27;s 18-and-over policy. It comes with its own teacher terms , built for K-12 privacy. Claude for Teachers data is not used for model training purposes, and student information is protected by our K-12 Data Processing Addendum, written to comply with FERPA.\nWe’re also working with the American Federation of Teachers to align our terms and privacy practices with gold standards they’re developing:\nTeachers can also access our newly released AI Fluency for PK-12 Teachers , a course co-created with Teach For America , and a train-the-trainer module co-created with the American Federation of Teachers. The guidance is model-agnostic, Creative Commons-licensed, and practical, covering which classroom tasks AI is su",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出Claude",
+          "zhSummary": "Anthropic推出Claude，重点落在模型与平台升级。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出Claude",
+          "displaySummary": "Anthropic推出Claude，重点落在模型与平台升级。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Fake call detection on Android helps protect you from scammers using AI deepfakes to impersonate your contacts.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding.\nWith these improvements, Muse Spark 1.1 advances the performance-efficiency frontier. Together with this week’s launch of Muse Image , this release brings us closer to our vision of personal superintelligence: models that help you pursue your goals, create what you imagine, deepen your relationships, and take action on what you value most.\nAlong with this release, we are launching a public preview of the new Meta Model API where developers can access Muse Spark 1.1. The model is available now in \"Thinking\" mode in the Meta AI app and on meta.ai .\nFor more details about our evaluations, see our report .\nMuse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services. It zero-shot generalizes to new native tools, MCP servers, and custom skills.\nIt tackles complex projects significantly faster than Muse Spark, as it is trained to orchestrate multi-agent systems to optimize end-to-end latency. As the main agent, it can gather context, make a plan, and delegate execution across parallel subagents. As a subagent, it adheres to its job, understands available tools, and knows when to escalate back to the main agent.\nMuse Spark 1.1 can actively manage its context window of 1 million tokens. It remembers actions, retrieves information from much earlier work, and compacts in a way that keeps the critical steps needed for later work.\nMuse Spark 1.1 excels at computer-use workflows that unfold across multiple applications with information changing on-the-fly. It maintains context across extended sessions, adapts to evolving requirements, and navigates unfamiliar interfaces with minimal human intervention.\nRather than reasoning through every desktop step one click at a time, Muse Spark 1.1 understands when to automate and when to use the interface directly. We trained the model to write scripts when automation is faster, click when direct interaction is simpler, and generate batches of actions at each step.\nAgentic dinner party organization: In real-world applications, new context arises that changes the task. Muse Spark 1.1 notices these changes when placing the dinner order and makes necessary updates without user intervention.\nCoding performance for Muse Spark 1.1 improved substantially on real-world tasks involving large, complex codebases. It can diagnose and fix complex bugs, implement new features in enterprise-grade systems, and execute large code migrations. In use cases ",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark 1.1",
+          "zhSummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：多模态能力",
+            "关键指标：1 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark 1.1",
+          "displaySummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Image and Muse Video",
+          "url": "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Muse Image follows instructions faithfully, edits with precision, composes from multiple references, and draws on Instagram for social context. Muse...\nWe’re excited to launch Muse Image and preview Muse Video, the first media generation models developed by Meta Superintelligence Labs.\nMuse Image is our most advanced image generation model yet: it follows instructions faithfully, edits with precision, and composes from multiple references. It also brings agentic tool use capabilities and integrates with Muse Spark. Muse Video, built on the same pretraining base, delivers exceptional visual fidelity with native audio support.\nMuse Image is available today across the Meta AI app and on meta.ai , Instagram Stories in the US, and WhatsApp in limited countries, and is coming soon to Facebook. Muse Video is coming soon to creators and Meta AI.\nInstead of directly mapping prompts to images, Muse Image operates as an agent: it invokes search and coding tools to improve accuracy, self-refines its own generations, and improves through scaling test-time compute. Muse Image also integrates with Muse Spark, allowing the two models to share tools and plan jointly for powerful agentic media generation.\nWe provide Muse Image with access to tools to enhance its agentic capabilities.\nCoding. During reinforcement learning, Muse Image learns to write and execute code that produces accurate plots and QR codes, and condition on rendered figures to improve the accuracy of generated images. Muse Spark and Muse Image also integrate to use the combination of code and media generation to create animated GIFs, websites with embedded images, and interactive visual games.\nSearch. Muse Image learns to search the web to ground generated images in factual and real-time information and visual references. Enabling search improves factual accuracy on knowledge-intensive prompts, particularly those involving current events and real-world facts.\nMuse Image improves with search tool use. Win rate from internal ablation.\nMuse Image reflects on and improves upon its own work within its chain of thought. This self-refining behavior can take different forms: a local edit to the current image draft when a small detail is off, a new image generation from scratch when larger parts are wrong, or a different tactic like tool use for more factually accurate generation. We didn’t design this behavior. Instead, it emerged during RL training simply because self-refinement produced better images and therefore higher reward.\nMuse Image improves with emergent self-refinement. Win rate from internal ablation.\nMuse Image improves with scaling test-time compute. Elo from internal ablation.\nMuse Image edits images with precision, changing exactly what the user asks for. It can follow a variety of instruction",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Image与Muse Video",
+          "zhSummary": "Meta AI推出Muse Image与Muse Video，重点落在Agent 能力升级。这次变化主要覆盖训练能力，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Image与Muse Video",
+          "displaySummary": "Meta AI推出Muse Image与Muse Video，重点落在Agent 能力升级。这次变化主要覆盖训练能力，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Alibaba Launches \"QwenWork,\" an All-in-One Workplace AI Agent Platform",
+          "url": "https://www.alibabacloud.com/blog/alibaba-launches-qwenwork-an-all-in-one-workplace-ai-agent-platform_603419",
+          "description": "Alibaba Launches \"QwenWork,\" an All-in-One Workplace AI Agent Platform Alibaba today unveiled the beta version of QwenWork, its latest all-in-one workplace AI agent platform designed to boost productivity for individuals . Alibaba Cloud Com",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "Alibaba today unveiled the beta version of QwenWork, its latest all-in-one workplace AI agent platform designed to boost productivity for individuals .\n• Public beta testing starts in China to boost workplace productivity • Flagship Qwen3.8 Max model to experience on QwenWork starting Aug 3\nAlibaba today unveiled the beta version of QwenWork, its latest all-in-one workplace AI agent platform designed to boost productivity for individuals and enterprises with advanced AI models and outstanding agentic capabilities.\nQwenWork is currently available for public beta testing in China via its official website. Users can access it through a cloud-based web interface, or download a desktop client with direct access to local computers. QwenWork will soon be fully accessible as an embedded AI agent within DingTalk desktop and mobile versions, Alibaba’s enterprise collaboration platform, which serves more than 20 million enterprises and organizations.\nAlibaba launches \"QwenWork,\" an all-in-one workplace AI agent platform, for public beta testing\nBuilt on the core capabilities of Alibaba's existing AI agent platforms: Qoderwork, Mulerun, and Wukong, the new QwenWork is among the industry's first solutions to unify desktop, cloud, and enterprise collaboration agents in a single platform, dedicated to enhancing workplace productivity for individuals and enterprises.\nThe new platform pairs autonomous agent capabilities with powerful web development and built-in multimodal generation. It can create high-quality HTML pages with integrated domain and database services, enabling users to turn ideas into fully functional and ready-to-use web applications. With native multimodal capabilities for image, video, and audio generation, QwenWork streamlines creative workflows by eliminating the need to switch between multiple AI tools.\nLooking ahead, QwenWork will also launch a standalone mobile app and an international edition, enabling seamless cross-platform synergy to address a broader range of workplace scenarios.\nThis article was originally published on Alizila written by Gabbie Fu and Karen Zhang.\nAlibaba Cloud Research Reveals Asian Enterprises Accelerating AI Adoption but Calls for Secure, End‑to‑End Solutions\nAlibaba Unveils Qwen3.8-Max: Its Largest and Most Capable Flagship Model to Date\nAlibaba Cloud Community - August 3, 2026\nAlibaba Cloud Community - October 21, 2021\nAlibaba Cloud Community - October 27, 2021\nAlibaba Cloud Community - April 26, 2024\nAlibaba Cloud Community - March 15, 2022\nA one-stop generative AI platform to build intelligent applications that understand your business, based on Qwen model series such as Qwen-Max and other popular models\nFull-range, open-source, multimodal, and multi-functional\nMultimodal cloud-based operating environment and expe",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud披露融资与资本动作",
+          "zhSummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。这次变化主要覆盖多模态能力，目前已进入产品端，文中出现的关键指标包括20 million。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：多模态能力",
+            "关键指标：20 million"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud披露融资与资本动作",
+          "displaySummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。这次变化主要覆盖多模态能力，目前已进入产品端，文中出现的关键指标包括20 million。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Alibaba Cloud SecOps Agent: A Revolutionary Cross-Product Security Operations Experience",
+          "url": "https://www.alibabacloud.com/blog/alibaba-cloud-secops-agent-a-revolutionary-cross-product-security-operations-experience_603417",
+          "description": "Alibaba Cloud SecOps Agent: A Revolutionary Cross-Product Security Operations Experience CloudSecurity August 3, 2026",
+          "date": "",
+          "score": 20,
+          "category": "开发者信号",
+          "detailText": "This blog post introduces the Alibaba Cloud SecOps Agent, an AI assistant that automates security operations via natural language to combat tool sprawl.\nAccording to a 2025 security survey, the majority of security teams manage between 20 and 49 security tools, with over 20% of enterprises managing 50 to 99 tools. As IT infrastructure complexity grows year over year, the sheer volume of security tools that enterprises must maintain continues to rise—a challenge widely known as \"tool sprawl.\"\nFurthermore, projections for 2026 indicate that security teams still spend 44% of their time on manual or repetitive tasks that could otherwise be automated. Understaffed and overworked teams are left struggling to support highly complex operations, resulting in a persistent gap where executives remain generally dissatisfied with overall security outcomes.\nInput your intent in natural language, and let the system execute the workflow. As a native AI security assistant embedded directly within the Alibaba Cloud Console, the SecOps Agent automates IT and security tool operations through a single conversational interface.\nThe SecOps Agent translates natural language into automated, cross-product workflows, streamlining core scenarios such as daily inspections, emergency incident response, and compliance auditing.\nFor conglomerate enterprises managing dozens of cloud accounts, traditional manual cross-platform alert triage and baseline data consolidation are time-consuming, prone to error, and highly inefficient.\nUser Command Examples:\"Query all high-severity alerts in Cloud Security Center and Cloud Firewall across all accounts, and suggest remediation steps.\"\n\"Export the system baseline risk assessment results for all assets across multiple accounts, group them by account and risk level, and output the data in an Excel report.\"\nFor compliance audits, the agent automatically decomposes the request into four structured steps:\nGenerate and export a formatted Excel report, dramatically accelerating compliance auditing.\nWAF Attack Analysis & Automated Rule Configuration\nThe SecOps Agent supports commands such as \"Aggregate attacks from the past 24 hours\" or \"Batch block high-frequency SQL injection source IPs.\" It automatically calls WAF OpenAPIs to analyze traffic logs, identify threats, and present a rule confirmation card. Upon user approval, policies are deployed in batch, replacing tedious manual analysis and significantly accelerating web application security response.\nDDoS Emergency Response, Diagnostics, and Troubleshooting\nRemediating critical vulnerabilities often carries downtime risks. The traditional workflow requires manual snapshot creation, approval, and patch execution, where roles and responsibilities can easily become blurred.\nUser Command Example: \"P",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出SecOps Agent",
+          "zhSummary": "Alibaba Cloud推出SecOps Agent，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出SecOps Agent",
+          "displaySummary": "Alibaba Cloud推出SecOps Agent，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "No More Panic Over 3 AM Alerts! Pinpoint the Root Cause in One Click with SysOM Inspection Skill",
+          "url": "https://www.alibabacloud.com/blog/no-more-panic-over-3-am-alerts-pinpoint-the-root-cause-in-one-click-with-sysom-inspection-skill_603424",
+          "description": "No More Panic Over 3 AM Alerts! Pinpoint the Root Cause in One Click with SysOM Inspection Skill This article introduces the open-sourced SysOM Inspection Skill, which combines with the SysOM Diagnostic Skill to give Agents a closed-loop in",
+          "date": "",
+          "score": 20,
+          "category": "开发者信号",
+          "detailText": "This article introduces the open-sourced SysOM Inspection Skill, which combines with the SysOM Diagnostic Skill to give Agents a closed-loop inspection-to-diagnosis workflow for Linux O&amp;M.\nNote: In this article, SysOM refers to an O&M component of the Alibaba Cloud Operating System Console. Both the SysOM Inspection Skill and the previously released SysOM Diagnostic Skill will be integrated into the upcoming SysOM Skill Bundle. Together, they form a complete \"inspection + diagnosis\" capability.\nAny on-call O&M engineer jolted awake at 2:00 AM knows the drill. The only thing worse than the system breaking is staring at a mountain of data and having absolutely no idea what to do next.\nRecently, the Alibaba Cloud OS Console launched the SysOM diagnostic Skill, offloading the post-alert workflow—logging into hosts to manually trace root causes—to an Agent. However, we know well that diagnosis only solves the problem of \"finding the root cause after an issue occurs.\" A far better approach is to identify hidden risks before they escalate into outages.\nDriven by this philosophy, the Alibaba Cloud Operating System Console is officially making the SysOM Inspection Skill open-source today. Moving forward, it will join the SysOM Diagnostic Skill in the upcoming SysOM Skill Bundle. Together, they form a complete, closed-loop workflow: \" inspection detects issues → diagnosis pinpoints the root cause → delivering remediation suggestions. \" This empowers the Agent to not only mitigate impact after an incident but also proactively prevent it.\nIt was an ordinary Thursday in the early hours of the morning. Lin was jolted awake by an @all ping in the on-call group. As his screen lit up the dark room, he was greeted by a cold, hard notification:\n\"The memory usage of an instance in the production environment has remained at 91.90% for 30 minutes.\"\nAnd then? Then came the frantic routine that anyone who has ever worked in O&M knows all too well:\nThat night, it took the team nearly forty minutes from the initial alert to finally pinpoint the rogue python process consuming 12.95 GB of memory. They managed to stabilize the service just before the next wave of traffic hit, but Lin knew the truth: they just got lucky this time.\nHad he been armed with the SysOM Inspection Skill that night, the story would have ended very differently.\nPicture the exact same machine and the exact same memory spike. This time, however, the SysOM Inspection Skill was already running its routine inspection. Just 37.4 seconds later, a comprehensive report landed in Lin's hands:\nOut of 19 inspection items executed, 18 returned Normal, while 1 Error triggered: memory usage at 91.90%. With only 161 MB of free memory remaining, the system was one traffic spike away from an OOM crash.\nCrucially, the r",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出Agent 能力升级",
+          "zhSummary": "Alibaba Cloud推出Agent 能力升级，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出Agent 能力升级",
+          "displaySummary": "Alibaba Cloud推出Agent 能力升级，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Architecting AI Systems for the Messy Reality of Enterprises: Why Agentic Compute is the Missing Layer",
+          "url": "https://www.infoq.com/presentations/agentic-compute",
+          "description": "Architecting AI Systems for the Messy Reality of Enterprises: Why Agentic Compute is the Missing Layer Arun Joseph shares real-world insights on scaling enterprise agentic platforms like Deutsche Telekom’s LMOS. He discusses bridging organi",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Arun Joseph explains how to successfully build and deploy enterprise-grade agentic platforms by leveraging existing teams, JVM stacks, and a &amp;quot;compute as the agent&amp;quot; architectural paradigm.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nHolly Cummins discusses why \"nothing is new under the sun\" in tech. She maps historical architectural tradeoffs to modern cloud, microservices, and AI hype cycles. She connects financial debt (post-ZIRP) and technical debt to epistemic and sleep debt, showing engineering leaders how to navigate shifts in assumptions, embrace sustainability, and revive proven engineering disciplines.\nWhy do simple features suddenly require cross-team negotiations? In this article, explore how boundary drift quietly destroys change locality and increases cognitive load across teams. Learn practical sociotechnical strategies - redistributing mechanics, exposing essential policy, and rehearsing exception paths - to restore domain boundaries and enable a truly evolutionary software architecture.\nArun Joseph shares real-world insights on scaling enterprise agentic platforms like Deutsche Telekom’s LMOS. He discusses bridging organizational fault lines, replacing tool sprawl with core platform abstractions, and moving beyond basic chatbots to operational intelligence systems through ephemeral agents and an Agent Definition Language (ADL).\nDaniel Doubrovkine explains why traditional LeetCode whiteboard interviews fail to evaluate senior engineering talent. He discusses his own experience bombing basic algorithm tests despite decades of leadership, and shares actionable frameworks for redefining the interview loop. Discover how evaluating human judgment, system design, and hands-on AI collaboration yields far better hiring signals.\nMax Korbacher explains why successful internal development platforms cannot be built on tech alone. He discusses the pitfalls of infrastructure-first thinking, the importance of a clear product mindset, and how to measure real value using DevEx and SPACE metrics. Learn how to align your team, manage tech debt, and foster a thriving community to ensure lasting platform adoption.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nWork through leadership decisions with senior peers facing similar technical",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出Architecting AI Systems",
+          "zhSummary": "InfoQ AI推出Architecting AI Systems，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出Architecting AI Systems",
+          "displaySummary": "InfoQ AI推出Architecting AI Systems，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "We’re announcing even more new capabilities in Managed Agents in Gemini API so developers can build reliable, production-ready agents.\nGemini API Managed Agents: 3.6 Flash, hooks, and more\nManaged Agents in Gemini API now default to Gemini 3.6 Flash. New environment hooks let you block, lint, or audit tool calls inside the sandbox. Also, we’ve added budget controls, scheduled triggers, and free tier access.\nMember of the Technical Staff, Google DeepMind\nYour browser does not support the audio element.\nManaged Agents in Gemini API are getting environment hooks , model selection , and free tier access . These capabilities build on our previous release introducing background tasks and remote MCP server integration .\nWith managed agents in the Gemini Interactions API , a single API call coordinates, reasoning, code execution, package installation, file management, and web retrieval inside an isolated cloud sandbox.\nIf you're using an AI coding assistant, drop this in your terminal to give it access to the Interactions API skill: npx skills add google-gemini/gemini-skills --skill gemini-interactions-api.\nBelow are examples using the @google/genai TypeScript/JavaScript SDK. For Python or cURL, check out the Antigravity agent documentation .\nThe antigravity-preview-05-2026 agent now runs Gemini 3.6 Flash by default. No code changes are required. Your next interaction picks it up automatically.\nYou can also explicitly select models by passing agent_config.model when creating an interaction or managed agent. Use Gemini 3.5 Flash-Lite for lower cost, or pin to your model of preference.\nEnvironment hooks let you run your custom scripts before or after every tool call the agent makes inside its sandbox. Add a . agents/hooks.json into your environment and the runtime executes your handlers on pre_tool_execution or post_tool_execution events.\nThe matcher field supports regular expressions, allowing you to target multiple tools with | or catch everything with * :\nFor complete HTTP hook definitions and failure handling semantics, refer to the hooks documentation .\nTeams are already using hooks to build production-grade validation pipelines. For example, AI-native investment bank Offdeal uses post_tool_execution hooks to run automated image verification inside the remote sandbox.\n\"OffDeal is an AI-native investment bank, and Archie is the AI analyst our bankers use every day. A requirement for banker-ready decks is company logos: buyer tables, sponsor columns, tombstone grids, often 30+ logos in a single deck, every one of which must be the right company, the appropriate size and aspect ratio, contain the name, have a transparent background, and have a high contrast when placed on a white slide.\nBefore agent hooks, we couldn’t do this on Gemini’s managed agents: the ",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出Gemini API 托管 Agents",
+          "zhSummary": "Google AI推出Gemini API 托管 Agents，重点落在Agent 能力升级。这次变化主要覆盖托管 Agents，目前开放预览，支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：开放预览，支持 API 接入",
+            "能力重点：托管 Agents"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI推出Gemini API 托管 Agents",
+          "displaySummary": "Google AI推出Gemini API 托管 Agents，重点落在Agent 能力升级。这次变化主要覆盖托管 Agents，目前开放预览，支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 27, 2026 Announcements Cognizant and Anthropic expand their partnership to bring Claude to enterprise clients",
+          "url": "https://www.anthropic.com/news/cognizant-anthropic",
+          "description": "",
+          "date": "",
+          "score": 20,
+          "category": "资本与生态",
+          "detailText": "Cognizant embeds Claude across its platforms, with 30,000+ associates trained, and becomes a Global Premier Partner in the Claude Partner Network.\nWe&#x27;re expanding our partnership with Cognizant , one of the world&#x27;s largest technology services companies.\nCognizant uses Claude in the systems it builds and runs for clients across manufacturing, life sciences, insurance, and other industries. With the expansion of our partnership, it’s embedding Claude across its own business and engineering platforms, scaling a Claude-certified workforce as part of its new Frontier Certified workforce model, and becoming a Global Premier Partner in the Claude Partner Network .\nSuccessfully integrating AI into a large enterprise requires knowledge of the company&#x27;s industry, the systems it already runs on, and the rules it operates under. Cognizant brings that domain context, along with the engineering depth and delivery scale to bring Claude to enterprises worldwide.\nCognizant&#x27;s engineers build with Claude every day, and more than 30,000 associates have completed Claude training.\nCognizant is embedding Claude across several of its platforms, including Flowsource™, Neuro® AI Engineering, and Neuro® IT Ops. Flowsource, its full-stack engineering platform, now runs Claude Code alongside software engineers in its Spec-Driven Development module. Flowsource directs Claude Code using the specifications, coding standards, and architectural blueprints a project defines, then and then evaluates the output before production.\nThe company uses what it learns internally to shape how it brings Claude to clients, and that work is already underway. Examples of what its teams built include:\n\"Deepening our partnership with Cognizant will help more companies harness AI&#x27;s growing capability and deploy it in real, practical ways for their businesses,\" said Daniela Amodei, Co-Founder and President of Anthropic. \"From manufacturing to the life sciences, Cognizant is bringing Claude into the everyday work of some of the world&#x27;s most demanding industries—the kinds of contexts where AI can demonstrate its greatest value for humanity.\"\nTo learn more about the Claude Partner Network, visit anthropic.com/partners .\nOpus 5 is a step change improvement for the Opus tier powering long-running agents while delivering improvements in coding and professional work.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布Announcements Cognizant与expand their 合作，重点落在企业落地与生态合作。这次变化主要覆盖训练能力。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布Announcements Cognizant与expand their 合作，重点落在企业落地与生态合作。这次变化主要覆盖训练能力。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "AI演员正成为独立IP，真人演员与AI也有了更多合作方式。",
+          "url": "https://www.36kr.com/p/3923857556142213",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "资本与生态",
+          "detailText": "AI演员正成为独立IP，真人演员与AI也有了更多合作方式。\n一面是AI演员已有代表性的IP，一面是AI与艺人的合作方式愈发多元化，观众也从最开始的不看好逐渐被种草，开始接受艺人通过AI参与内容创作的模式，这也意味着AI技术无论是独立行走还是与艺人合作，都能够在文娱行业开拓更多的业态。\n“现在人工智能替代的不是顶级艺人了，是替代你”“会被淘汰的，是没有形成IP的艺人。因为用你、用素人、AI捏一张脸，没有区别。”在近期热播的《姐姐当家2》里，杜华关于AI对演员冲击这一话题所发表的观点在社交平台引发热议。\n在节目之外，AI在影视行业的存在感越来越强，如AI短剧《被裁掉的女孩》以2亿点播放量成功出圈、《这一秒过火》因AI片头受争议后用真人镜头替换。在好评与争议并存中，AI技术悄然影响着演员行业的格局。\n随着AI短剧《被裁掉的女孩》的出圈，方桃子、周以衡这两位AI演员也成功吸引了观众的注意力。在剧集之外，这两位AI演员的运营模式完全对标真实艺人，都开设了个人社交账号，如今方桃子的粉丝有40.1万，周以衡有13.1万，这意味着AI演员能够从单纯的剧集工具人成长为独立的虚拟艺人IP。\n细看二人在社交平台发布的内容，不止有个人作品相关的剧宣，还有VLOG、PLOG等宠粉内容，包括生活片段、工作日常、手势舞、读书感悟等内容，这些内容共性是与看视频的网友有很强的交流感，但整体内容相对中规中矩，并无过多让人印象深刻的内容。倘若后续批量出现这样的AI演员，方桃子所发布的视频或将很快就会淹没在同质化的视频当中。\n物以稀为贵，在出圈的AI演员罕见的当下，还是有不少粉丝愿意为方桃子的内容买单。有粉丝称之为“AI idol第一人”“我嘞个AI豆，感觉以后会追一种很新的星，也有网友感慨“在抖音你甚至可以刷到一个AI人的日常”……\n方桃子、周以衡这样的AI演员并非孤例。早在今年3月，耀客传媒官宣了首批原创无真人原型的AI艺人秦凌岳、‌林汐颜，专攻短剧、悬疑新媒体内容，目前二人共同出演了AIGC剧集《秦岭青铜诡事录》，并开设了个人社交账号，所发布的内容大多是剧宣，营业频率也不高，粉丝也只有七百多。\n对于AI演员，真人演员们原本大都不看好——或是认为难以完全替代真人表演。如胡军所说：“AI可以复刻所有表演技术，但是很难替代一颗真心。演戏珍贵的是人与人眼神、心灵之间的碰撞，这个很难被取代。”或是深表抵制，演员何赛飞曾在接受采访时表示：“再多钱我也不会授权AI使用我的形象，我会主动抵制这种模式。AI无法复刻人发自内心生出的情绪。”\n即便质疑声再大，以方桃子为代表的AI演员还是成功出圈了，无论是出演短剧还是运营个人社交账号，运营模式基本上都是对标真实艺人。可以预见的是，未来AI艺人可以覆盖从综艺、影视等应用场景，且没有档期压力、塌房风险等天然优势，逐步形成拥有自身受众和商业价值的独立IP，成为文娱行业里一股不容忽视的新生力量。\n其实，早在元宇宙这一概念兴起之时，打造艺人同款数字人的概念便已在传媒行业悄然萌芽。\n一是AI驱动真人女团的养成。 今年3月，乐华娱乐推出了亚洲首支AI驱动真人女团HeyDream。与常规女团不同的是，HeyDream线上依靠AI批量产出短视频、海报、漫剧等宣传物料，线下舞台、粉丝活动则由成员真人亲自参与，形成“AI线上引流、真人线下维系情感”的运营闭环。\nHeyDream目前已上线同名出道曲与AI MV，还推出以全体成员作为故事主角的《身份藏不住了，顶流女团竟是猎魔师！》专属AI漫剧，上线12小时短视频相关话题播放破亿，登顶各大漫剧榜单，以此打通偶像IP世界观。而这一打法与早前aespa搭建真人搭配AI分身的世界观有一定的相似之处，不过在内娱还属于首个尝试利用AI赋能的偶像团体，在当下具有一定的样本意义。\n二是传媒公司以签约形式长期锁定艺人数字形象。 聿潇传媒主打网红真人数字分身授权，签约让素人与网红无需出镜即可实现持续内容变现。今年3月，聿潇传媒官宣签约了位AI演员，一类是韩安冉、徐志滨两位现实网红的AI形象，能继承网红自带粉丝流量，用于短剧、AI漫剧拍摄；另一类是新人演员真人建模，分别是陈慧智、赵承昊、吴灵然、张晓年，同样依靠真人肖像授权生成数字形象。这相当于构建了一个AI演员储备库，为后续的AI内容创作提供了充足的资源。此次官宣后在业内引发一定的讨论，但目前尚未出现出圈的代表作。\n三是艺人将肖像定向授权AI创作新作品。在早前的爱奇艺世界大会上，爱奇艺 CEO龚宇提到真人剧会越来越稀有，实拍依然会存在，但多少年以后可能会成为非物质文化遗产。还称旗下100多名演员签约AI艺人库，此言论一出，在当时引发诸多争议与抵制。\n当前，AI与知名艺人的合作已有不少案例。近日，息影二十二年的王祖贤正式向网易端游《天下》开放20至30岁巅峰时期肖像AI商用授权，通过AI技术生成广告短片《倩影》并植入游戏，以此形式出任游戏十八周年代言人，是艺人将人脸授权AI商用的代表。\n无独有偶，吴启华于6月28日官宣开放20岁青年时期样貌肖像，片方利用早年影像素材AI建模，生成青年吴启华数字分身，担任一部独立AI电影男主角，这也被视为演员数字资产变现的典型案例，但授权有严格限制，不是无条件的“卖脸”。\n以王祖贤网易游戏AI授权、吴启华AI电影青年形象授权为标杆，艺人将肖像授权AI这一模式似乎已经跑通了，而这样的模式在内地亦有案例。饶雪漫《左耳》AI短剧，主演陈添祥、张晋宜也只出肖像而不参与实际拍摄；因饰演“济公”一角出名的艺人游本昌向微短剧《济公之冒牌降龙》定向授权青年时期形象，用AI还原年轻版本济公；甚至网红都加入这条赛道，如网红徐杉将自己的肖像授权给AI短剧《修仙界全员老怪物，我苟活到了大结局》，完整打通“网红IP+AI工业化短剧”链路。\n一面是AI演员已有代表性的IP，一面是AI与艺人的合作方式愈发多元化，观众也从最开始的不看好逐渐被种草，开始接受艺人通过AI参与内容创作的模式，这也意味着AI技术无论是独立行走还是与艺人合作，都能够在文娱行业开拓更多的业态。\n本文来自微信公众号 “读娱”（ID：yiqiduyu） ，作者：小咕咚，36氪经授权发布。\n一面是AI演员已有代表性的IP，一面是AI与艺人的合作方式愈发多元化，观众也从最开始的不看好逐渐被种草，开始接受艺人通过AI参与内容创作的模式，这也意味着AI技术无论是独立行走还是与艺人合作，都能够在文娱行业开拓更多的业态。\n“现在人工智能替代的不是顶级艺人了，是替代你”“会被淘汰的，是没有形成IP的艺人。因为用你、用素人、AI捏一张脸，没有区别。”在近期热播的《姐姐当家2》里，杜华关于AI对演员冲击这一话题所发表的观点在社交平台引发热议。\n在节目之外，AI在影视行业的存在感越来越强，如AI短剧",
+          "translationMode": "fallback",
+          "zhTitle": "AI演员正成为独立IP，真人演员与AI也有了更多合作方式。",
+          "zhSummary": "36Kr公布AI演员正成为独立IP，真人演员与AI也有了更多合作方式。，重点落在企业落地与生态合作。目前已正式上线。进一步看，AI演员正成为独立IP，真人演员与AI也有了更多合作方式；IP的艺人。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已正式上线"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "AI演员正成为独立IP，真人演员与AI也有了更多合作方式。",
+          "displaySummary": "36Kr公布AI演员正成为独立IP，真人演员与AI也有了更多合作方式。，重点落在企业落地与生态合作。目前已正式上线。进一步看，AI演员正成为独立IP，真人演员与AI也有了更多合作方式；IP的艺人。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 16,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 16,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/08/04/"
+}
