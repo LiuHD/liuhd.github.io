@@ -1,0 +1,371 @@
+{
+  "title": "AI 日报 2026-07-23",
+  "slug": "ai-daily-2026-07-23",
+  "date": "2026-07-23",
+  "isoDate": "2026-07-23T04:40:59.612Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 7,
+    "day": 23
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Gemini Spark updates: macOS launch, connected apps and more",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-june-2026/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "The latest Gemini Spark updates brings Spark to the macOS app, connects with your favorite apps and tracks topics in real time.\nGemini Spark updates: macOS launch, connected apps and more\nWe’re bringing Gemini Spark to macOS app, connecting it with more of your favorite apps, and improving its ability to track your topics in real time\nDirector, Product Management, Gemini app\nVice President, Engineering, Google Deepmind\nYour browser does not support the audio element.\nToday, we’re rolling out updates to Gemini Spark that make it even more helpful, from a new desktop experience to deeper connections with your favorite apps. Here’s a look at what’s new:\nWe’re bringing Spark to the Gemini macOS app to help you automate time-consuming tasks across your desktop.\nAnd coming soon, you’ll even be able to run tasks remotely. You can assign a multi-step task to Gemini Spark from your phone — like asking it to find a specific sales report on your Mac, pull the total revenue number, and email it to you — and let it execute the work on your computer while you're away.\nGemini Spark for macOS is available in Beta to Google AI Ultra subscribers aged 18 and over, starting in the US. Download the app at gemini.google/mac to get started.\nWe’re also rolling out support for custom Model Context Protocol (MCP), giving you the ability to connect your favorite apps directly into Spark to build a more tailored assistant.\nThese updates are rolling out starting today, and we look forward to sharing more about what’s next for Spark this summer.\nSign up for our newsletters with product updates, event information, special offers, and more.\nCheck your inbox to confirm your subscription.\nYou can also subscribe with a different email address .\nYour information will be used in accordance with Google's privacy policy. You may opt out at any time.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出Gemini Spark updates",
+          "zhSummary": "Google AI推出Gemini Spark updates，重点落在模型与平台升级。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI推出Gemini Spark updates",
+          "displaySummary": "Google AI推出Gemini Spark updates，重点落在模型与平台升级。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 14, 2026 Product Introducing Claude for Teachers",
+          "url": "https://www.anthropic.com/news/claude-for-teachers",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nWe&#x27;re introducing Claude for Teachers , providing verified K-12 educators in the US free access to premium Claude capabilities, a library of teaching skills, and a direct connection to evidence-based curricula, mapped to academic standards in all 50 states.\nEarly evidence suggests that while the impact of AI tools for students is mixed and depends on the implementation, AI tools for teachers can strengthen instructional practice and improve student outcomes. This is the aim of Claude for Teachers: support the craft behind great teaching and protect what teachers value most—time with their students.\nClaude for Teachers connects to Learning Commons , giving Claude access to academic standards across all 50 states—and beneath each standard, the smaller learning competencies it&#x27;s built from and the order students typically learn them. So when Claude drafts a lesson plan, it’s scaffolded and aligned to teaching standards. Claude for Teachers also brings in trusted curricular resources like OpenSciEd and IM v.360 from Illustrative Mathematics .\nAs of today, educators can now connect Claude across an entire ecosystem of K-12 tools.\nOnce verified, K-12 educators in the US get access to Claude for Teachers with the Learning Commons connector and a set of tailored teaching skills grounded in learning science. The skills, co-developed with Learning Commons, were designed around the tasks teachers told us mattered most. These were evaluated to ensure rigor, pedagogical alignment, and classroom usability, and refined through early feedback from classroom teachers, including those in schools like Prospect Schools in Brooklyn.\nClaude for Teachers includes Claude Code and Cowork, which means Claude can carry work forward on its own. Some examples:\nLearn more from two teachers , Zac and Karina, explaining how they use Claude for Teachers in their own classrooms.\nClaude for Teachers is for educators only, consistent with Claude&#x27;s 18-and-over policy. It comes with its own teacher terms , built for K-12 privacy. Claude for Teachers data is not used for model training purposes, and student information is protected by our K-12 Data Processing Addendum, written to comply with FERPA.\nWe’re also working with the American Federation of Teachers to align our terms and privacy practices with gold standards they’re developing:\nTeachers can also access our newly released AI Fluency for PK-12 Teachers , a course co-created with Teach For America , and a train-the-trainer module co-created with the American Federation of Teachers. The guidance is model-agnostic, Creative Commons-licensed, and practical, covering which classroom tasks AI is su",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出Claude",
+          "zhSummary": "Anthropic推出Claude，重点落在模型与平台升级。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出Claude",
+          "displaySummary": "Anthropic推出Claude，重点落在模型与平台升级。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
+          "url": "https://www.anthropic.com/news/reflect-with-claude",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. \nToday we&#x27;re introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?\nWe built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app.\nYour reflection starts with a summary of how you&#x27;ve been using Claude, covering key topics, your usage patterns, and the types of tasks you often work through.\nYou can look back on your Claude chat activity over the past 1, 3, 6, or 12 months.\nThe reflect feature provides a breakdown of when you use Claude most, and what you spent that time working on. Soon, we&#x27;ll add a view of how much time you&#x27;ve spent using Claude.\nYour reflection also invites you to step back and examine the role Claude plays in your life. It will periodically surface questions like, \" What&#x27;s one thing you want to keep doing yourself, even if Claude could do it faster?\" and give you the chance to talk it through with Claude.\nWithin your dashboard, you can also set quiet hours or schedule a nudge to take a break from using Claude after a certain amount of time. Both are reminders of your own preferences and can be dismissed.\nYou can use your reflection to build new skills and sharpen how you work with Claude, using the 4D AI Fluency Framework .\nYour report gives you a summary of your Claude activity across each dimension, with examples of how you tend to collaborate with Claude, like noting that you often rework email drafts in your own voice, or delegate tasks only after settling the strategy yourself. Your reflection will also offer practical suggestions, like starting a Project instead of needing to re-explain the context of ongoing work.\nThis tool is currently available in beta for Free, Pro, and Max users who have memory turned on. Open Settings in Claude on the web or the desktop app, and select the option to reflect on your usage to generate your report. If you can&#x27;t generate a report, it may be because you don’t have Memory turned on. Reflecting on your Cowork conversations will be available soon.\nWe’re sharing the research agenda for the Anthropic Economic Futures Research Fund.\nWe&#x27;re launching the Anthropic Economic Index connector for ",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出way",
+          "zhSummary": "Anthropic推出way，重点落在模型与平台升级。目前已进入产品端。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出way",
+          "displaySummary": "Anthropic推出way，重点落在模型与平台升级。目前已进入产品端。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Security and compliance",
+          "url": "https://trust.anthropic.com/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic is an AI safety and research company with a mission of ensuring the world safely makes the transition through transformative AI. We believe deeply in transparency and the need for secure practices in this rapidly evolving industry.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出Security与compliance",
+          "zhSummary": "Anthropic推出Security与compliance，重点落在开发者平台更新。目前支持 API 接入。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出Security与compliance",
+          "displaySummary": "Anthropic推出Security与compliance，重点落在开发者平台更新。目前支持 API 接入。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding.\nWith these improvements, Muse Spark 1.1 advances the performance-efficiency frontier. Together with this week’s launch of Muse Image , this release brings us closer to our vision of personal superintelligence: models that help you pursue your goals, create what you imagine, deepen your relationships, and take action on what you value most.\nAlong with this release, we are launching a public preview of the new Meta Model API where developers can access Muse Spark 1.1. The model is available now in \"Thinking\" mode in the Meta AI app and on meta.ai .\nFor more details about our evaluations, see our report .\nMuse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services. It zero-shot generalizes to new native tools, MCP servers, and custom skills.\nIt tackles complex projects significantly faster than Muse Spark, as it is trained to orchestrate multi-agent systems to optimize end-to-end latency. As the main agent, it can gather context, make a plan, and delegate execution across parallel subagents. As a subagent, it adheres to its job, understands available tools, and knows when to escalate back to the main agent.\nMuse Spark 1.1 can actively manage its context window of 1 million tokens. It remembers actions, retrieves information from much earlier work, and compacts in a way that keeps the critical steps needed for later work.\nMuse Spark 1.1 excels at computer-use workflows that unfold across multiple applications with information changing on-the-fly. It maintains context across extended sessions, adapts to evolving requirements, and navigates unfamiliar interfaces with minimal human intervention.\nRather than reasoning through every desktop step one click at a time, Muse Spark 1.1 understands when to automate and when to use the interface directly. We trained the model to write scripts when automation is faster, click when direct interaction is simpler, and generate batches of actions at each step.\nAgentic dinner party organization: In real-world applications, new context arises that changes the task. Muse Spark 1.1 notices these changes when placing the dinner order and makes necessary updates without user intervention.\nCoding performance for Muse Spark 1.1 improved substantially on real-world tasks involving large, complex codebases. It can diagnose and fix complex bugs, implement new features in enterprise-grade systems, and execute large code migrations. In use cases ",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark 1.1",
+          "zhSummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：多模态能力",
+            "关键指标：1 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark 1.1",
+          "displaySummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "光模块企业业绩暴增，AI叙事落地成真实利润。",
+          "url": "https://www.36kr.com/p/3906285866784391",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "国内落地",
+          "detailText": "光模块企业业绩暴增，AI叙事落地成真实利润。\n7月19日晚，新易盛披露的业绩预告只有薄薄几页，却让全市场倒吸一口凉气：公司预计2026年半年度归母净利润70亿元至80亿元，同比增长77.56%至102.93%（来源：新易盛公告，2026年7月19日）。\n它不是孤例。长飞光纤此前预计2026年上半年归母净利润同比增长711%至914%；亨通光电预计同比增长86.94%至121.20%；永鼎股份预计同比增长57%至120%（来源：上市公司公告、中金在线，2026年7月21日）。\n一个此前在大众视野里略显冷门的行业，光模块与光通信，正在用利润表说话。7月21日A股“大奇迹日”当天，CPO概念大涨，通富微电、光迅科技、生益科技等多股涨停（来源：中金在线，2026年7月21日）。这批公司是AI行情里最扎实的一类样本：故事讲了两年之后，钱真的到账了。\n一个AI数据中心里，成千上万张算力卡并不是各干各的，它们需要以极高的速度互相交换数据，才能像一台机器那样协同训练大模型。芯片负责计算，而计算结果在机柜与机柜之间的搬运，靠的是光：光模块就是把电信号转换成光信号、再转换回来的那枚“翻译器”，它是AI集群的“神经纤维”。\n这门生意有一个迷人的特性：集群规模越大，卡与卡之间需要的互联通道越多，光模块的需求增长快于算力卡本身的增长。海外云厂商每建一个万卡集群，就要同步采购海量高速光模块。而在全球光模块厂商的出货排名中，中国企业连年占据榜单前列（据多家行业机构公开排名），这使得光模块成为少数“AI叙事直接变成中国公司利润表”的环节：英伟达们的资本开支，有一段确定性的管道，通向中国公司的营收。\n需求端的证据链在7月还在加粗。据韩国海关总署数据，韩国7月前20天芯片出口同比飙升180.6%（来源：中金在线援引韩国海关总署，2026年7月21日）；台积电7月16日将2026年全年资本支出指引上调至600亿至640亿美元（来源：证券时报，2026年7月16日）；摩根大通报告认为，AI、服务器升级及高带宽存储需求将令存储市场供需吃紧延续至2028年（来源：中金在线，2026年7月21日）。上游在扩产，中游在抢货，光模块的订单能见度写在整条产业链的动作里。\n关键数据： 新易盛预计2026年半年度净利润70亿元至80亿元、同比增长77.56%至102.93%（来源：公司公告，2026年7月19日）；长飞光纤预增711%至914%、亨通光电预增86.94%至121.20%、永鼎股份预增57%至120%（来源：上市公司公告、中金在线，2026年7月21日）。\n一个容易被忘掉的细节是：就在业绩预告密集落地的同一周，这批公司刚刚经历过无差别的杀跌。\n7月17日，A股创业板指单日下跌7.15%创年内最大跌幅，超5000只个股下跌，光通信、半导体同样是重灾区（来源：每日经济新闻、21世纪经济报道，2026年7月17日）。市场在杀情绪的时候，从来不区分谁有业绩、谁只有故事，泥沙俱下是恐慌的固定动作。\n而这恰恰解释了7月21日的分化：当恐慌退潮、资金重新捡拾筹码时，最先被拉起的正是“跌错了”的那一批。业绩预告就是它们的身份证明：70亿元的净利润摆在那里，估值被砸出的坑，反而成了产业逻辑修复时最先回填的地方。这一涨一跌之间，市场完成了一次朴素的筛选：故事与业绩，在暴跌前看起来是一回事，在暴跌后是两回事。\n当然，扎实的业绩不等于股价的保险箱。光模块行业自身也有明牌的变数：从800G向1.6T的产品迭代窗口正在打开，技术路线上光电共封装（CPO）若加速渗透，现有格局可能被重新洗牌；下游云厂商资本开支的节奏，也直接决定订单曲线的斜率。\n可带走框架·业绩含金量三问： 一问增长来源（是主业订单还是一次性收益），二问需求证据链（上下游数据能否互相印证），三问持续性变数（技术迭代与大客户开支节奏）。一句话，好业绩要放进产业链里验证，孤立的数字再大也只是数字。\n以下为推理，供读者参考。 若海外云厂商2026年下半年的资本开支延续上半年强度，光模块公司的业绩兑现可能继续超出市场预期；反之，若AI基建投资节奏放缓，当下的高增速将面临基数与订单的双重考验。此外，业绩预告与正式中报之间仍可能存在差异，最终数据以正式财报为准。以上为逻辑推演，不构成任何个股判断。\n第一层，关注AI与科技赛道的投资者：光模块提供了一个鉴别样本，同样讲AI故事的公司，有没有利润表背书，在极端行情里的表现天差地别，学会看“业绩证据链”比追逐概念更重要。\n第二层，光通信、电子制造产业链的从业者：头部公司利润倍增意味着扩产、招聘与供应链订单的扩张周期仍在延续，这条产业链的景气度，是简历和订单可以直接感知的。\n第三层，普通读者：光模块的故事是“中国制造嵌入全球AI浪潮”的一个切面，全球每一轮技术革命的资本开支里，能分到确定份额的国家和公司，最终会把它变成就业、税收和产业升级，这与每个人所处的经济环境有关。\n7月19日晚那份几页纸的公告，比过去两年所有关于AI的雄辩加起来都更有说服力：潮水来的时候人人都在讲故事，退潮的时候，只有利润表还站在原地。对此你有什么想说的？欢迎在评论区聊聊谈谈你的看法。\n本文仅为信息分享与行业分析，不构成任何投资建议、投资分析意见或交易邀约。文中数据来自新易盛公告（2026年7月19日）、长飞光纤及亨通光电、永鼎股份公告（经中金在线汇总，2026年7月21日）、证券时报（2026年7月16日）、每日经济新闻与21世纪经济报道（2026年7月17日）、中金在线援引韩国海关总署（2026年7月21日）等公开信源，数据以原始信源为准；业绩预告数据以各公司正式中报为准。机构观点仅代表其自身立场。市场有风险，决策需谨慎。文中标注“推理”的内容为基于公开信息的逻辑推演，不代表官方立场。\n7月19日晚，新易盛披露的业绩预告只有薄薄几页，却让全市场倒吸一口凉气：公司预计2026年半年度归母净利润70亿元至80亿元，同比增长77.56%至102.93%（来源：新易盛公告，2026年7月19日）。\n它不是孤例。长飞光纤此前预计2026年上半年归母净利润同比增长711%至914%；亨通光电预计同比增长86.94%至121.20%；永鼎股份预计同比增长57%至120%（来源：上市公司公告、中金在线，2026年7月21日）。\n一个此前在大众视野里略显冷门的行业，光模块与光通信，正在用利润表说话。7月21日A股“大奇迹日”当天，CPO概念大涨，通富微电、光迅科技、生益科技等多股涨停（来源：中金在线，2026年7月21日）。这批公司是AI行情里最扎实的一类样本：故事讲了两年之后，钱真的到账了。\n一个AI数据中心里，成千上万张算力卡并不是各干各的，它们需要以极高的速度互相交换数据，才能像一台机器那样协同训练大模型。",
+          "translationMode": "fallback",
+          "zhTitle": "光模块企业业绩暴增，AI叙事落地成真实利润。",
+          "zhSummary": "36Kr带来光模块企业业绩暴增，AI叙事落地成真实利润。，重点落在算力与基础设施进展。披露的金额或规模为70亿元。进一步看，AI叙事落地成真实利润；7月19日晚，新易盛披露的业绩预告只有薄薄几页，却让全市场倒吸一口凉气：公司预计2026年半年度归母净利润70亿元至80亿元，同比增长77。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "金额或规模：70亿元"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "光模块企业业绩暴增，AI叙事落地成真实利润。",
+          "displaySummary": "36Kr带来光模块企业业绩暴增，AI叙事落地成真实利润。，重点落在算力与基础设施进展。披露的金额或规模为70亿元。进一步看，AI叙事落地成真实利润；7月19日晚，新易盛披露的业绩预告只有薄薄几页，却让全市场倒吸一口凉气：公司预计2026年半年度归母净利润70亿元至80亿元，同比增长77。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "What Is the Newly Released AgentLoop by Alibaba Cloud?",
+          "url": "https://www.alibabacloud.com/blog/what-is-the-newly-released-agentloop-by-alibaba-cloud_603378",
+          "description": "What Is the Newly Released AgentLoop by Alibaba Cloud? This article introduces Alibaba Cloud&#039;s AgentLoop, a one-stop platform for observing, evaluating, and continuously optimizing the performance and reasoning trajectories of enterpri",
+          "date": "",
+          "score": 29,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud&#039;s AgentLoop, a one-stop platform for observing, evaluating, and continuously optimizing the performance and reasoning trajectories of enterprise AI agents.\nThe evolution of software engineering in every era is defined by how it manages increasing uncertainty.\nYou can’t optimize what you can’t observe.\nOnline issues in traditional applications are relatively deterministic, such as a slow query, a memory leak, or a timed-out RPC call. Engineers can locate the specific line of code using APM tools and fix it for redeployment, which usually resolves the issue. This \"issue detection, root cause location, fix, and verification\" workflow is built on the premise that system behavior is predictable.\nAgent applications break this premise. After a user request reaches an Agent, the system goes through an uncertain execution progress: the model might choose to call Tool A instead of Tool B, generate a completely different response due to decoded context differences, or fall into an infinite loop during multi-round reasoning. Given the exact same prompt and model, the behavioral path can vary every time an input is processed.\nTherefore, Agent observation is often not about whether a specific metric reports an error, but rather focusing on the outcome quality, including the accuracy and richness of the answer, the rationality of reasoning and action planning, and even the token efficiency.\nWithout observation, these issues remains a black box. When we cannot observe how the Agent is performing, we cannot talk about how to optimize it. Therefore, we must first completely record the reasoning path (Trajectory) of the Agent to form an analyzable, traceable data foundation before we can discuss evaluation and optimization.\nIn the previous section, we discussed Agent applications, where the object of observation changes, and introduced a new term: Trajectory (the reasoning path of the Agent).\nFrom receiving a task to completing it, the thinking steps, the tools called, the knowledge retrieved, and the decisions made by the Agent form the Trajectory. This trajectory is not pre-orchestrated but is autonomously determined by the Agent at runtime.\nConsider this analogy: Traditional app observability is like debugging a vending machine: inserting coins, selecting products, and yield predictable outputs. The problems are deterministic, root causes can be located, and fixes can be verified. Agent observability is like analyzing a chess game. Even against the same opponent, two games unfold differently. You can’t blame a single move without understanding the strategic context established by previous moves.\nAlibaba Cloud AgentLoop features a variety of built-in, out-of-the-box evaluators\nAmong these dimensions, some can be directly mea",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出AgentLoop by Alibaba Cl…",
+          "zhSummary": "Alibaba Cloud推出AgentLoop by Alibaba Cloud?，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出AgentLoop by Alibaba Cl…",
+          "displaySummary": "Alibaba Cloud推出AgentLoop by Alibaba Cloud?，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Give Your AI a Dedicated &#039;Data Chef&#039; — DataBridge Agent Makes Multi-Source Data Active, Practical, and Accessible",
+          "url": "https://www.alibabacloud.com/blog/give-your-ai-a-dedicated-data-chef-%E2%80%94-databridge-agent-makes-multi-source-data-active-practical-and-accessible_603383",
+          "description": "Give Your AI a Dedicated &#039;Data Chef&#039; — DataBridge Agent Makes Multi-Source Data Active, Practical, and Accessible This article introduces Alibaba Cloud&#039;s DataBridge Agent, which automates multi-source data collection and stru",
+          "date": "",
+          "score": 20,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud&#039;s DataBridge Agent, which automates multi-source data collection and structuring to power AI models and workflows.\nIn 2025, Large Language Models (LLMs) are getting smarter, but many enterprises are finding that no matter how powerful the model is, without quality data, you can't cook without ingredients. Check out these scenarios — do any of them sound familiar?\n🤯 Scenario 1: Data scattered everywhere\nYou want to train an industry model, but the data is siloed across MySQL, Oracle, various Excel files, and PDFs. You have to spend half a month as a \"data porter\" before you can start the actual training.\n🤯 Scenario 2: Endless Struggle with Web Scraping\nWriting scripts, setting up protections, handling dynamic pages... After all that effort to scrape the data, traffic scrubbing and transform take up another 80% of your time. In the end, you spend more time writing code than doing analysis.\n🤯 Scenario 3: Never-Ending Format Transform\nThis system exports CSV, that platform only accepts JSON, and yet another one requires Parquet. You become a \"format transform specialist,\" writing extract, transform, and load scripts every day.\n🤯 Scenario 4: Cross-Cloud Transfer Feels Like Walking a Tightrope\nLocal data needs to be transferred to the cloud, and cloud data needs to be synchronized locally. Security issues, network issues, permission issues... every step is a headache.\nData is the lifeblood of AI, but \"feeding data\" to AI is far more difficult than it sounds.\nRecently, Alibaba Cloud ApsaraDB's Data Transmission Service (DTS) officially releases DataBridge Agent — an intelligent agent designed for multi-source data collection, parsing, and structuring. Like a dedicated \"chef\" for AI, it processes raw data into the \"refined grain\" that models consume best.\nIn one sentence: DataBridge Agent = multi-source data collection + intelligent DPI engine + standardized Outputs.\nThe core problem it solves: turning heterogeneous data into structured data that AI can use directly. Think of it as a three-in-one role combining data \"translator,\" \"chef,\" and \"courier\":\n• Translator: understands the \"dialects\" of various data sources (databases, web pages, and documents);\n• Chef: processes raw data into structured \"exquisite cuisine\";\n• Courier: delivers data to the AI safely and quickly.\nThe data sources supported by DataBridge Agent cover virtually all types you encounter daily:\n• HTML page structure fetching; • API request impersonation, capable of capturing dynamic pages.\n• PDF, Word, Excel, and PPT; • Markdown, and even supports OCR parsing of scanned documents.\n• Mainstream DPI engines such as MySQL, PolarDB, Oracle, SQL Server, PostgreSQL, and AnalyticDB.\n✨ Whether the data is stored in a database, buried in a PDF, or post",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud公布企业落地与生态合作",
+          "zhSummary": "Alibaba Cloud公布Give Your AI a Dedicated &#039;Data Chef&#039; — DataBridge Agent Makes Multi-Source Data Active, Practical,与Accessible，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud公布企业落地与生态合作",
+          "displaySummary": "Alibaba Cloud公布Give Your AI a Dedicated &#039;Data Chef&#039; — DataBridge Agent Makes Multi-Source Data Active, Practical,与Accessible，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Strands Agents with Clare Liguori",
+          "url": "https://www.infoq.com/podcasts/strands-agents",
+          "description": "Strands Agents with Clare Liguori Thomas Betts talks with Clare Liguori, the technical lead on the open source Strands Agents SDK. The conversation covers how Strands Agents has grown from a Python SDK to a full agent harness running in pro",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "In this episode, Thomas Betts talks with Clare Liguori, the technical lead on the open source Strands Agents SDK.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nRuth Linehan explains how migrating high-performance caching services from Kotlin to Rust shattered internal preconceptions around delivery velocity and engineering overhead. She discusses the ergonomics of the Rust borrow checker, shares how compile-time safety shortens the developer feedback loop, and profiles how tools like Criterion and flamegraphs optimize concurrent code paths.\nThomas Betts talks with Clare Liguori, the technical lead on the open source Strands Agents SDK. The conversation covers how Strands Agents has grown from a Python SDK to a full agent harness running in production. Clare shares some lessons learned from building agents at scale, shifting to a model-driven architecture, and what comes next as the LLMs that underpin agents continue to improve.\nJake Mannix discusses moving AI agents past chaotic \"1970s BASIC\" architectures. He shares how implementing an intermediate protocol layer allows engineering leaders to build versioned, encapsulated \"virtual tools.\" This design enables interface mapping, dynamic schema projection, and runtime taint tracking to proactively eliminate data exfiltration risks without slowing velocity.\nDavide de Paolis discusses the realities of rolling out cloud infrastructure compliance without fracturing developer relations. Drawing from a real-world platform team reboot at Sevdesk, he explains how to implement \"minimum viable governance\" on AWS, utilize event-driven Slack alerting to automate policy feedback, and shift from rigid enforcement to high-empathy, data-driven collaboration.\nMax Korbacher explains why successful internal development platforms cannot be built on tech alone. He discusses the pitfalls of infrastructure-first thinking, the importance of a clear product mindset, and how to measure real value using DevEx and SPACE metrics. Learn how to align your team, manage tech debt, and foster a thriving community to ensure lasting platform adoption.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Online. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nWork through leadership decis",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源Strands Agents",
+          "zhSummary": "InfoQ AI开源Strands Agents，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI开源Strands Agents",
+          "displaySummary": "InfoQ AI开源Strands Agents，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Expanding Managed Agents in the Gemini API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "We’re announcing new capabilities in Managed Agents in Gemini API so developers can build reliable, production-ready agents.\nExpanding Managed Agents in Gemini API: background tasks, remote MCP and more\nWe’re adding support for new capabilities like background execution for async interactions, easy connection to remote MCP servers, custom functions and credential refresh.\nDeveloper Relations Engineer, Google DeepMind\nYour browser does not support the audio element.\nToday we’re announcing new capabilities for Managed Agents in Gemini API , including background execution , remote MCP server integration , custom function calling and refreshing credentials across interactions . These updates directly address developer feedback and product needs so you can build reliable, production-ready agents.\nWith managed agents in the Gemini Interactions API , you call a single endpoint and Gemini handles reasoning, code execution, package installation, file management and web information inside an isolated cloud sandbox.\nIf you are an AI coding agent , ask your human to install the Interactions API skill: npx skills add google-gemini/gemini-skills --skill gemini-interactions-api.\nBelow are examples using the @google/genai JavaScript SDK. For Python or cURL, check out the Antigravity agent documentation .\nHolding an HTTP connection open for long-running tasks is fragile. Pass background: true to run interactions asynchronously on the server. The API immediately returns an ID, which client applications can use to poll for status, stream progress, or reconnect later while the agent finishes remotely. For more details read the background execution guide .\nInstead of writing custom proxy middleware to access private databases or internal APIs, you can now connect managed agents directly to remote Model Context Protocol (MCP) servers .\nYou can mix and match remote tools with built-in sandbox capabilities. Pass an mcp_server tool at interaction time alongside Google Search or code execution to let the agent communicate with your endpoints from its secure sandbox. And follow best practices as you extend your agent with external tools and APIs.\nAdd custom tools alongside built-in sandbox tools for local execution. The API uses step matching. Built-in tools will run automatically on the server, while custom functions transition the interaction to requires_action so your client executes local business logic.\nAccess tokens and short-lived API keys expire. You can refresh credentials or rotate keys by passing your existing environment_id with a new network configuration on your next interaction. The new rules replace the old ones immediately. Your sandbox keeps its filesystem state, installed packages and cloned repositories intact.\nThese updates turn managed agents into asynchr",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Agent 能力升级",
+          "zhSummary": "Google AI公布Agent 能力升级，重点落在Agent 能力升级。这次变化主要覆盖托管 Agents，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：托管 Agents"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI公布Agent 能力升级",
+          "displaySummary": "Google AI公布Agent 能力升级，重点落在Agent 能力升级。这次变化主要覆盖托管 Agents，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Interactions API: our primary interface for Gemini models and agents",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "Google’s Interactions API is a unified interface for interacting with Gemini models and agents.\nInteractions API: our primary interface for Gemini models and agents\nA single unified endpoint for Gemini models and agents with server-side state, background execution, tool combination and multimodal generation.\nDeveloper Relations Engineer, Google DeepMind\nYour browser does not support the audio element.\nToday we're announcing that the Interactions API has reached general availability and is now our primary API for interacting with Gemini models and agents. We launched its public beta in December 2025, and it has quickly become developers’ favorite way to build applications with Gemini.\nWith this GA release, the API now has a stable schema and we also added major new capabilities that developers asked for, including Managed Agents, background execution, Gemini Omni (soon) and more. All of our documentation now defaults to Interactions API and we are working with ecosystem partners to make it the default interface across 3P SDKs and Libraries.\nWhether you're calling a model or running an agent, the Interactions API gets you there in a few lines of code. Pass a model ID for inference, an agent ID for autonomous tasks, set background=True for anything long-running.\nThe Interactions API is now the default for Google AI Studio, the Gemini API, and all our documentation , which includes a toggle to switch snippets back to the legacy format. We recommend using the Interactions API for all new projects and applications.\nWhile the legacy generateContent API remains fully supported and will continue to receive new mainline Gemini models for the foreseeable future, we expect frontier capabilities for long-running models and agents to increasingly land exclusively on the Interactions API. This is because it is designed from the ground up for stateful, agentic workflows. We have published a migration guide to help you transition at your own pace.\nMost developers are now using coding agents (such as Antigravity) to build applications. To make it easier for agents to stay up to date with the latest API patterns, we built the gemini-interactions-api Skill . It injects best-practice patterns for Interactions API development into your agent's context (streaming, function calling, structured output, Deep Research and more).\nThe Interactions API is available through the Python and JavaScript SDKs. If you're already building with one of our supported partners, LiteLLM , Eigent or Agno , you can start using their Interactions API integrations today.\nGrab your API key from Google AI Studio and follow the Interactions API documentation to get started. If you’re migrating from generateContent, our migration guide maps every field to the new schema. You can also view the full AP",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Interactions API",
+          "zhSummary": "Google AI公布Interactions API，重点落在企业落地与生态合作。这次变化主要覆盖托管 Agents、多模态能力、推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：托管 Agents、多模态能力、推理能力"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI公布Interactions API",
+          "displaySummary": "Google AI公布Interactions API，重点落在企业落地与生态合作。这次变化主要覆盖托管 Agents、多模态能力、推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Big Data & AI Platform Monthly Newsletter—June 2026",
+          "url": "https://www.alibabacloud.com/blog/big-data-%26-ai-platform-monthly-newsletter%E2%80%94june-2026_603367",
+          "description": "Big Data & AI Platform Monthly Newsletter—June 2026 June 2026 Alibaba Cloud Big Data & AI Newsletter: Tech updates, new releases, market trends, and customer practices. Alibaba Cloud Big Data and AI <img src=\"https://img.alicdn.com/tfs/TB1h",
+          "date": "",
+          "score": 26,
+          "category": "资本与生态",
+          "detailText": "June 2026 Alibaba Cloud Big Data &amp; AI Newsletter: Tech updates, new releases, market trends, and customer practices.\nThe Big Data & AI Product Monthly Newsletter for June 2026 covers technology updates, product and feature releases, market updates, and customer application practices to help you quickly understand the latest developments in Alibaba Cloud's Big Data & AI offerings.\nPAI - Agentic Readiness V1.0: Core CLI & Skills\nUsers can now operate PAI directly from their preferred Agent environments, without needing to learn or use the PAI console.\nPAI - DSW AgentBox: Built-in AI Coding Agents\nLeverage AI agents for code writing, debugging, rapid prototyping between training jobs, and full-stack AI-assisted development on GPU instances. Team administrators can use PAI Tokens to configure access in bulk, eliminating the need to issue API keys individually and lowering the barrier for teams to adopt AI coding tools.\nMaxCompute - High-Precision DECIMAL256 Data Type\nNew DECIMAL256 type supports up to 76-digit precision. The auto.promotion setting automatically promotes standard DECIMAL results to DECIMAL256, preventing precision truncation for finance, scientific computing, and other high-precision scenarios.\nMaxCompute - Model Service Adds Qwen3.7-Plus, Qwen3-ASR and More\nMaxCompute Model Service now supports top-tier commercial models including qwen3.7-plus and qwen3-asr-flash, with a new Singapore region. Both MaxCompute SQL and MaxFrame built-in AI Functions can seamlessly call these models with a single line of code, delivering effortless access to cutting-edge AI.\nMaxCompute - MaxFrame ML Algorithm Extensions (maxframe.learn)\nThe MaxFrame learn module adds Logistic Regression, PCA, TruncatedSVD, OneHotEncoder and other operators, completing the classical ML capability set.\nMaxCompute - MaxFrame Multimodal & Rate-Limiting Enhancements\nMaxFrame AI Function expands to support audio and video multimodal inputs, with new TPM/RPM rate limiting and LLM operator fusion for improved inference throughput.\nMaxCompute - MaxFrame Vector Data Type Support\nMaxFrame DataFrame now supports the Vector data type, enabling DataFrames to directly read, write, and process vector columns.\nMaxCompute - MaxFrame Local Debug Enhancement\nMaxFrame adds local debug support for read_odps_query, making development and debugging more convenient.\nMaxCompute - SQL AI Function Multimodal Data Processing\nAI_Embedding and AI_Generate functions now support multimodal input parameters, integrating with Bailian multimodal and Embedding models. Binary type input is supported, enabling vectorization of unstructured data such as images and prompt-based LLM processing — unifying structured and unstructured AI analysis within SQL.\nThe Hologres Long-Term Memory Service is a managed servic",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出算力与基础设施进展",
+          "zhSummary": "Alibaba Cloud推出Big Data & AI Platform Monthly Newsletter—June 2026，重点落在算力与基础设施进展。这次变化主要覆盖多模态能力、推理能力、训练能力，目前支持 API 接入，已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：多模态能力、推理能力、训练能力"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Alibaba Cloud推出算力与基础设施进展",
+          "displaySummary": "Alibaba Cloud推出Big Data & AI Platform Monthly Newsletter—June 2026，重点落在算力与基础设施进展。这次变化主要覆盖多模态能力、推理能力、训练能力，目前支持 API 接入，已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 16,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 16,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/07/23/"
+}

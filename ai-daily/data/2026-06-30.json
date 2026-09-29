@@ -1,0 +1,390 @@
+{
+  "title": "AI 日报 2026-06-30",
+  "slug": "ai-daily-2026-06-30",
+  "date": "2026-06-30",
+  "isoDate": "2026-06-30T02:05:58.170Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 6,
+    "day": 30
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.\nAlmost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people&#x27;s work evolves. That&#x27;s why the companies getting AI integration right are doing it with partners who have done it before.\nIn March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they&#x27;ve been trained to build and deploy Claude in production.\nToday we’re announcing two things that make this ecosystem easier for customers to navigate. The Services Track is a tiered structure that reflects what a firm has actually built and delivered with Claude. The Claude Partner Hub is a portal where partners see exactly where they stand against the program&#x27;s requirements, and customers find the firms most qualified for the scope of their project.\nThe best partners have firsthand experience with Claude. They use the newest models for their own work before they put it in front of a client. This way, when they tell a customer what it takes, they’re speaking from experience. The Services Track is built to give customers confidence in a firm’s ability to help them bring Claude into their businesses.\nThe Services Track has three tiers, each reflecting how deep a firm&#x27;s Claude practice runs.\nEvery firm is measured against the same requirements, whether it&#x27;s a ten-person AI-native shop or a global consultancy. Size doesn&#x27;t lower the bar or raise the tier; a smaller firm climbs by growing its certified bench. And because the ladder counts adoption and enablement work, firms that specialize in getting customers live on Claude can qualify early.\nEvery firm&#x27;s dashboard shows the same numbers we see, and we verify standing every quarter. Detailed requirements for each tier are published at claude.com/partners .\nThe Claude Partner Hub allows each partner to see its own standing against the published requirements, refreshed daily. It’s also where customers looking for Claude expertise find the firms most qualified to help. Every partner’s standing—their tier, certified team, customer deployments, and public references—",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布服务分层与伙伴门户",
+          "zhSummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：伙伴门户、服务分层、训练能力",
+            "关键指标：100 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布服务分层与伙伴门户",
+          "displaySummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Product Jun 23, 2026 Introducing Claude Tag Claude Tag is a new way for teams to work with Claude.",
+          "url": "https://www.anthropic.com/news/introducing-claude-tag",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Claude Tag is a new way for teams to work with Claude.\nClaude Tag is a new way for teams to work with Claude.\nWe’re starting on Slack, which Claude can join as a team member. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose. Then, anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future.\nWe’re launching Claude Tag on Slack, since it’s a natural home for collaborative work between teams and AI, and where much of Anthropic’s day-to-day work already happens. It’s available today in beta for Claude Enterprise and Team customers. Our goal is to expand where it’s available more widely, so that teams can tag @Claude in the many other places they work.\nIf you’ve worked with Claude Code or Cowork before, Claude Tag will feel familiar. Tag @Claude with a request in simple terms and it’ll break its task down into stages and then work through them in turn, using the tools it has access to. Once it’s done, it’ll respond in a Slack thread with what it’s created.\nBut tagging Claude comes with a few new advantages:\n@Claude is multiplayer. Within a given Slack channel, there’s one Claude that interacts with everyone. This means that anyone can see what it’s working on, and can pick up the conversation from where the last person left off. This makes tagging Claude very different from working within a single chat or for a single task—it’s much more like interacting collaboratively with a teammate.\n@Claude learns over time. As Claude follows along with its channel, it builds more context about the work. This means that users don’t need to explain things to it from scratch over and over again. And Claude can even automatically learn from other Slack channels and data sources, if it’s granted permission. (It doesn’t report from private channels.) This gives it the tacit knowledge necessary for it to provide the best possible work.\n@Claude takes initiative. If “ambient” behavior is enabled, Claude will proactively keep you updated about whatever it thinks you might need to know. It’ll flag relevant information from across the channels it’s in and the tools it’s connected to, and follow up on threads or tasks that have gone quiet without being resolved.\n@Claude works asynchronously. Set Claude a task, and you can focus on your other priorities while it works. It can also schedule tasks for itself, pursuing a project autonomously over hours or days. We’ve found this particularly helpful at Anthropic: we now spend much more of our time delegating tasks to many Claudes in parallel.\nYou can also send Claude direct messages: it’ll respond priva",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出企业落地与生态合作",
+          "zhSummary": "Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出企业落地与生态合作",
+          "displaySummary": "Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Fake call detection on Android helps protect you from scammers using AI deepfakes to impersonate your contacts.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.\nMuse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support further scaling, we are making strategic investments across the entire stack — from research and model training to infrastructure, including the Hyperion data center.\nIn this post, we&#039;ll first explore Muse Spark&#039;s new capabilities and applications. After these results, we’ll look behind the curtain at the scaling axes driving our progress toward personal superintelligence.\nMuse Spark is available today at meta.ai and the Meta AI app. We’re opening a private API preview to select users.\nCapabilities for Personal Superintelligence\nMuse Spark offers competitive performance in multimodal perception, reasoning, health, and agentic tasks. We continue to invest in areas with current performance gaps, such as long-horizon agentic systems and coding workflows.\nWith larger models in development, these results demonstrate that our stack is scaling effectively.\nWe’re also releasing Contemplating mode, which orchestrates multiple agents that reason in parallel. This allows Muse Spark to compete with the extreme reasoning modes of frontier models such as Gemini Deep Think and GPT Pro. Contemplating mode provides significant capability improvements in challenging tasks, achieving 58% in Humanity’s Last Exam and 38% in FrontierScience Research.\nMuse Spark is available now, and Contemplating mode will be rolling out gradually in meta.ai .\n*For more details about our evaluations, see our methodology document .\nMuse Spark is the first step toward a personal superintelligence that understands your world. From analyzing your immediate environment to supporting your wellness, the advanced reasoning capabilities of Muse Spark enable powerful, highly personal use cases.\nMultimodal. Muse Spark is built from the ground up to integrate visual information across domains and tools. It achieves strong performance on visual STEM questions, entity recognition, and localization. These capabilities come together to enable interactive experiences like creating fun minigames or troubleshooting your home appliances with dynamic annotations.\nHealth. One major application of personal superintelligence is to help people learn about and improve their health. To improve Muse Spark&#039;s health reasoning capabilities, we collaborated with over 1,000 physicians to curate training data that enables more factual and comprehensive responses. Muse Spark can generate interactive displays that unpack and ex",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark",
+          "zhSummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：工具调用、多 Agent 编排、视觉链路推理"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark",
+          "displaySummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "From Brain Waves to Words: Brain2Qwerty Offers a New Path to Communication Without Surgery",
+          "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "大公司动向",
+          "detailText": "Last year, we introduced Brain2Qwerty v1, research that uses AI to decode brain activity into text without any surgical implant. Now we&#039;re sharing the next step: Brain2Qwerty v2, the highest-performing end-to-end pipeline capable of real-time sentence decoding from non-invasive brain recordings, approaching levels of accuracy previously exclusive to techniques that require brain surgery.\nWe trained Brain2Qwerty v2 on approximately 22,000 sentences from nine volunteer participants, each recorded for 10 hours wearing a magnetoencephalography (MEG) device while actively typing. Instead of relying on hand-crafted pipelines to detect neural events, we use end-to-end deep learning to decode directly from raw brain signals.\nFine-tuning large language models on neural data allows the system to leverage semantic context, bridging the gap between noisy brain recordings and coherent language. We also deployed AI agents to explore optimizations for the decoding pipeline, with final training configurations selected manually by engineers.\nThe result: Brain2Qwerty v2 recovers sentences coherently from noisy neural inputs, achieving a word accuracy rate of 61%, significantly improving upon the 8% word accuracy from other non-invasive methods . And for our best participant, we achieve a 78% word accuracy, where more than half of all sentences are decoded with one word error or less.",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI带来From Brain Waves",
+          "zhSummary": "Meta AI带来From Brain Waves，重点落在Agent 能力升级。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI带来From Brain Waves",
+          "displaySummary": "Meta AI带来From Brain Waves，重点落在Agent 能力升级。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "一家美国公司选择100%接入DeepSeek的原因",
+          "url": "https://www.36kr.com/p/3874284272728968",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "中国铺平道路，美国打磨大脑\n一家公司每月付给 AI 厂商的钱，比发给员工的工资还多。CEO 的解法简单粗暴：把 Claude 全换了。\nFlo Crivello 在 X 上贴出的这张截图，记录的就是这个决定。没有煽情，没有宣言，只有一行冷冰冰的声明：\"Pulled the trigger today and switched 100% of Lindy traffic to DeepSeek v4.\" 底下补了一句：\"Saves us millions of $ and we're actually seeing an increase in performance on many core use cases.\"\n一家几十人的旧金山公司，把原本跑在Claude 上的全部业务，切到了 DeepSeek。理由是账单高到超过了全员工资。\n这件事发于将近一个月前，到6 月底后劲才显出来。6 月 27 日，DeepSeek 开源了 DSpark 投机解码框架，生成速度提升 60% 到 85%。接着更新的还有 Wayfinder Router，一个完全离线的模型路由工具，能在微秒级决定走本地还是云端。\nLindy 先跑了一步，工具随后跟上。企业付不起“大脑”的溢价，需要“肌肉”来干活。\nLindy 没有冲动切换。Crivello 四月份就公开说过，公司的推理成本已经超过了 payroll。团队评估了六到九个月，中间还看过 Kimi K2.5 和 GLM-5.1，最终选了 DeepSeek v4。\n迁移的工作量远超预期。Crivello 的原话是：\"100x more work than we thought.\" 大量在线评估、离线评估、逐步灰度上线，看对留存的影响，再适配提示词。这套流程走下来，光是迁移本身就要投入巨大成本。真正让 Crivello 下定决心的，是试出来的结果。\n在邮件分类、按用户语气预写回复这些Lindy 的核心场景上，DeepSeek 表现超出预期。但 Crivello 也没把话说满：复杂的自动化流程，Claude 还是更强。\n切换之后，成本曲线“断崖式下跌”。Crivello 的原话是：\"You should see our AI cost curve right now. It's a cliff.\"\n很多人会问：Claude 是公认的第一梯队模型，换更便宜的 DeepSeek，为什么性能反而提升？答案不复杂。对邮件分类、日程管理、高频自动化这类企业日常场景而言，模型参数过度冗余只会增加延迟与成本。DeepSeek 在这些特定任务上做了速度和实用性优化，没有单纯堆参数，于是在大量实际业务里，实现了“更便宜、更快、更稳”。\nLindy 的个案能不能代表全行业？说实话，难讲。它做的是 AI 原生应用，成本结构和大厂完全不同。但问题是，6 月底更新的 Wayfinder Router，做的就是同一件事：帮企业在本地模型和托管 API 之间自动选最便宜的路线，微秒级决策，完全离线。如果只是Lindy一家的痛点，这种工具不会在这个时间点冒出来。\nDeepSeek 开源的 DSpark，没有发布新模型。它是在 V4 现有权重上，附加了一个草稿模块，通过半自回归生成实现无损加速。生产环境下，V4-Flash 和 V4-Pro 的每用户生成速度分别提升 60% 到 85%、57% 到 78%。离线测试里，接受长度比 Eagle3 高 26% 到 31%。\n说白了，它没让模型变聪明，只是让同样的模型跑得更快、更省。对企业来说，这意味着用同样的硬件能处理更多业务量。成本敏感的公司要的就是这个。\nWayfinder Router 的逻辑更直接。它通过分析提示词的结构特征，长度、标题、代码块，在微秒级决定走本地模型还是云端 API，完全不需要调用其他模型做判断。以前企业得靠人工或者外部服务来“选模型”，现在一个离线工具就搞定了。\n两个工具在6 月底出现，一个负责“跑更快”，一个负责“花更少”。它们都不追求“最强智商”，只追求“够用且便宜”。\n当行业不再为“参数翻倍”集体狂欢，转而开始为“速度提升 60%”、“成本降一半”欢呼时，AI 就真正从实验室走进了生意场。\nAnthropic 的 Claude 当然很强。代码能力、推理深度、安全性，都是第一梯队。Lindy 自己也承认，在复杂的 workflow automation 上，Sonnet 仍然更好。\n但像Lindy 这样用 Claude 来写邮件、管日程、做自动化工作流的企业，付的账单里，有一部分是为“用不到的能力”买单。\n5 月份，Vercel 的 AI Gateway 数据显示：DeepSeek 的 token 流量占比从不到 1% 跳到 17%，但收入占比几乎没动。说明它承接的全是低价高频的“体力活”。企业没有放弃 Claude 去做最难的推理任务，只是把“下边的事”交给了更便宜的模型。\n企业在算完账后，开始分层用模：高难度推理、复杂自动化、合规敏感场景，继续用Claude；高频低复杂度、对延迟敏感、成本压力大的任务，交给 DeepSeek。两种模型各干各的活，谁也不替代谁。\n这种分层背后，是两条路线的分化。美国企业继续往“更聪明”的方向走，Claude、GPT 在顶尖推理上持续投入。中国企业在做另一件事：把价格打下来，让中小企业用得起。DeepSeek 的路线很明确，不在“大脑”上硬碰硬，在“肌肉”上做到极致。Lindy 能切过来，靠的是中国在基础设施层铺的路。\nDeepSeek 的出现，说明了一件事：不是所有企业都需要顶级模型干所有活。当 Lindy 发现切换后核心场景性能反而提升，成本断崖下跌，那些只需要“够用”的企业就会重新算账。\n过去，企业选用DeepSeek 往往带着“降级备选”的无奈；如今，Lindy 的主动切换宣告了一个新现实：当开源模型的速度追上闭源，价格却仅剩几分之一时，“性价比”本身就是最核心的竞争力。\nLindy 后台那条断崖式下跌的成本曲线，记录的不仅是供应商的更换，更是一家美国公司在算完账后，对中国基础设施的真实选择。\nAI 的世界正在裂变为两条赛道：美国在往上走，打磨 Claude 和 GPT 的“大脑”，追求极致的智力上限；中国在往下扎，铺平 DeepSeek 的“道路”，拉齐全球的准入门槛。这两条路没有输赢，只有分工。对于企业而言，在这个从狂热回归理性的下半场，让每一份算力都花在刀刃上，比拥有最聪明的模型更重要。\n一家公司每月付给 AI 厂商的钱，比发给员工的工资还多。CEO 的解法简单粗暴：把 Claude 全换了。\nFlo Crivello 在 X 上贴出的这张截图，记录的就是这个决定。没有煽情，没有宣言，只",
+          "translationMode": "fallback",
+          "zhTitle": "一家美国公司选择100%接入DeepSeek的原因",
+          "zhSummary": "36Kr开源一家美国公司选择100%接入DeepSeek的原因，重点落在算力与基础设施进展。目前已正式上线，支持 API 接入，文中出现的关键指标包括100x。进一步看，AI 厂商的钱，比发给员工的工资还多；CEO 的解法简单粗暴：把 Claude 全换了。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已正式上线，支持 API 接入",
+            "关键指标：100x"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "一家美国公司选择100%接入DeepSeek的原因",
+          "displaySummary": "36Kr开源一家美国公司选择100%接入DeepSeek的原因，重点落在算力与基础设施进展。目前已正式上线，支持 API 接入，文中出现的关键指标包括100x。进一步看，AI 厂商的钱，比发给员工的工资还多；CEO 的解法简单粗暴：把 Claude 全换了。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "AI语音巨头IPO遇坎，遭经销商控诉“画大饼”",
+          "url": "https://www.36kr.com/p/3874264457296517",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "思必驰二度冲击IPO遭经销商举报，七年累计亏超13亿\n“他们给我们画了一张很大的蓝图……可货品到货后，品控问题层出不穷”，就在二次冲击IPO的关键阶段，多家经销商“开撕”AI语音巨头思必驰。\n据媒体报道，近日，有经销商举报称，思必驰为冲刺营收规模，刻意夸大市场前景诱导经销商大额囤货，且在未完成完整产品交付闭环的前提下，提前确认销售收入。\n部分经销商直言，前述行为给其带来巨大库存压力和沉没成本。目前，已有经销商正式向监管审核机构提交举报材料。\n风波之外，作为国内领先的对话式人工智能企业，思必驰于去年实现6.88亿元的营收，同比增长14.47%；同期录得归母净利润亏损0.57亿元，亏损规模同比收窄59.42%， 但近7年来，公司始终未能实现盈利，累计亏损已超13亿元。\n天眼查显示，思必驰科技股份有限公司于2007年10月注册成立，是国内专业的大模型对话式人工智能平台型企业，专注于智能人机交互技术的研发与应用。\n2022年，思必驰首度向科创板发起冲击，但经过多轮问询，上市审核委员会最终审议认为，公司未能充分说明未来四年营业收入复合增长率的预测合理性，未能充分揭示上市前净资产为负的风险，故终止了公司的上市申请审核。\n今年年初，思必驰在江苏证监局完成辅导备案登记，欲二度冲击IPO。5月25日，公司向科创板递交IPO申请并获受理，目前审核状态为“已问询”。\n本次IPO，思必驰计划募资15.55亿元，其中6.8亿元用于“AI软件及软硬一体化解决方案项目”，3.25亿元用于“AI智能终端产品研发升级项目”，5.5亿元用于“研发中心建设项目”。\n据第一财经6月25日报道，思必驰的三家芯片经销商实名举报思必驰及其控股子公司深聪半导体（江苏）有限公司（下称“深聪半导体”）存在不合规、违背商业伦理的操作。\n据悉，这三家经销商分别是深圳市维合丰半导体有限公司（下称：维合丰）、联芯半导体（深圳）有限公司（下称：联芯半导体）、深圳市东恒升科技有限公司（下称：东恒升）。\n据多位经销商负责人回忆，合作初期，深聪半导体的业务人员宣称，其单款语音芯片年出货量可达千万片级别，同时详细勾勒出售后遥控器、运营商智能终端、头部家电品牌三大落地场景，以说服经销商投入自有资金大批量备货。\n但后续的真实情况却是公司此前口头承诺通信大客户的合作几乎无一落地，家电终端市场实际需求惨淡，多家经销商大批量采购的芯片最终积压仓库、难以实现实际销售。\n具体而言，联芯半导体2022年采购的芯片积压至今，四年无法消化，呆滞库存成本近86万元。\n东恒升在2022年至2024年三年间，累计采购并全款支付思必驰芯片产品金额超1500万元，但后期货值近700万元芯片，思必驰以不交付密钥key的方式阻挠东恒升出货，导致大量芯片滞压仓库。\n至于维合丰，其为合作项目投入大量人力、研发、场地成本，但最终形成数百万元沉没成本。\n维合丰负责人王雨（化名）表示：“当初他们给我们画了一张很大的蓝图，声称技术成熟、芯片不愁销路，我们第一次下单就拿了500万元的货，可货品到货后，品控问题层出不穷。”\n王雨透露，双方经销协议原本约定，由双方共同搭建技术团队，完成蓝牙芯片与遥控器产品的适配开发。但合作推进至2024年年中，思必驰却单方面撤走全部技术人员。\n为了消化积压库存、推进产品落地，维合丰只能自掏腰包搭建专属研发与运营团队，承担不菲的人员薪酬、场地、差旅等各项开支。即便是全额结清货款的芯片，思必驰依旧没有完成完整交付。“几百万的芯片在我们手里，他们却拒不提供配套密钥。”王雨称。\n王雨认为，双方矛盾根源在于思必驰自身交付能力不足、过度夸大业务前景——“他们本身技术不成熟，严重低估了芯片落地交付的难度，还虚构合作资源，当初承诺的移动、广电运营商以及长虹、康佳等头部家电客户，最终一个都没有落地。”\n雷达财经注意到，思必驰在招股书中披露，2025年末公司对维合丰计提341.33万元坏账准备，计提比例为100%，计提依据为“客户经营状况不佳，预计无法收回”。\n但该说法遭到维合丰方否认，王雨澄清道，公司未付尾款仅140余万元，且并非自身经营不善无力支付，而是双方存在重大合作纠纷，故而暂缓结算。\n王雨表示：“对方在IPO公开材料中不实描述我方经营状况，我们已准备提起名誉权民事诉讼，依法维权。”\n同花顺iFinD显示，2019年至2025年，思必驰的营收从1.15亿元一路上涨至6.88亿元。但近两年来，公司的营收增速均不足15%，较此前明显放缓。\n至于利润指标，2019年至2025年，思必驰的归母净利润累计亏损13.02亿元。其中，公司去年的归母净利润亏损为0.57亿元，亏损规模同比收窄近六成。\n去年，思必驰的毛利率高达63.24%，同比提升5.43个百分点，创下2021年来的最高纪录。\n对此，思必驰在招股书中解释称，报告期内，公司在AI软件及技术服务方面，减少毛利率较低的集成类定制开发业务，AI硬件方面加强自主品牌产品的研发与推广。随着公司经营策略以及产品结构的调整，毛利率水平整体呈现上升趋势。\n值得注意的是，去年公司的研发费用为2.54亿元，同比减少4.08%，研发投入占营业收入比例更是减少超7个百分点至36.86%。\n同期，公司的业务宣传及推广费同比暴涨162.41%至0.23亿元，主要系公司加大了抖音、京东等电商平台的推广力度，但思必驰强调，公司相关电商收入亦有所增长。\n截至2025年末，思必驰的资产负债率高达67.36%，虽然较2023年末的105.52%大幅收窄，但仍处于较高水平。\n其中，应收账款增长20.83%至3.25亿元，存货翻倍至1.03亿元，账面货币资金与去年几乎持平，为1.98亿元。\n截至2025年末，公司应收账款账面净值占流动资产的比重为44.42%，存货账面价值占流动资产的比重为14.04%。\n对于前者，思必驰表示，随着公司业务规模的扩大，应收账款可能继续增加。虽然公司客户的信誉度较好，但金额较高的应收账款，仍然存在因不能及时回收给公司带来坏账损失的风险。若下游客户财务状况出现变化，可能导致应收账款无法全部回收，进而对公司未来业绩造成不利影响。\n对于后者，思必驰表示，近年来公司的自主品牌产品销量不断增长，公司期末存货余额持续上升。若公司未来无法及时地预计市场需求的变动，或生产管理不当导致产品滞销、原材料积压等情形，则可能导致存货跌价准备上升的风险。\n与此同时，公司的流动负债增长19.88%至5.6亿元，其中短期借款增长59.17%至3.21亿元，一年内到期的非流动负债减少9.69%至0.45亿元。\n雷达财经从招股书获悉，目前思必驰的业务体系由“智能化定制中台DUI”与“垂域业务产品服务体系”两部分组成，协同实现面向智慧出行、智慧办公、智慧物联三大垂域的标准化软硬件产品及服务的大",
+          "translationMode": "fallback",
+          "zhTitle": "AI语音巨头IPO遇坎，遭经销商控诉“画大饼”",
+          "zhSummary": "36Kr公布AI语音巨头IPO遇坎，遭经销商控诉“画大饼”，重点落在企业落地与生态合作。披露的金额或规模为6.88亿元。进一步看，IPO遭经销商举报，七年累计亏超13亿 “他们给我们画了一张很大的蓝图……可货品到货后，品控问题层出不穷”，就在二次冲击IPO的关键阶段，多家经销商“开撕”AI语音巨头思必驰；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：6.88亿元"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "AI语音巨头IPO遇坎，遭经销商控诉“画大饼”",
+          "displaySummary": "36Kr公布AI语音巨头IPO遇坎，遭经销商控诉“画大饼”，重点落在企业落地与生态合作。披露的金额或规模为6.88亿元。进一步看，IPO遭经销商举报，七年累计亏超13亿 “他们给我们画了一张很大的蓝图……可货品到货后，品控问题层出不穷”，就在二次冲击IPO的关键阶段，多家经销商“开撕”AI语音巨头思必驰；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "From API to AI Agent: Alibaba Cloud CloudMonitor Command-line Interface (CLI) + Agent Skill in Practice",
+          "url": "https://www.alibabacloud.com/blog/from-api-to-ai-agent-alibaba-cloud-cloudmonitor-command-line-interface-cli-%2B-agent-skill-in-practice_603311",
+          "description": "From API to AI Agent: Alibaba Cloud CloudMonitor Command-line Interface (CLI) + Agent Skill in Practice This article introduces the Alibaba Cloud CloudMonitor CLI and Agent Skill to enable AI agents to automate observability O&M workflows.",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces the Alibaba Cloud CloudMonitor CLI and Agent Skill to enable AI agents to automate observability O&amp;M workflows.\nYou can use the official CloudMonitor CLI + Agent Skill to allow an AI Agent to securely execute observability O&M jobs.\nAlibaba Cloud CloudMonitor CLI ( aliyun cms2 ) consolidates capabilities such as integration, configuration, queries, alerting, and management events in the Cloud Monitor Service (CMS) 2.0 console into a unified command line entry. CMS Agent Skill organizes these commands into business workflows for AI Agents.\nIn the past, O&M automation often started from APIs: querying documents, assembling parameters, writing scripts, and invoking APIs. Now, by using the CloudMonitor CLI + Agent Skill, these capabilities can be organized into standardized workflows that AI Agents can understand, execute, and validate.\nFor O&M engineers, its value is not \"one more tool\", but allowing you to describe O&M targets in natural language, and having the AI Agent complete scenario understanding, CLI invocations, API executions, and result validations, transforming repetitive, multi-step, and error-prone observability O&M operations into confirmable, auditable, and reusable automated flows.\nHowever, to allow AI Agents to truly enter the production O&M closed loop, they cannot just stay at the stage of \"understanding problems, generating suggestions, or scripts\". A stable execution entry for CloudMonitor capabilities, standardized realm flows, necessary manual confirmations, and verifiable execution results are also required. The CloudMonitor CLI + Agent Skill is exactly the capability suite built for this requirement.\nMultiple credential types such as AccessKey and Security Token Service token are supported. For more information, see Configure identity credentials for Alibaba Cloud CLI .\nThe Site Reliability Engineering (SRE) team created an ACK cluster to deploy microservices. The SRE team needs to integrate the metrics of the cluster, such as nodes, pods, and containers, into CloudMonitor.\nYou only need to enter the following text in the AI Agent conversation:\nHelp me check which container clusters in Hangzhou do not have observability capabilities, and help me integrate them.\nThe Agent automatically completes the entire integration flow. Users only need to confirm at key steps.\nIntegrate by resource group: You can integrate all Relational Database Service (RDS) instances in the Beijing area under the default resource group into {workspace} of CloudMonitor.\nIntegrate by label: You can integrate all Elastic Compute Service (ECS) instances that match the label key={tagKey} and value={tagValue} into {workspace} of CloudMonitor.\nIntegrate across accounts: You can integrate all AI gateways in the Shanghai area of {resour",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出From API",
+          "zhSummary": "Alibaba Cloud推出From API，重点落在Agent 能力升级。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出From API",
+          "displaySummary": "Alibaba Cloud推出From API，重点落在Agent 能力升级。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "PolarDB-X Snapshots: The \" Undo Button\" for Agent-Operated Data",
+          "url": "https://www.alibabacloud.com/blog/polardb-x-snapshots-the-undo-button-for-agent-operated-data_603306",
+          "description": "PolarDB-X Snapshots: The \" Undo Button\" for Agent-Operated Data This article introduces practical applications of PolarDB-X columnar snapshots for historical analysis, rapid data recovery, and AI agent version management. ApsaraDB <img src=",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces practical applications of PolarDB-X columnar snapshots for historical analysis, rapid data recovery, and AI agent version management.\nThis article is the second in the Columnar Snapshot series, focusing on practical demonstrations. In the previous article \" Principles of PolarDB-X IMCI and Columnar Snapshots \", we introduced the principles of columnar snapshots—version chains, the Purge mechanism, and the internal implementation of snapshot construction and querying. This article no longer discusses the principles. Instead, this article uses some demonstrations to simulate three typical application scenarios:\nThe core capability of columnar snapshots is to restore the complete picture of data at a certain point in time in the past . For tables such as inventory and user levels that are frequently updated, the old values are lost after modification. However, snapshots allow you to \"go back to the past and take a look\" at any time to query the complete state at that time.\nTaking an e-commerce platform as an example, the data of two types of tables changes frequently:\nInventory table : This table records the current inventory quantity of each product. Every order and every replenishment will directly UPDATE the inventory value. The table always contains only the latest numbers. If you want to know \"what the inventory levels of each warehouse were at the end of last month\" at the beginning of the month, you can only rely on exporting in advance without snapshots. If an Extract, Transform, Load (ETL) fails, the historical data will be interrupted.\nUser table : This table records information such as user levels, membership status, and points. User upgrades, downgrades, and renewals will directly modify these fields. If the operations team wants to analyze the \"membership churn rate over the past three months\", the team needs to know the distribution of membership status at the end of each month. This is also a typical scenario for snapshot queries.\nWith columnar snapshots, you only need to take snapshots regularly (such as daily or monthly). Subsequently, you can restore the complete picture of data at any snapshot moment through SELECT ... AS OF TSO . You do not need ETL exports or additional historical tables.\nAnother increasingly realistic problem is: Who will protect your data from being corrupted with \"good intentions\"?\nToday, as AI agents increasingly participate in database operations, an incorrectly written UPDATE or DELETE may modify the entire table within a few seconds. Manual operations are similar. Almost every database administrator (DBA) has experienced or heard of the classic accident of \"forgetting to add a WHERE condition\".\nThe traditional recovery method is to restore the entire instance from a backup. This means ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud披露PolarDB-X Snapshots",
+          "zhSummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud披露PolarDB-X Snapshots",
+          "displaySummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Fully-managed PolarDB-X Mem0 Service: Enabling Infinite AI Memory Extension and Dual-Use Integration",
+          "url": "https://www.alibabacloud.com/blog/fully-managed-polardb-x-mem0-service-enabling-infinite-ai-memory-extension-and-dual-use-integration_603303",
+          "description": "Fully-managed PolarDB-X Mem0 Service: Enabling Infinite AI Memory Extension and Dual-Use Integration This article introduces the fully-managed PolarDB-X Mem0 service, which provides AI agents with long-term memory through a unified dual-cha",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces the fully-managed PolarDB-X Mem0 service, which provides AI agents with long-term memory through a unified dual-channel architecture for both semantic and structured data.\nAgents are changing the way we interact with software. However, a core pain point has always troubled developers and users: the \"amnesia\" of AI. Every conversation feels like a first meeting. AI is unable to remember user preferences, historical interactions, and business contexts.\nImagine this scenario: You tell the AI customer service that you are a VIP user, you are sensitive to prices, and you prefer Sichuan cuisine. Three days later, when you consult again, it asks you, \"What are your taste preferences?\" This experience not only frustrates the user but also makes the agent miss the opportunity for personalized service.\nTo address this issue, Alibaba Cloud PolarDB-X introduces the new fully managed long-term memory service Mem0. With a unique dual-channel architecture, this service provides a one-stop solution to the AI memory storage problem. This service allows agents to truly possess long-term memory capabilities.\nPolarDB-X Mem0 is not a simple conversation record storage. Instead, it is an intelligent memory operating system.\nIt can automatically fetch key facts and preferences from the conversations between AI and users. For example, if a user says, \"I want to find a Sichuan restaurant with an average cost of about 100,\" the system automatically fetches core facts such as \"the user likes Sichuan cuisine,\" \"the user is sensitive to price,\" and \"the user's city,\" and stores this knowledge as structured data. When the user visits again, the AI can instantly recall all of this and provide truly personalized service.\nAs a cloud-native distributed database, PolarDB-X brings enterprise-level extension capabilities and stability guarantees to Mem0.\nFinally, there are flexible extension methods. Vertically, you can increase single-machine performance by increasing the number of worker processes. Horizontally, you can deploy multiple instances through load balancing and share backend storage to achieve near-linear extension. It also supports Kubernetes automatic scaling to dynamically adjust the number of instances based on payloads. No matter how the business size changes, PolarDB-X Mem0 can handle it with ease.\nIn terms of compatibility , PolarDB-X Mem0 is fully compatible with the open source Mem0 frame, and simultaneously supports the API specifications of the community version and the commercial version. Whether you previously used the open source version for self-hosting or hosting services from other cloud providers, you can migrate to PolarDB-X with zero code changes.\nIn terms of user experience , you do not need to build a vector database, configure ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud开源企业落地与生态合作",
+          "zhSummary": "Alibaba Cloud开源Fully-managed PolarDB-X Mem0 Service，重点落在企业落地与生态合作。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud开源企业落地与生态合作",
+          "displaySummary": "Alibaba Cloud开源Fully-managed PolarDB-X Mem0 Service，重点落在企业落地与生态合作。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "url": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/",
+          "description": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Diagrid has announced the release of Dapr 1.18, introducing what it calls Verifiable Execution, a new set of capabilities designed to bring cryptographic trust, provenance, and tamper-evident executio\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nErik Steiger discusses the operational pain of legacy PDF generation in regulated banking and manufacturing. He explains how transitioning from resource-heavy engines like Puppeteer and LaTeX to a serverless Rust architecture powered by Typst can drop render latencies below 2ms. He shares how applying Git and Docker concepts to template registries ensures ironclad compliance and rapid debugging.\nIn this episode, Heroku co-founder and Ink & Switch founder Adam Wiggins argues for a 'local-first' architecture that reconciles cloud-based collaboration with the performance and data ownership of local software. He explores the role of CRDTs and version control primitives in non-code domains, and examines how a hybrid AI future might leverage local models for core productivity tasks.\nThis virtual panel brings together AI security experts to examine the evolution of AI-driven threats, from prompt injection and data poisoning to agent abuse and AI-powered social engineering. The discussion explores emerging attack patterns, incident response challenges, and the changes security teams must make as AI systems become more autonomous and integrated into critical workflows.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods spoke to Craig McLuckie, co-creator of Kubernetes and CEO of Stacklok, about the impact of AI coding tools on open source communities and engineering teams, designing deliberate organisational culture, and navigating evolving career paths for engineers in the age of AI.\nSean Klein discusses why \"human error\" is a dangerous myth in complex systems. Sharing the inside story of Azure’s 2023 global WAN outage, he explains how modern incident analysis looks past the \"Five Whys\" to uncover systemic issues. Learn how engineering leaders can move away from blame, improve Standard Operating Procedures, and design resilient systems that actively protect their engineers.\nOnline InfoQ AI Engineering Certification\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Register Now.\nWhat's working across AI, architecture, and leadership, from the teams doing it. Register. Early bird ends Ju",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源算力与基础设施进展",
+          "zhSummary": "InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI开源算力与基础设施进展",
+          "displaySummary": "InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Interactions API: our primary interface for Gemini models and agents",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "Google’s Interactions API is a unified interface for interacting with Gemini models and agents.\nA single unified endpoint for Gemini models and agents with server-side state, background execution, tool combination and multimodal generation.\nYour browser does not support the audio element.\nToday we're announcing that the Interactions API has reached general availability and is now our primary API for interacting with Gemini models and agents. We launched its public beta in December 2025, and it has quickly become developers’ favorite way to build applications with Gemini.\nWith this GA release, the API now has a stable schema and we also added major new capabilities that developers asked for, including Managed Agents, background execution, Gemini Omni (soon) and more. All of our documentation now defaults to Interactions API and we are working with ecosystem partners to make it the default interface across 3P SDKs and Libraries.\nWhether you're calling a model or running an agent, the Interactions API gets you there in a few lines of code. Pass a model ID for inference, an agent ID for autonomous tasks, set background=True for anything long-running.\nThe Interactions API is now the default for Google AI Studio, the Gemini API, and all our documentation , which includes a toggle to switch snippets back to the legacy format. We recommend using the Interactions API for all new projects and applications.\nWhile the legacy generateContent API remains fully supported and will continue to receive new mainline Gemini models for the foreseeable future, we expect frontier capabilities for long-running models and agents to increasingly land exclusively on the Interactions API. This is because it is designed from the ground up for stateful, agentic workflows. We have published a migration guide to help you transition at your own pace.\nMost developers are now using coding agents (such as Antigravity) to build applications. To make it easier for agents to stay up to date with the latest API patterns, we built the gemini-interactions-api Skill . It injects best-practice patterns for Interactions API development into your agent's context (streaming, function calling, structured output, Deep Research and more).\nThe Interactions API is available through the Python and JavaScript SDKs. If you're already building with one of our supported partners, LiteLLM , Eigent or Agno , you can start using their Interactions API integrations today.\nGrab your API key from Google AI Studio and follow the Interactions API documentation to get started. If you’re migrating from generateContent, our migration guide maps every field to the new schema. You can also view the full API Reference .\nThe Interactions API was built based on developer feedback, and that focus won't change with general ",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Interactions API",
+          "zhSummary": "Google AI公布Interactions API，重点落在企业落地与生态合作。这次变化主要覆盖托管 Agents、多模态能力、推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：托管 Agents、多模态能力、推理能力"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI公布Interactions API",
+          "displaySummary": "Google AI公布Interactions API，重点落在企业落地与生态合作。这次变化主要覆盖托管 Agents、多模态能力、推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 17, 2026 Announcements Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem",
+          "url": "https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "资本与生态",
+          "detailText": "Anthropic opens in Seoul and announces new partnerships across the Korean AI ecosystem.\nWe’ve just opened our Seoul office . Alongside it, we’re announcing new partnerships across the Korean AI ecosystem, with the enterprises, startups, and researchers behind some of the most ambitious uses of Claude. We’ve also signed a Memorandum of Understanding (MOU) with Korea’s Ministry of Science and ICT to advance AI safety.\n“What I see in Korea are teams who understand that innovation and safety are two sides of the same coin,” said KiYoung Choi, Representative Director of Korea at Anthropic. “Korean organizations are building with Claude to bring the benefits of AI to millions around the world. Opening an office in Seoul gives a long-term home to our work alongside the people shaping Korean leadership in AI.”\nThis week, senior leaders from Anthropic traveled to Seoul to open the office and meet with partners, customers, and developers building with Claude.\nAnthropic has signed an MOU with Korea’s Ministry of Science and ICT to support the safe and responsible adoption of AI across the public sector. Together, we’ll collaborate on AI safety and cybersecurity, including evaluating model safety in the Korean language with the Korea AI Safety Institute, and exchanging information on AI-enabled cyber threats.\nFrom WRTN to Law&Company , Korean organizations have been working with Claude for years. Today, we are sharing new examples of how Claude is running across the Korean economy.\nSome of the deepest adoption is happening among developers. NAVER, a leader in cloud and AI innovation in Asia, has recently deployed Claude Code across its entire engineering organization. Thousands of NAVER engineers are now using Claude Code to diversify their coding tools and maximize coding productivity. At global online game company Nexon, engineering teams use Claude Code to write, review, and ship code for live-service games played by millions around the world.\nAnd startups are building Claude directly into their products. Channel Corp uses Claude to power Channel Talk, its customer AI platform that resolves customer inquiries and analyzes service and sales data to deliver business insights—used by over 230,000 companies across Korea, Japan, and the United States.\nOur work in Korea also reaches beyond the private sector. To deepen ties with the academic research community, we will work with the National AI Research Lab (NAIRL), a consortium spanning KAIST, Korea University, Yonsei University, and POSTECH. Anthropic will provide Claude access to up to 60 NAIRL-affiliated researchers, supporting work on AI safety, model evaluation, alignment, robustness, and broader frontier AI research.\nIn the nonprofit sector, Good Neighbors Korea—a child rights specialist NGO—is deploying Cla",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 15,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/06/30/"
+}

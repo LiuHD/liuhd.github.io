@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102033">
+  <meta name="description" content="今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 日报 2026-06-27">
+  <meta property="og:url" content="https://liuhd.github.io/ai-daily/2026/06/27/">
+  <meta property="og:description" content="今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。">
+  <style>
+    :root {
+      --bg: #f4f8fc;
+      --bg-accent: radial-gradient(circle at top left, rgba(55, 180, 255, 0.22), transparent 26%),
+        radial-gradient(circle at top right, rgba(126, 92, 255, 0.18), transparent 24%),
+        linear-gradient(180deg, #eef6ff 0%, #f6fbff 38%, #f5f7fb 100%);
+      --ink: #15233a;
+      --muted: #56657d;
+      --line: rgba(21, 35, 58, 0.08);
+      --card: rgba(255, 255, 255, 0.88);
+      --card-strong: #ffffff;
+      --accent: #0b84ff;
+      --accent-2: #19c37d;
+      --shadow: 0 24px 60px rgba(16, 32, 51, 0.12);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg-accent);
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page-shell { max-width: var(--max); margin: 0 auto; padding: 24px 20px 72px; }
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      padding: 18px 22px; margin-bottom: 24px;
+      background: rgba(10, 21, 38, 0.9); color: #fff; border-radius: 22px; box-shadow: var(--shadow);
+    }
+    .brand-title { font-size: 28px; font-weight: 700; letter-spacing: 0.02em; }
+    .brand-subtitle { font-size: 14px; color: rgba(255,255,255,0.72); margin-top: 4px; }
+    .topnav { display: flex; gap: 12px; flex-wrap: wrap; }
+    .topnav a {
+      padding: 10px 14px; border-radius: 999px; font-size: 14px;
+      background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.92);
+    }
+    .hero-card, .status-panel, .daily-section, .archive-card {
+      background: var(--card); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.6);
+      box-shadow: var(--shadow);
+    }
+    .hero-card {
+      border-radius: var(--radius-xl); padding: 34px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px;
+      margin-bottom: 18px;
+    }
+    .archive-hero { grid-template-columns: 1fr; }
+    .hero-kicker, .section-kicker {
+      margin: 0 0 8px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+      font-weight: 700;
+    }
+    .hero-title { margin: 0; font-size: clamp(34px, 5vw, 56px); line-height: 1.04; }
+    .hero-summary { margin: 18px 0 0; font-size: 18px; color: var(--muted); max-width: 740px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+    .primary-link, .secondary-link, .entry-link {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; font-weight: 600;
+    }
+    .primary-link { background: linear-gradient(135deg, var(--accent), #5aa7ff); color: #fff; }
+    .secondary-link { background: rgba(11, 132, 255, 0.08); color: var(--accent); }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start;
+    }
+    .stat-card {
+      padding: 18px; border-radius: var(--radius-lg); background: var(--card-strong); border: 1px solid var(--line);
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .stat-card strong { font-size: 36px; line-height: 1; }
+    .stat-label { color: var(--muted); font-size: 13px; }
+    .section-nav {
+      display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 18px;
+    }
+    .section-link {
+      padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.7); border: 1px solid var(--line);
+      color: var(--muted); font-size: 14px; font-weight: 600;
+    }
+    .daily-section, .status-panel {
+      border-radius: var(--radius-xl); padding: 26px; margin-top: 22px;
+    }
+    .section-header {
+      display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 18px;
+    }
+    .section-title { margin: 0; font-size: 30px; line-height: 1.1; }
+    .section-count {
+      background: rgba(11, 132, 255, 0.08); color: var(--accent); border-radius: 999px; padding: 8px 12px; font-weight: 700;
+    }
+    .entry-grid, .archive-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;
+    }
+    .entry-card, .archive-card {
+      border-radius: var(--radius-lg); padding: 22px; background: var(--card-strong); border: 1px solid var(--line);
+    }
+    .entry-topline {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px;
+    }
+    .source-badge, .meta-inline, .signal-chip {
+      border-radius: 999px; padding: 6px 10px; font-size: 12px;
+    }
+    .source-badge { background: linear-gradient(135deg, rgba(25,195,125,0.16), rgba(11,132,255,0.14)); color: #135f46; font-weight: 700; }
+    .meta-inline { background: rgba(21,35,58,0.06); color: var(--muted); }
+    .entry-title, .archive-title { margin: 0; font-size: 30px; line-height: 1.14; letter-spacing: -0.02em; }
+    .entry-title a:hover, .archive-title a:hover { color: var(--accent); }
+    .entry-summary, .archive-summary, .status-summary {
+      margin: 16px 0 0; color: var(--muted); font-size: 16px;
+    }
+    .signal-list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+    .signal-chip { background: #eef5ff; color: #2559a7; }
+    .entry-bottom {
+      display: flex; flex-direction: column; gap: 14px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line);
+    }
+    .entry-takeaway {
+      margin: 0; color: var(--ink); font-size: 15px;
+    }
+    .entry-takeaway span { display: block; margin-bottom: 6px; color: var(--accent); font-weight: 700; }
+    .entry-link {
+      align-self: flex-start; background: rgba(21,35,58,0.06); color: var(--ink);
+    }
+    .status-grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px;
+    }
+    .status-card {
+      border-radius: var(--radius-md); padding: 16px; background: #fff; border: 1px solid var(--line);
+    }
+    .status-name { font-weight: 700; }
+    .status-value { color: var(--accent); margin-top: 6px; font-weight: 600; }
+    .status-note { color: var(--muted); font-size: 13px; margin-top: 8px; word-break: break-word; }
+    .page-footer {
+      margin-top: 28px; padding: 16px 4px; color: var(--muted); font-size: 14px; text-align: center;
+    }
+    @media (max-width: 980px) {
+      .hero-card, .entry-grid, .archive-grid, .status-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (max-width: 640px) {
+      .page-shell { padding: 16px 14px 56px; }
+      .topbar, .hero-card, .daily-section, .status-panel, .archive-card { padding: 18px; border-radius: 18px; }
+      .brand-title { font-size: 22px; }
+      .hero-title { font-size: 32px; }
+      .entry-title, .archive-title, .section-title { font-size: 24px; }
+      .hero-summary { font-size: 16px; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <link rel="canonical" href="https://liuhd.github.io/ai-daily/2026/06/27/">
+  <title>AI 日报 2026-06-27 | LiuHD</title>
+</head>
+<body class="daily-page" itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <div class="brand-title">LiuHD AI Daily</div>
+        <div class="brand-subtitle">给中文投资者和开发者看的高信息密度 AI 日报</div>
+      </div>
+      <nav class="topnav">
+        <a href="/">首页</a>
+        <a href="/ai-daily/">日报归档</a>
+        <a href="/archives/">旧文归档</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="hero-kicker">Investor + Developer Daily</p>
+          <h1 class="hero-title">AI 日报 2026-06-27</h1>
+          <p class="hero-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="/ai-daily/">查看历史日报</a>
+            <a class="secondary-link" href="#digest-sections">跳到正文</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card"><span class="stat-label">重点动态</span><strong>18</strong></div>
+          <div class="stat-card"><span class="stat-label">国内占比</span><strong>6</strong></div>
+          <div class="stat-card"><span class="stat-label">官方来源</span><strong>12</strong></div>
+          <div class="stat-card"><span class="stat-label">AI 编译</span><strong>0</strong></div>
+        </div>
+      </section>
+      <section class="section-nav"><a class="section-link" href="#section-大公司动向">大公司动向</a><a class="section-link" href="#section-国内落地">国内落地</a><a class="section-link" href="#section-开发者信号">开发者信号</a><a class="section-link" href="#section-资本与生态">资本与生态</a></section>
+      <div id="digest-sections">
+      <section class="daily-section" id="section-大公司动向">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">今日栏目</p>
+            <h2 class="section-title">大公司动向</h2>
+          </div>
+          <span class="section-count">5 条</span>
+        </div>
+        <div class="entry-grid">
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Anthropic</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.anthropic.com/news/services-track-partner-hub" target="_blank" rel="noopener">Anthropic公布服务分层与伙伴门户</a>
+            </h3>
+            <p class="entry-summary">Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：已进入产品端</span><span class="signal-chip">能力重点：伙伴门户、服务分层、训练能力</span><span class="signal-chip">关键指标：100 million</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+              <a class="entry-link" href="https://www.anthropic.com/news/services-track-partner-hub" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Anthropic</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">Anthropic推出企业落地与生态合作</a>
+            </h3>
+            <p class="entry-summary">Anthropic推出Claude Tag Claude Tag is a new way，重点落在企业落地与生态合作。目前已正式上线，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：已正式上线，已进入产品端</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+              <a class="entry-link" href="https://www.anthropic.com/news/introducing-claude-tag" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Google AI</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://blog.google/security/" target="_blank" rel="noopener">Google AI带来Google Security blog</a>
+            </h3>
+            <p class="entry-summary">Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+            
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+              <a class="entry-link" href="https://blog.google/security/" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Meta AI</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://ai.meta.com/blog/introducing-muse-spark-msl/" target="_blank" rel="noopener">Meta AI推出Muse Spark</a>
+            </h3>
+            <p class="entry-summary">Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：已正式上线，开放预览</span><span class="signal-chip">能力重点：工具调用、多 Agent 编排、视觉链路推理</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+              <a class="entry-link" href="https://ai.meta.com/blog/introducing-muse-spark-msl/" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Meta AI</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/" target="_blank" rel="noopener">Meta AI公布Four MTIA Chips in Two…</a>
+            </h3>
+            <p class="entry-summary">Meta AI公布Four MTIA Chips in Two Years，重点落在算力与基础设施进展。这次变化主要覆盖推理能力、训练能力，目前支持 API 接入，文中出现的关键指标包括4.5x、25x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：支持 API 接入</span><span class="signal-chip">能力重点：推理能力、训练能力</span><span class="signal-chip">关键指标：4.5x、25x</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+              <a class="entry-link" href="https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+        </div>
+      </section>
+    
+      <section class="daily-section" id="section-国内落地">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">今日栏目</p>
+            <h2 class="section-title">国内落地</h2>
+          </div>
+          <span class="section-count">2 条</span>
+        </div>
+        <div class="entry-grid">
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">36Kr</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">国内</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.36kr.com/p/3869740772316162" target="_blank" rel="noopener">G7易流发布货运行业首款穿戴式AI硬件「拍拍豆」，填平物流交付的“…</a>
+            </h3>
+            <p class="entry-summary">36Kr公布G7易流发布货运行业首款穿戴式AI硬件「拍拍豆」，填平物流交付的“最后两米”｜最前线，重点落在企业落地与生态合作。目前支持 API 接入，披露的金额或规模为340亿美元。进一步看，6月25日，G7易流发布货运行业首款穿戴式AI硬件“拍拍豆”；30克，采用磁吸设计，当车辆熄火停稳后，司机可直接将设备从挡风玻璃底座取下，佩戴于胸前即可自动启动录制；放回底座瞬间，录制文件将自动同步上传云端存储。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。</p>
+            <div class="signal-list"><span class="signal-chip">金额或规模：340亿美元</span><span class="signal-chip">上线状态：支持 API 接入</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。</p>
+              <a class="entry-link" href="https://www.36kr.com/p/3869740772316162" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">36Kr</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">国内</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.36kr.com/p/3869926145184774" target="_blank" rel="noopener">谷歌「推理之王」也跑路Meta了，当年还是李飞飞挖来的</a>
+            </h3>
+            <p class="entry-summary">36Kr公布谷歌「推理之王」也跑路Meta了，当年还是李飞飞挖来的，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，披露的金额或规模为27亿美元。进一步看，DeepMind「推理之王」的男人—— 周登勇 （Denny Zhou），早已离开了谷歌；Meta的高调官宣，如果不是LinkedIn上的职位信息悄悄更新，外界甚至不知道这位大牛已经易主。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。</p>
+            <div class="signal-list"><span class="signal-chip">金额或规模：27亿美元</span><span class="signal-chip">能力重点：训练能力</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。</p>
+              <a class="entry-link" href="https://www.36kr.com/p/3869926145184774" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+        </div>
+      </section>
+    
+      <section class="daily-section" id="section-开发者信号">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">今日栏目</p>
+            <h2 class="section-title">开发者信号</h2>
+          </div>
+          <span class="section-count">5 条</span>
+        </div>
+        <div class="entry-grid">
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Alibaba Cloud</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">国内</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.alibabacloud.com/blog/alibaba-cloud-releases-anolisa-agentic-os-the-first-agent-oriented-operating-system_603295" target="_blank" rel="noopener">Alibaba Cloud推出ANOLISA (Agentic OS)</a>
+            </h3>
+            <p class="entry-summary">Alibaba Cloud推出ANOLISA (Agentic OS)，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：已进入产品端</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+              <a class="entry-link" href="https://www.alibabacloud.com/blog/alibaba-cloud-releases-anolisa-agentic-os-the-first-agent-oriented-operating-system_603295" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Alibaba Cloud</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">国内</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.alibabacloud.com/blog/polardb-x-snapshots-the-undo-button-for-agent-operated-data_603306" target="_blank" rel="noopener">Alibaba Cloud披露PolarDB-X Snapshots</a>
+            </h3>
+            <p class="entry-summary">Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：支持 API 接入，已进入产品端</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+              <a class="entry-link" href="https://www.alibabacloud.com/blog/polardb-x-snapshots-the-undo-button-for-agent-operated-data_603306" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Alibaba Cloud</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">国内</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.alibabacloud.com/blog/fully-managed-polardb-x-mem0-service-enabling-infinite-ai-memory-extension-and-dual-use-integration_603303" target="_blank" rel="noopener">Alibaba Cloud开源企业落地与生态合作</a>
+            </h3>
+            <p class="entry-summary">Alibaba Cloud开源Fully-managed PolarDB-X Mem0 Service，重点落在企业落地与生态合作。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：支持 API 接入</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+              <a class="entry-link" href="https://www.alibabacloud.com/blog/fully-managed-polardb-x-mem0-service-enabling-infinite-ai-memory-extension-and-dual-use-integration_603303" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">InfoQ AI</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/" target="_blank" rel="noopener">InfoQ AI开源算力与基础设施进展</a>
+            </h3>
+            <p class="entry-summary">InfoQ AI开源Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：已进入产品端</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+              <a class="entry-link" href="https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">InfoQ AI</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.infoq.com/news/2026/06/pinecone-ai-agents-onelake/" target="_blank" rel="noopener">InfoQ AI开源算力与基础设施进展</a>
+            </h3>
+            <p class="entry-summary">InfoQ AI开源Pinecone Brings AI Agents Directly，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：已进入产品端</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。</p>
+              <a class="entry-link" href="https://www.infoq.com/news/2026/06/pinecone-ai-agents-onelake/" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+        </div>
+      </section>
+    
+      <section class="daily-section" id="section-资本与生态">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">今日栏目</p>
+            <h2 class="section-title">资本与生态</h2>
+          </div>
+          <span class="section-count">2 条</span>
+        </div>
+        <div class="entry-grid">
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">Anthropic</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">海外</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank" rel="noopener">Anthropic公布企业落地与生态合作</a>
+            </h3>
+            <p class="entry-summary">Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+            <div class="signal-list"><span class="signal-chip">上线状态：支持 API 接入，已进入产品端</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。</p>
+              <a class="entry-link" href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+          <article class="entry-card">
+            <div class="entry-topline">
+              <span class="source-badge">36Kr</span>
+              <span class="meta-inline">日期未标注</span>
+              <span class="meta-inline">国内</span>
+            </div>
+            <h3 class="entry-title">
+              <a href="https://www.36kr.com/p/3869928804799750" target="_blank" rel="noopener">两个Anthropic离职员工，融资13.6亿</a>
+            </h3>
+            <p class="entry-summary">36Kr披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，披露的金额或规模为2亿美元。进一步看，Anthropic离职员工，融资13；6亿 就在刚刚，Anthropic离职员工内沙布尔（Behnam Neyshabur）和梅塔（Harsh Mehta）创办的Mirendil在种子轮融了2亿美元（约合人民币13。更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。</p>
+            <div class="signal-list"><span class="signal-chip">金额或规模：2亿美元</span><span class="signal-chip">上线状态：支持 API 接入</span></div>
+            <div class="entry-bottom">
+              <p class="entry-takeaway"><span>为什么值得看</span>更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。</p>
+              <a class="entry-link" href="https://www.36kr.com/p/3869928804799750" target="_blank" rel="noopener">查看原文</a>
+            </div>
+          </article>
+        
+        </div>
+      </section>
+    </div>
+      <section class="status-panel">
+        <div class="section-header">
+          <div>
+            <p class="section-kicker">运行状态</p>
+            <h2 class="section-title">抓取概况</h2>
+          </div>
+        </div>
+        <p class="status-summary">当前日报以大公司产品、开发者平台和国内产业动作为主线。若配置 `OPENAI_API_KEY`，后续会自动升级为更自然的中文编译版。</p>
+        <div class="status-grid">
+        <div class="status-card">
+          <div class="status-name">OpenAI Developers</div>
+          <div class="status-value">抓取 20 条</div>
+          <div class="status-note">https://developers.openai.com/rss.xml</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">Anthropic</div>
+          <div class="status-value">抓取 20 条</div>
+          <div class="status-note">https://www.anthropic.com/news</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">Google AI</div>
+          <div class="status-value">抓取 15 条</div>
+          <div class="status-note">https://blog.google/innovation-and-ai/technology/ai/</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">Meta AI</div>
+          <div class="status-value">抓取 5 条</div>
+          <div class="status-note">https://ai.meta.com/blog/</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">Alibaba Cloud</div>
+          <div class="status-value">抓取 20 条</div>
+          <div class="status-note">https://www.alibabacloud.com/blog/</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">ModelScope</div>
+          <div class="status-value">抓取 0 条</div>
+          <div class="status-note">https://modelscope.cn/home</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">InfoQ AI</div>
+          <div class="status-value">抓取 20 条</div>
+          <div class="status-note">https://www.infoq.com/artificial_intelligence/</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">InfoQ 中文</div>
+          <div class="status-value">抓取 0 条</div>
+          <div class="status-note">https://www.infoq.cn/topic/AI</div>
+        </div>
+      
+        <div class="status-card">
+          <div class="status-name">36Kr</div>
+          <div class="status-value">抓取 20 条</div>
+          <div class="status-note">https://www.36kr.com/information/AI</div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer class="page-footer">由 GitHub Actions 每日自动更新，时区 Asia/Shanghai。</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "liuhd-ai-daily",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ai-daily": "node tools/ai-daily/generate.mjs",
+    "ai-daily:dry-run": "node tools/ai-daily/generate.mjs --dry-run"
+  }
+}

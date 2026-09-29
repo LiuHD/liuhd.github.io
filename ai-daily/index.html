@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102033">
+  <meta name="description" content="面向投资者与开发者的 AI 日报，重点关注产品落地、大公司动向和国内生态。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI 日报">
+  <meta property="og:url" content="https://liuhd.github.io/ai-daily/">
+  <meta property="og:description" content="面向投资者与开发者的 AI 日报，重点关注产品落地、大公司动向和国内生态。">
+  <style>
+    :root {
+      --bg: #f4f8fc;
+      --bg-accent: radial-gradient(circle at top left, rgba(55, 180, 255, 0.22), transparent 26%),
+        radial-gradient(circle at top right, rgba(126, 92, 255, 0.18), transparent 24%),
+        linear-gradient(180deg, #eef6ff 0%, #f6fbff 38%, #f5f7fb 100%);
+      --ink: #15233a;
+      --muted: #56657d;
+      --line: rgba(21, 35, 58, 0.08);
+      --card: rgba(255, 255, 255, 0.88);
+      --card-strong: #ffffff;
+      --accent: #0b84ff;
+      --accent-2: #19c37d;
+      --shadow: 0 24px 60px rgba(16, 32, 51, 0.12);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI Variable", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: var(--bg-accent);
+      line-height: 1.75;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page-shell { max-width: var(--max); margin: 0 auto; padding: 24px 20px 72px; }
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center; gap: 16px;
+      padding: 18px 22px; margin-bottom: 24px;
+      background: rgba(10, 21, 38, 0.9); color: #fff; border-radius: 22px; box-shadow: var(--shadow);
+    }
+    .brand-title { font-size: 28px; font-weight: 700; letter-spacing: 0.02em; }
+    .brand-subtitle { font-size: 14px; color: rgba(255,255,255,0.72); margin-top: 4px; }
+    .topnav { display: flex; gap: 12px; flex-wrap: wrap; }
+    .topnav a {
+      padding: 10px 14px; border-radius: 999px; font-size: 14px;
+      background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.92);
+    }
+    .hero-card, .status-panel, .daily-section, .archive-card {
+      background: var(--card); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.6);
+      box-shadow: var(--shadow);
+    }
+    .hero-card {
+      border-radius: var(--radius-xl); padding: 34px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 22px;
+      margin-bottom: 18px;
+    }
+    .archive-hero { grid-template-columns: 1fr; }
+    .hero-kicker, .section-kicker {
+      margin: 0 0 8px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+      font-weight: 700;
+    }
+    .hero-title { margin: 0; font-size: clamp(34px, 5vw, 56px); line-height: 1.04; }
+    .hero-summary { margin: 18px 0 0; font-size: 18px; color: var(--muted); max-width: 740px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+    .primary-link, .secondary-link, .entry-link {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; font-weight: 600;
+    }
+    .primary-link { background: linear-gradient(135deg, var(--accent), #5aa7ff); color: #fff; }
+    .secondary-link { background: rgba(11, 132, 255, 0.08); color: var(--accent); }
+    .hero-stats {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-content: start;
+    }
+    .stat-card {
+      padding: 18px; border-radius: var(--radius-lg); background: var(--card-strong); border: 1px solid var(--line);
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .stat-card strong { font-size: 36px; line-height: 1; }
+    .stat-label { color: var(--muted); font-size: 13px; }
+    .section-nav {
+      display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 18px;
+    }
+    .section-link {
+      padding: 10px 14px; border-radius: 999px; background: rgba(255,255,255,0.7); border: 1px solid var(--line);
+      color: var(--muted); font-size: 14px; font-weight: 600;
+    }
+    .daily-section, .status-panel {
+      border-radius: var(--radius-xl); padding: 26px; margin-top: 22px;
+    }
+    .section-header {
+      display: flex; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 18px;
+    }
+    .section-title { margin: 0; font-size: 30px; line-height: 1.1; }
+    .section-count {
+      background: rgba(11, 132, 255, 0.08); color: var(--accent); border-radius: 999px; padding: 8px 12px; font-weight: 700;
+    }
+    .entry-grid, .archive-grid {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px;
+    }
+    .entry-card, .archive-card {
+      border-radius: var(--radius-lg); padding: 22px; background: var(--card-strong); border: 1px solid var(--line);
+    }
+    .entry-topline {
+      display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 14px;
+    }
+    .source-badge, .meta-inline, .signal-chip {
+      border-radius: 999px; padding: 6px 10px; font-size: 12px;
+    }
+    .source-badge { background: linear-gradient(135deg, rgba(25,195,125,0.16), rgba(11,132,255,0.14)); color: #135f46; font-weight: 700; }
+    .meta-inline { background: rgba(21,35,58,0.06); color: var(--muted); }
+    .entry-title, .archive-title { margin: 0; font-size: 30px; line-height: 1.14; letter-spacing: -0.02em; }
+    .entry-title a:hover, .archive-title a:hover { color: var(--accent); }
+    .entry-summary, .archive-summary, .status-summary {
+      margin: 16px 0 0; color: var(--muted); font-size: 16px;
+    }
+    .signal-list { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+    .signal-chip { background: #eef5ff; color: #2559a7; }
+    .entry-bottom {
+      display: flex; flex-direction: column; gap: 14px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line);
+    }
+    .entry-takeaway {
+      margin: 0; color: var(--ink); font-size: 15px;
+    }
+    .entry-takeaway span { display: block; margin-bottom: 6px; color: var(--accent); font-weight: 700; }
+    .entry-link {
+      align-self: flex-start; background: rgba(21,35,58,0.06); color: var(--ink);
+    }
+    .status-grid {
+      display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px;
+    }
+    .status-card {
+      border-radius: var(--radius-md); padding: 16px; background: #fff; border: 1px solid var(--line);
+    }
+    .status-name { font-weight: 700; }
+    .status-value { color: var(--accent); margin-top: 6px; font-weight: 600; }
+    .status-note { color: var(--muted); font-size: 13px; margin-top: 8px; word-break: break-word; }
+    .page-footer {
+      margin-top: 28px; padding: 16px 4px; color: var(--muted); font-size: 14px; text-align: center;
+    }
+    @media (max-width: 980px) {
+      .hero-card, .entry-grid, .archive-grid, .status-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (max-width: 640px) {
+      .page-shell { padding: 16px 14px 56px; }
+      .topbar, .hero-card, .daily-section, .status-panel, .archive-card { padding: 18px; border-radius: 18px; }
+      .brand-title { font-size: 22px; }
+      .hero-title { font-size: 32px; }
+      .entry-title, .archive-title, .section-title { font-size: 24px; }
+      .hero-summary { font-size: 16px; }
+      .hero-stats { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+  <link rel="canonical" href="https://liuhd.github.io/ai-daily/">
+  <title>AI 日报 | LiuHD</title>
+</head>
+<body class="archive-page" itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <div class="brand-title">LiuHD AI Daily</div>
+        <div class="brand-subtitle">给中文投资者和开发者看的高信息密度 AI 日报</div>
+      </div>
+      <nav class="topnav">
+        <a href="/">首页</a>
+        <a href="/ai-daily/">日报归档</a>
+        <a href="/archives/">旧文归档</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-card archive-hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">Daily Archive</p>
+          <h1 class="hero-title">AI 日报</h1>
+          <p class="hero-summary">面向投资者和开发者，优先追踪大公司产品发布、企业落地、开发者平台更新和国内生态进展。每一期都尽量把“发生了什么”和“为什么重要”放在同一页里。</p>
+        </div>
+      </section>
+      <section class="archive-grid">
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-28</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/28/">AI 日报 2026-09-28</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-27</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/27/">AI 日报 2026-09-27</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-26</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/26/">AI 日报 2026-09-26</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-25</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 5 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/25/">AI 日报 2026-09-25</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-24</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/24/">AI 日报 2026-09-24</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-23</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/23/">AI 日报 2026-09-23</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-22</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/22/">AI 日报 2026-09-22</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-21</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/21/">AI 日报 2026-09-21</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-20</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/20/">AI 日报 2026-09-20</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-19</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/19/">AI 日报 2026-09-19</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-18</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/18/">AI 日报 2026-09-18</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-17</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/17/">AI 日报 2026-09-17</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-16</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/16/">AI 日报 2026-09-16</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-15</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/15/">AI 日报 2026-09-15</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-14</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/14/">AI 日报 2026-09-14</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-13</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/13/">AI 日报 2026-09-13</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-12</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/12/">AI 日报 2026-09-12</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-11</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/11/">AI 日报 2026-09-11</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-10</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/10/">AI 日报 2026-09-10</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-09</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/09/">AI 日报 2026-09-09</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-08</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/08/">AI 日报 2026-09-08</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-07</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/07/">AI 日报 2026-09-07</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-06</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/06/">AI 日报 2026-09-06</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-05</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/05/">AI 日报 2026-09-05</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-04</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/04/">AI 日报 2026-09-04</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-03</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/03/">AI 日报 2026-09-03</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-02</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/02/">AI 日报 2026-09-02</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-09-01</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/09/01/">AI 日报 2026-09-01</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-08-31</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/08/31/">AI 日报 2026-08-31</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    
+      <article class="archive-card">
+        <div class="entry-topline">
+          <span class="source-badge">2026-08-30</span>
+          <span class="meta-inline">18 条</span>
+          <span class="meta-inline">国内 6 条</span>
+        </div>
+        <h2 class="archive-title"><a href="/ai-daily/2026/08/30/">AI 日报 2026-08-30</a></h2>
+        <p class="archive-summary">今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。</p>
+      </article>
+    </section>
+    </main>
+    <footer class="page-footer">由 GitHub Actions 每日自动更新，时区 Asia/Shanghai。</footer>
+  </div>
+</body>
+</html>

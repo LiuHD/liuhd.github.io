@@ -1,0 +1,438 @@
+{
+  "title": "AI 日报 2026-06-11",
+  "slug": "ai-daily-2026-06-11",
+  "date": "2026-06-11",
+  "isoDate": "2026-06-11T02:07:17.600Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 6,
+    "day": 11
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、36Kr、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.\nAlmost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people&#x27;s work evolves. That&#x27;s why the companies getting AI integration right are doing it with partners who have done it before.\nIn March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they&#x27;ve been trained to build and deploy Claude in production.\nToday we’re announcing two things that make this ecosystem easier for customers to navigate. The Services Track is a tiered structure that reflects what a firm has actually built and delivered with Claude. The Claude Partner Hub is a portal where partners see exactly where they stand against the program&#x27;s requirements, and customers find the firms most qualified for the scope of their project.\nThe best partners have firsthand experience with Claude. They use the newest models for their own work before they put it in front of a client. This way, when they tell a customer what it takes, they’re speaking from experience. The Services Track is built to give customers confidence in a firm’s ability to help them bring Claude into their businesses.\nThe Services Track has three tiers, each reflecting how deep a firm&#x27;s Claude practice runs.\nEvery firm is measured against the same requirements, whether it&#x27;s a ten-person AI-native shop or a global consultancy. Size doesn&#x27;t lower the bar or raise the tier; a smaller firm climbs by growing its certified bench. And because the ladder counts adoption and enablement work, firms that specialize in getting customers live on Claude can qualify early.\nEvery firm&#x27;s dashboard shows the same numbers we see, and we verify standing every quarter. Detailed requirements for each tier are published at claude.com/partners .\nThe Claude Partner Hub allows each partner to see its own standing against the published requirements, refreshed daily. It’s also where customers looking for Claude expertise find the firms most qualified to help. Every partner’s standing—their tier, certified team, customer deployments, and public references—",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布服务分层与伙伴门户",
+          "zhSummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：伙伴门户、服务分层、训练能力",
+            "关键指标：100 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布服务分层与伙伴门户",
+          "displaySummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "May 28, 2026 Product Introducing Claude Opus 4.8",
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Our latest model, Claude Opus 4.8, is an upgrade to our Opus class of models, with stronger performance across coding, agentic tasks, and professional work, and the consistency to handle long-running work.\nWe’re upgrading Claude Opus to a new version: Claude Opus 4.8. It builds on Opus 4.7 with improvements across benchmarks, and is a more effective collaborator. It’s available today for the same price.\nOpus 4.8 launches alongside several new features. Users on claude.ai now have control over the amount of effort Claude puts into a task. Claude Code has a new “dynamic workflows” feature that allows it to tackle very large-scale problems. And fast mode for Opus 4.8—where the model can work at 2.5× the speed—is now three times cheaper than it was for previous models.\nThe table below shows how Opus 4.8 compares to its predecessor and to other models on tests of coding, agentic skills, reasoning, and practical knowledge work tasks. More details and a much wider range of capability evaluations are provided in the Claude Opus 4.8 System Card .\nEarly testers have found Claude Opus 4.8 to be more reliable and sharper in its judgment when it’s performing agentic tasks. Below are quotes from many of these testers about their experience collaborating with Opus 4.8:\nIn addition to Claude Opus 4.8, we’re making the following updates:\nUsers will find Opus 4.8 to be a modest but tangible improvement on its predecessor. There’s still more to be done: we’re working on developing and releasing models that provide many of the same capabilities as Opus at a lower cost.\nNot only that, but we plan to release a new class of model with even higher intelligence than Opus. As part of Project Glasswing , a small number of organizations are currently using Claude Mythos Preview for cybersecurity work. Models of this capability level require stronger cyber safeguards before they can be generally released. We’re making swift progress on developing these safeguards and expect to be able to bring Mythos-class models to all our customers in the coming weeks.\nClaude Opus 4.8 is available everywhere today. Pricing for regular usage is unchanged from Opus 4.7: $5 per million input tokens and $25 per million output tokens. Pricing for fast mode is $10 per million input tokens and $50 per million output tokens. Developers can use claude-opus-4-8 via the Claude API .\nOur next generation of intelligence for the hardest knowledge work and coding problems.\nAs AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出Claude Opus 4.8",
+          "zhSummary": "Anthropic推出Claude Opus 4.8，重点落在企业落地与生态合作。这次变化主要覆盖动态工作流，目前已正式上线，开放预览。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：动态工作流"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出Claude Opus 4.8",
+          "displaySummary": "Anthropic推出Claude Opus 4.8，重点落在企业落地与生态合作。这次变化主要覆盖动态工作流，目前已正式上线，开放预览。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Fake call detection on Android helps protect you from scammers using AI deepfakes to impersonate your contacts.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.\nMuse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support further scaling, we are making strategic investments across the entire stack — from research and model training to infrastructure, including the Hyperion data center.\nIn this post, we&#039;ll first explore Muse Spark&#039;s new capabilities and applications. After these results, we’ll look behind the curtain at the scaling axes driving our progress toward personal superintelligence.\nMuse Spark is available today at meta.ai and the Meta AI app. We’re opening a private API preview to select users.\nCapabilities for Personal Superintelligence\nMuse Spark offers competitive performance in multimodal perception, reasoning, health, and agentic tasks. We continue to invest in areas with current performance gaps, such as long-horizon agentic systems and coding workflows.\nWith larger models in development, these results demonstrate that our stack is scaling effectively.\nWe’re also releasing Contemplating mode, which orchestrates multiple agents that reason in parallel. This allows Muse Spark to compete with the extreme reasoning modes of frontier models such as Gemini Deep Think and GPT Pro. Contemplating mode provides significant capability improvements in challenging tasks, achieving 58% in Humanity’s Last Exam and 38% in FrontierScience Research.\nMuse Spark is available now, and Contemplating mode will be rolling out gradually in meta.ai .\n*For more details about our evaluations, see our methodology document .\nMuse Spark is the first step toward a personal superintelligence that understands your world. From analyzing your immediate environment to supporting your wellness, the advanced reasoning capabilities of Muse Spark enable powerful, highly personal use cases.\nMultimodal. Muse Spark is built from the ground up to integrate visual information across domains and tools. It achieves strong performance on visual STEM questions, entity recognition, and localization. These capabilities come together to enable interactive experiences like creating fun minigames or troubleshooting your home appliances with dynamic annotations.\nHealth. One major application of personal superintelligence is to help people learn about and improve their health. To improve Muse Spark&#039;s health reasoning capabilities, we collaborated with over 1,000 physicians to curate training data that enables more factual and comprehensive responses. Muse Spark can generate interactive displays that unpack and ex",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark",
+          "zhSummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：工具调用、多 Agent 编排、视觉链路推理"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark",
+          "displaySummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Four MTIA Chips in Two Years: Scaling AI Experiences for Billions",
+          "url": "https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Serving a wide range of AI models on a global scale, while maintaining the lowest possible costs, is one of the most demanding infrastructure challenges...\nWhile we remain committed to a diverse silicon portfolio and to leveraging the best solutions available — both internally and externally — the Meta Training and Inference Accelerator (MTIA), our family of homegrown AI chips developed in close partnership with Broadcom, has remained and will continue to be an important part of Meta’s AI infrastructure strategy . MTIA plays an important role in cost-effectively powering AI experiences for the billions of people who use Meta’s products.\nWe have published research papers at ISCA’23 and ISCA’25 detailing the first two generations of MTIA chips: MTIA 100 and MTIA 200 (formerly known as MTIA 1 and MTIA 2i). More importantly, we have deployed hundreds of thousands of MTIA chips in production, onboarded numerous internal production models, and tested MTIA with large language models (LLMs) like Llama.\nSince introducing MTIA 100 and 200, we have accelerated MTIA development across four successive generations: MTIA 300, 400, 450, and 500. These new chips have either already been deployed or are scheduled for deployment in 2026 or 2027, expanding workload coverage from ranking and recommendation (R&R) inference to R&R training, general GenAI workloads, and GenAI inference with targeted optimizations.\nFrom MTIA 300 to MTIA 500, the HBM bandwidth increases by 4.5x and the compute FLOPS increases by 25x (from MTIA300’s MX8 to MTIA500’s MX4), as shown in the chip specifications below. This rapid advancement in less than two years highlights the benefits of our velocity strategy.\n*Some vendors report bidirectional bandwidth. Multiply the value in the table by two to obtain the corresponding bidirectional bandwidth.\n**MTIA 300 is configured with a scale-out network with higher bandwidth (200 GB/s) due to its relatively small scale-up domain size and the target R&R workloads.\nCompared with earlier generations , MTIA 300’s distinguishing features include built-in NIC chiplets, dedicated message engines for offloading communication collectives, and near-memory compute for reduction-based collectives. Although initially optimized for R&R training, these low-latency, high-bandwidth communication components have provided the foundation for efficient GenAI inference and training in subsequent MTIA chips.\nMTIA 300 comprises one compute chiplet, two network chiplets, and several HBM stacks. Each compute chiplet comprises a grid of processing elements (PEs), with some redundant PEs to improve yield.\nPlease refer to our ISCA’25 paper for more details on the aforementioned PE components.\nMTIA 450: A Leap Forward for GenAI Inference\nAnticipating the rapid growth in GenAI inferen",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI公布Four MTIA Chips in Two…",
+          "zhSummary": "Meta AI公布Four MTIA Chips in Two Years，重点落在算力与基础设施进展。这次变化主要覆盖推理能力、训练能力，目前支持 API 接入，文中出现的关键指标包括4.5x、25x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：支持 API 接入",
+            "能力重点：推理能力、训练能力",
+            "关键指标：4.5x、25x"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI公布Four MTIA Chips in Two…",
+          "displaySummary": "Meta AI公布Four MTIA Chips in Two Years，重点落在算力与基础设施进展。这次变化主要覆盖推理能力、训练能力，目前支持 API 接入，文中出现的关键指标包括4.5x、25x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "‍新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星企业MiniMax陷入舆论漩涡。",
+          "url": "https://www.36kr.com/p/3847272900544769",
+          "description": "",
+          "date": "",
+          "score": 20,
+          "category": "国内落地",
+          "detailText": "‍新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星企业MiniMax陷入舆论漩涡。\n新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星企业MiniMax陷入舆论漩涡。\n前几日，这家一个月前市值还一度冲破3000亿港元的大模型新贵，突然将沿用已久的按次计费改为按Token计费，Starter套餐从29元/月直接跳到了49元/月，而且没提前跟用户打一声招呼。\n结果可想而知。大量用户在登录时才发现计费规则已经变了，同等任务下Token消耗量远超预期，月度额度几天就烧光。有开发者算了一笔账：过去每月消耗30至50亿Token只需49元，现在同样的量得花掉约175元，涨幅高达257%。\n更让很多用户火大的是，中外API定价搞两套标准。以上下文小于512K为例，国内输入价格是2.1元/百万tokens，国外才0.3美元/百万tokens（0.3美元折合人民币大约是2.04元）。这不是区别对待是什么？\n公司承认“本次调整未能提前与大家充分沟通并详细说明M3对应的Token Plan计费和套餐变化，是我们工作不到位，在老用户周限额等问题上处理也不够妥当”。\n官方解释是：M3尺寸更大、能力更强、拥有1M上下文，需要更多算力资源。但这话翻译一下就是，原来的套餐模式，在智能体时代算力成本失控了，扛不住了。\n面对市场舆情，公司随后给了补偿方案： 老用户保留无周限额特权，新用户加赠50%额度，还统一重置了6月1日到7日的使用额度。\n如果单看MiniMax的业绩增长，确实是明星公司的姿态。2025年营收7903.8万美元，同比增长158.9%；毛利从2024年的373.8万美元猛增至2007.9万美元，增幅437.2%；毛利率从12.2%提升到25.4%。\n股价一度冲到1330港元，从发行价的165港元涨了7倍，市值突破3000亿港元。公司还刚刚宣布启动回A上市，要跟智谱在科创板会师。\n营收狂飙，亏损更狂。 2025年归母净利润亏损18.72亿美元，约合人民币129亿元，同比扩大超三倍。从2022到2025年，四年累计亏损26.98亿美元，接近27亿美元。简单粗暴算一下：每赚1美元，要亏3.17美元。\n超70%营收靠“虚拟恋人”赚老外的钱。 翻开招股书，MiniMax超过70%的营收来自海外市场，核心来源是AI虚拟陪伴应用Talkie（星野）。\n截至2025年三季度，累计个人用户2.12亿，月活2760万，付费用户从2023年底的不到12万暴涨至177万。\n但问题是，虚拟社交玩得再嗨，也改变不了一个事实，公司C端AI原生产品2025年前三季度的毛利率只有4.7%。这不是“做慈善”是什么？而B端企业服务收入仅占总营收的32.8%。\n用最容易变现的“多巴胺经济”，去供养极其昂贵的基座模型研发——这条路到底是通往AGI的捷径，还是“拿快钱补贴理想”的危险游戏？\n343%的资产负债率，花钱如流水。 研发开支2.53亿美元，同比增长33.8%。经营活动现金流净流出2.8亿美元。建行国际测算，MiniMax每月的现金消耗约2810万美元。\n市场的反应说明了一切。消息出来后，GU价两天下跌超过20%，市值从3000亿高点腰斩至1417港元。\n2024年5月，字节跳动率先打响了价格战第一枪。豆包Pro模型定价0.0008元/千Token，比行业均价低了99.3%。随后阿里云通义千问主力模型降价97%，百度文心大模型两大主力模型全面免费，腾讯混元大模型价格降幅最高达87.5%。\n到了2025年，DeepSeek-V2将价格降到GPT-4的1%，DeepSeek-R1直接把进程推向“零成本”临界点。\n巨头们为啥敢这么玩？因为人家算的不是单次调用的账，而是生态的账。阿里云用AI模型留住云计算客户，字节把AI嵌进抖音飞书，腾讯靠微信QQ游戏现金流补贴AI业务。对这些大厂来说，AI是基础设施，不是利润中心——1块钱亏得起的战略布局。\n而更尴尬的是，就在MiniMax艰难消化这次改价危机的同一时段，老对手智谱正反向操作、高歌猛进，API调用定价逆势大涨83%，MaaS平台ARR约17亿元，12个月里提升了60倍。\n5月29日，中国证监会官网披露信息显示：MiniMax已与中信证券签署上市辅导协议，正式启动A股科创板上市进程。\n市场的担忧公司放出的是“急需资金”的信号。这个话题改天做专题，今天不再展开论述。\n这起风波当然可以归因于MiniMax的“沟通不充分”。但更深层的原因，是全行业都在焦虑同一个问题，算力成本会吃掉一切利润。\n有业内人士指出，AI时代算力经济模式带来了全新的消费信任问题，需要加快构建消费者权益保护体系。\n当大模型从“免费尝鲜”走向“按Token付费”，企业必须面对一个根本命题：如何让用户相信你的计费规则是公平透明的？\nKimi此前也因类似的计费调整引发过集中投诉。这不只是一家公司的运营事故，而是整个行业的预警信号。\n站在用户角度，MiniMax的致歉和补偿方案算是诚意的，对3月22日前购买且享有无周限额的老用户，继续保留该权益；对期间购买的用户周限额永久加赠50%；统一重置额度并在首周使用额度翻倍。\n很多人看到MiniMax股价暴跌，第一反应是“又是一个泡沫破裂了”。但我觉得，这种判断有点简单了。\nAI大模型这个赛道，从2023年的“百模大战”到2025年的“价格混战”，粗犷的喧嚣正在散去。2025年中国大模型市场规模约2200亿元人民币，增速超过150%。据沙利文报告，阿里云和百度智能云在国内AI云市场份额合计已超50%。行业确实在洗牌，但不代表故事讲完了。\nMiniMax的故事虽然在改价风波中蒙上了阴影，但它也有自己的硬牌——在全球200多个国家积累了2.12亿用户，视频生成工具海螺AI全球火爆，语音模型一度超越ElevenLabs登顶。\n未来如果能真正把C端流量转化成B端客户，从“多巴胺生意”走向“生产力工具”，局面可能完全不同。\n正如智谱CEO张鹏所说，API是把AI基础设施能力转化为经济运行资源的模式，“智能的质量创造定价权，企业和用户的深度使用创造增长的Scaling”。真正的壁垒不在价格高低，而在能不能让用户心甘情愿为更好的能力买单。\n但从整个行业来看，恰恰是这些“阵痛”，在逼着所有企业从“靠补贴换流量”的野蛮生长，走向“靠价值换信任”的正道。\n用户的愤怒是真实的，但它指向的不是对AI的否定，而是对更透明、更公正、更可持续商业模式的期待。\n对于新一代的AI科技公司，如果你不能尽快证明自己在企业级市场的造血能力，不能证明自己的API定价权和客户黏性，那么即使你的C端产品再怎么吸引眼球，到了资本市场的严苛审视期，缺乏支撑的股价总有一天会剧烈回归。\n声明：本文仅为财经热点分析，数据及资料援引公开",
+          "translationMode": "fallback",
+          "zhTitle": "‍新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星…",
+          "zhSummary": "36Kr推出‍新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星企业MiniMax陷入舆论漩涡。，重点落在算力与基础设施进展。目前已正式上线，支持 API 接入，披露的金额或规模为18.72亿美元。进一步看，AI明星企业MiniMax陷入舆论漩涡；3000亿港元的大模型新贵，突然将沿用已久的按次计费改为按Token计费，Starter套餐从29元/月直接跳到了49元/月，而且没提前跟用户打一声招呼。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "金额或规模：18.72亿美元",
+            "上线状态：已正式上线，支持 API 接入"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "‍新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星…",
+          "displaySummary": "36Kr推出‍新版大模型上线、算力成本高企，一场突如其来的调价，让港股AI明星企业MiniMax陷入舆论漩涡。，重点落在算力与基础设施进展。目前已正式上线，支持 API 接入，披露的金额或规模为18.72亿美元。进一步看，AI明星企业MiniMax陷入舆论漩涡；3000亿港元的大模型新贵，突然将沿用已久的按次计费改为按Token计费，Starter套餐从29元/月直接跳到了49元/月，而且没提前跟用户打一声招呼。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "AI含量最低的画画App，月入300万美元、做到品类第一",
+          "url": "https://www.36kr.com/p/3847397127738374",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "用纸和笔，俘获家长“芳心”？\n买一部 iPad，打开 Procreate，学习图层、笔刷、光影等数字绘图基础知识，是今天大多数人自学绘画的起点。不止Procreate，目前主流绘画学习 App 在做的事情，跳过基础知识——游戏化打卡、实时纠正笔触、智能配色建议，用户只需跟随指导，即可画出精美的画作。\n5月图形与设计类应用全球双端畅销榜中排名靠前的几款绘画学习App功能对比及其最近30天的分成后流水 | 数据来源：App Magic\nAI 更是在加速一切，不止于作画，做什么，都能更快的产出结果。但在上述 App 中，唯一一个没有走数字作画路线、AI 技术应用最克制的「Simply Draw」，却拿下了最好的成绩，近期最高单月分成后流水达到了 330 万美元+（超 2000 万人民币）。\n「Simply Draw」作为一款绘画教学 App，不能进行数字创作，也没有实时指导功能。App 的交互很简单，产品提供绘画图案，用户选定图案后准备纸笔，跟随产品提供的视频步骤作画，完成后拍照上传，整个过程唯一用到 AI 的部分是，上传后 AI 对用户的画作进行检测并评价。\n这个十分简洁的产品，在 2025 年的下半年收入快速上涨，最高单月分成后流水一度超过 300 万美元，至今月流水仍保持在 200 万美元以上。\n2025年12月，「Simply Draw」月流水达333万美元 | 图源：App Magic\n在分析了广告、产品设计后，我们发现，这款产品的流水显著高于同类 App， 是因为搭建了一套更强的家长购买框架。\n观看「Simply Draw」的广告素材可以发现，其素材内容几乎清一色以儿童学习绘画为主题，基本可以概括为跟随「Simply Draw」，孩子独立完成了漂亮画作，在成就感驱使下想继续学画。\n聚焦儿童受众，「Simply Draw」则不仅是一款绘画学习 App，也是一款儿童教育产品，拥有使用者是孩子、付费决策者是家长的典型属性。\n目前 3-12 岁孩子的家长，大多出生于 80 年代末到 90 年代初，纸笔作画是他们成长记忆里“学画画”的正规路径，叠加目前电子设备泛滥，加重家长对孩子使用电子产品的顾虑。因此，市面上主流的绘画学习 App，无论其设计得多么吸引人、门槛多么低，也很难拿到为孩子付费的那张订单。\n线下纸笔绘画班则走到了另一种极端：价格高、课程长、要接送，目标更偏向于专业培养。对于“只是想让孩子有个像样的兴趣或者技能”的多数家长来说，投入产出比并不划算。\n「Simply Draw」恰好嵌在这两者中间，孩子在用真实的纸笔学画画，但免去了高金钱与时间投入。\n但纸笔作画不足以解释家长愿意付费的全部原因，「Simply Draw」在产品设计层面完全拿捏家长心理。\n首先，在下载并注册「Simply Draw」后，如果设置注册年龄在儿童区间内（笔者设置年龄为 10 岁，结合教育类产品常见的年龄分层，设置年龄在 13 岁以下应该均会弹出该提醒），会提醒需要有家长陪伴，并询问用户是否在家长允许的情况下使用应用。\n这个细节看似普通，但它传递的信号很明确，这是一款需要家长参与的学习产品，不是孩子自己随便玩的游戏。\n而在这之后， 「Simply Draw」几乎每一个交互节点，都在围绕一件事做设计，让家长有东西可以验收。\nApp 的提醒过后，会让用户在几组图片中进行偏好选择，从而方便之后进行个性化的绘画图案推荐，从而为用户生成个性化的画作推荐，这里为后续推动付费埋了一个钩子。\n对孩子的兴趣进行了解后，会直接进入“第一堂课”，用户需要跟随教程，一步步绘制一条鱼。\n应用内的教学流程十分用心。绘画步骤拆解很细致，每一步老师都会在视频内演示并指导，耐心讲解、全程鼓励。这种设计固然会产生内容成本，但传递给家长一个信号，孩子并不是在“按提示描线”，而是有一个明确的老师在场，上的是一节完整的课程， 进一步强化其线下课程替代品的定位。\n完成画作后，用户可选择拍照上传，AI 将根据教学内容，检测画作是否完成并给出反馈。这也是产品中主要应用 AI 技术的地方。\n在选择上传后，这条鱼将“游”起来。AI会检查画作的阴影完成度，并对画的较为优秀的部分进行夸奖；如果选择不上传，也可跳过 | 图源：产品截图\n而根据我们的测评，AI 不评价“画得好不好看”， 它只检测关键步骤有没有完成 ，如阴影覆盖到位没有、轮廓比例对不对。给出的是明确的完成信号，并对完成度较高的部分进行夸奖。\n这个看似克制的设计选择，是家长的验收凭据。家长不需要懂绘画，也能立刻判断孩子有没有按教学完成任务——AI 给出的是一份可量化的学习反馈。\n绘画结束后，用户可以把画作拍照存入“Journal”画廊，记录绘画的成长进度，构成完整的成长轨迹，也类似于某些家长在线下会给孩子做的绘画墙。\n“Journal”支持展示用户的所有画作，用户还可选择上传自己在应用外的画作，展现绘画历程| 图源：产品截图\n通过视频教程+AI 结果反馈+学习画廊的 3 层设计，「Simply Draw」为家长构建了一个可持续获得孩子学习、成长反馈的路径， 逃脱出工具定位，将自己包装成为“线下艺术课的线上平替”。 这也是为什么，在有些家长的眼里，「Simply Draw」提供的是\"美术老师的课\"，而不是工具 App。\n而对于产品的真正使用者，每次结束绘画、拍照上传后，画作能够“动起来”；画作增多后，支持孩子对自己的画作进行组合拼装等，也保持了一定的趣味性 | 图源：产品截图\n「Simply Draw」的付费墙卡在了情绪曲线的最高点。 “画鱼第一课”完成之后，孩子花了差不多 30 分钟的时间必须跟完整个教程、体验一次完整的成就感闭环，才会遇到订阅提示。\n评论区中，儿童用户大多数都表现出对应用的爱不释手，如：“...我的第一幅画太棒了...。”但家长的评论却集中指控「Simply Draw」收费/价格过高，在激起孩子们的兴趣后，却不能让孩子免费使用下去；可以得出，「Simply Draw」已同时获得了孩子和家长的两方面认可，只差一个付费的决策 | 评论来自App Store\n孩子投入时间、也获得了成就感，而父母也看到了成果，此时遇到付费墙，即便是远高于同类绘画App的价格，因为其课程定位与可验收的成绩，不少的父母会选择打开钱包。\n美国区 App Store 高流水绘画学习类 App 年费对比，可以看出此类 App 的年费大都在 29 美元~59 美元之间，「Simply Draw」 年费为89 美元 | 图源：App Store\n此外，「Simply Draw」还提供 5 个账号档位注册，一家人都可以各自定制学习计划，进一步减轻多孩家庭的疑虑、提升付费的性价比。\n回看「Simply Draw」的收入曲线，与付费投放和苹",
+          "translationMode": "fallback",
+          "zhTitle": "AI含量最低的画画App，月入300万美元、做到品类第一",
+          "zhSummary": "36Kr带来AI含量最低的画画App，月入300万美元、做到品类第一，重点落在国内 AI 产业动态。这次变化主要覆盖支持展示用户的所有画作，用户还可选择上传自己在应用外的…，目前已进入产品端。进一步看，iPad，打开 Procreate，学习图层、笔刷、光影等数字绘图基础知识，是今天大多数人自学绘画的起点；Procreate，目前主流绘画学习 App 在做的事情，跳过基础知识——游戏化打卡、实时纠正笔触、智能配色建议，用户只需跟随指导，即可画出精美的画作。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：支持展示用户的所有画作，用户还可选择上传自己在应用外的…"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "AI含量最低的画画App，月入300万美元、做到品类第一",
+          "displaySummary": "36Kr带来AI含量最低的画画App，月入300万美元、做到品类第一，重点落在国内 AI 产业动态。这次变化主要覆盖支持展示用户的所有画作，用户还可选择上传自己在应用外的…，目前已进入产品端。进一步看，iPad，打开 Procreate，学习图层、笔刷、光影等数字绘图基础知识，是今天大多数人自学绘画的起点；Procreate，目前主流绘画学习 App 在做的事情，跳过基础知识——游戏化打卡、实时纠正笔触、智能配色建议，用户只需跟随指导，即可画出精美的画作。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "1290万考生，命运交给AI的第一个夏天",
+          "url": "https://www.36kr.com/p/3847954712597767",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "考场外的事，比考场里更大。\n千问上线高考志愿填报Agent，号称国内首款全周期高考志愿填报智能体，免费。夸克升级高考频道，四大功能全部开放，连续第八年服务高考用户。\n腾讯元宝联合QQ浏览器推出元宝高考通，定位高考咨询师Agent。百度把高考模块直接嵌进文心助手。豆包虽然没有单独开设专区，但对话框里已经能回答绝大多数志愿填报问题。\n表面上看，这只是一次热点营销。每年高考季，各家互联网公司都会围绕考生和家长抢流量。\n很多年以来，高考最大的生意一直是信息差。而2026年，信息差第一次开始变成公共品。\n这是AI第一次大规模进入中国人的人生决策场景。也是AI第一次开始影响1290万考生背后数千万家庭的未来选择。\n从最早的教辅书、分数线手册，到后来的志愿规划师，一对一咨询，升学机构。在教培行业转型、考公考编竞争白热化的背景下，家长们对选错专业的恐惧达到了顶峰，直接催生了畸形繁荣的志愿填报市场。\n如今市场上的高端志愿填报服务，价格早已突破万元。一对一咨询动辄12999元到18999元，40分钟单次咨询5000元，名额抢购制，热门老师的排期满到三年后。普通规划师5000到8000元。县城里新开的同类机构，三五千起步。\n他们并不创造录取名额，也不能帮考生多考50分。创造的是一种认知优势，哪个学校今年可能降分，哪个专业未来就业更好，哪个城市更值得去，哪种志愿组合最能让分数\"不浪费\"。\n但对一个从未经历过志愿填报的18岁学生和他的父母来说，在几天时间里完成搜集、筛选、判断和决策，几乎不可能。于是一个围绕信息差形成的产业诞生了。\n去年，阿里首创了“AI志愿报告”这一形式，累计发放近1300万份AI志愿报告。今年升级后，每份报告15至40页，覆盖数十套志愿组合方案。考生输入省份、选科、分数和位次，系统生成冲、稳、保方案，附带录取趋势、专业分析和就业建议。\n元宝高考通接入十余年的录取数据库。千问的Agent能识别考生的兴趣方向、城市偏好、职业倾向，甚至MBTI人格。即便同省份、同分数、同选科的两个考生，也会得到完全不同的推荐方案，宣称覆盖近3000所高校和2000多个本科专业，数据经多源交叉验证。\n它们未必完美。但对于过去完全得不到专业指导的绝大多数考生而言，中国每年有大批来自农村和县城的初代大学生，他们的父母一辈子没走出过县城，根本无力指导志愿。\n北京、上海、深圳的家庭，天然拥有更多教育信息。他们知道哪些专业正在崛起，知道哪些学校被低估，知道哪些赛道未来十年更有机会。\n而很多县城家庭，并不拥有这样的资源。同样的分数，大城市的父母可能帮孩子精准避开了夕阳产业的专业，而县城的父母可能仅仅因为听起来体面，就让孩子错过了行业红利。\n于是同样的分数，走向了完全不同的人生路径。高考结束以后，真正拉开差距的，往往不只是考试，还有信息。\nAI的介入，本质上是在用技术的确定性，去对抗地域和阶层带来的不确定性。今年第一次出现一种新的可能，考试结束之后的信息差，也开始被AI抹平。\n数据极其标准化。 全国近3000所高校、数千个专业、历年录取分数和位次，全部公开透明。这是AI最擅长处理的数据形态。\n决策链条极其清晰。 输入的是分数、位次、选科和偏好。输出的是志愿表。中间的逻辑可以被完全结构化。这正是Agent最擅长完成的任务类型，给定目标，规划路径，输出方案。\n需求极其刚性。 今年高考结束后，1290万考生必须在极短时间内完成一个可能影响未来数年的重要决定。时间有限，压力巨大，容错率也很低。这样的场景天然会驱动用户寻找更高效的工具。\n标准化数据、清晰决策链和强需求。这三个条件叠加在一起，让高考成为AI在中国最容易跑通的真实应用场景之一。\n问老师，老师熟悉的是自己学校过去的经验。问家长，家长的认知往往停留在自己的时代。问学长，学长只能代表自己的经历。找机构，收费昂贵，而且水平参差不齐。\n今天第一次出现了一个新的东西。AI或许不完美，但它见过全部数据，不会因为利益关系推荐某所学校，也不会因为个人偏好否定某个专业。它可以在几十秒内完成过去需要几天时间才能完成的方案比对。\n一个深圳重点中学的学生，和一个贵州县城中学的学生，第一次有机会获得接近同等质量的志愿建议。\n不是因为他们的分数一样，而是因为AI不区分你是谁，只要你输入分数，给出的分析质量是一样的。\n但是，对于绝大多数中国普通家庭来说，都不是。他们不写代码，不做视频，甚至很少接触那些最前沿的AI产品。\n1290万考生背后，是数千万父母。 当AI开始参与高考志愿填报的时候，它第一次进入了中国家庭最重要，最敏感，最不容出错的决策场景。\n这扇门一旦打开，后面的事情就会顺理成章。今天是选大学，明天可能是选工作，后天可能是选房子、理财、规划职业，甚至规划人生。\n人们在高考前后，交出了对AI的信任。这种信任会像水一样，渗进他们未来的每一项重大选择，让AI从工具变成顾问。\nAI见过了所有历史数据，能用最冷的投入产出比去计算每一个专业的就业率、平均薪资、行业寿命。它给出的推荐，必然是理性的、无风险的、甚至是功利的\n在AI的算法里，“冲稳保”是一道精密的数学题，它会劝一个有文学天赋的孩子去学计算机或法学，因为后者的就业面更宽，它会建议一个痴迷于考古的学生选择财务管理，因为该专业的薪酬回报周期更短。\n如果完全听从AI的安排，确实避开了风险，换取了最大概率的社会平均成功。但我们是不是同时交出了另一些东西，盲目、热忱、不计后果的偏爱，以及犯错的自由？\nAI可以帮我们规避志愿表上的误判，却没办法替我们承受漫长人生里的迷茫。面对一张由算法生成的，完美无瑕的志愿表，真正需要做决定的，依然是那个站在18岁路口的年轻人。\n很多年以后回头看，人们未必还记得2026年的高考作文题是什么，也未必记得数学最后一道大题有多难。\n而真正值得被记住的，或许不是AI替我们做了多少决定，而是在这个算法越来越聪明的时代，我们是否还愿意，为自己的选择承担全部后果。\n千问上线高考志愿填报Agent，号称国内首款全周期高考志愿填报智能体，免费。夸克升级高考频道，四大功能全部开放，连续第八年服务高考用户。\n腾讯元宝联合QQ浏览器推出元宝高考通，定位高考咨询师Agent。百度把高考模块直接嵌进文心助手。豆包虽然没有单独开设专区，但对话框里已经能回答绝大多数志愿填报问题。\n表面上看，这只是一次热点营销。每年高考季，各家互联网公司都会围绕考生和家长抢流量。\n很多年以来，高考最大的生意一直是信息差。而2026年，信息差第一次开始变成公共品。\n这是AI第一次大规模进入中国人的人生决策场景。也是AI第一次开始影响1290万考生背后数千万家庭的未来选择。\n从最早的教辅书、分数线手册，到后来的志愿规划师，一对一咨询，升学机构。在教培行业转型、考公考编竞争白热化的背景下，家长们",
+          "translationMode": "fallback",
+          "zhTitle": "1290万考生，命运交给AI的第一个夏天",
+          "zhSummary": "36Kr推出1290万考生，命运交给AI的第一个夏天，重点落在Agent 能力升级。目前已正式上线。进一步看，Agent，号称国内首款全周期高考志愿填报智能体，免费；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：已正式上线"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "1290万考生，命运交给AI的第一个夏天",
+          "displaySummary": "36Kr推出1290万考生，命运交给AI的第一个夏天，重点落在Agent 能力升级。目前已正式上线。进一步看，Agent，号称国内首款全周期高考志愿填报智能体，免费；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Apache RocketMQ 5.5.0 Open Source LiteTopic: Dedicated Channel for Millions of AI Sessions",
+          "url": "https://www.alibabacloud.com/blog/apache-rocketmq-5-5-0-open-source-litetopic-dedicated-channel-for-millions-of-ai-sessions_603233",
+          "description": "Apache RocketMQ 5.5.0 Open Source LiteTopic: Dedicated Channel for Millions of AI Sessions This article introduces Apache RocketMQ 5.5.0&#039;s LiteTopic, a new message model designed for millions of lightweight AI agent sessions with event",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces Apache RocketMQ 5.5.0&#039;s LiteTopic, a new message model designed for millions of lightweight AI agent sessions with event-driven distribution and session persistence.\nBefore and after the release of RocketMQ 5.5.0, the evolution of protocols and frameworks in the AI industry is also pointing in the same direction.\n● Anthropic MCP 2026 Roadmap pay close attention to Transport scalability, Agent Communication, task lifecycle management and session state externalization. The core contradiction is that there are natural conflicts between stateful Agent sessions and SLB and horizontal expansion, while production-level lifecycle semantics such as retry after task failure and cleanup after result expiration also need more stable run time support.\n● Google ADK also released a Long Running Agent solution, pointing out that the standard dialogue loop is not suitable for all long-term task scenarios, and the system needs more explicit state persistence, event-driven wake-up, and multi-agent delegation collaboration.\nTwo paths that converge to the same set of infrastructure requirements:\nThese three requirements are not only the protocol layer or the framework layer, but also impose higher requirements on the messaging infrastructure .\nIn the AI era, the Message Queue for Apache RocketMQ community launched the RIP-83(Lite Topic: A New Message Model) proposal in 2025 to address the needs of massive and lightweight sessions, state persistence, and event-driven scheduling. With the release of 5.5.0, LiteTopic has entered the open source version.\nLiteTopics are designed to bypass these limitations. Three industry needs, corresponding to three types of optimization directions:\nThe core differences between LiteTopics and traditional topics are as follows:\nEach queue of traditional topics corresponds to a ConsumeQueue file-millions of topics mean millions of small files. The root cause of performance degradation is the fragmented read and write of file systems.\nLiteTopic switches the index layer to RocksDB and manages consumer offset in key-value pairs:\n● Write Path Unchanged : Messages are appended in the CommitLog order without changing the high-performance write path.\n● Unified index management : One RocksDB engine supports the coexistence of a large number of Litetopics.\nWith the automatic TTL reclaim mechanism, developers do not need to manually delete historical session resources over a long period of time. This also reduces the resource usage caused by the continuous accumulation of historical sessions. This makes LiteTopic more suitable for carrying a large number of lightweight and dynamic session channels, and also more suitable for long-running AI application scenarios.\nThe traditional Pop mode is driven by long polling. Consumers",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud开源算力与基础设施进展",
+          "zhSummary": "Alibaba Cloud开源Apache RocketMQ 5.5.0 Open Source LiteTopic，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud开源算力与基础设施进展",
+          "displaySummary": "Alibaba Cloud开源Apache RocketMQ 5.5.0 Open Source LiteTopic，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Tokenmaxxing Dilemma: Are There Immediate Solutions for Improvement?",
+          "url": "https://www.alibabacloud.com/blog/tokenmaxxing-dilemma-are-there-immediate-solutions-for-improvement_603232",
+          "description": "Tokenmaxxing Dilemma: Are There Immediate Solutions for Improvement? This article introduces how ontology-based dependency modeling can reduce AI agent token consumption in enterprise scenarios. Alibaba Cloud Native Community <img src=\"http",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces how ontology-based dependency modeling can reduce AI agent token consumption in enterprise scenarios.\nThis is a complex question that relies on both rigorous statistics and a large number of compliant samples. We attempt to make an initial investigation into the distribution of Token consumption from the following three data sources: the academic paper arXiv:2604.22750 ,engineering field measurements from Vantage.sh, Jake Nesler , and consumption tracking of a 100 million token sample on Reddit .\nThis is individual tracking data from a heavy Claude Code user posted in r/ClaudeAI (1,289 requests, 100M token sample size) [4], where 99.4% of AI expenses came from Input Tokens. As independent, unfiltered, first-hand usage data, it confirms from a practical level the directional judgments of the academic papers and FinOps reports: the cost problem of Agents is fundamentally about reading too much, rather than writing too much.\nThe table below is a qualitative attribution we created based on personal experience using Agents combined with the industry consensus on common classifications of Agent Input behaviors, divided into File Retrieval, Relationship Tracking, Context Management, Generation Loop, and Tool Interaction. The high/medium/low rankings reflect the relative contribution of various actions to Token consumption in daily practice, rather than precise measurements from a specific experiment.\nC1 (Blind File Reading) and C2 (Dependency Exploration) are the two heaviest sources of consumption, together constituting the bulk of Input Tokens. This corroborates with findings from Jake Nesler's \"80% wasted finding things\", Vantage.sh's \"re-reading files\", and arXiv's \"input tokens dominate\". While C4 (Generation Iteration) and C5 (Tool Trial and Error) also consume Tokens, they are far less exaggerated in daily experience than the first two.\nAmong these five major cost sources, C2 (Dependency Exploration) is the most structural type and is best suited for intervention through architectural means.\nIf we only look at how Agents acquire dependency/relationship information, we have gone through roughly three stages over the past three years. Each generation resolved the core pain points of the previous one while exposing new bottlenecks. In the evolutionary comparison below, we connect these using examples from operations scenarios.\nScenario Description : An alert for a service named shopping-user goes off, but the root cause is actually downstream in shopping-cart (one user sleep + NPE, another spinning for 500ms). Traditional root cause analysis targets shopping-user itself. Only when the dependency chain \"shopping-user calls shopping-cart, shopping-cart calls shopping-item\" is explicitly known can the Agent follow the topology down ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来Tokenmaxxing Dilemma",
+          "zhSummary": "Alibaba Cloud带来Tokenmaxxing Dilemma，重点落在企业落地与生态合作。文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "关键指标：100 million"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来Tokenmaxxing Dilemma",
+          "displaySummary": "Alibaba Cloud带来Tokenmaxxing Dilemma，重点落在企业落地与生态合作。文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "AgentScope Java 2.0: Building a Distributed, Enterprise-Grade Foundation for AI Agents",
+          "url": "https://www.alibabacloud.com/blog/agentscope-java-2-0-building-a-distributed-enterprise-grade-foundation-for-ai-agents_603231",
+          "description": "AgentScope Java 2.0: Building a Distributed, Enterprise-Grade Foundation for AI Agents This article introduces AgentScope Java 2.0, an open-source framework for building distributed, enterprise-grade AI agents with production-ready features",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces AgentScope Java 2.0, an open-source framework for building distributed, enterprise-grade AI agents with production-ready features.\nAgentScope is an open-source agent application development framework designed to help developers construct and deploy agents ranging from large models to production applications. Following Python and TypeScript upgrading to 2.0, AgentScope Java 2.0 has been officially released — marking a crucial milestone for AgentScope's multi-language ecosystem as it steps into the JVM framework and production settings .\nFor enterprise users, running an agent once is rarely a barrier. The real challenge lies in keeping it running reliably in the long term, supporting distributed deployment, and ensuring multi-tenant isolation . In production environments, agents often must be embedded into existing Spring Boot microservices, achieve stateless horizontal scaling on Kubernetes, and meet unseen but essential engineering standards such as multi-tenant isolation, rolling releases, and security audits.\nAgentScope Java 2.0 addresses these production-grade demands through a systematic upgrade. Continuing the \"transparent development\" philosophy from 1.0, it integrates the capacity to run agents reliably in enterprise settings deep into the framework, focusing further on system reliability, security controls, distributed deployment, and enterprise integration and access.\nFor enterprise applications, the ultimate test of an agent framework is not how well it runs a single agent call, but how that agent is deployed live into production and whether it remains stable after deployment. AgentScope Java 2.0 treats distributed deployment as a first-class citizen — using the exact same business logic, you can scale to a distributed environment on demand, and any replica can restore any user's complete session context seamlessly.\nThese features are not built as isolated switches but as three interconnected of abstractions engineered by AgentScope Java 2.0 to support reliable production. The next three sections detail key 2.0 components and concepts: Harness, Workspace, and Context.\nSubsequent sections break down the engineering design choices behind each facility in Harness. For now, think of Harness as a tool that lets Java developers plug essential, long-term agent infrastructure into their applications in an incremental, composable, and replaceable way using their favorite builder patterns.\nDuring long-term operations, agents must continuously read and write files, load skills, call MCP services, and persist session states. If \"what the agent does\" and \"where it performs its reads and writes\" are tightly coupled, developers have to adapt code iteratively when moving from local directories to containers, and finally to cloud env",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出AgentScope Java 2.0",
+          "zhSummary": "Alibaba Cloud推出AgentScope Java 2.0，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出AgentScope Java 2.0",
+          "displaySummary": "Alibaba Cloud推出AgentScope Java 2.0，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Confidently Automating Changes Across a Diverse Fleet",
+          "url": "https://www.infoq.com/presentations/automate-fleetwide-changes",
+          "description": "Confidently Automating Changes Across a Diverse Fleet Netflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform",
+          "date": "",
+          "score": 16,
+          "category": "开发者信号",
+          "detailText": "Netflix engineer Casey Bleifer explains how the company is automating fleet-wide code changes and migrations at scale, driving adoption timelines down from months to mere days with confidence.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nBirgitta B&#xF6;ckeler, Distinguished Engineer at Thoughtworks, returns to discuss the rapid evolution of AI in software delivery. She touches on the evolution from vibe coding, the changing tools landscape and the more autonomous agents that, besides higher velocity, introduce higher risk.\nThe speakers discuss the architectural challenges of executing safe data deletion across distributed datastores. Balancing durability, availability & correctness, they explain how to orchestrate multi-system deletion propagation without impacting live traffic. They share lessons on controlling tombstone accumulation, building continuous audit loops, and gaining trust with a centralized platform.\nAdi Polak discusses the architecture required to transition from stateless prompts to state-aware, context-rich AI agents. Drawing on 15 years in distributed systems, she shares how engineering leaders can leverage Apache Kafka and Flink for real-time stream processing, dynamic memory tiering, and tool orchestration via MCP to solve token limits, cost spikes, and latency bottlenecks.\nTrisha Ballakur discusses her journey from a backend software engineer to CTO and CEO, using her startup Pointz as a case study. She explains how to implement bottom-up customer discovery to find product-market fit, effectively delegate to global contractors to reduce build times, customize open-source repos like Valhalla, and apply engineering test-case models to business development.\nNetflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform using composable, Lego-like steps, and explains how Netflix utilizes automated canary validation, compliance checks, and a custom \"confidence metric\" to eliminate the long tail of manual engineering migrations.\nThe more senior you become, the fewer people pressure-test your decisions. This 5-week cohort gives you that check.\nA practical online cohort for senior architects addressing team topologies, value stream architecture, cognitive load, and architecting for flow.\nA practical online cohort for senior engineers making decisions around retrieval, agents, evals, and AI infrastructure.\nLearn what's next in AI and sof",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出算力与基础设施进展",
+          "zhSummary": "InfoQ AI推出Confidently Automating Changes Across a Diverse Fleet，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出算力与基础设施进展",
+          "displaySummary": "InfoQ AI推出Confidently Automating Changes Across a Diverse Fleet，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Platform Teams Enabling AI - MCP/Multi-Agentic Tools across Linkedin",
+          "url": "https://www.infoq.com/presentations/ai-multi-agentic-tools/",
+          "description": "Platform Teams Enabling AI - MCP/Multi-Agentic Tools across Linkedin",
+          "date": "",
+          "score": 16,
+          "category": "开发者信号",
+          "detailText": "LinkedIn’s Karthik Ramgopal and Prince Valluri explain how to scale engineering with agentic AI. They discuss building centralized platform foundations for orchestration, tooling, and context.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nBirgitta B&#xF6;ckeler, Distinguished Engineer at Thoughtworks, returns to discuss the rapid evolution of AI in software delivery. She touches on the evolution from vibe coding, the changing tools landscape and the more autonomous agents that, besides higher velocity, introduce higher risk.\nThe speakers discuss the architectural challenges of executing safe data deletion across distributed datastores. Balancing durability, availability & correctness, they explain how to orchestrate multi-system deletion propagation without impacting live traffic. They share lessons on controlling tombstone accumulation, building continuous audit loops, and gaining trust with a centralized platform.\nAdi Polak discusses the architecture required to transition from stateless prompts to state-aware, context-rich AI agents. Drawing on 15 years in distributed systems, she shares how engineering leaders can leverage Apache Kafka and Flink for real-time stream processing, dynamic memory tiering, and tool orchestration via MCP to solve token limits, cost spikes, and latency bottlenecks.\nTrisha Ballakur discusses her journey from a backend software engineer to CTO and CEO, using her startup Pointz as a case study. She explains how to implement bottom-up customer discovery to find product-market fit, effectively delegate to global contractors to reduce build times, customize open-source repos like Valhalla, and apply engineering test-case models to business development.\nNetflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform using composable, Lego-like steps, and explains how Netflix utilizes automated canary validation, compliance checks, and a custom \"confidence metric\" to eliminate the long tail of manual engineering migrations.\nThe more senior you become, the fewer people pressure-test your decisions. This 5-week cohort gives you that check.\nA practical online cohort for senior architects addressing team topologies, value stream architecture, cognitive load, and architecting for flow.\nA practical online cohort for senior engineers making decisions around retrieval, agents, evals, and AI infrastructure.\nLearn what's next in AI and sof",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出算力与基础设施进展",
+          "zhSummary": "InfoQ AI推出Platform Teams Enabling AI - MCP/Multi-Agentic Tools across Linkedin，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出算力与基础设施进展",
+          "displaySummary": "InfoQ AI推出Platform Teams Enabling AI - MCP/Multi-Agentic Tools across Linkedin，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "May 28, 2026 Announcements Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "url": "https://www.anthropic.com/news/series-h",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "资本与生态",
+          "detailText": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital.\nAnthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money.\n“Claude is increasingly indispensable to our growing global community of customers, and we work tirelessly to make tools like Claude Code and Cowork more helpful, more powerful, and more adaptable to their needs,” said Krishna Rao, Chief Financial Officer of Anthropic. “This funding will help us serve the historic demand we are experiencing, stay at the research frontier, and bring Claude to more of the places where work happens.”\nJoining them are strategic infrastructure partners — Micron, Samsung, and SK hynix — whose technologies play a critical role in the world&#x27;s supply of memory, storage, and logic chips. As demand for Claude continues to grow, these relationships will help us scale our compute reliably at the pace our customers need.\n“Claude’s latest advancements have driven large-scale adoption among the world’s most demanding organizations. This momentum positions Anthropic to lead the next phase of AI innovation and capture the enormous opportunity ahead,” said Brad Gerstner, Founder and CEO of Altimeter Capital.\n“Anthropic has built an organization in which the world’s best researchers and engineers operate with unmatched clarity of purpose, because they believe this is the most important work they will ever do,” said Neil Mehta, Founder and Managing Partner at Greenoaks. “Rarely has a company’s culture, mission, and commercial momentum reinforced each other so completely. We are honored to deepen our partnership.”\n“Startups and Global 5000 companies alike are deploying Claude to handle complex workflows, and in doing so, Claude is learning how businesses actually operate: the context, the processes, the judgment,” said Alfred Lin, Partner at Sequoia Capital. “Anthropic is building the bridge between where enterprise AI stands today and where it&#x27;s headed.”\nWe are grateful for the support of our investors and partners as we continue building Claude for people and organizations around the world.\nOur next generation of intelligence for the hardest knowledge work and coding problems.\nAs AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic披露新一轮融资进展",
+          "zhSummary": "Anthropic披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端，披露的金额或规模为$65B，文中出现的关键指标包括65 billion、965 billion。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。",
+          "keySignals": [
+            "金额或规模：$65B",
+            "上线状态：支持 API 接入，已进入产品端",
+            "关键指标：65 billion、965 billion"
+          ],
+          "takeaway": "更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。",
+          "displayTitle": "Anthropic披露新一轮融资进展",
+          "displaySummary": "Anthropic披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端，披露的金额或规模为$65B，文中出现的关键指标包括65 billion、965 billion。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏资本与产业信号，适合观察估值水平、行业集中度和商业化节奏。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Save time and grow your business with new Gemini tools",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-features-for-businesses/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "资本与生态",
+          "detailText": "An overview of new features in the Gemini app designed specifically to support businesses and entrepreneurs.\nWe&#x27;re introducing new Gemini features tailored for small businesses, including a direct Google Business Profile connection and proactive Business notebooks — designed to transform the app into a partner that natively understands your brand.\nYou can now connect your Google Business Profile to Gemini to get a personalized AI assistant that understands your brand and customer data. Use the new Business notebooks feature to organize your workflows, track critical tasks, and generate content based on your specific business context. Look for these updates rolling out globally this month to help you save time and manage your operations more effectively.\n\"Save time and grow your business with new Gemini tools\" helps entrepreneurs work smarter. Connect your Google Business Profile to Gemini for a smarter, personalized AI assistant. Use Gemini to analyze performance data and draft quick responses to customer reviews. Organize your workflows and business data in one place with new Business notebooks. These tools help you manage daily tasks and grow your business more efficiently.\nGoogle is adding new features to Gemini to help small business owners save time. You can now connect your business profile so the AI understands your brand and helps you reply to customers. It also includes a new notebook tool to keep your projects and data organized in one place. These updates make Gemini act like a smart assistant that knows exactly how to help your business grow.\nYour browser does not support the audio element.\nSmall businesses are the true engine of the global economy, yet entrepreneurs often find themselves stretched thin, playing the roles of CEO, CMO and customer service team all before lunch. AI holds incredible promise to act as an extension of your team, but to be truly helpful, it needs to remember your brand voice and context so you don't have to re-explain your goals every time you log in.\nBuilding on the new Google AI capabilities we announced in May, we’re excited to share what’s next for Gemini and Google Business Profile users. Today on stage at Google for Brazil , we introduced new Gemini app features specifically designed for business owners everywhere.\nRolling out globally this month, these updates transform Gemini into a deeply knowledgeable, in-pocket partner that natively understands your business and helps you get more done.\nYour Google Business Profile serves as your digital storefront, helping you stand out on Google Search and Maps, build instant credibility through customer reviews, and turn online searches into customer actions like bookings, orders and sales. That’s why we’re introducing new business features in Gemini that con",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Save time与grow your bus…",
+          "zhSummary": "Google AI公布Save time与grow your business，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Google AI公布Save time与grow your bus…",
+          "displaySummary": "Google AI公布Save time与grow your business，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 16,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/06/11/"
+}

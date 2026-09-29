@@ -1,0 +1,439 @@
+{
+  "title": "AI 日报 2026-06-12",
+  "slug": "ai-daily-2026-06-12",
+  "date": "2026-06-12",
+  "isoDate": "2026-06-12T02:06:58.188Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 6,
+    "day": 12
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Anthropic。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 3, 2026 Announcements Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "In March, we launched the Claude Partner Network, a program for the firms that help enterprises put Claude into production.. Today, we’re announcing two new components that make this ecosystem easier for customers to navigate.\nAlmost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work—and the real opportunity—is in the integration, the evaluation, and the way people&#x27;s work evolves. That&#x27;s why the companies getting AI integration right are doing it with partners who have done it before.\nIn March, we launched the Claude Partner Network—a program, backed by a $100 million investment in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification—a credential, held by an individual, that signals they&#x27;ve been trained to build and deploy Claude in production.\nToday we’re announcing two things that make this ecosystem easier for customers to navigate. The Services Track is a tiered structure that reflects what a firm has actually built and delivered with Claude. The Claude Partner Hub is a portal where partners see exactly where they stand against the program&#x27;s requirements, and customers find the firms most qualified for the scope of their project.\nThe best partners have firsthand experience with Claude. They use the newest models for their own work before they put it in front of a client. This way, when they tell a customer what it takes, they’re speaking from experience. The Services Track is built to give customers confidence in a firm’s ability to help them bring Claude into their businesses.\nThe Services Track has three tiers, each reflecting how deep a firm&#x27;s Claude practice runs.\nEvery firm is measured against the same requirements, whether it&#x27;s a ten-person AI-native shop or a global consultancy. Size doesn&#x27;t lower the bar or raise the tier; a smaller firm climbs by growing its certified bench. And because the ladder counts adoption and enablement work, firms that specialize in getting customers live on Claude can qualify early.\nEvery firm&#x27;s dashboard shows the same numbers we see, and we verify standing every quarter. Detailed requirements for each tier are published at claude.com/partners .\nThe Claude Partner Hub allows each partner to see its own standing against the published requirements, refreshed daily. It’s also where customers looking for Claude expertise find the firms most qualified to help. Every partner’s standing—their tier, certified team, customer deployments, and public references—",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布服务分层与伙伴门户",
+          "zhSummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：伙伴门户、服务分层、训练能力",
+            "关键指标：100 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布服务分层与伙伴门户",
+          "displaySummary": "Anthropic公布服务分层与伙伴门户，重点落在企业落地与生态合作。这次变化主要覆盖伙伴门户、服务分层、训练能力，目前已进入产品端，文中出现的关键指标包括100 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 11, 2026 Announcements DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+          "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "We’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.\nWe’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies. DXC will train tens of thousands of Claude-certified forward-deployed engineers (FDEs)—engineers embedded directly inside customer organizations—to bring Claude into the systems DXC operates for the world’s largest banks, airlines, insurers, manufacturers, and government agencies.\nDXC is also now part of the Claude Partner Network , our network of consulting and services firms that bring Claude to enterprise clients.\nDXC worked with Claude in its own systems before rolling it out to clients. For example, in April 2026, DXC launched DXC OASIS, its tool for running customers&#x27; IT systems, where AI agents handle much of the routine work. Claude is now the default foundation model powering the platform’s agentic workflows.\nClaude was also the primary tool DXC used to build the platform. The firm estimates that Claude sped up software development by a factor of 10. More than 95% of the code was generated by Claude, then reviewed by software engineers. OASIS now serves over 50 DXC customers, and the firm plans to roll it out to customers around the world.\n“DXC helps the world’s largest banks, airlines, insurers, and government agencies put new technology to work,” said Paul Smith, Chief Commercial Officer, Anthropic. “They proved Claude inside their own operations first, under the same security and compliance requirements their customers face. Now we’re bringing Claude inside those environments together, industry by industry, with engineers who have already done it themselves.”\nFor its FDE program, DXC will recruit engineers from its existing development teams and certify them through Anthropic Academy , our training and certification program for partner engineers. DXC has added its own curriculum on top of Anthropic Academy, with training specific to the mission-critical systems its customers operate.\nThe alliance will begin in four areas where DXC already runs large operations for customers, and where Claude can do useful work today:\nTo learn more about the Claude Partner Network, visit anthropic.com/partners .\nWe’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.\nOur next generation of intelligence for the hardest knowledge work and coding problems.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。这次变化主要覆盖训练能力。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布企业落地与生态合作，重点落在企业落地与生态合作。这次变化主要覆盖训练能力。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 11, 2026 Announcements Introducing Claude Corps",
+          "url": "https://www.anthropic.com/news/claude-corps",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "We’re launching Claude Corps, a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.\nWe’re launching Claude Corps , a national fellowship program for people early in their careers who are passionate about extending the benefits of AI to communities across America.\nWe’ll teach 1,000 fellows how to use Claude well, match them with nonprofits across America, and pay them to spend a year—full-time, in-person—helping host organizations to advance their missions. Our goals are twofold: that host organizations are equipped with valuable tools and systems, and fellows build AI skills that will serve them in their careers.\nThe benefits of transformative AI systems could come at the cost of significant disruption. The companies building this technology have a responsibility to make sure the benefits are fully realized and widely shared, and to invest directly in the workers absorbing the change. As such, we’re committing an initial $150m to this program.\nIf Claude Corps works, we&#x27;ll have a foundation for something much larger: a model for widening AI&#x27;s benefits during a period of vast economic change. We’re announcing Claude Corps alongside our policy framework for addressing AI&#x27;s impact on work.\nEach fellowship lasts for 12 months. At the beginning of the program, Anthropic and CodePath will provide intensive training on using Claude in nonprofit settings. After being placed, fellows will receive five hours of ongoing training each week, with the remainder of their time dedicated to their host organization.\nFellows will receive a full-time salary of $85,000 and benefits, support from a CodePath mentor, office hours from Anthropic for their technical questions, an expansive Claude token budget, and professional guidance from their manager at the host organization.\nOver the next 12 months, at least 400 nonprofits will host Claude Corps Fellows. Host organizations include:\nHost organization applications are also open today for all cohort start dates. For more information about criteria for hosting and what’s involved, see the Claude Corps website .\nWe’re announcing a multi-year global alliance with DXC Technology, one of the world’s largest IT services companies.\nOur next generation of intelligence for the hardest knowledge work and coding problems.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出Claude Corps",
+          "zhSummary": "Anthropic推出Claude Corps，重点落在模型与平台升级。这次变化主要覆盖训练能力，目前已进入产品端，披露的金额或规模为$150m。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "金额或规模：$150m",
+            "上线状态：已进入产品端",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出Claude Corps",
+          "displaySummary": "Anthropic推出Claude Corps，重点落在模型与平台升级。这次变化主要覆盖训练能力，目前已进入产品端，披露的金额或规模为$150m。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Fake call detection on Android helps protect you from scammers using AI deepfakes to impersonate your contacts.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark: Scaling Towards Personal Superintelligence",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark, the first in the Muse family of models developed by Meta Superintelligence Labs. Muse Spark is a natively multimodal reasoning model with support for tool-use, visual chain of thought, and multi-agent orchestration.\nMuse Spark is the first step on our scaling ladder and the first product of a ground-up overhaul of our AI efforts. To support further scaling, we are making strategic investments across the entire stack — from research and model training to infrastructure, including the Hyperion data center.\nIn this post, we&#039;ll first explore Muse Spark&#039;s new capabilities and applications. After these results, we’ll look behind the curtain at the scaling axes driving our progress toward personal superintelligence.\nMuse Spark is available today at meta.ai and the Meta AI app. We’re opening a private API preview to select users.\nCapabilities for Personal Superintelligence\nMuse Spark offers competitive performance in multimodal perception, reasoning, health, and agentic tasks. We continue to invest in areas with current performance gaps, such as long-horizon agentic systems and coding workflows.\nWith larger models in development, these results demonstrate that our stack is scaling effectively.\nWe’re also releasing Contemplating mode, which orchestrates multiple agents that reason in parallel. This allows Muse Spark to compete with the extreme reasoning modes of frontier models such as Gemini Deep Think and GPT Pro. Contemplating mode provides significant capability improvements in challenging tasks, achieving 58% in Humanity’s Last Exam and 38% in FrontierScience Research.\nMuse Spark is available now, and Contemplating mode will be rolling out gradually in meta.ai .\n*For more details about our evaluations, see our methodology document .\nMuse Spark is the first step toward a personal superintelligence that understands your world. From analyzing your immediate environment to supporting your wellness, the advanced reasoning capabilities of Muse Spark enable powerful, highly personal use cases.\nMultimodal. Muse Spark is built from the ground up to integrate visual information across domains and tools. It achieves strong performance on visual STEM questions, entity recognition, and localization. These capabilities come together to enable interactive experiences like creating fun minigames or troubleshooting your home appliances with dynamic annotations.\nHealth. One major application of personal superintelligence is to help people learn about and improve their health. To improve Muse Spark&#039;s health reasoning capabilities, we collaborated with over 1,000 physicians to curate training data that enables more factual and comprehensive responses. Muse Spark can generate interactive displays that unpack and ex",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark",
+          "zhSummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：工具调用、多 Agent 编排、视觉链路推理"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark",
+          "displaySummary": "Meta AI推出Muse Spark，重点落在算力与基础设施进展。这次变化主要覆盖工具调用、多 Agent 编排、视觉链路推理，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "【导读】Anthropic执行团队由妹妹Daniela领导，她负责日常运营并向董事会汇报，Dario则专注长远战略和研究方向。他和妹妹把维护企业文化视为最重要任务。而他专注于真正该思考的事：AI到底会不会把人变成工具？",
+          "url": "https://www.36kr.com/p/3848711901189125",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "【导读】Anthropic执行团队由妹妹Daniela领导，她负责日常运营并向董事会汇报，Dario则专注长远战略和研究方向。他和妹妹把维护企业文化视为最重要任务。而他专注于真正该思考的事：AI到底会不会把人变成工具？\n这位掌管9650亿美元估值的AI巨头创始人，把日常运营全部甩给Daniela Amodei，自己只保留首席幕僚Avital Balwit一人汇报。其他高管全部绕过他，直接向Daniela负责。\nAnthropic的执行团队由总裁Daniela Amodei领导，她负责日常运营并定期向董事会汇报，而Dario则专注于公司的长远战略规划和研究方向。\nAnthropic首席执行官达里奥·阿莫迪回击了那些指责他炒作AI风险以谋取公司利益的批评者。\n阿莫迪还抨击了硅谷的社交媒体「通病」，并解释了为什么社会需要现在就着手规划未来的就业问题。\n所以，我要传达的信息绝不是「末日将至」。我的信息是：这是一个我们应当预见到的、我们正在担忧的、并且需要积极去应对的事情。\n工作中90%的内容被自动化了，剩下10%的人因此获得了十倍的杠杆，效率也随之提升十倍。\n眼下，AI已经在撰写全部或几乎全部的代码，软件工程师的生产力却还在提升——这看似矛盾，却是事实。\n更诚实的问法开始浮现—— 与其让人借助AI提高生产力，不如直接让AI完成工作，是不是反而更好？\n更现实的问题：AI的影响远不止软件业，真正难的是——到底哪些行业会先被重塑、哪些岗位会消失、又会冒出哪些新岗位？\n饼变大，就意味着社会里大概率会出现新的容纳空间——问题在于，我们能不能足够快地找到这些空间，让人及时转过去。\nAI再强也得对齐某些人的价值与意图，总得有人在某个层面上「给方向」。只是阿莫迪不确定这个角色最终会薄到什么程度、厚到什么程度。\n他说到这里，语气稍微乐观了一点：他希望人类依然能找到办法，继续「借力AI」，把自己解放出来，去做那些对人类而言更有意义、也更像「人」的工作。\n但他认为AI很快就能非常擅长：告诉你可能有哪些病、该做哪些检查。到那时，你未必还需要医生来完成「诊断」这一部分。\n它也没法给你「床边沟通」（bedside manner）。它不坐下来问你：你现在心里怎么想？你怎么面对这件事？你怎么熬过这个过程？\n所以医学可能会发生一种转向：诊断工具越来越强，人类医生的价值会更多回到「人与人之间」的那部分——而这一部分不会消失。\n这段话的潜台词很清楚：AI会把很多职业的「技术核心」抽走，但也可能逼着这些职业把重心移回「人类独有的那点东西」。\n阿莫迪最喜欢的书之一是《The Making of the Atomic Bomb》（《原子弹的制造》）。\n他最有共鸣的其实是Leo Szilard——那个最早提出「可能存在链式反应」的人。\n他接着把话说得更重：我们不可能靠「某个伟人式人物」来度过这一切，也不应该让某个自以为是的中心人物站到舞台中央。\n因为这里牵涉到太多强势参与者、太多利益。想让结局对所有人都好，唯一的办法是：到处都得有「制衡」（checks and balances）。\nhttps://x.com/shiringhaffary/status/2064798209613201741?s=20https://www.bloomberg.com/news/articles/2026-06-10/anthropic-ceo-dario-amodei-is-a-manager-to-only-one-direct-report\nhttps://www.youtube.com/watch?v=v1wZwxY3CMg\n这位掌管9650亿美元估值的AI巨头创始人，把日常运营全部甩给Daniela Amodei，自己只保留首席幕僚Avital Balwit一人汇报。其他高管全部绕过他，直接向Daniela负责。\nAnthropic的执行团队由总裁Daniela Amodei领导，她负责日常运营并定期向董事会汇报，而Dario则专注于公司的长远战略规划和研究方向。\nAnthropic首席执行官达里奥·阿莫迪回击了那些指责他炒作AI风险以谋取公司利益的批评者。\n阿莫迪还抨击了硅谷的社交媒体「通病」，并解释了为什么社会需要现在就着手规划未来的就业问题。\n所以，我要传达的信息绝不是「末日将至」。我的信息是：这是一个我们应当预见到的、我们正在担忧的、并且需要积极去应对的事情。\n工作中90%的内容被自动化了，剩下10%的人因此获得了十倍的杠杆，效率也随之提升十倍。\n眼下，AI已经在撰写全部或几乎全部的代码，软件工程师的生产力却还在提升——这看似矛盾，却是事实。\n更诚实的问法开始浮现—— 与其让人借助AI提高生产力，不如直接让AI完成工作，是不是反而更好？\n更现实的问题：AI的影响远不止软件业，真正难的是——到底哪些行业会先被重塑、哪些岗位会消失、又会冒出哪些新岗位？\n饼变大，就意味着社会里大概率会出现新的容纳空间——问题在于，我们能不能足够快地找到这些空间，让人及时转过去。\nAI再强也得对齐某些人的价值与意图，总得有人在某个层面上「给方向」。只是阿莫迪不确定这个角色最终会薄到什么程度、厚到什么程度。\n他说到这里，语气稍微乐观了一点：他希望人类依然能找到办法，继续「借力AI」，把自己解放出来，去做那些对人类而言更有意义、也更像「人」的工作。\n但他认为AI很快就能非常擅长：告诉你可能有哪些病、该做哪些检查。到那时，你未必还需要医生来完成「诊断」这一部分。\n它也没法给你「床边沟通」（bedside manner）。它不坐下来问你：你现在心里怎么想？你怎么面对这件事？你怎么熬过这个过程？\n所以医学可能会发生一种转向：诊断工具越来越强，人类医生的价值会更多回到「人与人之间」的那部分——而这一部分不会消失。\n这段话的潜台词很清楚：AI会把很多职业的「技术核心」抽走，但也可能逼着这些职业把重心移回「人类独有的那点东西」。\n阿莫迪最喜欢的书之一是《The Making of the Atomic Bomb》（《原子弹的制造》）。\n他最有共鸣的其实是Leo Szilard——那个最早提出「可能存在链式反应」的人。\n他接着把话说得更重：我们不可能靠「某个伟人式人物」来度过这一切，也不应该让某个自以为是的中心人物站到舞台中央。\n因为这里牵涉到太多强势参与者、太多利益。想让结局对所有人都好，唯一的办法是：到处都得有「制衡」（checks and balances）。\nhttps://x.com/shiringhaffary/status/2064798209613201741?s=20https://www.bloomberg.com/news/articles/2026-06-10/an",
+          "translationMode": "fallback",
+          "zhTitle": "【导读】Anthropic执行团队由妹妹Daniela领导，她负责…",
+          "zhSummary": "36Kr带来【导读】Anthropic执行团队由妹妹Daniela领导，她负责日常运营并向董事会汇报，Dario则专注长远战略和研究方向。他和妹妹把维护企业文化视为最重要任务。而他专注于真正该思考的事：AI到底会不会把人变成工具？，重点落在国内 AI 产业动态。披露的金额或规模为9650亿美元。进一步看，Anthropic执行团队由妹妹Daniela领导，她负责日常运营并向董事会汇报，Dario则专注长远战略和研究方向；AI到底会不会把人变成工具。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "金额或规模：9650亿美元"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "【导读】Anthropic执行团队由妹妹Daniela领导，她负责…",
+          "displaySummary": "36Kr带来【导读】Anthropic执行团队由妹妹Daniela领导，她负责日常运营并向董事会汇报，Dario则专注长远战略和研究方向。他和妹妹把维护企业文化视为最重要任务。而他专注于真正该思考的事：AI到底会不会把人变成工具？，重点落在国内 AI 产业动态。披露的金额或规模为9650亿美元。进一步看，Anthropic执行团队由妹妹Daniela领导，她负责日常运营并向董事会汇报，Dario则专注长远战略和研究方向；AI到底会不会把人变成工具。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "OpenAI推理之父掀桌：AI真·满血的样子，你没钱见",
+          "url": "https://www.36kr.com/p/3848712049202439",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "【导读】OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了。GPT-5.5看起来只比5.4强一点？控制推理预算后再看，那叫一个天壤之别。\nOpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。\n文章标题叫「大规模推理计算的启示」，核心论点只有一个， 你现在看到的所有AI跑分排行榜，给你的信息基本上是错的。\n同一个模型，给它一块钱想事情和给它一万块钱想事情，跑出来的分数天差地别。但现在所有的排行榜，都不告诉你这个模型花了多少钱跑出来的成绩。\nOpenAI甩出benchmark表格，社区照例逐行比对。结论是：还行，比5.4好一点，但也没好到哪去。\n波兰数学家Bartosz Naskręcki用一条prompt，让GPT-5.5在11分钟内搭出一个代数几何可视化应用。\nRuby on Rails之父DHH更是感慨，用完5.5再切回Opus 4.7，像倒退了一个时代。\n这就好比两个学生考同一张卷子，一个给了30分钟，一个给了3小时。你拿两份成绩来比，说「差距不大」，这不是比较，这是搞笑。\nGPT-5.4 Pro的API定价是$30/$180（每百万token），GPT-5.5是$5/$30。价格差了6倍。\n但benchmark表格上，这两个模型被当成同一个量级来比较，完全忽略了推理预算的差异。一旦控制token预算，GPT-5.5在网络安全评估上大幅拉开GPT-5.4。\nBrown在文中展示了两张图。左边是传统benchmark视角，5.5比5.4好一点。右边x轴换成token数量，5.5的曲线远远甩开5.4。\nMMLU这个曾经最主流的评测基准，前沿模型全部挤在88%以上，分数差异在统计上已经没有意义。你看到的不是「谁更聪明」，是噪声。\nMRCR v2在100万token长度上的测试，GPT-5.4得36.6%，GPT-5.5得74.0%——翻了一倍。但这个维度在标准benchmark表格里根本不存在。\n当模型的能力是推理计算量的函数时，一个没有x轴的benchmark分数，就是一个没有单位的物理量。它什么都没告诉你。\nx轴可以是token数、美元或耗时，各有优劣。但可以肯定的是，任何一条曲线，都比一个标量数字强。\n此前，他在卡耐基梅隆做出Libratus和Pluribus（击败顶级扑克职业选手，后者登上Science封面），在Meta FAIR做出CICERO（第一个在策略游戏《外交》中达到人类水平的AI）。\n2024年的o1让「推理时间换准确率」进入公众视野。到了2026年，推理时计算已经是所有前沿模型的标配。\nGPT-5.5 Pro不是一个独立模型，它是GPT-5.5同一个底座加了并行推理时计算：遇到难题跑多条推理链，综合出结果。\nClaude有extended thinking，Gemini有Deep Think，几乎每家前沿实验室都在往同一个方向跑。\n也就是，给AI双倍的「想事情时间」，它不会变聪明一倍，但确实会变聪明一点。收益是对数级递减的。\n但Brown引用了Karpathy和AI Safety Institute的一个关键发现——\n每一代模型发布时，如果你只在某个固定的推理预算下跑benchmark，你看到的就只是冰山一角。真正的能力上限，在你测不起的那片水域。\n用Brown的话说就是：「我们可能根本不知道现代LLM的能力天花板在哪里，因为测量成本太高了。」\nGPT-5.5的82.7% Terminal-Bench 2.0，你不知道花了多少钱跑出来的。你拿它和另一个模型比，你也不知道对方花了多少钱。\n这就像两家公司比营收，一家报的是年收入，一家报的是季度收入，但都不标注时间跨度。\n安全评估不能只测「默认状态」——国家级攻击者完全可以在单个任务上砸1000万美元推理预算。\nDeep Think本质上就是Gemini 3 Pro加了外部调用框架，任何人花同样推理费就能复现。\nx轴是推理预算（从$1到$10M），y轴是模型在特定危险能力上的表现。在低预算下测量，然后向高预算区域做预测。\n但他也承认一个棘手的问题，长期评估可能无法靠外推解决。要评估一个AI agent跑一年会不会出问题，可能真得让它跑一年。\n而AI实验室很快将面临荒诞局面——agent的运行周期超过了新模型的开发周期。你还没评估完上一代的长期行为，下一代就已经发布了。\n如果模型的能力是推理计算量的函数，而且越强的模型高原期越远，那「超级智能」到底是什么？\n传统理解里，ASI是一个质变的拐点：某天某个模型突然在所有认知任务上全面超越人类。\n前面的数字已经说得很清楚：同一类任务，两毛钱和三万美元的推理预算，买到的是完全不同的结果。但这些还只是已经测过的区间。\n但对数线性的scaling关系告诉你，曲线还没到顶。而且越强的模型，高原期越远。\n一个运行一整年、消耗数亿美元推理预算的AI agent，在这一年里表现出的能力，可能已经在特定领域超越了人类个体的一生积累。\n过去十年，整个AI行业习惯了一种评估方式：一个模型，一个分数，排个名次。从ImageNet到MMLU到Chatbot Arena，谁的数字大谁就赢。\n模型的能力从一个点变成了一条曲线，评估从一个分数变成了一张图。y轴是表现，x轴是你愿意花多少钱让它想。\n同一个模型在$5和$500预算下的能力，可能根本不是同一个级别。而这张二维地图上的绝大部分区域，至今没有人探索过。\n2026年，全球科技巨头在AI基础设施上的投入预计接近7000亿美元。这些钱买的不只是更大的模型，还有更长的推理、更多的采样、更快的inference。\n同一个开源模型，有人跑$0.20一道题，有人跑$30,000一道题。能力差距不是模型的差距，是资源的差距。\n参考资料：https://x.com/polynoamial/status/2064210146558136827\nOpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。\n文章标题叫「大规模推理计算的启示」，核心论点只有一个， 你现在看到的所有AI跑分排行榜，给你的信息基本上是错的。\n同一个模型，给它一块钱想事情和给它一万块钱想事情，跑出来的分数天差地别。但现在所有的排行榜，都不告诉你这个模型花了多少钱跑出来的成绩。\nOpenAI甩出benchmark表格，社区照例逐行比对。结论是：还行，比5.4好一点，但也没好到哪去。\n波兰数学家Bartosz Naskręcki用一条prompt，让GPT-5.5在11分钟内搭出一个代数几何可视化应用。\nRuby on Rails之父DHH更是感慨，用完5.5再切回Opus 4.7，像倒退了一个时",
+          "translationMode": "fallback",
+          "zhTitle": "OpenAI推理之父掀桌：AI真·满血的样子，你没钱见",
+          "zhSummary": "36Kr开源OpenAI推理之父掀桌：AI真·满血的样子，你没钱见，重点落在Agent 能力升级。这次变化主要覆盖推理能力，目前支持 API 接入，披露的金额或规模为$10M。进一步看，OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了；OpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：$10M",
+            "上线状态：支持 API 接入",
+            "能力重点：推理能力"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "OpenAI推理之父掀桌：AI真·满血的样子，你没钱见",
+          "displaySummary": "36Kr开源OpenAI推理之父掀桌：AI真·满血的样子，你没钱见，重点落在Agent 能力升级。这次变化主要覆盖推理能力，目前支持 API 接入，披露的金额或规模为$10M。进一步看，OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了；OpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "【导读】OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了。GPT-5.5看起来只比5.4强一点？控制推理预算后再看，那叫一个天壤之别。",
+          "url": "https://www.36kr.com/p/3848712049202439",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "【导读】OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了。GPT-5.5看起来只比5.4强一点？控制推理预算后再看，那叫一个天壤之别。\nOpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。\n文章标题叫「大规模推理计算的启示」，核心论点只有一个， 你现在看到的所有AI跑分排行榜，给你的信息基本上是错的。\n同一个模型，给它一块钱想事情和给它一万块钱想事情，跑出来的分数天差地别。但现在所有的排行榜，都不告诉你这个模型花了多少钱跑出来的成绩。\nOpenAI甩出benchmark表格，社区照例逐行比对。结论是：还行，比5.4好一点，但也没好到哪去。\n波兰数学家Bartosz Naskręcki用一条prompt，让GPT-5.5在11分钟内搭出一个代数几何可视化应用。\nRuby on Rails之父DHH更是感慨，用完5.5再切回Opus 4.7，像倒退了一个时代。\n这就好比两个学生考同一张卷子，一个给了30分钟，一个给了3小时。你拿两份成绩来比，说「差距不大」，这不是比较，这是搞笑。\nGPT-5.4 Pro的API定价是$30/$180（每百万token），GPT-5.5是$5/$30。价格差了6倍。\n但benchmark表格上，这两个模型被当成同一个量级来比较，完全忽略了推理预算的差异。一旦控制token预算，GPT-5.5在网络安全评估上大幅拉开GPT-5.4。\nBrown在文中展示了两张图。左边是传统benchmark视角，5.5比5.4好一点。右边x轴换成token数量，5.5的曲线远远甩开5.4。\nMMLU这个曾经最主流的评测基准，前沿模型全部挤在88%以上，分数差异在统计上已经没有意义。你看到的不是「谁更聪明」，是噪声。\nMRCR v2在100万token长度上的测试，GPT-5.4得36.6%，GPT-5.5得74.0%——翻了一倍。但这个维度在标准benchmark表格里根本不存在。\n当模型的能力是推理计算量的函数时，一个没有x轴的benchmark分数，就是一个没有单位的物理量。它什么都没告诉你。\nx轴可以是token数、美元或耗时，各有优劣。但可以肯定的是，任何一条曲线，都比一个标量数字强。\n此前，他在卡耐基梅隆做出Libratus和Pluribus（击败顶级扑克职业选手，后者登上Science封面），在Meta FAIR做出CICERO（第一个在策略游戏《外交》中达到人类水平的AI）。\n2024年的o1让「推理时间换准确率」进入公众视野。到了2026年，推理时计算已经是所有前沿模型的标配。\nGPT-5.5 Pro不是一个独立模型，它是GPT-5.5同一个底座加了并行推理时计算：遇到难题跑多条推理链，综合出结果。\nClaude有extended thinking，Gemini有Deep Think，几乎每家前沿实验室都在往同一个方向跑。\n也就是，给AI双倍的「想事情时间」，它不会变聪明一倍，但确实会变聪明一点。收益是对数级递减的。\n但Brown引用了Karpathy和AI Safety Institute的一个关键发现——\n每一代模型发布时，如果你只在某个固定的推理预算下跑benchmark，你看到的就只是冰山一角。真正的能力上限，在你测不起的那片水域。\n用Brown的话说就是：「我们可能根本不知道现代LLM的能力天花板在哪里，因为测量成本太高了。」\nGPT-5.5的82.7% Terminal-Bench 2.0，你不知道花了多少钱跑出来的。你拿它和另一个模型比，你也不知道对方花了多少钱。\n这就像两家公司比营收，一家报的是年收入，一家报的是季度收入，但都不标注时间跨度。\n安全评估不能只测「默认状态」——国家级攻击者完全可以在单个任务上砸1000万美元推理预算。\nDeep Think本质上就是Gemini 3 Pro加了外部调用框架，任何人花同样推理费就能复现。\nx轴是推理预算（从$1到$10M），y轴是模型在特定危险能力上的表现。在低预算下测量，然后向高预算区域做预测。\n但他也承认一个棘手的问题，长期评估可能无法靠外推解决。要评估一个AI agent跑一年会不会出问题，可能真得让它跑一年。\n而AI实验室很快将面临荒诞局面——agent的运行周期超过了新模型的开发周期。你还没评估完上一代的长期行为，下一代就已经发布了。\n如果模型的能力是推理计算量的函数，而且越强的模型高原期越远，那「超级智能」到底是什么？\n传统理解里，ASI是一个质变的拐点：某天某个模型突然在所有认知任务上全面超越人类。\n前面的数字已经说得很清楚：同一类任务，两毛钱和三万美元的推理预算，买到的是完全不同的结果。但这些还只是已经测过的区间。\n但对数线性的scaling关系告诉你，曲线还没到顶。而且越强的模型，高原期越远。\n一个运行一整年、消耗数亿美元推理预算的AI agent，在这一年里表现出的能力，可能已经在特定领域超越了人类个体的一生积累。\n过去十年，整个AI行业习惯了一种评估方式：一个模型，一个分数，排个名次。从ImageNet到MMLU到Chatbot Arena，谁的数字大谁就赢。\n模型的能力从一个点变成了一条曲线，评估从一个分数变成了一张图。y轴是表现，x轴是你愿意花多少钱让它想。\n同一个模型在$5和$500预算下的能力，可能根本不是同一个级别。而这张二维地图上的绝大部分区域，至今没有人探索过。\n2026年，全球科技巨头在AI基础设施上的投入预计接近7000亿美元。这些钱买的不只是更大的模型，还有更长的推理、更多的采样、更快的inference。\n同一个开源模型，有人跑$0.20一道题，有人跑$30,000一道题。能力差距不是模型的差距，是资源的差距。\n参考资料：https://x.com/polynoamial/status/2064210146558136827\nOpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。\n文章标题叫「大规模推理计算的启示」，核心论点只有一个， 你现在看到的所有AI跑分排行榜，给你的信息基本上是错的。\n同一个模型，给它一块钱想事情和给它一万块钱想事情，跑出来的分数天差地别。但现在所有的排行榜，都不告诉你这个模型花了多少钱跑出来的成绩。\nOpenAI甩出benchmark表格，社区照例逐行比对。结论是：还行，比5.4好一点，但也没好到哪去。\n波兰数学家Bartosz Naskręcki用一条prompt，让GPT-5.5在11分钟内搭出一个代数几何可视化应用。\nRuby on Rails之父DHH更是感慨，用完5.5再切回Opus 4.7，像倒退了一个时",
+          "translationMode": "fallback",
+          "zhTitle": "【导读】OpenAI o1推理模型核心缔造者Noam Brown发…",
+          "zhSummary": "36Kr开源【导读】OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了。GPT-5.5看起来只比5.4强一点？控制推理预算后再看，那叫一个天壤之别。，重点落在Agent 能力升级。这次变化主要覆盖推理能力，目前支持 API 接入，披露的金额或规模为$10M。进一步看，OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了；OpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：$10M",
+            "上线状态：支持 API 接入",
+            "能力重点：推理能力"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "【导读】OpenAI o1推理模型核心缔造者Noam Brown发…",
+          "displaySummary": "36Kr开源【导读】OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了。GPT-5.5看起来只比5.4强一点？控制推理预算后再看，那叫一个天壤之别。，重点落在Agent 能力升级。这次变化主要覆盖推理能力，目前支持 API 接入，披露的金额或规模为$10M。进一步看，OpenAI o1推理模型核心缔造者Noam Brown发长文炮轰整个行业：用单一跑分评价AI模型，从2024年就过时了；OpenAI的Noam Brown，刚刚发了一篇长文，对着整个AI行业开了一炮。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Say Goodbye to Goldfish Memory: PolarDB Mem0 Gives AI Agents long-term Memory",
+          "url": "https://www.alibabacloud.com/blog/say-goodbye-to-goldfish-memory-polardb-mem0-gives-ai-agents-long-term-memory_603241",
+          "description": "Say Goodbye to Goldfish Memory: PolarDB Mem0 Gives AI Agents long-term Memory This article introduces PolarDB Mem0, a managed long-term memory service that gives AI agents persistent, structured recall through integrated vector and graph ca",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces PolarDB Mem0, a managed long-term memory service that gives AI agents persistent, structured recall through integrated vector and graph capabilities.\nOn the evolution path of AI agents, perception (multimodal), thinking (inference), and tool execution (function calling) are gradually improving. However, they still lack time continuity. Mem0 (Memory Layer for AI) was created as a personal memory layer for LLMs. Mem0 on PolarDB for MySQL is its cloud-native managed version. It provides one-stop integration of memory storage, fetching, and retrieval into the ApsaraDB ecosystem.\n· Agents without long-term memory treat every conversation as a first meeting. They require repeated prompts to maintain settings.\n· Agents with Mem0 on PolarDB for MySQL fetch structured facts from conversations and continually evolve.\nIt does not simply save chat records. Instead, it fetches core facts from raw expressions. For example, it fetches key facts from a statement such as \"I want to buy a pink unicorn gift for my daughter, but money is tight right now\":\nIf you ask \"Where to take the kids this weekend\" a month later, the agent recommends a suitable low-cost plan based on these facts. This is long-term memory. It gives agents the continuity to understand user needs. It is a key step toward artificial general intelligence (AGI).\nMem0 on PolarDB for MySQL is more than storage. It builds a digital twin for each user in the database. The following outlines the common scenarios of long-term memory across five realms:\nMem0 stores user device models, repair records, and communication preferences. This lets the agent ask questions such as \"Mr. Wang, is your previous projector issue resolved?\" This upgrades the continuous experience from a cold program to a dedicated assistant.\nMem0 records information such as difficult knowledge points, question types, and accuracy rates for students. It pushes incorrect questions from three days ago during review. This achieves dynamic teaching and prevents blind practice.\nMem0 stores medical histories, allergy histories, and treatment plans. When a patient consults about new symptoms, the agent associates diagnostics data from six months ago. It provides in-depth historical advice and warns of drug conflicts to deliver full-lifecycle medical services.\nMem0 stores information such as emotional fluctuations, anniversaries, and family relationships. When a user feels down, the agent initiates topics such as \"I remember you were happy for a long time after completing the last project. Is it going well now?\" This provides empathetic support.\n5. Artificialintelligence recommendation\nMem0 records interest evolution and purchase motives based on long-term customer interests. It builds dynamic interest graphs and actively recom",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来Say Goodbye",
+          "zhSummary": "Alibaba Cloud带来Say Goodbye，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力、推理能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：多模态能力、推理能力"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来Say Goodbye",
+          "displaySummary": "Alibaba Cloud带来Say Goodbye，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力、推理能力，目前已进入产品端。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Apache RocketMQ 5.5.0 Open Source LiteTopic: Dedicated Channel for Millions of AI Sessions",
+          "url": "https://www.alibabacloud.com/blog/apache-rocketmq-5-5-0-open-source-litetopic-dedicated-channel-for-millions-of-ai-sessions_603233",
+          "description": "Apache RocketMQ 5.5.0 Open Source LiteTopic: Dedicated Channel for Millions of AI Sessions This article introduces Apache RocketMQ 5.5.0&#039;s LiteTopic, a new message model designed for millions of lightweight AI agent sessions with event",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces Apache RocketMQ 5.5.0&#039;s LiteTopic, a new message model designed for millions of lightweight AI agent sessions with event-driven distribution and session persistence.\nBefore and after the release of RocketMQ 5.5.0, the evolution of protocols and frameworks in the AI industry is also pointing in the same direction.\n● Anthropic MCP 2026 Roadmap pay close attention to Transport scalability, Agent Communication, task lifecycle management and session state externalization. The core contradiction is that there are natural conflicts between stateful Agent sessions and SLB and horizontal expansion, while production-level lifecycle semantics such as retry after task failure and cleanup after result expiration also need more stable run time support.\n● Google ADK also released a Long Running Agent solution, pointing out that the standard dialogue loop is not suitable for all long-term task scenarios, and the system needs more explicit state persistence, event-driven wake-up, and multi-agent delegation collaboration.\nTwo paths that converge to the same set of infrastructure requirements:\nThese three requirements are not only the protocol layer or the framework layer, but also impose higher requirements on the messaging infrastructure .\nIn the AI era, the Message Queue for Apache RocketMQ community launched the RIP-83(Lite Topic: A New Message Model) proposal in 2025 to address the needs of massive and lightweight sessions, state persistence, and event-driven scheduling. With the release of 5.5.0, LiteTopic has entered the open source version.\nLiteTopics are designed to bypass these limitations. Three industry needs, corresponding to three types of optimization directions:\nThe core differences between LiteTopics and traditional topics are as follows:\nEach queue of traditional topics corresponds to a ConsumeQueue file-millions of topics mean millions of small files. The root cause of performance degradation is the fragmented read and write of file systems.\nLiteTopic switches the index layer to RocksDB and manages consumer offset in key-value pairs:\n● Write Path Unchanged : Messages are appended in the CommitLog order without changing the high-performance write path.\n● Unified index management : One RocksDB engine supports the coexistence of a large number of Litetopics.\nWith the automatic TTL reclaim mechanism, developers do not need to manually delete historical session resources over a long period of time. This also reduces the resource usage caused by the continuous accumulation of historical sessions. This makes LiteTopic more suitable for carrying a large number of lightweight and dynamic session channels, and also more suitable for long-running AI application scenarios.\nThe traditional Pop mode is driven by long polling. Consumers",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud开源算力与基础设施进展",
+          "zhSummary": "Alibaba Cloud开源Apache RocketMQ 5.5.0 Open Source LiteTopic，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud开源算力与基础设施进展",
+          "displaySummary": "Alibaba Cloud开源Apache RocketMQ 5.5.0 Open Source LiteTopic，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Dropbox Introduces Nova, an Internal Platform for Running AI Coding Agents at Scale",
+          "url": "https://www.infoq.com/news/2026/06/dropbox-nova-ai-coding-agents/",
+          "description": "Dropbox Introduces Nova, an Internal Platform for Running AI Coding Agents at Scale",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Dropbox has unveiled Nova, an internal platform designed to orchestrate and operationalize AI coding agents across the company\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nBirgitta B&#xF6;ckeler, Distinguished Engineer at Thoughtworks, returns to discuss the rapid evolution of AI in software delivery. She touches on the evolution from vibe coding, the changing tools landscape and the more autonomous agents that, besides higher velocity, introduce higher risk.\nThe speakers discuss the architectural challenges of executing safe data deletion across distributed datastores. Balancing durability, availability & correctness, they explain how to orchestrate multi-system deletion propagation without impacting live traffic. They share lessons on controlling tombstone accumulation, building continuous audit loops, and gaining trust with a centralized platform.\nAdi Polak discusses the architecture required to transition from stateless prompts to state-aware, context-rich AI agents. Drawing on 15 years in distributed systems, she shares how engineering leaders can leverage Apache Kafka and Flink for real-time stream processing, dynamic memory tiering, and tool orchestration via MCP to solve token limits, cost spikes, and latency bottlenecks.\nTrisha Ballakur discusses her journey from a backend software engineer to CTO and CEO, using her startup Pointz as a case study. She explains how to implement bottom-up customer discovery to find product-market fit, effectively delegate to global contractors to reduce build times, customize open-source repos like Valhalla, and apply engineering test-case models to business development.\nNetflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform using composable, Lego-like steps, and explains how Netflix utilizes automated canary validation, compliance checks, and a custom \"confidence metric\" to eliminate the long tail of manual engineering migrations.\nThe more senior you become, the fewer people pressure-test your decisions. This 5-week cohort gives you that check.\nA practical online cohort for senior architects addressing team topologies, value stream architecture, cognitive load, and architecting for flow.\nA practical online cohort for senior engineers making decisions around retrieval, agents, evals, and AI infrastructure.\nLearn what's next in AI and software, from teams already doing it.\nInfoQ Homepage News Dropbox In",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出算力与基础设施进展",
+          "zhSummary": "InfoQ AI推出Dropbox Introduces Nova, an Internal Platform，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出算力与基础设施进展",
+          "displaySummary": "InfoQ AI推出Dropbox Introduces Nova, an Internal Platform，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Confidently Automating Changes Across a Diverse Fleet",
+          "url": "https://www.infoq.com/presentations/automate-fleetwide-changes",
+          "description": "Confidently Automating Changes Across a Diverse Fleet Netflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform",
+          "date": "",
+          "score": 16,
+          "category": "开发者信号",
+          "detailText": "Netflix engineer Casey Bleifer explains how the company is automating fleet-wide code changes and migrations at scale, driving adoption timelines down from months to mere days with confidence.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nBirgitta B&#xF6;ckeler, Distinguished Engineer at Thoughtworks, returns to discuss the rapid evolution of AI in software delivery. She touches on the evolution from vibe coding, the changing tools landscape and the more autonomous agents that, besides higher velocity, introduce higher risk.\nThe speakers discuss the architectural challenges of executing safe data deletion across distributed datastores. Balancing durability, availability & correctness, they explain how to orchestrate multi-system deletion propagation without impacting live traffic. They share lessons on controlling tombstone accumulation, building continuous audit loops, and gaining trust with a centralized platform.\nAdi Polak discusses the architecture required to transition from stateless prompts to state-aware, context-rich AI agents. Drawing on 15 years in distributed systems, she shares how engineering leaders can leverage Apache Kafka and Flink for real-time stream processing, dynamic memory tiering, and tool orchestration via MCP to solve token limits, cost spikes, and latency bottlenecks.\nTrisha Ballakur discusses her journey from a backend software engineer to CTO and CEO, using her startup Pointz as a case study. She explains how to implement bottom-up customer discovery to find product-market fit, effectively delegate to global contractors to reduce build times, customize open-source repos like Valhalla, and apply engineering test-case models to business development.\nNetflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform using composable, Lego-like steps, and explains how Netflix utilizes automated canary validation, compliance checks, and a custom \"confidence metric\" to eliminate the long tail of manual engineering migrations.\nThe more senior you become, the fewer people pressure-test your decisions. This 5-week cohort gives you that check.\nA practical online cohort for senior architects addressing team topologies, value stream architecture, cognitive load, and architecting for flow.\nA practical online cohort for senior engineers making decisions around retrieval, agents, evals, and AI infrastructure.\nLearn what's next in AI and sof",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出算力与基础设施进展",
+          "zhSummary": "InfoQ AI推出Confidently Automating Changes Across a Diverse Fleet，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出算力与基础设施进展",
+          "displaySummary": "InfoQ AI推出Confidently Automating Changes Across a Diverse Fleet，重点落在算力与基础设施进展。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Google Expands SynthID Adoption for AI Watermarking, Previews Content Detection API",
+          "url": "https://www.infoq.com/news/2026/05/google-synthid-content-detection/",
+          "description": "Google Expands SynthID Adoption for AI Watermarking, Previews Content Detection API",
+          "date": "",
+          "score": 16,
+          "category": "开发者信号",
+          "detailText": "Google\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nBirgitta B&#xF6;ckeler, Distinguished Engineer at Thoughtworks, returns to discuss the rapid evolution of AI in software delivery. She touches on the evolution from vibe coding, the changing tools landscape and the more autonomous agents that, besides higher velocity, introduce higher risk.\nThe speakers discuss the architectural challenges of executing safe data deletion across distributed datastores. Balancing durability, availability & correctness, they explain how to orchestrate multi-system deletion propagation without impacting live traffic. They share lessons on controlling tombstone accumulation, building continuous audit loops, and gaining trust with a centralized platform.\nAdi Polak discusses the architecture required to transition from stateless prompts to state-aware, context-rich AI agents. Drawing on 15 years in distributed systems, she shares how engineering leaders can leverage Apache Kafka and Flink for real-time stream processing, dynamic memory tiering, and tool orchestration via MCP to solve token limits, cost spikes, and latency bottlenecks.\nTrisha Ballakur discusses her journey from a backend software engineer to CTO and CEO, using her startup Pointz as a case study. She explains how to implement bottom-up customer discovery to find product-market fit, effectively delegate to global contractors to reduce build times, customize open-source repos like Valhalla, and apply engineering test-case models to business development.\nNetflix engineer Casey Bleifer shares how to achieve rapid, automated code changes across a massive, diverse software fleet. She discusses building an event-driven orchestration platform using composable, Lego-like steps, and explains how Netflix utilizes automated canary validation, compliance checks, and a custom \"confidence metric\" to eliminate the long tail of manual engineering migrations.\nThe more senior you become, the fewer people pressure-test your decisions. This 5-week cohort gives you that check.\nA practical online cohort for senior architects addressing team topologies, value stream architecture, cognitive load, and architecting for flow.\nA practical online cohort for senior engineers making decisions around retrieval, agents, evals, and AI infrastructure.\nLearn what's next in AI and software, from teams already doing it.\nInfoQ Homepage News Google Expands SynthID Adoption for AI Watermarking, Previews Content Detection API\nGoogle's SynthID, designed to embed impercepti",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出算力与基础设施进展",
+          "zhSummary": "InfoQ AI推出Google Expands SynthID Adoption，重点落在算力与基础设施进展。目前开放预览，支持 API 接入。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：开放预览，支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出算力与基础设施进展",
+          "displaySummary": "InfoQ AI推出Google Expands SynthID Adoption，重点落在算力与基础设施进展。目前开放预览，支持 API 接入。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Big Data & AI Platform Monthly Newsletter—May 2026",
+          "url": "https://www.alibabacloud.com/blog/big-data-%26-ai-platform-monthly-newsletter%E2%80%94may-2026_603242",
+          "description": "Big Data & AI Platform Monthly Newsletter—May 2026 May 2026 Alibaba Cloud Big Data & AI Newsletter: Tech updates, new releases, market trends, and customer practices. Alibaba Cloud Big Data and AI J",
+          "date": "",
+          "score": 26,
+          "category": "资本与生态",
+          "detailText": "May 2026 Alibaba Cloud Big Data &amp; AI Newsletter: Tech updates, new releases, market trends, and customer practices.\nThe Big Data & AI Product Monthly Newsletter for May 2026 covers technology updates, product and feature releases, market updates, and customer application practices to help you quickly understand the latest developments in Alibaba Cloud's Big Data & AI offerings.\nBy adding LLM on Modul Studio and deeply integrating them into PAI product modules, we provide users with more out-of-the-box model choices to meet the growing demand for model services.\nMaxCompute SQL adds 6 new scenario-based AI Functions including data classification, extraction, sentiment analysis, and translation.\nMaxCompute SQL now supports array expansion via the UNNEST operator, simplifying nested data processing. It also supports coordination with JOIN syntax via ON conditions for associative filtering, suitable for array split statistics, struct field extraction, and associative match filtering scenarios.\nMaxCompute SQL script mode now supports temporary tables. Within the script execution lifecycle, you can create temporary tables via CREATE TEMPORARY TABLE to cache intermediate results for multiple reuses within the same script, reducing repeated query overhead.\nMaxQA supports automatic elastic upper limit CU (Autoscale). Interactive Quota types can be set with a step size of 25 CU, and the configurable automatic elastic upper limit CU value range is [0, Level-1 Quota AutoscaleLimitCU].\nMaxCompute supports storing Apache Iceberg tables on Alibaba Cloud Object Storage Service (OSS), and manages metadata, permissions, and data lifecycle through MaxCompute for efficient querying, writing, and management. Iceberg tables are compatible with open-source engines like Spark, supporting multi-engine sharing of the same data, suitable for Lakehouse architecture.\nWith the Blob type, raw files, metadata, and annotation information of multimodal data can be uniformly stored in the same MaxCompute table, queried and maintained via SQL, and processed in batch through MaxFrame and SQL UDF.\nMaxFrame AI Function further integrates with Alibaba Cloud Bailian Platform. Without the need to self-encapsulate UDFs or maintain DashScope Keys, you can directly call Model Studio's multimodal models within MaxFrame DataFrame expressions, supporting declarative invocation, automatic batch distributed inference, row-level fault tolerance, and precise reruns.\nThe MaxFrame multimodal operator module officially extends its capability boundary to audio , adding the Series.mf.audio accessor, covering the full pipeline of speech processing.\nFor industry scenarios such as intelligent driving, smart cabin, and visual perception, MaxFrame officially releases the MaxFrame Intelligent Driving Video Pr",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud披露融资与资本动作",
+          "zhSummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。这次变化主要覆盖多模态能力、推理能力，目前已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：多模态能力、推理能力"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Alibaba Cloud披露融资与资本动作",
+          "displaySummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。这次变化主要覆盖多模态能力、推理能力，目前已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Save time and grow your business with new Gemini tools",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-features-for-businesses/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "资本与生态",
+          "detailText": "An overview of new features in the Gemini app designed specifically to support businesses and entrepreneurs.\nWe&#x27;re introducing new Gemini features tailored for small businesses, including a direct Google Business Profile connection and proactive Business notebooks — designed to transform the app into a partner that natively understands your brand.\nYou can now connect your Google Business Profile to Gemini to get a personalized AI assistant that understands your brand and customer data. Use the new Business notebooks feature to organize your workflows, track critical tasks, and generate content based on your specific business context. Look for these updates rolling out globally this month to help you save time and manage your operations more effectively.\n\"Save time and grow your business with new Gemini tools\" helps entrepreneurs work smarter. Connect your Google Business Profile to Gemini for a smarter, personalized AI assistant. Use Gemini to analyze performance data and draft quick responses to customer reviews. Organize your workflows and business data in one place with new Business notebooks. These tools help you manage daily tasks and grow your business more efficiently.\nGoogle is adding new features to Gemini to help small business owners save time. You can now connect your business profile so the AI understands your brand and helps you reply to customers. It also includes a new notebook tool to keep your projects and data organized in one place. These updates make Gemini act like a smart assistant that knows exactly how to help your business grow.\nYour browser does not support the audio element.\nSmall businesses are the true engine of the global economy, yet entrepreneurs often find themselves stretched thin, playing the roles of CEO, CMO and customer service team all before lunch. AI holds incredible promise to act as an extension of your team, but to be truly helpful, it needs to remember your brand voice and context so you don't have to re-explain your goals every time you log in.\nBuilding on the new Google AI capabilities we announced in May, we’re excited to share what’s next for Gemini and Google Business Profile users. Today on stage at Google for Brazil , we introduced new Gemini app features specifically designed for business owners everywhere.\nRolling out globally this month, these updates transform Gemini into a deeply knowledgeable, in-pocket partner that natively understands your business and helps you get more done.\nYour Google Business Profile serves as your digital storefront, helping you stand out on Google Search and Maps, build instant credibility through customer reviews, and turn online searches into customer actions like bookings, orders and sales. That’s why we’re introducing new business features in Gemini that con",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Save time与grow your bus…",
+          "zhSummary": "Google AI公布Save time与grow your business，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Google AI公布Save time与grow your bus…",
+          "displaySummary": "Google AI公布Save time与grow your business，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 16,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/06/12/"
+}

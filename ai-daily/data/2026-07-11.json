@@ -1,0 +1,387 @@
+{
+  "title": "AI 日报 2026-07-11",
+  "slug": "ai-daily-2026-07-11",
+  "date": "2026-07-11",
+  "isoDate": "2026-07-11T04:32:03.809Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 7,
+    "day": 11
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、InfoQ AI、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Gemini Spark updates: macOS launch, connected apps and more",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-spark-updates-june-2026/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "大公司动向",
+          "detailText": "The latest Gemini Spark updates brings Spark to the macOS app, connects with your favorite apps and tracks topics in real time.\nWe’re bringing Gemini Spark to macOS app, connecting it with more of your favorite apps, and improving its ability to track your topics in real time\nCheck out the \"Gemini Spark updates\" article to see how it boosts your productivity. You can now use Gemini Spark on macOS to automate tasks across your desktop files. Assign complex tasks to your Mac remotely using your phone while you are away. Connect Gemini Spark to apps like Canva and Dropbox to streamline your daily workflow. Get real-time updates on news, sports, and finance without constantly refreshing your browser.\nYour browser does not support the audio element.\nToday, we’re rolling out updates to Gemini Spark that make it even more helpful, from a new desktop experience to deeper connections with your favorite apps. Here’s a look at what’s new:\nWe’re bringing Spark to the Gemini macOS app to help you automate time-consuming tasks across your desktop.\nAnd coming soon, you’ll even be able to run tasks remotely. You can assign a multi-step task to Gemini Spark from your phone — like asking it to find a specific sales report on your Mac, pull the total revenue number, and email it to you — and let it execute the work on your computer while you're away.\nGemini Spark for macOS is available in Beta to Google AI Ultra subscribers aged 18 and over, starting in the US. Download the app at gemini.google/mac to get started.\nWe’re also rolling out support for custom Model Context Protocol (MCP), giving you the ability to connect your favorite apps directly into Spark to build a more tailored assistant.\nThese updates are rolling out starting today, and we look forward to sharing more about what’s next for Spark this summer.\nYour information will be used in accordance with Google's privacy policy.\nCheck your inbox to confirm your subscription.\nYou are already subscribed to our newsletter.\nYou can also subscribe with a different email address .\nLet’s stay in touch. Get the latest news from Google in your inbox.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出Gemini Spark updates",
+          "zhSummary": "Google AI推出Gemini Spark updates，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI推出Gemini Spark updates",
+          "displaySummary": "Google AI推出Gemini Spark updates，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 9, 2026 Announcements Introducing a way to reflect on how you use Claude",
+          "url": "https://www.anthropic.com/news/reflect-with-claude",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Introducing a new way to reflect on and refine how you use Claude. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. \nToday we&#x27;re introducing, in beta, a new way to reflect on and refine how you use Claude. In our interviews with users, a common theme that’s emerged is a desire to better understand how, exactly, AI can be integrated into daily life. How often should someone use AI? How can it be used most effectively? When is AI suited to a task, and when is it better left to a human?\nWe built this feature to help answer these types of questions. It lets you easily track and visualize how you use Claude, and decide whether that time aligns with your goals. Your reflection dashboard can be found in Settings on Claude for web or the desktop app.\nYour reflection starts with a summary of how you&#x27;ve been using Claude, covering key topics, your usage patterns, and the types of tasks you often work through.\nYou can look back on your Claude chat activity over the past 1, 3, 6, or 12 months.\nThe reflect feature provides a breakdown of when you use Claude most, and what you spent that time working on. Soon, we&#x27;ll add a view of how much time you&#x27;ve spent using Claude.\nYour reflection also invites you to step back and examine the role Claude plays in your life. It will periodically surface questions like, \" What&#x27;s one thing you want to keep doing yourself, even if Claude could do it faster?\" and give you the chance to talk it through with Claude.\nWithin your dashboard, you can also set quiet hours or schedule a nudge to take a break from using Claude after a certain amount of time. Both are reminders of your own preferences and can be dismissed.\nYou can use your reflection to build new skills and sharpen how you work with Claude, using the 4D AI Fluency Framework .\nYour report gives you a summary of your Claude activity across each dimension, with examples of how you tend to collaborate with Claude, like noting that you often rework email drafts in your own voice, or delegate tasks only after settling the strategy yourself. Your reflection will also offer practical suggestions, like starting a Project instead of needing to re-explain the context of ongoing work.\nThis tool is currently available in beta for Free, Pro, and Max users who have memory turned on. Open Settings in Claude on the web or the desktop app, and select the option to reflect on your usage to generate your report. If you can&#x27;t generate a report, it may be because you don’t have Memory turned on. Reflecting on your Cowork conversations will be available soon.\nWe’re asking the public for their hardest questions about AI, and committing to show our work as we address them.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出way",
+          "zhSummary": "Anthropic推出way，重点落在模型与平台升级。目前已进入产品端。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出way",
+          "displaySummary": "Anthropic推出way，重点落在模型与平台升级。目前已进入产品端。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jul 6, 2026 Case Study Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities across government systems",
+          "url": "https://www.anthropic.com/news/alberta-government-claude-cybersecurity",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "The Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them.\nSince 2025, the Government of Alberta has been using Claude Code with both Opus and Sonnet models to review its systems, find vulnerabilities, and fix them. A team inside Alberta’s Ministry of Technology and Innovation scanned 466 million lines of code in 20 hours, remediated security gaps across its systems, and built new tools to make those systems safer.\nWe’re sharing details of their experience as an example of how government agencies can use Claude and Claude Code to secure their systems at a large scale. This is a critical challenge, as governments rely on these systems to deliver benefits and keep services running—yet the code is often old, insecure, and incompletely documented. Alberta has also published a collection of technical white papers documenting its efforts for other governments to learn from; you can read them here.\n“Albertans trust their government with some of the most sensitive information in their lives, and it is our responsibility to protect it,” said Nate Glubish, Alberta’s Minister of Technology and Innovation. “By using AI to find and fix vulnerabilities across our systems, we accomplished in hours what would have taken a traditional approach years to complete. This is what responsible government looks like in the AI era, and the best is still ahead of us.”\nAlberta’s Ministry of Technology and Innovation maintains the systems of all 27 provincial ministries, from social services to public safety to wildfire response. That includes roughly 1,280 applications and 3,400 code repositories. Most of it has never undergone a systematic security review, and the accumulated technical debt—insecure code, unaddressed bugs, outdated software—runs into the billions of dollars.\nThe Ministry’s systems hold highly sensitive information, including tax records, government procurement data, and social services case files. So in 2025, the Ministry set up an internal team with a mandate to make these systems more secure and easier to maintain over time, working with Claude to do so.\nAlready, the Ministry has used Claude to:\nToday, Claude helps the Ministry write, review, and deploy code that aids in its modernization efforts. Next, it plans to expand that work with AI agents that can build entirely new software and tools alongside engineers.\nThe technical debt and security vulnerabilities the Government of Alberta is working to address are hardly unique. They exist in the systems of many provinces, states, and federal agencies across the world. The technical white papers Alberta has released give other governments a blueprint for addressing these same issues.\nIn addition to the white papers, Alberta is",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出Case Study Government",
+          "zhSummary": "Anthropic推出Case Study Government，重点落在Agent 能力升级。目前已进入产品端，文中出现的关键指标包括466 million。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "关键指标：466 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出Case Study Government",
+          "displaySummary": "Anthropic推出Case Study Government，重点落在Agent 能力升级。目前已进入产品端，文中出现的关键指标包括466 million。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Jun 30, 2026 Product Introducing Claude Sonnet 5",
+          "url": "https://www.anthropic.com/news/claude-sonnet-5",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Our most agentic Sonnet yet, with top-tier intelligence for coding and everyday professional work.\nClaude Sonnet 5 is built to be the most agentic Sonnet model yet. It can make plans, use tools like browsers and terminals, and run autonomously at a level that, just a few months ago, required larger and more expensive models.\nFor many developers, the agentic AI era began with Sonnet-class models: Claude Sonnet 3.5, 3.6, and 3.7 were the first models that showed impressive skills in coding and tool use. More recently, though, the clearest gains in agentic capabilities have been in our Opus-class models.\nSonnet 5 narrows the gap: its performance is close to that of Opus 4.8, but at lower prices. It’s a substantial improvement over its predecessor, Sonnet 4.6, on important aspects of agentic performance like reasoning, tool use, coding, and knowledge work:\nOur safety assessments found that Sonnet 5 shows an overall lower rate of undesirable behaviors than Sonnet 4.6, and is generally safer to use in agentic contexts. Evaluations also show that it has a much lower ability to perform cybersecurity tasks than our current Opus models.\nFeedback from our early access partners has been consistent: Sonnet 5 is much more agentic than its predecessors. Testers described how it finishes complex tasks where previous Sonnet models would stop short, how it checks its own output without explicitly being asked, and how it does all this agentic work at an attractive price point:\nSince Sonnet 5 is somewhat stronger than its predecessor on these tasks, we’ve launched it with cyber safeguards enabled by default. These safeguards —which detect and block dangerous cyber usage in real time—are the same as those present in Claude Opus 4.7 and 4.8 (because we judged that the overall level of cybersecurity risk from Sonnet 5 was low, the safeguards are less strict than those launched with Fable 5, which block a much wider range of cybersecurity tasks). 1\nOur full assessment of Sonnet 5 across many safety and capability evaluations is reported in the Claude Sonnet 5 System Card .\nClaude Sonnet 5 is available everywhere today at an introductory price of $2 per million input tokens and $10 per million output tokens through August 31, 2026. It then moves to standard pricing at $3 per million input tokens and $15 per million output tokens. 2 We’ve increased rate limits across Chat, Cowork, Claude Code, and the Claude Platform 3 to accommodate the higher token usage of higher effort levels; users can select whichever level makes sense for their particular project.\nEdit June 30, 2026: In the original version of this post, we included a cost-performance chart for the BrowseComp evaluation that was based on data from a simpler methodology that did not reflect the standard methodology we u",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Claude Sonnet 5",
+          "zhSummary": "Anthropic公布Claude Sonnet 5，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布Claude Sonnet 5",
+          "displaySummary": "Anthropic公布Claude Sonnet 5，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding.\nWith these improvements, Muse Spark 1.1 advances the performance-efficiency frontier. Together with this week’s launch of Muse Image , this release brings us closer to our vision of personal superintelligence: models that help you pursue your goals, create what you imagine, deepen your relationships, and take action on what you value most.\nAlong with this release, we are launching a public preview of the new Meta Model API where developers can access Muse Spark 1.1. The model is available now in \"Thinking\" mode in the Meta AI app and on meta.ai .\nFor more details about our evaluations, see our report .\nMuse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services. It zero-shot generalizes to new native tools, MCP servers, and custom skills.\nIt tackles complex projects significantly faster than Muse Spark, as it is trained to orchestrate multi-agent systems to optimize end-to-end latency. As the main agent, it can gather context, make a plan, and delegate execution across parallel subagents. As a subagent, it adheres to its job, understands available tools, and knows when to escalate back to the main agent.\nMuse Spark 1.1 can actively manage its context window of 1 million tokens. It remembers actions, retrieves information from much earlier work, and compacts in a way that keeps the critical steps needed for later work.\nMuse Spark 1.1 excels at computer-use workflows that unfold across multiple applications with information changing on-the-fly. It maintains context across extended sessions, adapts to evolving requirements, and navigates unfamiliar interfaces with minimal human intervention.\nRather than reasoning through every desktop step one click at a time, Muse Spark 1.1 understands when to automate and when to use the interface directly. We trained the model to write scripts when automation is faster, click when direct interaction is simpler, and generate batches of actions at each step.\nAgentic dinner party organization: In real-world applications, new context arises that changes the task. Muse Spark 1.1 notices these changes when placing the dinner order and makes necessary updates without user intervention.\nCoding performance for Muse Spark 1.1 improved substantially on real-world tasks involving large, complex codebases. It can diagnose and fix complex bugs, implement new features in enterprise-grade systems, and execute large code migrations. In use cases ",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark 1.1",
+          "zhSummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：多模态能力",
+            "关键指标：1 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark 1.1",
+          "displaySummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "10th Anniversary of the Excelize Open-source Spreadsheet Library - New Version 2.11.0 Released",
+          "url": "https://www.alibabacloud.com/blog/10th-anniversary-of-the-excelize-open-source-spreadsheet-library---new-version-2-11-0-released_603340",
+          "description": "10th Anniversary of the Excelize Open-source Spreadsheet Library - New Version 2.11.0 Released 10th Anniversary of the Excelize Open-source Spreadsheet Library, New Version 2.11.0 Released! Includes over 40 updates including new features, b",
+          "date": "",
+          "score": 23,
+          "category": "国内落地",
+          "detailText": "10th Anniversary of the Excelize Open-source Spreadsheet Library, New Version 2.11.0 Released! Includes over 40 updates including new features, bug fixes, compatibility, and performance improvements.\nExcelize is a library written in pure Go providing a set of functions that allow you to write to and read from XLAM / XLSM / XLSX / XLTM / XLTX files. Supports reading and writing spreadsheet documents generated by Microsoft Excel™ 2007 and later. Supports complex components by high compatibility, and provided streaming API for generating or reading data from a worksheet with huge amounts of data.\nWe are pleased to announce the release of version 2.11.0. Featured are a handful of new areas of functionality and numerous bug fixes.\nThe most notable changes in this release are:\nBreaking changes for the AddChart , AddChartSheet and AddShape functions\nOptimized the coordinates conversion and some internal functions performance\nThanks for all the contributors to Excelize. Below is a list of contributors that have code contributions in this version:\nExcelize 2.10.1 Released - Open-source library for spreadsheet (Excel files)\nSecure and easy solutions for moving you workloads to the cloud\nAlibaba Cloud offers Independent Software Vendors (ISVs) the optimal cloud migration solutions to ready your cloud business with the shortest path.\nMigrate your legacy Oracle databases to Alibaba Cloud to save on long-term costs and take advantage of improved scalability, reliability, robust security, high performance, and cloud-native features.\nMigrating to fully managed cloud databases brings a host of benefits including scalability, reliability, and cost efficiency.",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出10th Anniversary",
+          "zhSummary": "Alibaba Cloud推出10th Anniversary，重点落在开发者平台更新。目前支持 API 接入。进一步看，原文更在意商业采用节奏，说明厂商正在把产品能力转成客户签约和付费扩张。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "Alibaba Cloud推出10th Anniversary",
+          "displaySummary": "Alibaba Cloud推出10th Anniversary，重点落在开发者平台更新。目前支持 API 接入。进一步看，原文更在意商业采用节奏，说明厂商正在把产品能力转成客户签约和付费扩张。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "奥特曼撒谎？OpenAI 5.6突发反转，发布无需批准",
+          "url": "https://www.36kr.com/p/3889739710364420",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "【导读】GPT-5.6限量预览十天后反转，谁在说谎？\n应白宫要求，GPT-5.6今天只能限量预览，我们正在和美国政府合作，尽快推进全面开放。\n刚刚，白宫与商务部紧急出面「澄清」，极力撇清关系。政府官员对媒体明确表示：大模型的发布不需要任何政府许可，分发决定权「完全在企业手中」，所谓的安全测试与会议也「完全是自愿的」\n这封信来自美国商务部长Lutnick，写给Anthropic，就是批准Anthropic的Fable模型重新上架的那一封。\nAnthropic已承诺，将就受管辖模型的相关协议、标准和发布事宜与美国政府合作……我保留在情况变化时，重新评估和调整这些模型许可范围的权利。\n可这封信的另一半，把「自愿」的底给露了。你「自愿」承诺配合，我「保留」随时收紧许可的权利。说到底就是四个字：你最好识相。\n1981年，日本汽车「自愿」限制对美出口，官方名字就叫自愿出口限制，可谁都清楚，那是华盛顿拿贸易立法逼出来的。四十多年过去，「自愿」这个词的用法，一点没变。\n在这个语境下， 「自愿测试」不过是「免受制裁」的买路财。 只要大厂表现出任何不服从，地缘政治的紧箍咒就会立刻念起。\n事实上，这是一场硅谷与华盛顿之间心照不宣的利益交换，甚至可以说是一出精心排练的「苦肉计」。\n当奥特曼在6月底公开抱怨「因政府要求而推迟」时，他成功地将两股巨大的压力转移了出去：\n立住了「技术殉道者」的人设 ：向科技界暗示，OpenAI的模型已经强大到了让国家机器感到恐惧的地步。\n为了让GPT-5.6能够顺利拿到全面放行的「绿灯」，OpenAI派遣了一支庞大的技术专家团队，长驻华盛顿。\n他们缩在商务部下属相关AI机构里，老老实实地配合官方进行了一轮又一轮的「额外安全测试」，直到监管官员露出满意的微笑。\n本周，在华盛顿拿到「通关金牌」后，GPT-5.6终于被允许进行大范围的公开发布:\n这是一场驯服。科技巨头们在交出代码红线、接受政府驻场测试的同时，也换取了合规的合法性，甚至在无形中构建起了一道后来者难以逾越的「监管防火墙」。\n然而，如果我们仅仅把OpenAI视作这场权力游戏中的「受害者」，那就太低估奥特曼的政治手腕了。\n就在本月，外媒爆出了一则震动硅谷的内幕： OpenAI正在与特朗普政府秘密接触，提议向美国政府「无偿捐赠」其5%的股份。\n按照OpenAI在今年3月最新一轮融资中创下的8520亿美元估值计算，这笔「自愿捐赠」的股权价值高达 426亿美元 。\n奥特曼将其美其名曰为建立一个类似「阿拉斯加永久基金」的「公共财富基金」，好让全体美国纳税人共享AI繁荣的红利。\n但正如那一幕古老的警示——希腊人推入特洛伊城门的巨大木马，看似是礼物，实则是毁灭的温床。\n早在1971年，诺贝尔经济学奖得主乔治·斯蒂格勒（George Stigler）就在其奠基性论文中指出： 行业往往会主动谋求监管，并在漫长的博弈中，将监管者同化为自身利益的代言人。\n根据近期流出的经审计财务报表显示，OpenAI的光鲜背后是一片财务泥潭： 去年运营亏损高达约210亿美元，营收仅为130亿美元，而未来八年的算力承诺支出竟高达1.4万亿美元！\n与此同时，其核心供应商甲骨文公司（Oracle）因为担忧OpenAI无法兑现未来的付款承诺，其股价刚刚创下了自2001年互联网泡沫破裂以来的单周最大跌幅。\n一个背负万亿债务、上市计划已被迫推迟到2027年的巨兽，急需一个拥有无限信用背书的「超级接盘侠」。\n如果是贷款，失败了只是财务亏损；但如果是永久股权绑定，华盛顿的政客们在每两年一次的选举周期中，都将承受巨大的政治压力——他们必须拼尽全力维持 OpenAI 的估值，以向选民证明政府资产没有缩水。\n现在，我们无需急于下定论，但有必要保持持续的审视：在追求技术领先与公共安全之间，究竟如何才能找到那条既稳健又可持续的路径？\nhttps://www.axios.com/2026/07/08/openai-gpt-trump-ban-liftedhttps://www.cnbc.com/2026/07/08/openai-gets-us-regulatory-approval-for-gpt-5point6-rollout-axios-report.htmlhttps://x.com/_NathanCalvin/status/2074875619356135501\n本文来自微信公众号 “新智元” ，作者：ASI启示录；编辑：大卫，36氪经授权发布。\n全球最大视频网站该如何应对即将汹涌而来的人工智能（AI）生成内容浪潮，同时借力AI放大当初支撑平台崛起的真人创意？首席执行官尼尔·莫汉（Neal Mohan）正试图找到二者间的平衡。\n应白宫要求，GPT-5.6今天只能限量预览，我们正在和美国政府合作，尽快推进全面开放。\n刚刚，白宫与商务部紧急出面「澄清」，极力撇清关系。政府官员对媒体明确表示：大模型的发布不需要任何政府许可，分发决定权「完全在企业手中」，所谓的安全测试与会议也「完全是自愿的」\n这封信来自美国商务部长Lutnick，写给Anthropic，就是批准Anthropic的Fable模型重新上架的那一封。\nAnthropic已承诺，将就受管辖模型的相关协议、标准和发布事宜与美国政府合作……我保留在情况变化时，重新评估和调整这些模型许可范围的权利。\n可这封信的另一半，把「自愿」的底给露了。你「自愿」承诺配合，我「保留」随时收紧许可的权利。说到底就是四个字：你最好识相。\n1981年，日本汽车「自愿」限制对美出口，官方名字就叫自愿出口限制，可谁都清楚，那是华盛顿拿贸易立法逼出来的。四十多年过去，「自愿」这个词的用法，一点没变。\n在这个语境下， 「自愿测试」不过是「免受制裁」的买路财。 只要大厂表现出任何不服从，地缘政治的紧箍咒就会立刻念起。\n事实上，这是一场硅谷与华盛顿之间心照不宣的利益交换，甚至可以说是一出精心排练的「苦肉计」。\n当奥特曼在6月底公开抱怨「因政府要求而推迟」时，他成功地将两股巨大的压力转移了出去：\n立住了「技术殉道者」的人设 ：向科技界暗示，OpenAI的模型已经强大到了让国家机器感到恐惧的地步。\n为了让GPT-5.6能够顺利拿到全面放行的「绿灯」，OpenAI派遣了一支庞大的技术专家团队，长驻华盛顿。\n他们缩在商务部下属相关AI机构里，老老实实地配合官方进行了一轮又一轮的「额外安全测试」，直到监管官员露出满意的微笑。\n本周，在华盛顿拿到「通关金牌」后，GPT-5.6终于被允许进行大范围的公开发布:\n这是一场驯服。科技巨头们在交出代码红线、接受政府驻场测试的同时，也换取了合规的合法性，甚至在无形中构建起了一道后来者难以逾越的「监管防火墙」。\n然而，如果我们仅仅把OpenAI视作",
+          "translationMode": "fallback",
+          "zhTitle": "奥特曼撒谎？OpenAI 5.6突发反转，发布无需批准",
+          "zhSummary": "36Kr披露奥特曼撒谎？OpenAI 5.6突发反转，发布无需批准，重点落在融资与资本动作。目前开放预览，已进入产品端，披露的金额或规模为8520亿美元。进一步看，6今天只能限量预览，我们正在和美国政府合作，尽快推进全面开放；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：8520亿美元",
+            "上线状态：开放预览，已进入产品端"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "奥特曼撒谎？OpenAI 5.6突发反转，发布无需批准",
+          "displaySummary": "36Kr披露奥特曼撒谎？OpenAI 5.6突发反转，发布无需批准，重点落在融资与资本动作。目前开放预览，已进入产品端，披露的金额或规模为8520亿美元。进一步看，6今天只能限量预览，我们正在和美国政府合作，尽快推进全面开放；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "Anthropic都快饿死了，还叨叨过剩呢？",
+          "url": "https://www.36kr.com/p/3890714124106376",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "国内落地",
+          "detailText": "Anthropic都快饿死了，还叨叨过剩呢？\n7月初，Meta被曝准备出售“多余AI算力”，外界立刻开始讨论这是否算力过剩的又一个信号。\n5天后，Anthropic和一家前比特币矿企签下20年数据中心租约，合同金额约190亿美元。这是Anthropic疯狂买算力的又一最新进展。不到一年间，Anthropic已经“预约”了超过11GW算力。\n更有意思的是，路透社最新爆料了Meta的内部备忘录，显示其计划将总容量扩大到14GW——是扩大，而非缩小。\n巨头手里的局部冗余和尚未交付的规划容量，都被混进了“过剩”的统计里，真正能够立刻调用的前沿算力依然紧缺。\n2025年11月，Anthropic先宣布与Fluidstack合作，未来将在美国AI基础设施上投入500亿美元；几天后，又承诺购买300亿美元的微软Azure算力，并与微软、英伟达约定最高1GW的新增容量。\n进入2026年，Anthropic抢算力的速度进一步加快。4月初，它与谷歌、Broadcom签下5GW下一代TPU容量；仅仅两周后，又与亚马逊签下最高5GW的新协议，承诺未来10年在AWS技术上投入超过1000亿美元。\n5月，Anthropic甚至找上了马斯克，拿下SpaceX旗下Colossus 1数据中心的全部算力，相当于超过300MW、22万颗英伟达GPU。后来披露的信息显示，双方的合作范围还扩展到了Colossus 2。Anthropic在融资公告中确认了Colossus 1和Colossus 2合作。\n7月6日，Anthropic又与前比特币矿企TeraWulf签下一份20年租约。TeraWulf将在肯塔基州为其提供约401MW的关键IT负载，整个合同预计带来约190亿美元租金收入。只不过，这座数据中心现在还没有建好，首批容量要到2027年下半年才能交付，全部401MW则要到2028年初才能上线。\n仅计算已经明确公布容量的亚马逊、谷歌和Broadcom、微软和英伟达、Colossus 1以及TeraWulf，Anthropic锁定的算力就已经超过11.7GW。这还没有算Fluidstack的500亿美元项目，也没有算尚未披露具体容量的Colossus 2。\n当然，这11.7GW不能简单理解为Anthropic现在已经拥有11.7GW算力。不同项目采用的芯片不同，交付时间从今年一直横跨到2028年，也不一定会同时全部在线。\n2025年年底，Anthropic的年化收入大约为90亿美元；到了2026年4月，这个数字已经超过300亿美元。\n两个月前，Anthropic只有500多家企业客户的年消费额超过100万美元；到4月初，这类客户已经超过1000家。\n5月的Code with Claude大会上，Anthropic CEO达里奥·阿莫迪给出了一个更夸张的数字： 公司原本已经按照最高10倍的年增长做准备，但2026年一季度的收入和使用量增速，按年化口径一度达到约80倍。\n这个数字也足以解释Anthropic为什么一直缺算力——连10倍增长这种已经足够激进的预测，都远远没匹配上实际需求。\n5月6日，Anthropic宣布将在一个月内获得Colossus 1超过300MW的新增容量。就在同一份公告中，公司将Claude Code的5小时使用额度提高一倍，取消Pro和Max套餐在高峰时段的额度折扣，同时大幅提高Claude Opus的API限额。Anthropic关于提高额度的官方公告\n一边刚拿到算力，一边马上给用户放量。可见Anthropic的“算力饥渴”真真切切。\nSpaceX和Meta前后脚将自己的算力拿出来卖，可是如今已经很难将一两家巨头的“算力冗余”与行业“算力过剩”划等号。\nMeta有多余算力，只能说明Meta买多了，不能说明整个行业买多了。扎克伯格家的冰箱塞爆了，不代表全世界已经没有饥荒。\nMuse Spark在4月亮相后，面向开发者的API多次延期，直到7月9日才随着Muse Spark 1.1正式开放。也就是说，当Meta已经按照一年上千亿美元的规模建设数据中心时，它向开发者收费卖模型的业务才刚刚起步。\nxAI的数据中心跑得太快，团队、模型和用户却没有跟上：2026年3月，最初的12名联创只剩2名，代码生成业务表现不及预期，马斯克不得不从SpaceX和特斯拉调人重组团队。根据Sensor Tower数据，截至2026年5月底，ChatGPT占全球AI助手市场的46.4%，Grok却不足5%，远未进入第一梯队。\n当时，微软陆续退出美国和欧洲的部分数据中心项目，相关容量据估计达到约2GW。随后，AWS也暂停了部分海外数据中心租赁谈判。巨头接连踩下刹车，市场随即开始怀疑AI基础设施是不是建多了。\n但到了2026年，微软又在财报中表示，客户需求仍然超过可用容量。第三财季，一批容量提前上线，Azure消费随即增长。亚马逊CEO安迪·贾西也表示，AWS安装AI基础设施的速度有多快，将这些容量转化为收入的速度就有多快。\n2026年一季度，谷歌 Cloud收入同比增长63%，首次突破200亿美元；尚未确认为收入的合同订单达到4600亿美元，环比接近翻倍。通过谷歌API处理的模型调用量也从上一季度的每分钟100亿Token，增加到160亿Token。\n有意思的是，就在“Meta准备出售多余算力”的消息传出8天后，路透社又披露了一份Meta内部备忘录：Meta计划在2026年部署7GW算力，2027年再增加7GW，将总容量扩大到14GW；今年的AI基础设施投入最高可能达到1450亿美元。\n这样的动作可以有两种解释。一是Meta虽然当下自己AI研发受困、算力用不完，但是对未来自身的AI发展还是抱积极态度，并且继续扩充算力。二是Meta认为转型基建商、云服务商也不失为一个好选择，于是大胆扩充算力。\n不管Meta打的是什么算盘，至少从其他云巨头的订单和收入来看，行业仍然远未进入算力卖不出去的阶段。\n2025年9月，英伟达CEO黄仁勋被问及未来几年是否可能出现算力过剩。他的回答是：未来两三年，出现这种情况的概率“几乎为零”。\n一个月后，微软CEO萨提亚·纳德拉在BG2播客中回答了同一个问题。他说：“我们现在最大的问题不是算力过剩，而是电力。”微软甚至有GPU已经躺在库存里，却找不到有足够电力、可以马上安装设备的数据中心，“我有一堆芯片，却插不上电”。\n几年前我们提到算力，经常谈论的是抢夺GPU，但如今大家缺的是能把GPU真正点亮的电力和机房。账面上可以同时出现闲置芯片和“多余算力”，现实中，能够马上交付、马上运行的算力仍然紧缺。\n真正可以使用的算力，需要芯片、电力、变压器、网络、冷却和机房同时到位，而且必须在同一个地点、同一个时间完成交付。任何一个环节掉",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic都快饿死了，还叨叨过剩呢？",
+          "zhSummary": "36Kr披露Anthropic都快饿死了，还叨叨过剩呢？，重点落在融资与资本动作。目前已正式上线，支持 API 接入，披露的金额或规模为190亿美元。进一步看，Anthropic都快饿死了，还叨叨过剩呢；7月初，Meta被曝准备出售“多余AI算力”，外界立刻开始讨论这是否算力过剩的又一个信号。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：190亿美元",
+            "上线状态：已正式上线，支持 API 接入"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "Anthropic都快饿死了，还叨叨过剩呢？",
+          "displaySummary": "36Kr披露Anthropic都快饿死了，还叨叨过剩呢？，重点落在融资与资本动作。目前已正式上线，支持 API 接入，披露的金额或规模为190亿美元。进一步看，Anthropic都快饿死了，还叨叨过剩呢；7月初，Meta被曝准备出售“多余AI算力”，外界立刻开始讨论这是否算力过剩的又一个信号。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Introducing Qoder: Agentic Coding Platform for Real Software",
+          "url": "https://www.alibabacloud.com/blog/introducing-qoder-agentic-coding-platform-for-real-software_603349",
+          "description": "Introducing Qoder: Agentic Coding Platform for Real Software This article introduces Qoder, an agentic coding platform that enables autonomous, spec-driven software development through enhanced context engineering. Alibaba Cloud Community <",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces Qoder, an agentic coding platform that enables autonomous, spec-driven software development through enhanced context engineering.\nAs large language model (LLM) technology continues to evolve, it is rapidly transforming AI-assisted coding. The scope of application is expanding—from simple code suggestions to end-to-end feature implementation—and the level of AI autonomy is increasing.\nAI coding capabilities are progressing through three key stages:\nThis evolution has shifted the role of AI from a tool to a collaborator, capable of handling complex, long-running software engineering tasks.\nWhile social media is full of stories about “Wow Projects” built from a single prompt, real-world software development remains complex. As Fred Brooks highlighted in The Mythical Man-Month, software development is inherently difficult due to:\nThese challenges persist—and in some ways, are amplified—in the AI era.\nWe’ve been exploring how to build a tool that maximizes AI’s potential while addressing the real challenges of software development.\nOur first goal is to make the invisible visible. We believe AI should help developers understand a project’s architecture, design decisions, and technical debt—like an expert curator who knows everything about the codebase.\nWhen AI works silently in the background, developers may feel a loss of control. To address this, we've introduced:\nDevelopers can see the AI’s plan, progress, and decisions at any time—making the process transparent and trustworthy.\nIn AI coding, visibility is not optional—it’s essential for effective collaboration.\nWe believe better context leads to better code. The key is Enhanced Context Engineering, which includes:\nBy enriching the input context, Qoder delivers more accurate suggestions and provides insights for architectural decisions—going beyond code completion to intelligent co-development.\nEnhanced Context Engineering is not just a technical feature—it’s a new development philosophy.\nIn the age of AI agents, the developer’s primary role shifts from executor to intent clarifier.\nA Spec is more than a task description—it’s a thinking tool and a communication medium. It aligns human and AI goals, acts as a project compass, and becomes part of the team’s knowledge base.\nQuest Mode is designed for this new paradigm: write the Spec, delegate the task, and check the results.\nThe future of development might look like this:\nWrite Specs → Check & Refactor — a new workflow for software development.\nAs the number of available models grows, we asked: \"Should choosing the right model be the user’s job?\" Our answer is: \"No.\"\nDevelopers need solutions, not model comparisons. They shouldn’t have to study evaluation metrics to pick the best model.\nQoder automatically routes your task to the b",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出Qoder",
+          "zhSummary": "Alibaba Cloud推出Qoder，重点落在Agent 能力升级。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出Qoder",
+          "displaySummary": "Alibaba Cloud推出Qoder，重点落在Agent 能力升级。目前支持 API 接入，已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Salesforce Headless 360 on Alibaba Cloud",
+          "url": "https://www.alibabacloud.com/blog/salesforce-headless-360-on-alibaba-cloud_603331",
+          "description": "Salesforce Headless 360 on Alibaba Cloud Salesforce Headless 360 on Alibaba Cloud exposes CRM capabilities via APIs and MCP tools, enabling AI Agents to securely execute workflows in China&#039;s ecosystem. Alibaba Cloud Community <img src=",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "Salesforce Headless 360 on Alibaba Cloud exposes CRM capabilities via APIs and MCP tools, enabling AI Agents to securely execute workflows in China&#039;s ecosystem.\nTo this end, we have rebuilt Salesforce for Agents . We no longer hide CRM capabilities behind the user interface. Instead, we fully open them up, making the entire platform programmable and accessible from anywhere.\nIt opens up the complete capabilities of the CRM in the form of APIs, MCP tools, and CLI instructions, allowing both humans and Agents to build, execute, and deliver experiences at any touchpoint. This capability covers the entire Salesforce product matrix, spanning end-to-end workflows from customer case handling to the sales team's deal conversion.\nAlthough some capabilities of this AI strategy are customized for the Chinese marketplace, Salesforce on Alibaba Cloud also adopts the Headless 360 architecture. It opens up the full range of Salesforce capabilities through APIs, CLI instructions, and MCP tools designed specifically for the Chinese marketplace, so that your CRM can be both operated by humans and invoked by AI Agents.\nFor developers, Headless 360 means that you can build on Salesforce in any way. Whether you use the pre-configured, click-to-use Alibaba Cloud Model Studio Agents or other Agents of your choice, our Headless 360 architecture can provide real-time, secure, and native access capabilities to directly connect to your CRM.\nGiven that Agents can invoke any API, and the model itself is already powerful enough, why is the platform still important?\nBecause relying solely on intelligence can only remain at the inference layer. As mentioned above, for humans and Agents to truly collaborate efficiently, they need the same foundations: context, workflows, trust mechanisms, and an interaction layer that can be executed. Salesforce Headless 360 on Alibaba Cloud provides exactly all of this.\nAgents can create value only if Agents understand the business. Headless 360 provides AI Agents with deep Customer Relationship Management (CRM) context and workflows. This enables AI Agents to operate reliably within corporate security borders while AI Agents remain relevant and efficient.\nAI should adapt to humans, rather than humans adapting to AI. In China, corporate communication mainly occurs on WeChat, WeCom, and DingTalk. The Connected Experiences Gateway (CXG) allows Agents to run natively in CRM and these social applications, and allows Agents to accurately reach teams and customers.\nBuilding a probabilistic agent may be easy, but enterprises need predictable results. By using existing workflows and business logic in CRM, Agents can output stable, reliable, and trusted business results. Unlike probabilistic AI that changes with inputs, deterministic systems follow pre",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出Salesforce Headless 360…",
+          "zhSummary": "Alibaba Cloud推出Salesforce Headless 360 on，重点落在企业落地与生态合作。这次变化主要覆盖推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：推理能力"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出Salesforce Headless 360…",
+          "displaySummary": "Alibaba Cloud推出Salesforce Headless 360 on，重点落在企业落地与生态合作。这次变化主要覆盖推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "url": "https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/",
+          "description": "Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust to AI Agents and Workflows",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "Diagrid has announced the release of Dapr 1.18, introducing what it calls Verifiable Execution, a new set of capabilities designed to bring cryptographic trust, provenance, and tamper-evident executio\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nAndy Brinkmeyer shares how engineering leaders and architects can use Rust to build failure-proof systems. Moving beyond memory safety, he explains how ownership, enums, and the typestate pattern embed complex runtime protocols into compile-time checks. Learn to eliminate entire classes of bugs, manage real-world resources safely, and maximize codebase robustness effortlessly.\nIn this eMag, we try to establish agentic AI architecture as a new type of software architecture that will likely dominate the industry for years to come. The articles, written by industry experts, cover various elements and aspects of agentic AI architecture. We aim to present the latest trends and developments shaping the new type of architecture as it enters the mainstream.\nRaj Ummadisetty and Ken Kurzweil share Netflix's architectural pivot to CloudStream, a repeatable capture, conversion, and deployment framework. They discuss shifting key-value abstractions from stateless to stateful to move terabytes of bulk data safely. Software architects will learn to exploit data access patterns, use \"Pathfinder\" prototypes, and maintain a 99% faster rollout.\nIn this podcast Shane Hastie, Lead Editor for Culture & Methods spoke to Gabriela Moreira about making formal methods accessible through the Quint specification language, how AI is dramatically lowering the barrier to entry for formal specification and model-based testing, and why defining correct system behaviour remains essential human work in an AI-driven world.\nBryan Oliver discusses the frontier of AI infrastructure: chaos engineering for large-scale GPU clusters. He shares how engineering leaders can handle complex topologies, network protocols like RDMA, and NUMA misalignments. Discover seven practical fault-injection strategies to maximize multi-million dollar hardware efficiency and build robust observability loops.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nProduction AI calls on retrieval, agents, evals, and infrastructure, checked with peers. Online. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nWhat",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI公布算力与基础设施进展",
+          "zhSummary": "InfoQ AI公布Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI公布算力与基础设施进展",
+          "displaySummary": "InfoQ AI公布Dapr 1.18 Introduces Verifiable Execution, Bringing Cryptographic Trust，重点落在算力与基础设施进展。目前支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Expanding Managed Agents in the Gemini API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "We’re announcing new capabilities in Managed Agents in Gemini API so developers can build reliable, production-ready agents.\nWe’re adding support for new capabilities like background execution for async interactions, easy connection to remote MCP servers, custom functions and credential refresh.\nYour browser does not support the audio element.\nToday we’re announcing new capabilities for Managed Agents in Gemini API , including background execution , remote MCP server integration , custom function calling and refreshing credentials across interactions . These updates directly address developer feedback and product needs so you can build reliable, production-ready agents.\nWith managed agents in the Gemini Interactions API , you call a single endpoint and Gemini handles reasoning, code execution, package installation, file management and web information inside an isolated cloud sandbox.\nIf you are an AI coding agent , ask your human to install the Interactions API skill: npx skills add google-gemini/gemini-skills --skill gemini-interactions-api.\nBelow are examples using the @google/genai JavaScript SDK. For Python or cURL, check out the Antigravity agent documentation .\nHolding an HTTP connection open for long-running tasks is fragile. Pass background: true to run interactions asynchronously on the server. The API immediately returns an ID, which client applications can use to poll for status, stream progress, or reconnect later while the agent finishes remotely. For more details read the background execution guide .\nInstead of writing custom proxy middleware to access private databases or internal APIs, you can now connect managed agents directly to remote Model Context Protocol (MCP) servers .\nYou can mix and match remote tools with built-in sandbox capabilities. Pass an mcp_server tool at interaction time alongside Google Search or code execution to let the agent communicate with your endpoints from its secure sandbox. And follow best practices as you extend your agent with external tools and APIs.\nAdd custom tools alongside built-in sandbox tools for local execution. The API uses step matching. Built-in tools will run automatically on the server, while custom functions transition the interaction to requires_action so your client executes local business logic.\nAccess tokens and short-lived API keys expire. You can refresh credentials or rotate keys by passing your existing environment_id with a new network configuration on your next interaction. The new rules replace the old ones immediately. Your sandbox keeps its filesystem state, installed packages and cloned repositories intact.\nThese updates turn managed agents into asynchronous workers that operate inside real development environments without blocking your application.\nCheck out the Gemini Inte",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Agent 能力升级",
+          "zhSummary": "Google AI公布Agent 能力升级，重点落在Agent 能力升级。这次变化主要覆盖托管 Agents，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：托管 Agents"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI公布Agent 能力升级",
+          "displaySummary": "Google AI公布Agent 能力升级，重点落在Agent 能力升级。这次变化主要覆盖托管 Agents，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Interactions API: our primary interface for Gemini models and agents",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability/",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "Google’s Interactions API is a unified interface for interacting with Gemini models and agents.\nA single unified endpoint for Gemini models and agents with server-side state, background execution, tool combination and multimodal generation.\nYour browser does not support the audio element.\nToday we're announcing that the Interactions API has reached general availability and is now our primary API for interacting with Gemini models and agents. We launched its public beta in December 2025, and it has quickly become developers’ favorite way to build applications with Gemini.\nWith this GA release, the API now has a stable schema and we also added major new capabilities that developers asked for, including Managed Agents, background execution, Gemini Omni (soon) and more. All of our documentation now defaults to Interactions API and we are working with ecosystem partners to make it the default interface across 3P SDKs and Libraries.\nWhether you're calling a model or running an agent, the Interactions API gets you there in a few lines of code. Pass a model ID for inference, an agent ID for autonomous tasks, set background=True for anything long-running.\nThe Interactions API is now the default for Google AI Studio, the Gemini API, and all our documentation , which includes a toggle to switch snippets back to the legacy format. We recommend using the Interactions API for all new projects and applications.\nWhile the legacy generateContent API remains fully supported and will continue to receive new mainline Gemini models for the foreseeable future, we expect frontier capabilities for long-running models and agents to increasingly land exclusively on the Interactions API. This is because it is designed from the ground up for stateful, agentic workflows. We have published a migration guide to help you transition at your own pace.\nMost developers are now using coding agents (such as Antigravity) to build applications. To make it easier for agents to stay up to date with the latest API patterns, we built the gemini-interactions-api Skill . It injects best-practice patterns for Interactions API development into your agent's context (streaming, function calling, structured output, Deep Research and more).\nThe Interactions API is available through the Python and JavaScript SDKs. If you're already building with one of our supported partners, LiteLLM , Eigent or Agno , you can start using their Interactions API integrations today.\nGrab your API key from Google AI Studio and follow the Interactions API documentation to get started. If you’re migrating from generateContent, our migration guide maps every field to the new schema. You can also view the full API Reference .\nThe Interactions API was built based on developer feedback, and that focus won't change with general ",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Interactions API",
+          "zhSummary": "Google AI公布Interactions API，重点落在企业落地与生态合作。这次变化主要覆盖托管 Agents、多模态能力、推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端",
+            "能力重点：托管 Agents、多模态能力、推理能力"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI公布Interactions API",
+          "displaySummary": "Google AI公布Interactions API，重点落在企业落地与生态合作。这次变化主要覆盖托管 Agents、多模态能力、推理能力，目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 18,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 17,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/07/11/"
+}
