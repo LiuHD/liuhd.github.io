@@ -1,0 +1,447 @@
+{
+  "title": "AI 日报 2026-10-01",
+  "slug": "ai-daily-2026-10-01",
+  "date": "2026-10-01",
+  "isoDate": "2026-10-01T01:51:22.641Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 10,
+    "day": 1
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、Google AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Beam expands with new regions, partners, and customers",
+          "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+          "description": "",
+          "date": "",
+          "score": 20,
+          "category": "大公司动向",
+          "detailText": "Google Beam expands to 6 countries and partners with Industrious to boost meeting connection by 50%. See how to book your session at new locations.\nGoogle Beam expands with new regions, partners, and customers\nWe’re expanding Google Beam to five new countries, partnering with Industrious for an extended network, and proving our impact at Google and beyond.\nDirector, Business Development, Google Beam\nYour browser does not support the audio element.\nGoogle Beam is expanding its global reach to six countries, supported by 18 partners and new hardware from HP. Internal testing shows the technology improves team connection and reduces the need for follow-up meetings. Starting in October, you can book and test these units at select Industrious locations to see how they enhance your own professional meetings.\nGoogle Beam uses special hardware to make video calls feel like you’re actually in the room with someone. It’s expanding to more countries and partnering with workspaces so more people can use it for meetings and interviews. Tests show that using this tech helps people feel more connected and makes communication much clearer. Now, businesses of all sizes can book these setups to make their remote chats feel more natural.\nSince its early days, Google Beam has been driven by a singular vision: bringing people together so they can experience genuine, face-to-face connection, no matter the distance. We’ve tested Beam with early users, including in our own offices, and shown how it can help transform everyday meetings into authentic moments of connection.\nToday, we’re announcing a major expansion of our global footprint, new data on our proven impact, and the launch of our first-ever extended network.\nWe are officially expanding our global reach, with Google Beam units shipping to customers across six countries, including the U.S., Canada, U.K., France, Germany, and Japan. Backing this rollout is a robust, global ecosystem of 18 channel partners who are fully equipped to deploy and support Beam.\nDelivered by our flagship hardware partner as HP Dimension with Google Beam, this experience is built for modern enterprise collaboration. By integrating seamlessly with both Google Meet and Zoom, Beam can provide the flexibility organizations need while helping to elevate everyday conversations.\nWe are also working closely with leaned-in partners to prove out these exact use cases in the field. Earlier this year, we partnered with Bain and Company to test how HP Dimension with Google Beam could help transform their campus recruiting and candidate interviews. By using this technology, Bain was able to create authentic, face-to-face connections with candidates from anywhere—without the need for extensive travel. Watch how Bain is transforming their interview process ",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI公布Google Beam expands",
+          "zhSummary": "Google AI公布Google Beam expands，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Google AI公布Google Beam expands",
+          "displaySummary": "Google AI公布Google Beam expands，重点落在企业落地与生态合作。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Sep 17, 2026 Announcements Introducing the Life Sciences Verification Program",
+          "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nThe LSVP is designed to enable life science professionals to use our models across a wide range of tasks that are currently blocked in our generally available Fable models, like drug discovery, research biology, clinical development, and manufacturing. It’s built for teams of all kinds—from academic labs to startups, pharma companies, and more.\nAlthough we expect Standard Use to cover the majority of access needs, some work carries a higher potential for misuse and therefore requires additional vetting.\nHigh-risk grants for Claude Opus 5 and Claude Sonnet 5 are available today. We are working with the US government to make high-risk grants more broadly available for Claude Mythos, but at the time of this launch they will remain limited to a small set of entities with additional vetting.\nAll other safeguards, such as cyber classifiers, will remain in place under LSVP grants.\nIn order to defend against these threats and in close collaboration with enterprise CISOs, we designed the new LSVP safeguards around the concept of shared responsibility by monitoring usage against the intended use-case for the model access. Because we vet the LSVP organizations for their life sciences credibility and oversight, we can empower them to specify for themselves what constitutes safe usage for teams or projects within their program.\nThis data is strictly compartmentalized and cannot be used for model training or accessed by members of Anthropic’s life sciences research teams. For organizations that qualify, we are also working to understand how LSVP can integrate with features from our Enterprise Frontier Safeguards (EFS) systems.\nOrganizations interested in joining the LSVP can register interest here . We expect to enroll hundreds of organizations within the first week, and to scale the program further to support the majority of the life science community in the coming weeks.\nToday, LSVP is available in our first-party console for API usage, as well as in Claude for Enterprise and Team plans. We do not yet support individual plans but are working to expand access for these users. It is also not yet available on third-party platforms.\nAs a beta, LSVP is not available for BAA-enabled orgs. This means customers with PHI data should use separate non-BAA orgs with non-HIPAA.\nIn API and Claude Science, users can switch between grants natively. In Claude.ai and Claude Code, initially only a preselected default grant applies (except while using Claude Code with API authentication). This should be fine for the vast majority of users, who will only ever require a Standard Use grant. However, we will improve support and portability of these LSVP feature",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic推出企业落地与生态合作",
+          "zhSummary": "Anthropic推出Life Sciences Verification Program，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前已正式上线，支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，支持 API 接入",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic推出企业落地与生态合作",
+          "displaySummary": "Anthropic推出Life Sciences Verification Program，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前已正式上线，支持 API 接入。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Aug 31, 2026 Announcements Improving our alignment and security efforts",
+          "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "On July 30, we reported three incidents in which Claude models gained unauthorized access to real computer systems. We are conducting an in-depth analysis of both incidents, and planning to work with METR for an independent review. In the meantime, we’re sharing some of the changes we’ve made over the past month.\nWe are conducting an in-depth analysis of both incidents. We are also planning to work with METR for an independent review. We want to ensure both studies are thorough, and will share more in the coming weeks.\nWhile we do not believe these incidents represent operational issues alone, our first priority was to address specific containment and monitoring issues. We took the following actions in response:\nWhile evaluations were paused, we put in place the following preliminary measures:\n1) We built and deployed a classifier to automatically identify, in real time, when a model attempts to aggressively probe or escape a testing environment, or unexpectedly obtains internet access. When the classifier flags such an attempt, it blocks the action before the tool call is run, ends the task, and alerts a human. 1\n3) We migrated high-risk 3 internal cyber sandboxes to more robust isolation. We are also further red-teaming our virtualization stack—that is, tasking pre-release models to try and escape it—to find and patch weaknesses.\nOur internal cyber evaluations are now running again with these measures in place.\nWe also paused higher-risk RL environments on pre-release models for several weeks. During that time, we built a similar classifier, modified to avoid incentivizing the model to evade this new monitoring, which we’ve now deployed within those environments. The majority of RL has resumed, but some high-risk environments remain paused until they can be manually reviewed, while others will require an updated version of the classifier that we plan to deploy soon.\nIn addition to the efforts focused on high-risk evaluations and training, we expanded our offline monitoring to cover most other forms of internal frontier agentic usage. We are also building controls on our internal inference to prevent Anthropic employees from accidentally running agents with weaker mitigations than the ones described above.\nBecause the reported incidents took place in third-party environments, we have asked every organization that tests pre-release models with reduced cyber safeguards to commit to a set of best practices. We believe these are necessary because:\nThese practices apply in full wherever partners run cyber-related evaluations using their own harnesses, sandboxes, or agents. They do not apply to customers using safeguarded models like Claude Fable 5. We have resumed external cyber evaluations with these practices in place, and we are adhering to them inter",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布Announcements Improving our alignment与security efforts，重点落在企业落地与生态合作。这次变化主要覆盖推理能力、训练能力，目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：推理能力、训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布Announcements Improving our alignment与security efforts，重点落在企业落地与生态合作。这次变化主要覆盖推理能力、训练能力，目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Learn how Android Strongbox and the new Digital Credential Alliance secure mobile wallets and digital IDs globally.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding.\nWith these improvements, Muse Spark 1.1 advances the performance-efficiency frontier. Together with this week’s launch of Muse Image , this release brings us closer to our vision of personal superintelligence: models that help you pursue your goals, create what you imagine, deepen your relationships, and take action on what you value most.\nAlong with this release, we are launching a public preview of the new Meta Model API where developers can access Muse Spark 1.1. The model is available now in \"Thinking\" mode in the Meta AI app and on meta.ai .\nFor more details about our evaluations, see our report .\nMuse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services. It zero-shot generalizes to new native tools, MCP servers, and custom skills.\nIt tackles complex projects significantly faster than Muse Spark, as it is trained to orchestrate multi-agent systems to optimize end-to-end latency. As the main agent, it can gather context, make a plan, and delegate execution across parallel subagents. As a subagent, it adheres to its job, understands available tools, and knows when to escalate back to the main agent.\nMuse Spark 1.1 can actively manage its context window of 1 million tokens. It remembers actions, retrieves information from much earlier work, and compacts in a way that keeps the critical steps needed for later work.\nMuse Spark 1.1 excels at computer-use workflows that unfold across multiple applications with information changing on-the-fly. It maintains context across extended sessions, adapts to evolving requirements, and navigates unfamiliar interfaces with minimal human intervention.\nRather than reasoning through every desktop step one click at a time, Muse Spark 1.1 understands when to automate and when to use the interface directly. We trained the model to write scripts when automation is faster, click when direct interaction is simpler, and generate batches of actions at each step.\nAgentic dinner party organization: In real-world applications, new context arises that changes the task. Muse Spark 1.1 notices these changes when placing the dinner order and makes necessary updates without user intervention.\nCoding performance for Muse Spark 1.1 improved substantially on real-world tasks involving large, complex codebases. It can diagnose and fix complex bugs, implement new features in enterprise-grade systems, and execute large code migrations. In use cases ",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark 1.1",
+          "zhSummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：多模态能力",
+            "关键指标：1 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark 1.1",
+          "displaySummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Forward Deployed Engineering Using Alibaba Cloud",
+          "url": "https://www.alibabacloud.com/blog/forward-deployed-engineering-using-alibaba-cloud_603601",
+          "description": "Forward Deployed Engineering Using Alibaba Cloud It is crucial to distinguish the Forward Deployed Engineer from the traditional Solutions Architect (SA) within Alibaba Cloud or it&#039;s partners and customers. ferdinjoe <img src=\"https://",
+          "date": "",
+          "score": 26,
+          "category": "国内落地",
+          "detailText": "It is crucial to distinguish the Forward Deployed Engineer from the traditional Solutions Architect (SA) within Alibaba Cloud or it&#039;s partners and customers.\nIn the rapidly evolving landscape of enterprise technology, particularly with the explosion of Generative AI, a significant gap often exists between a cloud provider’s cutting-edge capabilities and a customer’s ability to actually implement them. Enterprises do not just need architecture diagrams; they need working, deployed solutions tailored to their unique, messy, real-world environments. Here comes the Forward Deployed Engineer (FDE) .\nA simple distinction in the context of Alibaba Cloud:\nSolutions Architect: \"Here is how you should structure your VPC, configure your PAI clusters, and design your RAG pipeline using Qwen and AnalyticDB.\"\nForward Deployed Engineer: \"Let's build it together. I'm writing the Terraform for your VPC, coding the RAG pipeline in Python, and deploying the Qwen agent to your ACK cluster right now.\"\nFor consultation and queries, the author can be reached via email: ferdinjoe@gmail.com and via Linkedin .\nAlibaba Container Service - March 29, 2019\nAlibaba Cloud Community - February 4, 2022\nAlibaba Cloud Big Data and AI - January 21, 2026\nBuild more, spend less. One plan, every modality.\nA one-stop generative AI platform to build intelligent applications that understand your business, based on Qwen model series such as Qwen-Max and other popular models\nQwenWork is dedicated to helping employees strengthen their professional competitiveness in the AI era and to enabling enterprises to improve organizational effectiveness.\nCustomized infrastructure to ensure high availability, scalability and high-performance",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud披露Forward 部署 Engineering…",
+          "zhSummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Alibaba Cloud披露Forward 部署 Engineering…",
+          "displaySummary": "Alibaba Cloud披露新一轮融资与估值更新，重点落在融资与资本动作。目前支持 API 接入，已进入产品端。进一步看，原文核心在于融资规模、估值水平以及这笔资金会如何继续推高模型、算力和生态投入。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "刚刚，谷歌发布Gemini 4 Argon：单次输出上限达100万Token",
+          "url": "https://www.36kr.com/p/4006503753830529",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "输出Token上限从此前的6.4万提升至100万。\nGoogle 将 Argon 定位为 面向复杂、长周期工作流的模型 ，重点覆盖软件工程、法律与金融等企业知识工作，以及网络安全防御。\n与以往直接面向公众开放的方式不同，Argon 将采用分阶段发布策略。该模型将通过 Fairwind Program，首批提供给受信任的网络安全防御者。\n价格方面，Argon API 的初始定价为每百万输入 Token 2 美元、每百万输出 Token 10 美元，缓存输入 Token 的价格比标准输入价格低 95%。\nGemini 4 Argon 最受关注的变化，是将 输出 Token 上限从此前的 6.4 万提升至 100 万 。\n这里的 100 万 Token 指单次输出上限，和上下文窗口是两个指标。更高的输出空间意味着，模型可以在一条任务轨迹中持续推理，并生成数十万甚至接近百万 Token 的结果。这类能力主要面向大型代码迁移、深度研究和多步骤企业流程。\n有网友指出，多数前沿模型的输出上限大约为 12.8 万 Token。相比之下，Argon 单次生成 100 万 Token 的能力挺罕见。\nGoogle 称，Argon 在 DeepSWE v1.1 软件工程评测中的得分为 77.9%，达到当前最高水平。该评测主要衡量模型处理真实、长期软件工程任务的能力。\n在企业知识工作方面，Argon 位列 Vals Index 第一。该指数覆盖金融、编程、法律和税务等领域，并按照各行业对美国国内生产总值的贡献进行加权。\nArgon 还在 Vals Finance Agent v2、Harvey Legal Agent Benchmark 和 Zapier 的 AutomationBench 等评测中取得领先表现，AutomationBench 得分为 51.3%。\nArgon 也强调视觉理解能力。Google 表示，模型可以分析专业图表、理解长视频，并根据多份文档采取行动。在长视频理解评测 LVBench 中，Argon 得分 91.7%。\nGoogle 表示，已有数千名员工在日常工作中使用 Argon，应用场景包括代码调试、算法设计和大型代码库迁移。\n在量子计算领域，Argon 帮助研究人员优化量子算法中的时空资源，也就是量子比特数量与门操作数量的乘积。Google 称，在一项测试中，Argon 仅用几分钟就将已发表的基准结果提升了 40%。\n在数据中心内存优化项目中，Argon 代理分析了全网的性能监控数据，并自动识别和实施优化方案。相关方案上线后已释放超过 300 TiB 内存，预计总节省量将达到 500 TiB 至 1 PiB。\nArgon 还参与了 Google 内部 C/C++ 代码库向 Rust 的迁移工作，覆盖 re2、libgav1 等核心库，并延伸至超过 80 万行代码的 Fuchsia Zircon 内核。由于涉及关键基础设施，这些迁移仍需经过自动化审计、人工评审和仿真测试。\n在开源视频解码器 libgav1 项目中，Argon 代理通过多轮性能测试和编译器分析，重写了约 3.2 万行 SIMD 代码。新的 Rust 版本在保持视频输出一致的情况下，运行速度达到原 Rust 版本的 2.7 倍。\n网络安全是 Argon 首批落地的重点领域。Google 称，该模型能够自主发现、验证并修复关键软件漏洞。\n网络安全公司 Wiz 已通过「Scan for Good」计划使用 Argon，为公共基础设施免费排查高风险暴露面。Google 表示，Argon 曾发现一项影响全球医院所用医疗软件的严重漏洞，该漏洞可能暴露敏感个人信息，此前的前沿模型没有识别出这一风险。\n在 CWE-bench v1 漏洞修复评测中，Argon 以 68% 的成绩并列第一。\nGoogle 还称，在覆盖 20 种编程语言的内部漏洞测试，以及不提供源代码的黑盒渗透测试中，Argon 的表现均优于 Gemini 3.8 Flash Cyber。\n随着模型能力提升，Google 也在同步强化安全机制。Argon 会对网络攻击以及化学、生物、放射性和核相关滥用请求进行限制，并通过内部激活监测、自动化红队测试和人工评估识别潜在风险。\n针对间接提示注入攻击，Google 通过对抗训练和自动化测试提升模型的防护能力。公司还部署了针对模型失配的监控机制，跟踪模型的推理过程与行动轨迹，必要时中止任务执行，并对高风险训练和评测环境进行隔离。\n彭博社报道称，Google 内部对 Gemini 4 在编码等关键任务中的表现仍有疑问。知情人士表示，模型虽然在行业基准测试中表现突出，但员工真正使用时，部分编码任务依然难以稳定完成。\nGoogle 表示，公司正在参与美国政府推动的模型预发布自愿流程，首批测试者将帮助 Google 评估模型表现，并进一步完善安全防护措施。\n在完成早期测试后，Argon 将逐步向开发者、企业和消费者开放。首批公开用户将包括付费 API 客户和 Google AI Ultra 订阅者。\nhttps://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/\nhttps://www.bloomberg.com/news/articles/2026-09-30/google-grapples-with-employee-skepticism-about-new-gemini-model?srnd=phx-ai\n本文来自微信公众号 “机器之心”（ID：almosthuman2014） ，作者：关注AI的，36氪经授权发布。\n有些地方的人，善于在生活中找到快乐的密码，精神状态良好。而幽默，就是他们“过日子的盐”。\nGoogle 将 Argon 定位为 面向复杂、长周期工作流的模型 ，重点覆盖软件工程、法律与金融等企业知识工作，以及网络安全防御。\n与以往直接面向公众开放的方式不同，Argon 将采用分阶段发布策略。该模型将通过 Fairwind Program，首批提供给受信任的网络安全防御者。\n价格方面，Argon API 的初始定价为每百万输入 Token 2 美元、每百万输出 Token 10 美元，缓存输入 Token 的价格比标准输入价格低 95%。\nGemini 4 Argon 最受关注的变化，是将 输出 Token 上限从此前的 6.4 万提升至 100 万 。\n这里的 100 万 Token 指单次输出上限，和上下文窗口是两个指标。更高的输出空间意味着，模型可以在一条任务轨迹中持续推理，并生成数十万甚至接近百万 Token 的",
+          "translationMode": "fallback",
+          "zhTitle": "刚刚，谷歌发布Gemini 4 Argon：单次输出上限达100万…",
+          "zhSummary": "36Kr开源刚刚，谷歌发布Gemini 4 Argon：单次输出上限达100万Token，重点落在企业落地与生态合作。目前已正式上线，支持 API 接入。进一步看，Google 将 Argon 定位为 面向复杂、长周期工作流的模型 ，重点覆盖软件工程、法律与金融等企业知识工作，以及网络安全防御；Argon 将采用分阶段发布策略。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "上线状态：已正式上线，支持 API 接入"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "刚刚，谷歌发布Gemini 4 Argon：单次输出上限达100万…",
+          "displaySummary": "36Kr开源刚刚，谷歌发布Gemini 4 Argon：单次输出上限达100万Token，重点落在企业落地与生态合作。目前已正式上线，支持 API 接入。进一步看，Google 将 Argon 定位为 面向复杂、长周期工作流的模型 ，重点覆盖软件工程、法律与金融等企业知识工作，以及网络安全防御；Argon 将采用分阶段发布策略。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？",
+          "url": "https://www.36kr.com/p/4005797516791937",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "AI 的爆发，正在重写 NAND 的剧本\nNAND 是一个被“技术诅咒”的行业：正如海豚君在前篇《NAND天性 “多产”，闪迪凭什么守 80% 毛利率？》中所说，AI 爆发前的 NAND 就是典型的大宗生意——产能由市场无情出清，技术领先换不来溢价，只能“亏得比别人少”，销量增长的红利被降价全部吞噬。\n根源在供给端太多产：靠单一晶圆上向上堆叠、横向缩孔，从 BiCS5 到 BiCS11 五代，闪迪每片晶圆的 bit 产出 每代 增加 54%，年化复合约 27%。\n也就是说，哪怕一分钱扩产（CapEx）不花，bit 产能每年也会自动膨胀近三成。3D 转型期更是一次性猛增，供给一度远超需求，这让“轻资产”NAND 生意在下行周期比“重资产”DRAM 更惨烈。\n而 AI 的爆发，正在重写 NAND 的剧本。本篇报告中，海豚君重点关注AI 浪潮究竟给 NAND 下游需求带来了怎样的结构性重塑？\nAI之前的消费电子周期中，“话事”需求场景——手机、PC、传统服务器等核心下游增长平稳可预期，缺乏爆发变量，所以周期的大起大落，实质由供给端的无序扩产与急剧收缩主导。\n需求增长来自三大动能：单机容量升级、新兴市场渗透，以及固态硬盘（SSD）对机械硬盘（HDD）的存量替代，缓步而稳定。\n稳定的需求，配上刚性提升供给，导致NAND 属性被困在经典的“硅周期”中：供过于求、价格暴跌 → 原厂减产，低价同时刺激单机容量升级 → 供需再平衡、价格回升 → 原厂在高利润下追高扩产 → 再次陷入产能过剩。\n只要 NAND 摆脱不了“外围零件”的定位，这个死循环就打不破。唯一出路，是出现一个不太看价格、且与 GPU 算力部署直接绑定的新场景—— 这正是后来 AI 浪潮所扮演的破局者角色。\n2026 年是 NAND 历史上最具标志性的分水岭：数据中心占 NAND 总需求的比重，从 2025 年约 30% 跃升至 2026 年约 45%，历史性反超智能手机（同期收缩至约 23%），成为最大终端基本盘。\n驱动 NAND 需求的主角，从对价格高度敏感、库存大起大落的消费电子，换成了以 TCO（总拥有成本）和算力回报（ROI）做决策、对价格脱敏的云服务商。\n云厂商关心的不再是“这季度颗粒够不够便宜”，而是“能否按时拿到足额的高性能 eSSD，保证未来三年 GPU 基建不掉链子”。从“短期压价”转向“长期保供”，正是原厂推行 NBM（新型长协模式）的需求侧基石。\nAI早期，NAND 只是外围的“数据仓库”：把训练语料、模型权重、防宕机的 Checkpoint（存档）等静态数据，放在 GPU 能快速调取的近端。这些数据可替代性极强——丢了从数据湖重新下载即可，只花带宽和极少电费，不必动用昂贵 GPU 重算。\n但推理时代，计算变成高并发、持续性的“动态消耗”——存储需求与“AI 用户数 × 使用频次 × 上下文长度”强绑定。更关键的是， NAND 首次存储“计算的中间产物”。\n长文本推理产生的庞大 KV Cache 不是外部搬来的静态数据，是 GPU 大量消耗算力后生成的“工作记忆”。它一旦丢失，中央仓库没有备份，只能再花昂贵的 GPU 算力和电费重算。\n存储的价值第一次可以直接折算成“算力与电费”。正如闪迪所说—— SSD 本质上已经进化为一块“Token 电池” ：Token 是已经做过的功，与其丢弃重算，不如“充”入硬盘；存 KV Cache 就是帮云厂商省电、省算力。\n铠侠的预测也印证了这一趋势：数据中心 NAND 总需求将从 2025 年的 286 EB 增至 2031 年的 1,686 EB（CAGR 34%），且内部结构极度分化：\nAI 推理： 从 2025 年的 86 EB 激增至 2031 年的 1,251 EB， CAGR 高达 56% ；占数据中心 NAND 需求的比例也从 30% 攀升至 74%。\nAI 训练与传统负载： 同期 AI 训练的 CAGR 仅 11%，传统云工作负载（以 CPU 为主）仅 14%。\n推理需求的增速是训练的 5 倍——本轮 NAND 超级行情，将主要由推理需求的爆发主导。\nAI 推理时，GPU 必须为每个 Token 实时计算并维护 KV Cache（模型的“工作记忆”）。但早期架构中它是“算完即弃”的消耗品：一轮对话结束，或 GPU 要腾显存服务下一个用户，HBM 里的 KV Cache 就被清空。\n于是用户一旦追问，或多人并发调用同一份超长文档，系统只能把上下文重新喂给 GPU，从头做一次昂贵的 Prefill（预填充）。\nPrefill 是推理第一步：GPU 一口气通读全部输入、算清 Token 间的关联（Attention 机制），再生成一遍 KV Cache——这是整个推理中最吃算力、最费电的环节。\na. 重算比存起来更便宜： 早期（如 GPT-3 时代）上下文只有 2K Tokens，KV Cache 很小，GPU 零点几秒就能重算完；而存进硬盘要经 CPU 和内存中转、在 PCIe 上“折返跑”，来回耗时甚至超过重算。\nb. HBM 又小又贵： GPU 自带显存“寸土寸金”，必须留给当前活跃的计算任务，不可能长期保管已下线用户历史记忆。\n但长文本时代推翻了这笔账：从 2020 年 GPT-3 的 2K Token 到 2026 年主流模型的百万级上下文，六年暴涨 500 倍。重算一次百万 Token 的 KV Cache，要让昂贵的 GPU 满载跑好几秒，有算力与电费代价。\n这直接促成 KV Cache 的“再定性”：英伟达 ICMS（推理上下文内存存储）架构，正式把它从“算完即弃的临时缓存”改定义为“AI 原生持久数据”。\nKV Cache 总量 = 上下文长度 × 并发会话数 × 单 Token 存储量。目前，前两个变量都在被急剧放大：\n上下文长度每年翻倍以上 ：主流模型从 4K、128K 快速演进到 1M+，KV Cache 随之线性放大。\na. RAG（检索增强生成）： 问一句话，后台塞进两本书。系统把检索到的大量文档拼接到输入端，送进 GPU 的 Token 远超原始提问，单次任务的 KV Cache 直接拉爆。\nb. Agentic Search： AI 从“一问一答”变成自主循环的“规划—调用—评估—再检索”。多步任务把单次 Token 消耗从数百个拉到上百万个。\nc. Multi-Agent： 多个 Agent 并发协作，每个独立生成 KV Cache，存储需求随数量成倍叠加。\n模型厂商每年至少把上下文扩大一倍，HBM 的物理扩容却接近极限：单卡容量约 2-3 年才翻一倍，红利还在放缓。\n判断 KV Cache 会不会溢出，要以单个推理机柜的可用 HBM 池为单位。",
+          "translationMode": "fallback",
+          "zhTitle": "从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？",
+          "zhSummary": "36Kr带来从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？，重点落在算力与基础设施进展。进一步看，AI 的爆发，正在重写 NAND 的剧本 NAND 是一个被“技术诅咒”的行业：正如海豚君在前篇《NAND天性 “多产”，闪迪凭什么守 80% 毛利率；AI 爆发前的 NAND 就是典型的大宗生意——产能由市场无情出清，技术领先换不来溢价，只能“亏得比别人少”，销量增长的红利被降价全部吞噬。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？",
+          "displaySummary": "36Kr带来从绿叶到鲜花，AI 推理如何为 NAND“逆天改命”？，重点落在算力与基础设施进展。进一步看，AI 的爆发，正在重写 NAND 的剧本 NAND 是一个被“技术诅咒”的行业：正如海豚君在前篇《NAND天性 “多产”，闪迪凭什么守 80% 毛利率；AI 爆发前的 NAND 就是典型的大宗生意——产能由市场无情出清，技术领先换不来溢价，只能“亏得比别人少”，销量增长的红利被降价全部吞噬。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "The Future of AI: from Enterprise Adoption to Open Source Sovereignty",
+          "url": "https://www.infoq.com/podcasts/enterprise-adoption-open-source-sovereignty/",
+          "description": "The Future of AI: from Enterprise Adoption to Open Source Sovereignty",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "In this episode, a panel of AI experts, Meryem Arik (DoubleWord), Clara Higuera Caba&#xF1;es (BBVA), and Jeff Smith (C Proof), demystify the current state of AI in the enterprise.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nLily Mara explains how to avoid high-risk software rewrites through incremental FFI refactoring. She shares how engineering teams can replace Python bottlenecks with Rust via PyO3, demonstrating how to achieve dramatic function-level speedups, seamless integration testing, and meaningful infrastructure cost savings without microservice overhead.\nModern architectures often use legacy services for specific tasks, but these services may lack accurate documentation and using them can be risky if you don't understand them well. AI coding agents can help close that knowledge gap.\nBen Maraney shares how Forter demystified AI agent creation for technical and non-technical staff. He discusses leveraging custom MCP servers, combining no-code and code-based platforms, sidestepping complex RAG setups, and aligning security and legal teams to accelerate internal agent adoption across R&D.\nGonzalo Maldonado explains how technical leaders can translate engineering skills into startup success using their \"VC Abstraction Layer Knowledge\" (VALK). They share hard-won lessons on finding product-market fit, structuring pitches like technical docs, avoiding co-founder drama, and evaluating internal platforms as commercial ventures in a post-ZIRP environment.\nPatrick Debois discusses how to manage, evaluate, distribute, and observe context using proven software engineering practices. He shares how treating context like code - complete with testing, CI/CD, package managers, and security scanning - enables engineering leaders to reliably scale AI coding agents, maintain control over non-deterministic outputs, and build long-term organizational knowledge.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nYour coding agent moves fast. Who checks whether it's making the codebase better? Online. Register Now.\nCompare team design, delivery flow, AI roles, and metrics with experienced practitioners. Online. Register Now.\nWhat's working across AI, architecture, and leadership, from the teams doing it. Register. Early bird ends Oct 13.\nProduction AI across agent",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源Future",
+          "zhSummary": "InfoQ AI开源Future，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "InfoQ AI开源Future",
+          "displaySummary": "InfoQ AI开源Future，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "所有组件，与此前面向英伟达平台的开源组件一一对应。",
+          "url": "https://www.36kr.com/p/4005634131349637",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "所有组件，与此前面向英伟达平台的开源组件一一对应。\n9月30日， DeepSeek 宣布开源面向华为昇腾的基础设施组件，涵盖TileLang算子编程语言及其编译支持、计算库和分布式通信库，并强调：“所有组件与此前面向英伟达平台的开源组件一一对应。”\nDeepSeek 正将支撑自家模型研发的核心工具和算子能力，系统地扩展到昇腾平台。双方的合作，由模型适配进一步深入训练与推理所依赖的基础软件。\n官方还披露， DeepSeek 与华为共同推进基于昇腾950的128卡超节点方案，并对计算与通信进行深度优化。\n大模型研究中的新想法，需要通过算子变成芯片能够执行的计算。算子开发越复杂，研究者验证新结构、优化训练效率所需的时间就越长。 DeepSeek 对TileLang的期待，是让开发者用更简单的语言编程，同时保留充分利用芯片性能的能力。\n按照 DeepSeek 的介绍，相较CUDA，TileLang能够简化代码逻辑、提高开发效率；相较其他同类高级语言，其编程模型能够更充分地发挥芯片特性。这条路线先在英伟达平台得到验证，如今已承载V4系列模型训练中大部分算子的实现，是 DeepSeek 开发高性能算子的核心工具。\n此次昇腾版本封装了底层Ascend C指令。 DeepSeek 称，目前训练中使用的每一个TileLang算子，在昇腾上都有对应的高性能实现。\n这项进展的意义，是 DeepSeek 能够将已经熟悉的研发工具延伸到另一种硬件上，减少为不同平台重复开发的负担。昇腾获得的支持，也更贴近模型团队自身的训练需求。\n因此，此次开放的组件还包括加速矩阵运算的DeepGEMM、处理跨设备通信的DeepEP，以及覆盖向量计算与访存、稀疏注意力，以及用于注意力索引和采样的Top-K选择等操作的TileKernels、FlashMLA和DeepSelect。它们为常见任务提供可复用的实现，让开发者不必逐项从头优化。\n“一一对应”也由此有了实际含义。部分项目已经对齐上层接口，例如TileKernels支持同一套Python接口在英伟达GPU与华为NPU上运行，底层实现根据硬件选择。\n不过，接口能够复用，性能仍需针对硬件打磨。 DeepSeek 在公告中感谢华为团队给予“毫无保留的大力支持”，双方围绕128卡超节点共同优化计算与通信，正是为了让这些软件能力在具体系统中发挥作用。\nDeepSeek 称，多项关键测试用例的性能已接近硬件上限。这些成绩仍属于特定测试条件下的结果，但显示双方的工作已经进入性能深度优化阶段。\n2025年8月， DeepSeek 发布V3.1时，解释其UE8M0 FP8设计面向即将发布的下一代国产芯片。虽然没有点名华为，但这一表态说明，国产硬件需求已开始进入模型团队的技术设计考量。\n2025年9月29日， DeepSeek -V3.2-Exp发布，引入稀疏注意力机制，并开放相关算子实现。同一天，TileLang-Ascend开源，围绕昇腾建设高级语言开发能力的工作由此公开。\n2026年4月24日，V4预览版发布，昇腾适配已延伸至推理和训练侧。开放原子开源基金会披露，相关实践包括推理优化、Ascend C融合算子，以及训练优化和续训练；TileLang-Ascend也发布了V4算子。\n此次 DeepSeek 明确将适配范围对齐自家训练使用的TileLang算子，并将计算与通信组件成套开放，同时披露了与华为围绕昇腾950开展联合优化的进展。\n从已发布模型的部署适配，到面向新结构的算子优化，再到此次基础设施组件开放，昇腾对 DeepSeek 的支持正进一步深入模型研发所需的软件层。\n9月24日，腾讯科技报道， DeepSeek 规模为500亿元的第二轮融资已接近结束，但部分审核仍在进行，具体落地时间尚不确定。路透社此前也报道， DeepSeek 已聘请中信证券筹备潜在的科创板IPO，上市时间及募资规模尚未确定。\n资金可以支持研发和基础设施投入，但新增硬件能否转化为有效算力，还取决于软件适配与运行效率。\n据The Information报道，梁文锋在近期投资者会议上表示， DeepSeek 将超过70%的算力用于模型训练，留给推理的算力不足30%。这也解释了，为训练所依赖的核心工具增加硬件选择，具有怎样的现实分量。\n对 DeepSeek 而言，昇腾上的工具与组件越完善，未来选择算力平台时，需要重新投入的工程成本就可能越低。对华为而言，与模型团队共同优化，有助于让芯片软件更快跟上模型结构变化，将适配经验用于后续产品。\n开源又使这种合作具备向外扩展的可能。 DeepSeek 表示，希望TileLang昇腾版本能为更多AI芯片建立高可用软件生态起到示范作用。如果其他团队可以复用这些工具，更多国产芯片承接前沿模型的门槛也有望降低。\n从组件开源到稳定承担大规模生产任务，仍有工作要做。DeepEP昇腾版还列有开发中的功能，此次公告也未披露V4已在昇腾上完成全流程大规模训练，但可以看出 DeepSeek 正与华为一起完善一条能够持续支持模型研发的硬件路线。\n9月30日， DeepSeek 宣布开源面向华为昇腾的基础设施组件，涵盖TileLang算子编程语言及其编译支持、计算库和分布式通信库，并强调：“所有组件与此前面向英伟达平台的开源组件一一对应。”\nDeepSeek 正将支撑自家模型研发的核心工具和算子能力，系统地扩展到昇腾平台。双方的合作，由模型适配进一步深入训练与推理所依赖的基础软件。\n官方还披露， DeepSeek 与华为共同推进基于昇腾950的128卡超节点方案，并对计算与通信进行深度优化。\n大模型研究中的新想法，需要通过算子变成芯片能够执行的计算。算子开发越复杂，研究者验证新结构、优化训练效率所需的时间就越长。 DeepSeek 对TileLang的期待，是让开发者用更简单的语言编程，同时保留充分利用芯片性能的能力。\n按照 DeepSeek 的介绍，相较CUDA，TileLang能够简化代码逻辑、提高开发效率；相较其他同类高级语言，其编程模型能够更充分地发挥芯片特性。这条路线先在英伟达平台得到验证，如今已承载V4系列模型训练中大部分算子的实现，是 DeepSeek 开发高性能算子的核心工具。\n此次昇腾版本封装了底层Ascend C指令。 DeepSeek 称，目前训练中使用的每一个TileLang算子，在昇腾上都有对应的高性能实现。\n这项进展的意义，是 DeepSeek 能够将已经熟悉的研发工具延伸到另一种硬件上，减少为不同平台重复开发的负担。昇腾获得的支持，也更贴近模型团队自身的训练需求。\n因此，此次开放的组件还包括加速矩阵运算的DeepGEMM、处理跨设备通信的DeepEP，以及覆盖向量计算与访存、稀疏注意",
+          "translationMode": "fallback",
+          "zhTitle": "所有组件，与此前面向英伟达平台的开源组件一一对应。",
+          "zhSummary": "36Kr披露所有组件，与此前面向英伟达平台的开源组件一一对应。，重点落在融资与资本动作。这次变化主要覆盖支持、计算库和分布式通信库，并强调：“所有组件与此前面…，目前已正式上线，开放预览，披露的金额或规模为500亿元。进一步看，；9月30日， DeepSeek 宣布开源面向华为昇腾的基础设施组件，涵盖TileLang算子编程语言及其编译支持、计算库和分布式通信库，并强调：“所有组件与此前面向英伟达平台的开源组件一一对应。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "金额或规模：500亿元",
+            "上线状态：已正式上线，开放预览",
+            "能力重点：支持、计算库和分布式通信库，并强调：“所有组件与此前面…"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "所有组件，与此前面向英伟达平台的开源组件一一对应。",
+          "displaySummary": "36Kr披露所有组件，与此前面向英伟达平台的开源组件一一对应。，重点落在融资与资本动作。这次变化主要覆盖支持、计算库和分布式通信库，并强调：“所有组件与此前面…，目前已正式上线，开放预览，披露的金额或规模为500亿元。进一步看，；9月30日， DeepSeek 宣布开源面向华为昇腾的基础设施组件，涵盖TileLang算子编程语言及其编译支持、计算库和分布式通信库，并强调：“所有组件与此前面向英伟达平台的开源组件一一对应。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Pairing Google Antigravity with Gemini 3.7 Flash solves notable multi-agent math and engineering problems.",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/antigravity-teamwork-multi-agent/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "开发者信号",
+          "detailText": "Gemini 3.7 Flash powers autonomous agent teams in Antigravity to solve open math problems, build CPU emulators, and optimize OSS.\nIn Google Antigravity , we recently launched a number of updates to Teamwork , a framework that allows autonomous teams of AI agents to collaborate, critique, and iterate over hours or days to solve complex, long-horizon challenges. Pairing Gemini 3.7 Flash with this multi-agent orchestration accelerated problem solving across research and engineering:\nRead about all the wins on the Antigravity blog .",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出Pairing Google Antigrav…",
+          "zhSummary": "Google AI推出Pairing Google Antigravity，重点落在Agent 能力升级。这次变化主要覆盖多 Agent 编排。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "能力重点：多 Agent 编排"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Google AI推出Pairing Google Antigrav…",
+          "displaySummary": "Google AI推出Pairing Google Antigravity，重点落在Agent 能力升级。这次变化主要覆盖多 Agent 编排。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "AI agents explained",
+          "url": "https://ai.meta.com/learn/agentic-ai/what-are-ai-agents/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "开发者信号",
+          "detailText": "AI agents explained: A beginner-friendly guide to what AI agents are, how they work, their key types, benefits, and real-world use cases.",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI带来AI agents explained",
+          "zhSummary": "Meta AI带来AI agents explained，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Meta AI带来AI agents explained",
+          "displaySummary": "Meta AI带来AI agents explained，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Five Ways To Use AI Coding Agents to Improve Your Software Architecture",
+          "url": "https://www.infoq.com/articles/ai-agents-improve-software-architecture",
+          "description": "Five Ways To Use AI Coding Agents to Improve Your Software Architecture Modern architectures often use legacy services for specific tasks, but these services may lack accurate documentation and using them can be risky if you don't understan",
+          "date": "",
+          "score": 13,
+          "category": "开发者信号",
+          "detailText": "Modern architectures often use legacy services for specific tasks, but these services may lack accurate docs, and modifying them can be risky. AI coding agents can help close that knowledge gap.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nLily Mara explains how to avoid high-risk software rewrites through incremental FFI refactoring. She shares how engineering teams can replace Python bottlenecks with Rust via PyO3, demonstrating how to achieve dramatic function-level speedups, seamless integration testing, and meaningful infrastructure cost savings without microservice overhead.\nModern architectures often use legacy services for specific tasks, but these services may lack accurate documentation and using them can be risky if you don't understand them well. AI coding agents can help close that knowledge gap.\nBen Maraney shares how Forter demystified AI agent creation for technical and non-technical staff. He discusses leveraging custom MCP servers, combining no-code and code-based platforms, sidestepping complex RAG setups, and aligning security and legal teams to accelerate internal agent adoption across R&D.\nGonzalo Maldonado explains how technical leaders can translate engineering skills into startup success using their \"VC Abstraction Layer Knowledge\" (VALK). They share hard-won lessons on finding product-market fit, structuring pitches like technical docs, avoiding co-founder drama, and evaluating internal platforms as commercial ventures in a post-ZIRP environment.\nPatrick Debois discusses how to manage, evaluate, distribute, and observe context using proven software engineering practices. He shares how treating context like code - complete with testing, CI/CD, package managers, and security scanning - enables engineering leaders to reliably scale AI coding agents, maintain control over non-deterministic outputs, and build long-term organizational knowledge.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nYour coding agent moves fast. Who checks whether it's making the codebase better? Online. Register Now.\nCompare team design, delivery flow, AI roles, and metrics with experienced practitioners. Online. Register Now.\nWhat's working across AI, architecture, and leadership, from the teams doing it. Register. Early bird ends Oct 13.\nProduction ",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出Five Ways",
+          "zhSummary": "InfoQ AI推出Five Ways，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出Five Ways",
+          "displaySummary": "InfoQ AI推出Five Ways，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Building Enterprise Chatbots with Alibaba Cloud Qwen and Business Knowledge",
+          "url": "https://www.alibabacloud.com/blog/building-enterprise-chatbots-with-alibaba-cloud-qwen-and-business-knowledge_603593",
+          "description": "Building Enterprise Chatbots with Alibaba Cloud Qwen and Business Knowledge Enterprise chatbots have evolved from simple question-answering systems into intelligent assistants that can help employees, customers, and business teams access in",
+          "date": "",
+          "score": 29,
+          "category": "资本与生态",
+          "detailText": "Enterprise chatbots have evolved from simple question-answering systems into intelligent assistants that can help employees, customers, and business teams access information more efficiently.\nEnterprise chatbots have evolved from simple question-answering systems into intelligent assistants that can help employees, customers, and business teams access information more efficiently. However, a chatbot is only as useful as the information it can access.\nWhile large language models provide strong conversational capabilities, enterprises often require chatbots that understand company-specific policies, products, procedures, and business knowledge. Combining Alibaba Cloud Qwen models with enterprise knowledge sources enables organizations to build chatbots that deliver more relevant and contextual responses.\nAlibaba Cloud provides AI development capabilities through Model Studio that can support the development of enterprise chatbot applications powered by Qwen models and business knowledge.\nGeneral-purpose AI models are trained on broad datasets and may not have access to an organization's internal information.\nEnterprise chatbots often need to answer questions about:\nWithout access to enterprise-specific information, chatbot responses may lack the context needed for business use cases.\nThe effectiveness of an enterprise chatbot depends not only on the model but also on the quality of the business knowledge available to it.\nKnowledge-grounded chatbots combine language models with enterprise information sources.\nThis approach helps chatbots deliver answers that are based on business knowledge rather than relying solely on model training data.\nQwen models can support a wide range of enterprise chatbot scenarios, including customer support, employee assistance, and knowledge discovery.\nOrganizations can tailor chatbot behavior through prompts, workflow design, and access to relevant enterprise information.\nThe quality of retrieved knowledge often has a significant impact on response accuracy.\nTo provide useful business answers, chatbots need access to trusted knowledge sources.\nOrganizations can use RAG Knowledge Base to help connect enterprise content with AI applications.\nRetrieval-based approaches allow chatbot responses to remain aligned with current business information.\nAccuracy is one of the most important requirements for enterprise chatbot deployments.\nOrganizations can improve chatbot performance by:\nHigh-quality knowledge repositories help reduce irrelevant responses and improve user trust.\nAccurate knowledge retrieval is often more important than adding more documents to a chatbot's knowledge base.\nEnterprise chatbots can support a variety of departments and operational needs.\nA single chatbot platform may serve multiple user groups while retriev",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来Building 企业 Chatbots",
+          "zhSummary": "Alibaba Cloud带来Building 企业 Chatbots，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已进入产品端",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Alibaba Cloud带来Building 企业 Chatbots",
+          "displaySummary": "Alibaba Cloud带来Building 企业 Chatbots，重点落在企业落地与生态合作。这次变化主要覆盖训练能力，目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Enterprise AI Security Guardrails: Protecting Sensitive Data with Alibaba Cloud",
+          "url": "https://www.alibabacloud.com/blog/enterprise-ai-security-guardrails-protecting-sensitive-data-with-alibaba-cloud_603590",
+          "description": "Enterprise AI Security Guardrails: Protecting Sensitive Data with Alibaba Cloud As organizations adopt AI across customer service, internal operations, knowledge management, and business automation, protecting sensitive information becomes",
+          "date": "",
+          "score": 26,
+          "category": "资本与生态",
+          "detailText": "As organizations adopt AI across customer service, internal operations, knowledge management, and business automation, protecting sensitive information becomes a critical requirement.\nAs organizations adopt AI across customer service, internal operations, knowledge management, and business automation, protecting sensitive information becomes a critical requirement. Enterprise AI applications often interact with confidential documents, customer records, financial information, and proprietary business data.\nWithout appropriate security controls, AI systems may expose sensitive information, access unauthorized data, or generate responses that create compliance risks. Security guardrails help organizations establish boundaries around how AI applications access, process, and use enterprise information.\nAlibaba Cloud provides services and capabilities that can support the development of AI applications while helping organizations implement security, governance, and data protection controls.\nTraditional applications typically operate within predefined workflows and business rules. AI applications introduce additional considerations because models generate responses dynamically based on prompts, retrieved information, and application context.\nEffective AI security starts with controlling access to information before it reaches the model.\nSensitive information exists in many forms across enterprise environments. AI applications should be designed to handle this information carefully.\nOrganizations should classify data according to business, security, and compliance requirements before making it available to AI applications.\nThe classification of enterprise information is often the foundation of an effective AI security strategy.\nMany AI applications use retrieval systems to access organization-specific information. While retrieval improves response quality, it also increases the importance of access controls.\nOrganizations using RAG Knowledge Base should ensure that retrieval mechanisms respect existing permissions and data access policies.\nUsers should only be able to retrieve information that they are authorized to access.\nSecurity guardrails help define how AI systems operate and what actions they are allowed to perform.\nFor example, an AI assistant may be allowed to summarize internal documents but prevented from exposing confidential financial information to unauthorized users.\nGuardrails should be applied consistently across prompts, retrieval systems, APIs, and workflow components.\nEnterprise AI applications increasingly include agents, APIs, and automated workflows. These systems may access multiple sources of information during a single request.\nThis helps reduce the risk of unintended data exposure during automated processes.\nAI workflows should ope",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出企业 AI Security Guardrai…",
+          "zhSummary": "Alibaba Cloud推出企业 AI Security Guardrails，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Alibaba Cloud推出企业 AI Security Guardrai…",
+          "displaySummary": "Alibaba Cloud推出企业 AI Security Guardrails，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+          "description": "",
+          "date": "",
+          "score": 20,
+          "category": "资本与生态",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nToday we’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention (ZDR) with state-of-the-art safeguards for detecting misuse. EFS works by storing data in cloud infrastructure controlled by the customer, not Anthropic. EFS will be rolling out to customers in phases, starting later this fall. To make the transition smooth, eligible customers will receive ZDR on Fable 5 and Fable 5.1 until EFS is ready.\nWe developed EFS in close collaboration with more than 100 customers in industries like financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, and with our cloud partners at Amazon Web Services, Google Cloud, and Microsoft Azure.\nEFS will be supported on Claude Code, Claude Enterprise, the Claude Platform, Amazon Bedrock, Claude Platform on AWS, Google’s Agent Platform, and Microsoft Foundry.\nMythos-class models, like Claude Fable 5.1 , represent a major increase in intelligence and agentic capabilities. However, with that increase comes the potential for both misuse and autonomous misbehavior.\nOver the last few months, we’ve seen substantial evidence of attempted misuse of AI models. These range from typical forms of abuse, such as fraud, to sophisticated cyberattacks, which can include agents autonomously engaging in destructive behavior. Some of these instances involve theft or misappropriation of enterprise customers’ credentials, which are difficult to detect without the ability to monitor traffic and detect abnormal behavior.\nFurthermore, because the most sophisticated misuse can involve many tasks spread across multiple sessions and accounts, it is not sufficient to run automated analysis on each interaction separately and then instantaneously discard the data. Effective detection requires storing data for a meaningful period of time so that it can be correlated across time and accounts.\nFor this reason, we introduced 30-day data retention starting with Fable 5. This policy was not motivated by a desire to train on enterprise data: Anthropic has never trained on enterprise data without explicit permission, and never will.\nThe enterprises we worked with generally understood the safety and security value of data retention, but many–especially in regulated industries–found it difficult to use models with data retention. We therefore sat down with customers to design a solution that could provide the best of both worlds: the privacy of ZDR and the safety allowed by monitoring across time and accounts.\nWe built Enterprise Frontier Safeguards with feedback from the experts who will use it every day: security, product, compliance, and de",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布算力与基础设施进展",
+          "zhSummary": "Anthropic公布Announcements Developing 企业 Frontier Safeguards，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Anthropic公布算力与基础设施进展",
+          "displaySummary": "Anthropic公布Announcements Developing 企业 Frontier Safeguards，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 19,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 15,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 8,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/10/01/"
+}
