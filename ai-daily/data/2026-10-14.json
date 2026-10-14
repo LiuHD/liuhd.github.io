@@ -1,0 +1,381 @@
+{
+  "title": "AI 日报 2026-10-14",
+  "slug": "ai-daily-2026-10-14",
+  "date": "2026-10-14",
+  "isoDate": "2026-10-14T06:14:04.373Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 10,
+    "day": 14
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.\nEach year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we’ve received from our customers. We&#x27;re publishing a new version of the policy today. In this post, we summarize the changes we’ve made.\nThe updated policy takes effect on November 12. The full Usage Policy and Supported Regions Policy can be found on their respective pages.\nAs we wrote about last month , we’ve seen examples of state media outlets, government propaganda offices, and commercial firms using Claude to run networks of fake accounts and fabricated news sites. Our policy already prohibited this activity, but the restrictions were scattered across our elections, fraud, privacy, and disinformation sections.\nWe&#x27;ve consolidated those rules into a new section titled Do Not Engage in Deceptive Campaigns or Artificial Activity, which applies to deceptive activity of any kind (whether political or commercial). It covers efforts to obscure who is behind a message or amplify content through fake accounts or posts, along with building the tools and infrastructure for running influence operation campaigns.\nOur Usage Policy has always prohibited using Claude to develop weapons. Recently, we’ve seen people attempt to use our models to build guidance and control software for weapons. The updated section makes clear that our prohibitions include the software and components that make weapons work, as well as actions like arming drones and other autonomous vehicles. These changes reflect how we’ve enforced our previous policy.\nAs with the previous update to our weapons prohibitions, this update does not reflect a change in what we enforce in practice: it is just intended to make our policy more explicit. The new section also spells out which uses remain permitted, including tracking that people have agreed to (such as fraud monitoring), content moderation, journalism, and legal research.\nWhen our products are used in ways that can affect someone&#x27;s health, legal rights, finances, livelihood, or access to essential services, we require there to be a qualified “human in the loop” (that is, someone who has the authority to review and, if necessary, change Claude’s recommendations), and for the individual affected to be told that AI was used.\nThese requirements haven’t changed with the updated version of our Usage Policy. However, users have often asked us whether a given use case has these requirements, so we&#x27;ve rewritten our High-risk Use Case Requirements section to answer that more directly. It now lists which kinds of recommendations are covered and which are not.\nFollowing the launch of our Model Hardware Standard , t",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布算力与基础设施进展",
+          "zhSummary": "Anthropic公布Announcements 2026 Usage Policy update，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布算力与基础设施进展",
+          "displaySummary": "Anthropic公布Announcements 2026 Usage Policy update，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nToday we’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on. The Cyber Mission is a new effort to support defenders with tools, research, and resources to secure their software and systems. We’re starting with two areas:\nToday, we’re introducing the Critical Infrastructure Defense Program , which brings frontier Claude models, on-site engineers, and our threat research to those trusted providers. Its founding partners are Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi Networks, Palo Alto Networks, PwC, and Rockwell Automation.\nThese organizations represent the providers that operators rely on to secure these systems: the consulting and advanced technology companies that run security programs, the security companies that guard the business and industrial networks, and the manufacturers that build and patch the equipment itself.\nThis work is underway. Several partners are currently working with Claude to fix vulnerabilities and help customers do the same. Critical infrastructure is hard to defend in many ways that AI cannot fix, but we believe that frontier models can help find and repair weaknesses before those weaknesses are used to cut off power or make water unsafe. Our first step is to work with a small cohort of providers to learn which strategies are most effective and practical.\nIf your company builds security products or services for critical infrastructure, you can register your interest here .\nIn June, we launched a cyber defense program for state, local, tribal, and territorial governments. Since then, we’ve offered frontier Claude models and technical support to more than half of all US states and some of the country’s largest public critical infrastructure operators, speeding up code scanning and patching, incident response, red teaming, and other security workflows.\nWe are listening to and learning from the people who know this landscape best. Our approach is to work with the companies, coalitions, governments, and nonprofits that know this landscape and that operators trust, and provide support where it’s most needed.\nAlmost all software relies on open-source code, much of it maintained by small teams of volunteers. Under Project Glasswing, we scanned hundreds of widely used open-source projects, had humans triage and review many of the potential vulnerabilities uncovered, and privately reported what we found to their maintainers through our coordinated vulnerability disclosure process .\nThe service is meant for projects with the capacity to keep up with surfaced findings. For others, we will continue to share human-ve",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Anthropic Cyber Mission",
+          "zhSummary": "Anthropic公布Anthropic Cyber Mission，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布Anthropic Cyber Mission",
+          "displaySummary": "Anthropic公布Anthropic Cyber Mission，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Discover new Advanced Protection features on Android designed to defend against sophisticated threats and keep your data safe.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "The latest AI news we announced in September 2026 Here are Google’s latest AI updates from September 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "See the full list of September AI updates.\nThe latest AI news we announced in September 2026\nHere’s a recap of some of our biggest AI updates from September, including Gemini 4 Argon, new Connected Apps in the Gemini App, and WeatherNext 3.\nYour browser does not support the audio element.\nGoogle just released a bunch of new AI updates, including the powerful Gemini 4 Argon model for solving complex problems. They’ve added cool features like better voice tools, music generation, and ways to connect your favorite apps directly into Gemini. They’re also using AI to help scientists map DNA, track climate change from space, and even study fruit fly brains. Plus, you can now use Gemini on Windows or check out their new Googlebook laptop.\nFor more than 20 years, we’ve invested in machine learning and AI research, tools, and infrastructure to build products that make everyday life better for more people. Teams across Google are working on ways to unlock AI’s benefits in fields as wide-ranging as healthcare, crisis response, and education. To keep you posted on our progress, we're doing a regular roundup of Google's most recent AI news.\nHere’s a look back at some of our AI announcements from September.\nSay hello to Gemini 3.8 Flash-Lite TTS and Gemini 3.8 Flash TTS . Our most expressive text-to-speech models yet let you generate custom voices, direct scene dialogue, and more from simple text prompts. Instead of choosing from a fixed list of static presets, you now get a dynamic creative studio to build voice-first applications and elevate audio experiences, rolling out across products including Gemini Notebook and Google Vids.\nTackle tasks with new Connected Apps in Gemini . We brought more of your favorite apps directly into Gemini, including productivity tools like Airtable, Linear, monday.com, and PandaDoc; creative platforms including Adobe, Picsart, Squarespace, and Webflow; and lifestyle services such as Peloton, SeatGeek, and Experian. Instead of switching between tabs, you can now tackle your tasks all in one place. To get started, head to your Gemini settings and select the apps you want to link.\nCreate your best tracks yet with Lyria 3.5 in Gemini . From simple text prompts or images, you can now use our most expressive music generation model yet to produce richer arrangements, coherent songs, and personalized audio right in the Gemini app. Lyria 3.5 is available globally in Gemini and across Google AI Studio, Google Flow Music, and Google Vids.\nSharpen your study routine with new Gemini Notebook tools . Now you can transform your study routine in Gemini Notebook with interactive coursework tools and animated video summaries. Master complex topics using custom flashcards, versatile quiz formats, and 60-second Short Video Overviews in over 80 languag",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出算力与基础设施进展",
+          "zhSummary": "Google AI推出latest AI news we announced in September 2026 Here are Google’s latest AI updates from September 2026，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI推出算力与基础设施进展",
+          "displaySummary": "Google AI推出latest AI news we announced in September 2026 Here are Google’s latest AI updates from September 2026，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding.\nWith these improvements, Muse Spark 1.1 advances the performance-efficiency frontier. Together with this week’s launch of Muse Image , this release brings us closer to our vision of personal superintelligence: models that help you pursue your goals, create what you imagine, deepen your relationships, and take action on what you value most.\nAlong with this release, we are launching a public preview of the new Meta Model API where developers can access Muse Spark 1.1. The model is available now in \"Thinking\" mode in the Meta AI app and on meta.ai .\nFor more details about our evaluations, see our report .\nMuse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services. It zero-shot generalizes to new native tools, MCP servers, and custom skills.\nIt tackles complex projects significantly faster than Muse Spark, as it is trained to orchestrate multi-agent systems to optimize end-to-end latency. As the main agent, it can gather context, make a plan, and delegate execution across parallel subagents. As a subagent, it adheres to its job, understands available tools, and knows when to escalate back to the main agent.\nMuse Spark 1.1 can actively manage its context window of 1 million tokens. It remembers actions, retrieves information from much earlier work, and compacts in a way that keeps the critical steps needed for later work.\nMuse Spark 1.1 excels at computer-use workflows that unfold across multiple applications with information changing on-the-fly. It maintains context across extended sessions, adapts to evolving requirements, and navigates unfamiliar interfaces with minimal human intervention.\nRather than reasoning through every desktop step one click at a time, Muse Spark 1.1 understands when to automate and when to use the interface directly. We trained the model to write scripts when automation is faster, click when direct interaction is simpler, and generate batches of actions at each step.\nAgentic dinner party organization: In real-world applications, new context arises that changes the task. Muse Spark 1.1 notices these changes when placing the dinner order and makes necessary updates without user intervention.\nCoding performance for Muse Spark 1.1 improved substantially on real-world tasks involving large, complex codebases. It can diagnose and fix complex bugs, implement new features in enterprise-grade systems, and execute large code migrations. In use cases ",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark 1.1",
+          "zhSummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：多模态能力",
+            "关键指标：1 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark 1.1",
+          "displaySummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。",
+          "url": "https://www.36kr.com/p/4024476507558018",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。\n10月13日晚间，“79岁老干妈陶华碧用AI一年赚54亿”话题登上微博热搜第二位。部分消费者在社交平台上表示，原本以为在众多网红辣酱轮番冲击之下，这家国民辣酱品牌会慢慢淡出大众视野。但官方披露的数据，推翻了外界的预判。\n近日，老干妈常务副总、首席质量官李鑫在2026年贵州省质量发展大会上对外透露，“通过四年的质量巩固与体系优化，2025年，我们营收达54亿元，创历史最高峰值。”\n值得一提的是，在品牌端，老干妈长期保持线上“断网”状态，不仅官方微博资质尚未完成年审，公众号最后一篇推文仍停留在2022年3月，抖音官方旗舰店近一年没有直播动作。面对直播带货、短视频种草的浪潮，老干妈几乎不主动做线上营销。\n此前有数据显示，老干妈电商渠道销售额占比从未超过5%，但营销成本却占到总营销预算的30%以上。2022年左右，老干妈解散了直播团队，也逐步退出各类线上促销活动，转而聚焦能带来稳定收益的线下传统经销渠道。\n但在工厂内部，这家老牌辣酱企业已经完成智能化升级，AI视觉质检系统在2025年实现全车间上线。\n这套AI视觉质检系统，核心任务是筛选辣椒原料。高速工业相机持续扫描传送带上的辣椒，机器可以快速识别霉变、带有黑斑的坏果，通过气流装置自动剔除不合格原料。依托这套系统，老干妈实现核心原料100%可追溯，原料从田间进厂，每一批次信息都能完整回溯。\n据李鑫介绍，上述AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。过去依靠人工肉眼挑拣辣椒，容易因为长时间重复工作出现疏漏。AI则将品控的不确定性大幅压缩。\n公开资料显示，老干妈品牌最初由陶华碧在1996年创办，其凭借独特油辣椒配方，从贵州街边小店成长为国民辣酱龙头，产品远销全球160个国家和地区，常年占据国内中式调味酱市场头部位置。多年来，陶华碧坚持“不贷款、不融资、不上市”的经营原则，依靠自有现金流运营企业。在很长一段时间里，陶华碧亲自扎根生产一线，把控原料与口味。\n老干妈的发展并非一路坦途。2014年，陶华碧退休，将股权交给两个儿子接手管理。2016年之后，老干妈营收出现连续下滑，从45亿元回落至2018年的43亿元。\n此后有消息称，陶华碧选择重回一线主持管理。对于陶华碧2019年复出的消息，今年1月红星新闻曾报道，相关工作人员表示：“陶华碧一直都在公司，这是网络上网友个人的猜测。”\n天眼查网站显示，贵阳南明老干妈风味食品有限责任公司法定代表人和董事长仍为陶华碧，公司注册资本1000万人民币，参保人数为740人。目前陶华碧次子李妙行为老干妈实控人，持股比例为51%；长子李贵山为受益所有人，也是公司监事，持股49%。\n《2025贵州企业100强》榜单显示，2022至2024年，老干妈营收分别为52.6亿元、53.81亿元、53.91亿元，连续三年稳步增长。\n尽管业绩回暖，但老干妈曾遭遇口味争议。同在今年1月，“老干妈为节省成本味道变了”冲上热搜。当时据津云新闻报道，相关工作人员否认了为节约成本而调整原料的说法，并表示产品味道如有差异，可能是由于消费者生活水平提升、对口感的要求越来越高，加之个人口味偏好不同所致。工作人员同时强调，老干妈的原料、工艺及配方，并未改变。\n今年一季度，老干妈在国内中式调味酱中市场份额虽有所下滑，但仍排在首位。马上赢数据显示，老干妈凭借三款不同风味的辣椒酱产品占据前三，市场份额合计超过16%。\n而在2025年三季度，中式调味酱类目中市场份额TOP 5的SKU中，老干妈同样占据了前三名，280g的风味豆豉油制辣椒酱、280g的风味鸡油辣椒酱以及275g的油辣椒酱的市场份额分别为8.25%、4.88%和3.13%。这些产品的均价都在10-12元左右。\n此前有电商运营人士对界面新闻表示，除非是能在抖音做到年销售额10亿元以上的品牌 ，否则其他小品牌基本不太会影响老干妈。\n10月13日晚间，“79岁老干妈陶华碧用AI一年赚54亿”话题登上微博热搜第二位。部分消费者在社交平台上表示，原本以为在众多网红辣酱轮番冲击之下，这家国民辣酱品牌会慢慢淡出大众视野。但官方披露的数据，推翻了外界的预判。\n近日，老干妈常务副总、首席质量官李鑫在2026年贵州省质量发展大会上对外透露，“通过四年的质量巩固与体系优化，2025年，我们营收达54亿元，创历史最高峰值。”\n值得一提的是，在品牌端，老干妈长期保持线上“断网”状态，不仅官方微博资质尚未完成年审，公众号最后一篇推文仍停留在2022年3月，抖音官方旗舰店近一年没有直播动作。面对直播带货、短视频种草的浪潮，老干妈几乎不主动做线上营销。\n此前有数据显示，老干妈电商渠道销售额占比从未超过5%，但营销成本却占到总营销预算的30%以上。2022年左右，老干妈解散了直播团队，也逐步退出各类线上促销活动，转而聚焦能带来稳定收益的线下传统经销渠道。\n但在工厂内部，这家老牌辣酱企业已经完成智能化升级，AI视觉质检系统在2025年实现全车间上线。\n这套AI视觉质检系统，核心任务是筛选辣椒原料。高速工业相机持续扫描传送带上的辣椒，机器可以快速识别霉变、带有黑斑的坏果，通过气流装置自动剔除不合格原料。依托这套系统，老干妈实现核心原料100%可追溯，原料从田间进厂，每一批次信息都能完整回溯。\n据李鑫介绍，上述AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。过去依靠人工肉眼挑拣辣椒，容易因为长时间重复工作出现疏漏。AI则将品控的不确定性大幅压缩。\n公开资料显示，老干妈品牌最初由陶华碧在1996年创办，其凭借独特油辣椒配方，从贵州街边小店成长为国民辣酱龙头，产品远销全球160个国家和地区，常年占据国内中式调味酱市场头部位置。多年来，陶华碧坚持“不贷款、不融资、不上市”的经营原则，依靠自有现金流运营企业。在很长一段时间里，陶华碧亲自扎根生产一线，把控原料与口味。\n老干妈的发展并非一路坦途。2014年，陶华碧退休，将股权交给两个儿子接手管理。2016年之后，老干妈营收出现连续下滑，从45亿元回落至2018年的43亿元。\n此后有消息称，陶华碧选择重回一线主持管理。对于陶华碧2019年复出的消息，今年1月红星新闻曾报道，相关工作人员表示：“陶华碧一直都在公司，这是网络上网友个人的猜测。”\n天眼查网站显示，贵阳南明老干妈风味食品有限责任公司法定代表人和董事长仍为陶华碧，公司注册资本1000万人民币，参保人数为740人。目前陶华碧次子李妙行为老干妈实控人，持股比例为51%；长子李贵山为受益所有人，也是公司监事，持股49%。\n《2025贵州企业100强》榜单显示，2022至2024年，老干妈营收分别为52.6亿元、53.81亿元、53.91亿元，连续三年稳步",
+          "translationMode": "fallback",
+          "zhTitle": "AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。",
+          "zhSummary": "36Kr披露AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。，重点落在融资与资本动作。目前已正式上线，披露的金额或规模为54亿元。进一步看，AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0；10月13日晚间，“79岁老干妈陶华碧用AI一年赚54亿”话题登上微博热搜第二位。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "金额或规模：54亿元",
+            "上线状态：已正式上线"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。",
+          "displaySummary": "36Kr披露AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0.02%。，重点落在融资与资本动作。目前已正式上线，披露的金额或规模为54亿元。进一步看，AI视觉质检系统落地之后，老干妈关键工序产品不良率降至0；10月13日晚间，“79岁老干妈陶华碧用AI一年赚54亿”话题登上微博热搜第二位。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "What Makes Alibaba Cloud’s Newly Released AgentCore Different?",
+          "url": "https://www.alibabacloud.com/blog/what-makes-alibaba-cloud%E2%80%99s-newly-released-agentcore-different_603627",
+          "description": "What Makes Alibaba Cloud’s Newly Released AgentCore Different? This article introduces Alibaba Cloud&#039;s AgentCore, an enterprise-grade platform for building, governing, and scaling reliable AI Agents in production. Alibaba Cloud Native",
+          "date": "",
+          "score": 32,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud&#039;s AgentCore, an enterprise-grade platform for building, governing, and scaling reliable AI Agents in production.\nThis article is summarized from the sharing session by Zhou Qi, Head of Cloud-Native Application Platform at Alibaba Cloud Intelligence Group, and Li Guoqiang, Product Manager of AgentCore , at the Apsara Conference.\nWhile the investment in Agents has become a consensus, production-grade adoption remains the minority.\nThe reason is not complex. When building an Agent for personal use, occasional fluctuations in performance are acceptable; one can simply re-execute the task or adjust the context. However, handing over real work to an Agent imposes entirely different requirements. It may need to run for extended periods, call multiple enterprise systems, access sensitive data, collaborate with other Agents and humans, and ultimately be accountable for business outcomes.\nThis means that deploying Agents in enterprise production environments faces four major shifts:\nAlibaba Cloud's newly released AgentCore is an enterprise-grade Agent construction and governance platform launched specifically for this stage.\nModel outputs are probabilistic. The same question asked at different times may yield slightly different answers. Once inside an Agent, this uncertainty expands further.\nAn Agent does more than generate text. It understands goals, breaks down tasks, selects tools, reads knowledge, calls external systems, and decides the next step based on intermediate results. A single task may involve multiple steps, and a deviation in any step can affect the final outcome.\nFor personal use, this uncertainty is usually acceptable. If the result is unsatisfactory, one can modify the prompt or rerun the task. However, in an enterprise production environment, an Agent might be handling a fault incident, modifying a customer record, or executing a cross-system business operation. Enterprises cannot treat \"trying multiple times\" as a stability solution.\nWhile model outputs can be probabilistic, production processes must have boundaries, and business results must be verifiable.\nTherefore, deploying Agents in production requires answering a set of questions rarely faced by traditional demos:\n• How is state preserved during long-running tasks?\n• Can execution resume from the point of failure after an interruption?\n• How is context isolated when multiple tasks run simultaneously?\n• Can we fully trace which tools an Agent called and what resources it modified?\n• Can humans take over in time when the Agent prepares to execute high-risk operations?\nAgentCore integrates these issues into a unified runtime and governance system.\n• Runtime and Sandbox provide isolation, elastic scheduling, and the environment required for long-",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出AgentCore Different?",
+          "zhSummary": "Alibaba Cloud推出AgentCore Different?，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出AgentCore Different?",
+          "displaySummary": "Alibaba Cloud推出AgentCore Different?，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "After Every Agent Rewrite, What&#039;s Actually Worth Keeping?",
+          "url": "https://www.alibabacloud.com/blog/after-every-agent-rewrite-whats-actually-worth-keeping_603628",
+          "description": "After Every Agent Rewrite, What&#039;s Actually Worth Keeping? This article introduces Alibaba Cloud&#039;s EventHouse as a unified, real-time semantic data pipeline that provides AI Agents with actionable, trustworthy business context. Ali",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud&#039;s EventHouse as a unified, real-time semantic data pipeline that provides AI Agents with actionable, trustworthy business context.\nThe pace of change in Agent development has outrun what many teams expected.\nMany teams have lived the same arc: hand-rolling an Agent Loop, then adopting frameworks like LangChain and LangGraph, then turning to model vendors' Agent SDKs and Harness Runtimes. Every leap in model capability seems to bring another architectural adjustment.\nThat doesn't mean earlier choices were wrong — the underlying capabilities simply changed too fast. The Planner, Memory, Router, retries, and state management teams once built themselves are becoming common capabilities of the model or platform. So a practical question: if models, frameworks, and runtimes keep changing, what part of the Agent you invest in today actually endures?\nOur answer: orthogonal growth — keep pace with general intelligence, but put long-term investment in your own business context.\nAgent development splits into two growth axes:\nThe horizontal axis is general intelligence — Memory, Planner, Managed Runtime, Agent collaboration. Model vendors and platforms invest here continuously; enterprises should keep pace and reuse rather than rebuild what is becoming a common capability. But capabilities on this axis are not necessarily durable enterprise assets: what a business team builds itself today may be a default setting of the model or platform tomorrow.\nThe other axis runs orthogonal to it — the vertical axis of business depth. It comprises:\n• the business facts an enterprise continuously generates;\n• the relationships among business objects;\n• a unified business semantics internal to the enterprise;\n• industry knowledge and business experience.\nNone of this appears automatically with a model upgrade, and no model vendor can produce it for you. Models can help organize, infer, and generate candidates, but your own business definitions, data relationships, and process boundaries must be built up inside the business itself.\nThis is \"orthogonal growth\": model vendors push forward along general intelligence while the enterprise climbs along business depth. The more perpendicular the two axes, the larger the \"area of intelligence\" they enclose.\nTo judge whether an investment is worth making long term, ask one question: after the next model upgrade, will it be replaced — or amplified?\nGiven the importance of business depth, the next question is: where does that context come from?\nNot from a static document compiled once, but from the data an enterprise generates every day as it runs. Orders and transactions keep occurring, customer behavior keeps shifting, devices keep emitting events and alerts, tickets keep moving, applications an",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来企业落地与生态合作",
+          "zhSummary": "Alibaba Cloud带来After Every Agent Rewrite, What&#039;s Actually Worth Keeping?，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来企业落地与生态合作",
+          "displaySummary": "Alibaba Cloud带来After Every Agent Rewrite, What&#039;s Actually Worth Keeping?，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "From Business Alerts to Database Root Causes: How STAROps and ApsaraDB Agent Sharpen Cross-Layer Diagnostics",
+          "url": "https://www.alibabacloud.com/blog/from-business-alerts-to-database-root-causes-how-starops-and-apsaradb-agent-sharpen-cross-layer-diagnostics_603622",
+          "description": "From Business Alerts to Database Root Causes: How STAROps and ApsaraDB Agent Sharpen Cross-Layer Diagnostics This article introduces how STAROps and ApsaraDB Agent enable precise, cross-layer root cause analysis from app alerts to database",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces how STAROps and ApsaraDB Agent enable precise, cross-layer root cause analysis from app alerts to database commands.\nThe alert fires. The frontend P95 latency spikes to 1,800 ms. You trace the call chain downstream—Redis connections are fluctuating, ApsaraDB RDS (RDS) active sessions are climbing—and the clues gradually converge on the database layer. At this point, opening more monitoring dashboards won't help; what you need is something that can run deep diagnostics against the database itself.\nA digital worker is an AI operations assistant in STAROps that can be equipped with skills. Attach ApsaraDB Agent to a digital worker and it gains professional diagnostic capabilities at the database layer. ApsaraDB Agent can do far more than fault diagnosis—beyond instance diagnostics, it also covers everyday scenarios such as instance specification selection, kernel parameter change evaluation, cost analysis, schema modeling analysis, kernel parameter explanation, and backup status queries.\nThe cross-layer scenarios that follow all involve the same e-commerce application. Below is the frontend service call chain extracted from Cloud Monitor 2.0, which also represents the actual alert propagation path:\nThe agent replies shown in the following scenarios are the final diagnostic conclusions. During actual use, the agent first displays analysis progress (querying metrics, analyzing slow commands…). Single-instance diagnostics typically complete within a few minutes, while cross-layer root cause analysis takes roughly 5–10 minutes. If the problem description is incomplete, the agent may ask follow-up questions.\nAnalyze the cause of the abnormal spike in active sessions for RDS instance rm-j6c3l32c730ti37ur during the period 2026-07-18T12:21:30+08:00 → 2026-07-18T12:38:30+08:00\nThe digital worker identifies that the issue clearly points to the RDS database layer and invokes ApsaraDB Agent for instance diagnostics.\nA slow frontend interface response alert occurred from 2026-08-10 10:31 to 10:50. Help me diagnose the root cause of the issue and provide a solution\nThe digital worker first kicks off STAROps full-stack correlation analysis, gradually narrowing the troubleshooting scope from the frontend layer to the Redis layer through timeline comparison, topology tracing, and change-record cross-referencing. It then invokes ApsaraDB Agent for in-depth diagnostics at the Redis layer.\nAnalyze the cause of the frontend response time spike alert during the period from 2026-08-10 06:19 to 06:25\nFollowing the same troubleshooting path as Scenario 2: STAROps full-stack correlation analysis narrows the scope to the Redis layer, and ApsaraDB Agent takes over for in-depth Redis diagnostics.\nLooking at Scenario 2 and Scenario 3 together:\nSame symptom, ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来From Business Alerts",
+          "zhSummary": "Alibaba Cloud带来From Business Alerts，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来From Business Alerts",
+          "displaySummary": "Alibaba Cloud带来From Business Alerts，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "The Future of AI: from Enterprise Adoption to Open Source Sovereignty",
+          "url": "https://www.infoq.com/podcasts/enterprise-adoption-open-source-sovereignty/",
+          "description": "The Future of AI: from Enterprise Adoption to Open Source Sovereignty",
+          "date": "",
+          "score": 19,
+          "category": "开发者信号",
+          "detailText": "In this episode, a panel of AI experts, Meryem Arik (DoubleWord), Clara Higuera Caba&#xF1;es (BBVA), and Jeff Smith (C Proof), demystify the current state of AI in the enterprise.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nLily Mara explains how to avoid high-risk software rewrites through incremental FFI refactoring. She shares how engineering teams can replace Python bottlenecks with Rust via PyO3, demonstrating how to achieve dramatic function-level speedups, seamless integration testing, and meaningful infrastructure cost savings without microservice overhead.\nNicholas Herring shares how EVE Online tackles distributed tracing and observability across a 20-year-old MMO architecture. He discusses leveraging head-based, dynamic exponential moving average (EMA), and deterministic sampling techniques to maintain high system fidelity, control telemetry costs, and avoid performance degradation under high-throughput real-time game simulations.\nPhysical data layout is one of the most consequential decisions in lakehouse engineering. The author compares Liquid Clustering, ZOrdering, and partitioning across four workload types on Delta Lake, uncovering two undocumented failure modes that likely affect production systems today and offering a decision framework for choosing the right layout strategy.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods, spoke to Matt Gjertsen, founder of Built and author of Minimum Viable Manager, about the three foundational skills every first-time manager needs, how to build trust and give effective feedback, and why human leadership skills matter even more in the age of AI.\nMatthew Liste explains the 12 core principles of building scalable, reliable platforms for enterprise tech teams. From avoiding technical debt and managing deprecation to building a strong engineering culture, Liste discusses how to design infrastructure platforms that reduce complexity, streamline developer workflows, and deliver long-term value for senior architects and engineering leaders.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nYour coding agent moves fast. Who checks whether it's making the codebase better? Online. Register Now.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nCompare team design, delivery flow, AI roles, and metrics with experienced practitioners. Online.",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI开源Future",
+          "zhSummary": "InfoQ AI开源Future，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "InfoQ AI开源Future",
+          "displaySummary": "InfoQ AI开源Future，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "AI agents explained",
+          "url": "https://ai.meta.com/learn/agentic-ai/what-are-ai-agents/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "开发者信号",
+          "detailText": "AI agents explained: A beginner-friendly guide to what AI agents are, how they work, their key types, benefits, and real-world use cases.",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI带来AI agents explained",
+          "zhSummary": "Meta AI带来AI agents explained，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Meta AI带来AI agents explained",
+          "displaySummary": "Meta AI带来AI agents explained，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Sep 1, 2026 Announcements Developing Enterprise Frontier Safeguards with our customers",
+          "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+          "description": "",
+          "date": "",
+          "score": 20,
+          "category": "资本与生态",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nToday we’re announcing Enterprise Frontier Safeguards (EFS), a solution that combines the privacy of zero data retention (ZDR) with state-of-the-art safeguards for detecting misuse. EFS works by storing data in cloud infrastructure controlled by the customer, not Anthropic. EFS will be rolling out to customers in phases, starting later this fall. To make the transition smooth, eligible customers will receive ZDR on Fable 5 and Fable 5.1 until EFS is ready.\nWe developed EFS in close collaboration with more than 100 customers in industries like financial services, healthcare, manufacturing, telecom, law, retail, and the public sector, and with our cloud partners at Amazon Web Services, Google Cloud, and Microsoft Azure.\nEFS will be supported on Claude Code, Claude Enterprise, the Claude Platform, Amazon Bedrock, Claude Platform on AWS, Google’s Agent Platform, and Microsoft Foundry.\nMythos-class models, like Claude Fable 5.1 , represent a major increase in intelligence and agentic capabilities. However, with that increase comes the potential for both misuse and autonomous misbehavior.\nOver the last few months, we’ve seen substantial evidence of attempted misuse of AI models. These range from typical forms of abuse, such as fraud, to sophisticated cyberattacks, which can include agents autonomously engaging in destructive behavior. Some of these instances involve theft or misappropriation of enterprise customers’ credentials, which are difficult to detect without the ability to monitor traffic and detect abnormal behavior.\nFurthermore, because the most sophisticated misuse can involve many tasks spread across multiple sessions and accounts, it is not sufficient to run automated analysis on each interaction separately and then instantaneously discard the data. Effective detection requires storing data for a meaningful period of time so that it can be correlated across time and accounts.\nFor this reason, we introduced 30-day data retention starting with Fable 5. This policy was not motivated by a desire to train on enterprise data: Anthropic has never trained on enterprise data without explicit permission, and never will.\nThe enterprises we worked with generally understood the safety and security value of data retention, but many–especially in regulated industries–found it difficult to use models with data retention. We therefore sat down with customers to design a solution that could provide the best of both worlds: the privacy of ZDR and the safety allowed by monitoring across time and accounts.\nWe built Enterprise Frontier Safeguards with feedback from the experts who will use it every day: security, product, compliance, and de",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布算力与基础设施进展",
+          "zhSummary": "Anthropic公布Announcements Developing 企业 Frontier Safeguards，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "Anthropic公布算力与基础设施进展",
+          "displaySummary": "Anthropic公布Announcements Developing 企业 Frontier Safeguards，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Building Resilient Platforms: Insights from 20+ Years in Mission-Critical Infrastructure",
+          "url": "https://www.infoq.com/presentations/infrastructure-financial-services-platform",
+          "description": "Building Resilient Platforms: Insights from 20+ Years in Mission-Critical Infrastructure Matthew Liste explains the 12 core principles of building scalable, reliable platforms for enterprise tech teams. From avoiding technical debt and mana",
+          "date": "",
+          "score": 16,
+          "category": "资本与生态",
+          "detailText": "Matthew Liste shares 12 core principles for building resilient, enterprise-scale platforms. Learn how to balance velocity, reduce technical debt, and build systems engineering teams rely on.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nLily Mara explains how to avoid high-risk software rewrites through incremental FFI refactoring. She shares how engineering teams can replace Python bottlenecks with Rust via PyO3, demonstrating how to achieve dramatic function-level speedups, seamless integration testing, and meaningful infrastructure cost savings without microservice overhead.\nNicholas Herring shares how EVE Online tackles distributed tracing and observability across a 20-year-old MMO architecture. He discusses leveraging head-based, dynamic exponential moving average (EMA), and deterministic sampling techniques to maintain high system fidelity, control telemetry costs, and avoid performance degradation under high-throughput real-time game simulations.\nPhysical data layout is one of the most consequential decisions in lakehouse engineering. The author compares Liquid Clustering, ZOrdering, and partitioning across four workload types on Delta Lake, uncovering two undocumented failure modes that likely affect production systems today and offering a decision framework for choosing the right layout strategy.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods, spoke to Matt Gjertsen, founder of Built and author of Minimum Viable Manager, about the three foundational skills every first-time manager needs, how to build trust and give effective feedback, and why human leadership skills matter even more in the age of AI.\nMatthew Liste explains the 12 core principles of building scalable, reliable platforms for enterprise tech teams. From avoiding technical debt and managing deprecation to building a strong engineering culture, Liste discusses how to design infrastructure platforms that reduce complexity, streamline developer workflows, and deliver long-term value for senior architects and engineering leaders.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nYour coding agent moves fast. Who checks whether it's making the codebase better? Online. Register Now.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nCompare team design, delivery flow, AI roles, and metrics with experienced practitione",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出Building Resilient Plat…",
+          "zhSummary": "InfoQ AI推出Building Resilient Platforms，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "InfoQ AI推出Building Resilient Plat…",
+          "displaySummary": "InfoQ AI推出Building Resilient Platforms，重点落在算力与基础设施进展。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 19,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 15,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 8,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/10/14/"
+}
