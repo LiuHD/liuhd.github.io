@@ -1,0 +1,304 @@
+{
+  "title": "AI 日报 2026-10-20",
+  "slug": "ai-daily-2026-10-20",
+  "date": "2026-10-20",
+  "isoDate": "2026-10-20T06:07:26.151Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 10,
+    "day": 20
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、36Kr、InfoQ AI。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Oct 15, 2026 Announcements An update on independent evaluators",
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic announces updates to embedding independent evaluators\nLast month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we’re announcing that we’ve started to give employee-like access to a team from METR , a nonprofit that evaluates frontier AI models.\nMETR will publish the results of its risk assessments. Over the past year, we’ve worked with METR on several reviews of our Risk Reports . We’re also working with SecureBio and Accenture as evaluators, and are in early discussions with several other organizations, including Hugging Face .\nHere, we explain our approach to working with evaluators.\nTo evaluate frontier models, evaluators need the following:\nAlthough the analogy isn’t exact, bank supervision operates on similar logic. Banks know more about their own risk positions than outsiders do, so regulators assign resident examiners to work inside the largest banks. If a bank’s risk-taking could threaten the public, third parties try to see that in advance.\nFor the AI industry, this is a step toward robust safety oversight . We’re moving quickly with multiple evaluators and learning actively about what kinds of partnership work. We’re committed to sharing updates as we go.\nWe’ve onboarded six METR employees with company hardware, office space, and access to internal tools and systems that are roughly on par with what our own risk assessment teams have access to. Outside a small number of clearly defined categories (e.g., data about customers, attorney-client privileged information, or information about our model architectures), Anthropic employees are encouraged to share information with them just as they would with a fellow employee working on alignment risk. 1\nMETR will publish its analysis of our risk levels, incidents, or practices. Anthropic can’t veto publication, but we can require them to redact information if it falls into predefined categories such as reproducing confidential IP. (Anthropic ultimately decides what information does and does not fall into these categories, although METR reserves the right to make certain statements about the level of access and information it received.) 2\nOur engagement with METR is limited to a small team operating under enforceable agreements. Other METR employees are siloed from that team’s work, including researchers who work with us on other projects. Embedded evaluation gives a few qualified people working under Anthropic’s security standards a close view of how we operate. It’s not a way for other organizations to obtain our information, or that of our customers and partners.\nWe’re working on sev",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布Announcements An update on independent evaluators，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布Announcements An update on independent evaluators，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Oct 8, 2026 Announcements 2026 Usage Policy update",
+          "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "We’re publishing a new version of our Usage Policy. In this post, we summarize the changes we’ve made.\nEach year, Anthropic updates its Usage Policy in response to the evolving capabilities of our models, and the feedback we’ve received from our customers. We&#x27;re publishing a new version of the policy today. In this post, we summarize the changes we’ve made.\nThe updated policy takes effect on November 12. The full Usage Policy and Supported Regions Policy can be found on their respective pages.\nAs we wrote about last month , we’ve seen examples of state media outlets, government propaganda offices, and commercial firms using Claude to run networks of fake accounts and fabricated news sites. Our policy already prohibited this activity, but the restrictions were scattered across our elections, fraud, privacy, and disinformation sections.\nWe&#x27;ve consolidated those rules into a new section titled Do Not Engage in Deceptive Campaigns or Artificial Activity, which applies to deceptive activity of any kind (whether political or commercial). It covers efforts to obscure who is behind a message or amplify content through fake accounts or posts, along with building the tools and infrastructure for running influence operation campaigns.\nOur Usage Policy has always prohibited using Claude to develop weapons. Recently, we’ve seen people attempt to use our models to build guidance and control software for weapons. The updated section makes clear that our prohibitions include the software and components that make weapons work, as well as actions like arming drones and other autonomous vehicles. These changes reflect how we’ve enforced our previous policy.\nAs with the previous update to our weapons prohibitions, this update does not reflect a change in what we enforce in practice: it is just intended to make our policy more explicit. The new section also spells out which uses remain permitted, including tracking that people have agreed to (such as fraud monitoring), content moderation, journalism, and legal research.\nWhen our products are used in ways that can affect someone&#x27;s health, legal rights, finances, livelihood, or access to essential services, we require there to be a qualified “human in the loop” (that is, someone who has the authority to review and, if necessary, change Claude’s recommendations), and for the individual affected to be told that AI was used.\nThese requirements haven’t changed with the updated version of our Usage Policy. However, users have often asked us whether a given use case has these requirements, so we&#x27;ve rewritten our High-risk Use Case Requirements section to answer that more directly. It now lists which kinds of recommendations are covered and which are not.\nFollowing the launch of our Model Hardware Standard , t",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布算力与基础设施进展",
+          "zhSummary": "Anthropic公布Announcements 2026 Usage Policy update，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布算力与基础设施进展",
+          "displaySummary": "Anthropic公布Announcements 2026 Usage Policy update，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Oct 8, 2026 Announcements Introducing the Anthropic Cyber Mission",
+          "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nToday we’re launching the Anthropic Cyber Mission, a long-term commitment to securing the systems everyone depends on. The Cyber Mission is a new effort to support defenders with tools, research, and resources to secure their software and systems. We’re starting with two areas:\nToday, we’re introducing the Critical Infrastructure Defense Program , which brings frontier Claude models, on-site engineers, and our threat research to those trusted providers. Its founding partners are Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Insane Cyber, Nozomi Networks, Palo Alto Networks, PwC, and Rockwell Automation.\nThese organizations represent the providers that operators rely on to secure these systems: the consulting and advanced technology companies that run security programs, the security companies that guard the business and industrial networks, and the manufacturers that build and patch the equipment itself.\nThis work is underway. Several partners are currently working with Claude to fix vulnerabilities and help customers do the same. Critical infrastructure is hard to defend in many ways that AI cannot fix, but we believe that frontier models can help find and repair weaknesses before those weaknesses are used to cut off power or make water unsafe. Our first step is to work with a small cohort of providers to learn which strategies are most effective and practical.\nIf your company builds security products or services for critical infrastructure, you can register your interest here .\nIn June, we launched a cyber defense program for state, local, tribal, and territorial governments. Since then, we’ve offered frontier Claude models and technical support to more than half of all US states and some of the country’s largest public critical infrastructure operators, speeding up code scanning and patching, incident response, red teaming, and other security workflows.\nWe are listening to and learning from the people who know this landscape best. Our approach is to work with the companies, coalitions, governments, and nonprofits that know this landscape and that operators trust, and provide support where it’s most needed.\nAlmost all software relies on open-source code, much of it maintained by small teams of volunteers. Under Project Glasswing, we scanned hundreds of widely used open-source projects, had humans triage and review many of the potential vulnerabilities uncovered, and privately reported what we found to their maintainers through our coordinated vulnerability disclosure process .\nThe service is meant for projects with the capacity to keep up with surfaced findings. For others, we will continue to share human-ve",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Anthropic Cyber Mission",
+          "zhSummary": "Anthropic公布Anthropic Cyber Mission，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布Anthropic Cyber Mission",
+          "displaySummary": "Anthropic公布Anthropic Cyber Mission，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Discover new Advanced Protection features on Android designed to defend against sophisticated threats and keep your data safe.",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "The latest AI news we announced in September 2026 Here are Google’s latest AI updates from September 2026",
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "See the full list of September AI updates.\nThe latest AI news we announced in September 2026\nHere’s a recap of some of our biggest AI updates from September, including Gemini 4 Argon, new Connected Apps in the Gemini App, and WeatherNext 3.\nYour browser does not support the audio element.\nGoogle just released a bunch of new AI updates, including the powerful Gemini 4 Argon model for solving complex problems. They’ve added cool features like better voice tools, music generation, and ways to connect your favorite apps directly into Gemini. They’re also using AI to help scientists map DNA, track climate change from space, and even study fruit fly brains. Plus, you can now use Gemini on Windows or check out their new Googlebook laptop.\nFor more than 20 years, we’ve invested in machine learning and AI research, tools, and infrastructure to build products that make everyday life better for more people. Teams across Google are working on ways to unlock AI’s benefits in fields as wide-ranging as healthcare, crisis response, and education. To keep you posted on our progress, we're doing a regular roundup of Google's most recent AI news.\nHere’s a look back at some of our AI announcements from September.\nSay hello to Gemini 3.8 Flash-Lite TTS and Gemini 3.8 Flash TTS . Our most expressive text-to-speech models yet let you generate custom voices, direct scene dialogue, and more from simple text prompts. Instead of choosing from a fixed list of static presets, you now get a dynamic creative studio to build voice-first applications and elevate audio experiences, rolling out across products including Gemini Notebook and Google Vids.\nTackle tasks with new Connected Apps in Gemini . We brought more of your favorite apps directly into Gemini, including productivity tools like Airtable, Linear, monday.com, and PandaDoc; creative platforms including Adobe, Picsart, Squarespace, and Webflow; and lifestyle services such as Peloton, SeatGeek, and Experian. Instead of switching between tabs, you can now tackle your tasks all in one place. To get started, head to your Gemini settings and select the apps you want to link.\nCreate your best tracks yet with Lyria 3.5 in Gemini . From simple text prompts or images, you can now use our most expressive music generation model yet to produce richer arrangements, coherent songs, and personalized audio right in the Gemini app. Lyria 3.5 is available globally in Gemini and across Google AI Studio, Google Flow Music, and Google Vids.\nSharpen your study routine with new Gemini Notebook tools . Now you can transform your study routine in Gemini Notebook with interactive coursework tools and animated video summaries. Master complex topics using custom flashcards, versatile quiz formats, and 60-second Short Video Overviews in over 80 languag",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI推出算力与基础设施进展",
+          "zhSummary": "Google AI推出latest AI news we announced in September 2026 Here are Google’s latest AI updates from September 2026，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI推出算力与基础设施进展",
+          "displaySummary": "Google AI推出latest AI news we announced in September 2026 Here are Google’s latest AI updates from September 2026，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文关注的不只是模型分数，而是编码、推理和长任务稳定性是否已经足够支撑真实业务场景。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "The Better Harness Evaluation Model Used by 100,000 Users Is Now Open Source",
+          "url": "https://www.alibabacloud.com/blog/the-better-harness-evaluation-model-used-by-100000-users-is-now-open-source_603641",
+          "description": "The Better Harness Evaluation Model Used by 100,000 Users Is Now Open Source This article introduces the open-source release of Better Harness, a toolkit for evaluating and optimizing AI coding agent workflows based on actual task execution",
+          "date": "",
+          "score": 25,
+          "category": "开发者信号",
+          "detailText": "This article introduces the open-source release of Better Harness, a toolkit for evaluating and optimizing AI coding agent workflows based on actual task execution.\nRecently, we built Better Harness into Qoder Desktop. Since its launch, many users have asked: will this feature be open source?\nToday, we’re officially open-sourcing Better Harness. Find the project at: https://github.com/QoderAI/better-harness\nBetter Harness is an open-source toolkit for analyzing and continuously improving coding agent workflows. It connects the engineering practices, evaluation models, and runtime capabilities of Harness Engineering and Loop Engineering, with support for Claude Code, Codex, Qoder, and Cursor.\nAll four platforms share the same evaluation model, but they do not yet offer full parity in session analysis, evidence coverage, or output capabilities. The Qoder integration has been repeatedly validated in real development workflows and is currently the most complete reference implementation.\nOnce you have installed or loaded it on your platform, run the following command in the project you want to analyze:\nYou can start it now and review the report as you continue reading. If a type of evidence is unavailable, Better Harness explicitly preserves that limitation in its results rather than substituting configuration counts or data from another platform.\nSuppose an agent changes a module, runs a test command, and declares the task complete. The real question is not whether the repository “has tests,” but whether that test is relevant to the change, covers the main risks, and produces results that justify handing over the work.\nThat is why Better Harness does not treat the presence of AGENTS.md, Rules, Skills, MCP, Hooks, Memory, tests, or CI as proof that they actually contributed to the task. Every proposed improvement—a Finding—must include traceable evidence, a concrete impact on the user, the smallest necessary fix scope, and a way to verify the fix.\nHere is a snapshot of Better Harness analyzing its own project in Codex:\nThe report does not equate “missing Codex host tests” with “Codex has failed.” Instead, it preserves the distinction between tests that have not been run and evidence of failure. Scores only help locate issues; what matters is the conclusion, its impact, the smallest necessary fix scope, and how to verify the fix.\nThis is what separates Better Harness from a configuration checklist. A checklist tells you what a project has; Better Harness examines whether those capabilities actually helped the agent complete a task with trustworthy results.\nAnd if the report’s judgments are to be inspected, revised, and verified again, open source has to mean more than a runnable entry point.\nSimply publishing the prompt behind /better-harness on GitHub wou",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud公布Agent 能力升级",
+          "zhSummary": "Alibaba Cloud公布Better Harness Evaluation Model Used by 100,000 Users Is Now Open Source，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud公布Agent 能力升级",
+          "displaySummary": "Alibaba Cloud公布Better Harness Evaluation Model Used by 100,000 Users Is Now Open Source，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Qoder Cloud Agents Help Developers Enter the Personal Agent Era",
+          "url": "https://www.alibabacloud.com/blog/qoder-cloud-agents-help-developers-enter-the-personal-agent-era_603644",
+          "description": "Qoder Cloud Agents Help Developers Enter the Personal Agent Era This article introduces Qoder Cloud Agents, a managed platform that simplifies building context-aware Personal Agents. Alibaba Cloud Community <img src=\"https://img.alicdn.com/",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces Qoder Cloud Agents, a managed platform that simplifies building context-aware Personal Agents.\nIn the second half of 2026, Personal Agents are becoming a new focus for the AI industry. OpenAI launched Dots at DevDay 2026, and Meta introduced Muse. This wave of product launches points in the same direction: giving everyone an AI assistant that can keep working on their behalf.\nFollowing the excitement around OpenClaw early in the year and the accelerating adoption of coding and workplace agents, Personal Agents are taking AI collaboration into its next phase: from answering questions and completing individual tasks to delivering results on an ongoing basis.\nThis shift can be understood in three statements:\nFigure 1 · The Evolution of AI Assistant Paradigms\nFor example, preparing an industry briefing is a one-off task. Remembering your areas of interest, gathering information every week, generating reports and sending them through instant messaging (IM), and promptly alerting you to important developments is ongoing collaboration. To add a new research topic, you only need to send a message—not restate the entire background.\nA Personal Agent is an AI assistant that works on an ongoing basis around an individual's needs. Its work continues after the user leaves the chat window, and the next conversation picks up from the progress made previously.\nFor developers, Personal Agents create many opportunities: turning familiar use cases into assistants that users are willing to entrust with ongoing work. But there is still engineering work between “AI can answer” and “an assistant can keep getting things done.”\nConnecting to a model is only part of the work. Before putting an assistant in users' hands, several other questions must be addressed.\nWhere do tasks run? Searching for information, reading and writing files, and running scripts require tools, dependencies, and an isolated environment. You also need visibility into task progress, the step at which a task failed, and where its output files are stored.\nHow is knowledge of the user carried forward? A task started in a new week is a new task, but it should still reflect that person's areas of interest. Conversation history, long-term memory, and reference files serve different purposes. Each needs a clear owner and must be connected to the correct execution environment.\nHow does the assistant fit into the user's daily routine? IM messages must be associated with the right user and assistant, and results returned through the original channel. Recurring tasks require scheduling, authorization, and notifications; they cannot depend on the user manually opening a page each time.\nHow do you scale to more users? The same assistant capabilities need to be reused, while individual configur",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出Agent 能力升级",
+          "zhSummary": "Alibaba Cloud推出Agent 能力升级，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出Agent 能力升级",
+          "displaySummary": "Alibaba Cloud推出Agent 能力升级，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Better Harness Is Here: Make Your Agent Better with Every Task",
+          "url": "https://www.alibabacloud.com/blog/better-harness-is-here-make-your-agent-better-with-every-task_603635",
+          "description": "Better Harness Is Here: Make Your Agent Better with Every Task This article introduces Qoder&#039;s Better Harness, a tool that diagnoses and optimizes AI agent workflows by turning task lessons into reusable assets. Alibaba Cloud Community",
+          "date": "",
+          "score": 23,
+          "category": "开发者信号",
+          "detailText": "This article introduces Qoder&#039;s Better Harness, a tool that diagnoses and optimizes AI agent workflows by turning task lessons into reusable assets.\nSummary : Qoder introduces Better Harness (Beta): assess your agent’s working environment across five dimensions, fix issues with one click, and turn the lessons from every task into reusable assets—so your agent keeps getting better.\nYou have always been the one checking the agent’s code at the end. This time, turn things around: give the agent’s working environment a health check.\nToday’s coding agents can read requirements, change code, run tests, and submit pull requests. But being able to do many things is not the same as doing them well.\nAn agent typically cycles through “ understand the task—take action—inspect the results—adjust and continue .” This is the agent loop. A reliable loop does more than keep the agent busy: it makes the goal clear, defines what must not be changed, establishes how to verify the result, and sets out what to do when something fails. Otherwise, an agent may change a great deal of code and run many tests without being able to demonstrate that the task is actually complete.\nOur advice: you do not need to chase every new term. The terminology keeps changing, but the underlying challenge has not: make the agent’s goals, boundaries, and verification methods clear, then retain the lessons from each task. The practical response has not changed either: whenever an agent makes a mistake, put a mechanism in place to prevent it next time.\nThe new Better Harness (Beta) in Qoder Desktop starts by diagnosing gaps, then helps you fix them and retain what you learn. Its checks draw on the Qoder team’s internal practice and approaches repeatedly validated by the community. The aim is to equip the agent with project context, the right development tools, effective verification methods, and clearly defined safety boundaries—bringing every loop closer to reliable delivery.\nIn the latest Qoder Desktop, open Better Harness to start an analysis and fix issues through the visual interface, or run the /better-harness Skill directly. It examines how the agent carries out tasks, identifies missing or weak elements, and helps you determine what to add or improve next.\nBetter Harness does not assess the quality of a single answer. It examines the entire harness that supports a coding agent’s work: whether goals and context are clear, the project is easy to run, permissions are controlled, verification is effective, delivery is safe, and both the team and the agent can keep learning from each task.\nIn coding agents such as Qoder, Rules, Skills, Custom Agents, MCPs, Plugins, Memories, and Hooks are the building blocks of an agent loop. Better Harness identifies these user-configured capabilities, ",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来Better Harness Is Here",
+          "zhSummary": "Alibaba Cloud带来Better Harness Is Here，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来Better Harness Is Here",
+          "displaySummary": "Alibaba Cloud带来Better Harness Is Here，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "11亿美元，中国首单生成式AI-LNP平台出海大单落地，礼来的扫货逻辑变了",
+          "url": "https://www.36kr.com/p/4033587477844870",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "风口还是绞肉机？\n10月19日，剂泰科技（7666.HK）与礼来官宣战略合作，共同推动组织特异性LNP递送技术突破，总额最高11亿美元。这是中国首个生成式AI-LNP平台出海大单，也是全球交易规模最大的AI驱动肝外LNP递送平台合作：大型药企不仅为单一管线资产买单，而且开始为平台能力支付里程碑，为长期研发合作锁定优先权。\n中信建投最新研报指出，AI4S正由模型能力竞赛迈向产业化临界点，技术、产业、需求、政策四重共振，价值锚点由模型能力向科研生产力、数据资产与系统化生物设计升维。AI制药产业链已演化为以平台和技术中台为核心、上中下游深度协同的网状赋能体系。\n礼来（Eli Lilly）的AI投资版图正是这一趋势的最佳注脚。从NVIDIA的算力底座、到Insilico的小分子生成、到Chai的生物药设计、到Profluent的基因编辑酶、再到Kelonia的体内基因递送——礼来正在构建一个AI-native制药闭环。这一次剂泰科技为礼来补上了这个闭环的最后一环：递送。\n但这一事件的投资意义，远不止于一单BD。礼来买的不只是一个LNP配方，而是剂泰NanoForge平台作为Biological AI基础设施的系统能力。这意味着，剂泰科技的估值逻辑，正从管线公司向平台基础设施公司迁移—— 而港股市场，尚未对此充分定价。\n把此前礼来围绕AI的动作拆开来看，每一层布局其实都在回答同一个问题： 怎么让药物更快、更准、更可预测地到达患者。\n算力层，礼来与英伟达共建LillyPod和AI Co-Innovation Lab，5年内共同投资最高10亿美元。生物药设计层，投资Chai Discovery。基因编辑工具层，与Profluent合作，里程碑最高22.5亿美元。体内基因递送层，收购Kelonia Therapeutics，最高70亿美元。制造层，用数字孪生和AI质检、机器人技术解决GLP-1产能瓶颈。\n如果说英伟达提供的是算力底座，英矽智能、Chai Discovery和Profluent生成的是三类“弹头”，Kelonia提供的是体内基因递送工具，那么剂泰科技补上的，就是让所有这些分子和工具抵达靶细胞的“弹道系统”。没有递送，前面的分子设计都是“有弹无枪”。\n礼来首席信息官Diogo Rau曾公开表示，礼来的AI逻辑是全链条覆盖——制造、发现、递送、临床。此次剂泰合作的出现，也说明礼来已认定，递送不再仅是化学配方问题，而是AI可工程化问题。\n这个判断并不容易得出。过去几十年，递送在药物研发中长期处于配角位置。小分子时代，递送问题相对简单，口服或注射，药物自己就能分布到目标部位。但到了核酸药物、基因编辑、mRNA疗法和体内细胞疗法时代，递送变成了决定性瓶颈。siRNA、mRNA、CRISPR组件这些载荷，分子量大、带电、易降解，没有递送系统根本进不了细胞。LNP的出现解决了部分问题，但传统LNP的能力边界也很清晰，主要停留在肝脏富集。\n礼来要做的，是把递送从肝脏拓展到更多器官、更多细胞类型。这不是锦上添花，而是决定新一代疗法能否成立的关键。\n长期以来，传统LNP的研发高度依赖化学家的经验积累与高通量盲筛，一个脂质库往往需要耗费数年时间去打磨。这种模式不仅效率较低，更形成了极高的专利壁垒。Acuitas、Genevant等老牌玩家凭借多年积累的脂质结构和专利占据先机，后来者想要切入，往往只能支付高昂的过路费。\n今年3月，Moderna斥资22.5亿美元与Genevant和Arbutus达成和解，但其买到的仅仅是已验证的LNP在传染病mRNA疫苗里的“自由使用权”，解决的是专利自由问题，而非下一代递送技术的选择权。\n更关键的是，面对新的治疗需求，传统路线已经触及了天花板。当行业目标从肝脏富集走向肺、脾、肿瘤等肝外器官或组织，甚至进一步向组织内特定细胞类型的高选择性递送迈进时，可探索的化学空间呈指数级膨胀。面对千万级的结构组合，靠人工经验去设计和试错已经彻底筛不动了。\n剂泰的解法，是用生成式AI彻底重构脂质发现的底层逻辑。其NanoForge平台已积累超过1000万种脂质结构和10万个实验数据点。在此基础上，AiLNP平台拥有了AI for Nano脂质从头生成算法、脂质语言基础模型、METiS智能体以及高通量干湿实验闭环。\n这套系统的核心颠覆在于，它不再局限于筛选已知结构，而是能像生成语言一样，生成自然界不存在的全新脂质分子。脂质语言基础模型让AI深刻理解结构与递送性能之间的关系；算法一天可以生成数千个候选结构，预测模型迅速挑出最有希望的几十个，进入湿实验验证后再回流数据。这种“干湿闭环”带来的效率有可能造成数量级的降维打击。\n当然礼来有兴趣的，也许不止是AiLNP这一个点，而是NanoForge背后的全栈系统能力。除了AiLNP，NanoForge还包含负责蛋白与抗体设计的AiProtein、负责核酸序列设计的AiRNA，以及负责小分子制剂开发的AiTEM。这四大平台构成了一个完整的Biological AI闭环，能够同时解决“药物是什么”、“如何到达”以及“如何成药”的问题。\n这个闭环的价值，已经获得了外部头部药企的真金白银验证。就在此前8月，剂泰宣布AiTEM平台将在恒瑞医药进行本地化部署。在中国首个完成III期临床的AI赋能制剂新药MTS-004项目中，AiTEM承担了核心的建模与预测，将临床前制剂优化周期从行业平均的1至2年压缩到了3个月内，推动MTS-004从立项至完成III期临床仅耗时38个月。\n恒瑞的订单和礼来的订单，在底层逻辑上指向了同一件事：头部药企看中的，是NanoForge平台持续产出和优化药物的系统能力。剂泰不是在卖一条管线，也不是在卖一套SaaS软件，而是在输出一套与药企共同定义下一代技术路线的底层基础设施。\n回到此次合作，剂泰正在助力礼来完成一次关键的技术跨越：从“器官靶向”走向“组织与细胞级选择性递送”。传统的器官级递送只需解决富集问题，而细胞级递送需要同时突破细胞识别、摄取与胞内功能释放等多重屏障。这一技术壁垒的打破，有望让核酸药物、基因编辑、mRNA疗法和体内细胞疗法等新一代治疗模式，彻底摆脱递送选择性不足的困局，极大拓展可成药靶点的边界。\n礼来与剂泰的这笔合作，正在让产业和资本市场从两个方向同时对同一件事做出判断。这两个判断最终指向同一个结论，剂泰科技的平台价值正在被重新定价。\n过去MNC买的是管线，是一个已经成型的分子或一款经过验证的药物。礼来这一轮布局显示，它开始为持续产出分子的能力支付对价。标的尚未进入临床，平台本身却已经被当作可定价资产。\n剂泰这笔交易的核心不只是某个LNP配方，而是NanoForge从脂质生成、递送设计到蛋白设计、核酸优化的全链条能力。递送是切入口，",
+          "translationMode": "fallback",
+          "zhTitle": "11亿美元，中国首单生成式AI-LNP平台出海大单落地，礼来的扫货…",
+          "zhSummary": "36Kr公布11亿美元，中国首单生成式AI-LNP平台出海大单落地，礼来的扫货逻辑变了，重点落在算力与基础设施进展。披露的金额或规模为11亿美元。进一步看，HK）与礼来官宣战略合作，共同推动组织特异性LNP递送技术突破，总额最高11亿美元；AI-LNP平台出海大单，也是全球交易规模最大的AI驱动肝外LNP递送平台合作：大型药企不仅为单一管线资产买单，而且开始为平台能力支付里程碑，为长期研发合作锁定优先权。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "keySignals": [
+            "金额或规模：11亿美元"
+          ],
+          "takeaway": "更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。",
+          "displayTitle": "11亿美元，中国首单生成式AI-LNP平台出海大单落地，礼来的扫货…",
+          "displaySummary": "36Kr公布11亿美元，中国首单生成式AI-LNP平台出海大单落地，礼来的扫货逻辑变了，重点落在算力与基础设施进展。披露的金额或规模为11亿美元。进一步看，HK）与礼来官宣战略合作，共同推动组织特异性LNP递送技术突破，总额最高11亿美元；AI-LNP平台出海大单，也是全球交易规模最大的AI驱动肝外LNP递送平台合作：大型药企不仅为单一管线资产买单，而且开始为平台能力支付里程碑，为长期研发合作锁定优先权。更偏企业落地信号，适合判断真实需求是否持续扩张，以及哪些场景开始进入付费阶段。"
+        },
+        {
+          "source": "InfoQ AI",
+          "sourceId": "infoq-ai",
+          "region": "global",
+          "kind": "media",
+          "title": "Exploding GPUs and the AI Infrastructure Challenge",
+          "url": "https://www.infoq.com/presentations/ai-security-kubernetes-gpu-threats",
+          "description": "Exploding GPUs and the AI Infrastructure Challenge Andrew Martin discusses why AI security is fundamentally tied to Kubernetes security. He shares insights into the evolving AI threat landscape, covering non-deterministic agent behavior, GP",
+          "date": "",
+          "score": 16,
+          "category": "开发者信号",
+          "detailText": "Andrew Martin explains why AI security relies on Kubernetes security, highlighting new threat vectors like prompt injection, unconstrained agents, and the unique risks facing GPU infrastructure.\nA monthly overview of things you need to know as an architect or aspiring architect.\nFacilitating the Spread of Knowledge and Innovation in Professional Software Development\nUnlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.\nLily Mara explains how to avoid high-risk software rewrites through incremental FFI refactoring. She shares how engineering teams can replace Python bottlenecks with Rust via PyO3, demonstrating how to achieve dramatic function-level speedups, seamless integration testing, and meaningful infrastructure cost savings without microservice overhead.\nThe article examines the transition from microservices to agentic AI architecture in distributed systems. Microservices allow for functional decomposition, while agentic systems focus on decision decomposition. This shift introduces new complexities in observability, reliability, and system design, highlighting the need for updated architectural patterns and practices.\nRachel Lee Nabors, former React core team member, dives into the architecture and philosophy behind local-first applications, exploring how small language models (SLMs) running directly on-device can deliver privacy-focused, low-latency, and cost-effective alternatives to cloud-hosted LLM wrappers.\nIn this podcast, Shane Hastie, Lead Editor for Culture & Methods, spoke to Matt Gjertsen, founder of Built and author of Minimum Viable Manager, about the three foundational skills every first-time manager needs, how to build trust and give effective feedback, and why human leadership skills matter even more in the age of AI.\nAndrew Martin discusses why AI security is fundamentally tied to Kubernetes security. He shares insights into the evolving AI threat landscape, covering non-deterministic agent behavior, GPU supply chain vulnerabilities, shared compute risks, and practical defense strategies - from prompt firewalling to agentic identity - to help secure cloud-native AI workloads in production environments.\nYour coding agent moves fast. Who checks whether it's making the codebase better? Online. Register Now.\nAI Security & Privacy Engineering Certification\nSecure and govern production AI systems, from sensitive data to guardrails, evals, and audits. Online. Register now.\nCompare team design, delivery flow, AI roles, and metrics with experienced practitioners. Online. Register Now.\nDistributed systems, decentralized decisions, platform engineering, and AI architecture. Online. Register Now.\nWhat's working across AI, architecture, and",
+          "translationMode": "fallback",
+          "zhTitle": "InfoQ AI推出算力与基础设施进展",
+          "zhSummary": "InfoQ AI推出算力与基础设施进展，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "InfoQ AI推出算力与基础设施进展",
+          "displaySummary": "InfoQ AI推出算力与基础设施进展，重点落在算力与基础设施进展。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 17,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 13,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 8,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/10/20/"
+}
