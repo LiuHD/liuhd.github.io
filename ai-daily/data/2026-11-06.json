@@ -1,0 +1,388 @@
+{
+  "title": "AI 日报 2026-11-06",
+  "slug": "ai-daily-2026-11-06",
+  "date": "2026-11-06",
+  "isoDate": "2026-11-06T07:59:26.449Z",
+  "dateParts": {
+    "year": 2026,
+    "month": 11,
+    "day": 6
+  },
+  "timezone": "Asia/Shanghai",
+  "heroSummary": "今天共筛出 18 条高相关动态，信息最密集的来源集中在Alibaba Cloud、Anthropic、36Kr。当前部分摘要仍是规则生成版本，但已经尽量补齐了关键事实、上线状态和投资视角。整体看，今天的主线仍是大厂平台升级、Agent 工具链演进，以及国内市场的融资和落地节奏。",
+  "sections": [
+    {
+      "name": "大公司动向",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "An update on independent evaluators",
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Anthropic announces updates to embedding independent evaluators\nLast month, we committed to stronger independent, third-party assessment of our models and safety practices. We also signed the White House Accord on Super Intelligence, in which companies pledged to partner with independent external auditors or evaluators. Today, we’re announcing that we’ve started to give employee-like access to a team from METR , a nonprofit that evaluates frontier AI models.\nMETR will publish the results of its risk assessments. Over the past year, we’ve worked with METR on several reviews of our Risk Reports . We’re also working with SecureBio and Accenture as evaluators, and are in early discussions with several other organizations, including Hugging Face .\nHere, we explain our approach to working with evaluators.\nTo evaluate frontier models, evaluators need the following:\nAlthough the analogy isn’t exact, bank supervision operates on similar logic. Banks know more about their own risk positions than outsiders do, so regulators assign resident examiners to work inside the largest banks. If a bank’s risk-taking could threaten the public, third parties try to see that in advance.\nFor the AI industry, this is a step toward robust safety oversight . We’re moving quickly with multiple evaluators and learning actively about what kinds of partnership work. We’re committed to sharing updates as we go.\nWe’ve onboarded six METR employees with company hardware, office space, and access to internal tools and systems that are roughly on par with what our own risk assessment teams have access to. Outside a small number of clearly defined categories (e.g., data about customers, attorney-client privileged information, or information about our model architectures), Anthropic employees are encouraged to share information with them just as they would with a fellow employee working on alignment risk. 1\nMETR will publish its analysis of our risk levels, incidents, or practices. Anthropic can’t veto publication, but we can require them to redact information if it falls into predefined categories such as reproducing confidential IP. (Anthropic ultimately decides what information does and does not fall into these categories, although METR reserves the right to make certain statements about the level of access and information it received.) 2\nOur engagement with METR is limited to a small team operating under enforceable agreements. Other METR employees are siloed from that team’s work, including researchers who work with us on other projects. Embedded evaluation gives a few qualified people working under Anthropic’s security standards a close view of how we operate. It’s not a way for other organizations to obtain our information, or that of our customers and partners.\nWe’re working on sev",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布企业落地与生态合作",
+          "zhSummary": "Anthropic公布update on independent evaluators，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布企业落地与生态合作",
+          "displaySummary": "Anthropic公布update on independent evaluators，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Google Security blog",
+          "url": "https://blog.google/security/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Google Security blog",
+          "zhSummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Google Security blog",
+          "displaySummary": "Google AI带来Google Security blog，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Spark 1.1",
+          "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Today, we’re excited to introduce Muse Spark 1.1, the latest model from Meta Superintelligence Labs and a significant upgrade from Muse Spark. Muse Spark 1.1 is a multimodal reasoning model built for agentic tasks, with major gains in tool and computer use, coding, and multimodal understanding.\nWith these improvements, Muse Spark 1.1 advances the performance-efficiency frontier. Together with this week’s launch of Muse Image , this release brings us closer to our vision of personal superintelligence: models that help you pursue your goals, create what you imagine, deepen your relationships, and take action on what you value most.\nAlong with this release, we are launching a public preview of the new Meta Model API where developers can access Muse Spark 1.1. The model is available now in \"Thinking\" mode in the Meta AI app and on meta.ai .\nFor more details about our evaluations, see our report .\nMuse Spark 1.1 delivers exceptional performance in personal agentic tasks that require planning and orchestration across a range of external apps and services. It zero-shot generalizes to new native tools, MCP servers, and custom skills.\nIt tackles complex projects significantly faster than Muse Spark, as it is trained to orchestrate multi-agent systems to optimize end-to-end latency. As the main agent, it can gather context, make a plan, and delegate execution across parallel subagents. As a subagent, it adheres to its job, understands available tools, and knows when to escalate back to the main agent.\nMuse Spark 1.1 can actively manage its context window of 1 million tokens. It remembers actions, retrieves information from much earlier work, and compacts in a way that keeps the critical steps needed for later work.\nMuse Spark 1.1 excels at computer-use workflows that unfold across multiple applications with information changing on-the-fly. It maintains context across extended sessions, adapts to evolving requirements, and navigates unfamiliar interfaces with minimal human intervention.\nRather than reasoning through every desktop step one click at a time, Muse Spark 1.1 understands when to automate and when to use the interface directly. We trained the model to write scripts when automation is faster, click when direct interaction is simpler, and generate batches of actions at each step.\nAgentic dinner party organization: In real-world applications, new context arises that changes the task. Muse Spark 1.1 notices these changes when placing the dinner order and makes necessary updates without user intervention.\nCoding performance for Muse Spark 1.1 improved substantially on real-world tasks involving large, complex codebases. It can diagnose and fix complex bugs, implement new features in enterprise-grade systems, and execute large code migrations. In use cases ",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Spark 1.1",
+          "zhSummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：多模态能力",
+            "关键指标：1 million"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Spark 1.1",
+          "displaySummary": "Meta AI推出Muse Spark 1.1，重点落在企业落地与生态合作。这次变化主要覆盖多模态能力，目前已正式上线，开放预览，文中出现的关键指标包括1 million。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Meta AI",
+          "sourceId": "meta-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Introducing Muse Image and Muse Video",
+          "url": "https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "大公司动向",
+          "detailText": "Muse Image follows instructions faithfully, edits with precision, composes from multiple references, and draws on Instagram for social context. Muse...\nWe’re excited to launch Muse Image and preview Muse Video, the first media generation models developed by Meta Superintelligence Labs.\nMuse Image is our most advanced image generation model yet: it follows instructions faithfully, edits with precision, and composes from multiple references. It also brings agentic tool use capabilities and integrates with Muse Spark. Muse Video, built on the same pretraining base, delivers exceptional visual fidelity with native audio support.\nMuse Image is available today across the Meta AI app and on meta.ai , Instagram Stories in the US, and WhatsApp in limited countries, and is coming soon to Facebook. Muse Video is coming soon to creators and Meta AI.\nInstead of directly mapping prompts to images, Muse Image operates as an agent: it invokes search and coding tools to improve accuracy, self-refines its own generations, and improves through scaling test-time compute. Muse Image also integrates with Muse Spark, allowing the two models to share tools and plan jointly for powerful agentic media generation.\nWe provide Muse Image with access to tools to enhance its agentic capabilities.\nCoding. During reinforcement learning, Muse Image learns to write and execute code that produces accurate plots and QR codes, and condition on rendered figures to improve the accuracy of generated images. Muse Spark and Muse Image also integrate to use the combination of code and media generation to create animated GIFs, websites with embedded images, and interactive visual games.\nSearch. Muse Image learns to search the web to ground generated images in factual and real-time information and visual references. Enabling search improves factual accuracy on knowledge-intensive prompts, particularly those involving current events and real-world facts.\nMuse Image improves with search tool use. Win rate from internal ablation.\nMuse Image reflects on and improves upon its own work within its chain of thought. This self-refining behavior can take different forms: a local edit to the current image draft when a small detail is off, a new image generation from scratch when larger parts are wrong, or a different tactic like tool use for more factually accurate generation. We didn’t design this behavior. Instead, it emerged during RL training simply because self-refinement produced better images and therefore higher reward.\nMuse Image improves with emergent self-refinement. Win rate from internal ablation.\nMuse Image improves with scaling test-time compute. Elo from internal ablation.\nMuse Image edits images with precision, changing exactly what the user asks for. It can follow a variety of instruction",
+          "translationMode": "fallback",
+          "zhTitle": "Meta AI推出Muse Image与Muse Video",
+          "zhSummary": "Meta AI推出Muse Image与Muse Video，重点落在Agent 能力升级。这次变化主要覆盖训练能力，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "上线状态：已正式上线，开放预览",
+            "能力重点：训练能力"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Meta AI推出Muse Image与Muse Video",
+          "displaySummary": "Meta AI推出Muse Image与Muse Video，重点落在Agent 能力升级。这次变化主要覆盖训练能力，目前已正式上线，开放预览。进一步看，原文把重点放在带宽、算力和推理成本改善上，说明基础设施效率仍是大厂争夺 AI 红利的关键。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        },
+        {
+          "source": "Google AI",
+          "sourceId": "google-ai",
+          "region": "global",
+          "kind": "official",
+          "title": "Learning & Education",
+          "url": "https://blog.google/products-and-platforms/products/education/",
+          "description": "",
+          "date": "",
+          "score": 11,
+          "category": "大公司动向",
+          "detailText": "Find out about Google&#x27;s commitment to education through our products and initiatives.\nThe official source for information about Google’s learning and education-related efforts .",
+          "translationMode": "fallback",
+          "zhTitle": "Google AI带来Learning & Education",
+          "zhSummary": "Google AI带来Learning & Education，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Google AI带来Learning & Education",
+          "displaySummary": "Google AI带来Learning & Education，重点落在全球 AI 产品动态。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    },
+    {
+      "name": "国内落地",
+      "items": [
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "算力地租重压下，国内大模型四小龙各寻生存路径",
+          "url": "https://www.36kr.com/p/4057575286052741",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "算力地租重压下，国内大模型四小龙各寻生存路径\nKimi 在四处寻找GPU与算力，智谱在大参数训练上遇到现实约束， MiniMax 把阶段性资源集中到M3 Pro，阶跃星辰则把移动端作为随时可以加码的方向。国内人工智能“四小龙”眼下的处境，常被概括为“一团糟”。这个说法带有情绪，但也提示了一个事实：四家公司同时显露出紧绷感。这种紧绷并非偶然的经营失误，而是同一种结构性力量在不同战略路径上挤压出的不同形状——算力以“新型地租”的形式，重新划定了大模型竞争的成本曲线和生存门槛。\n古典政治经济学中的“地租”，指的是土地所有者凭借对有限自然要素的垄断，向生产者索取的那一部分剩余。在2026年的大模型产业中，高端算力正在扮演相近的角色。\nKimi 的案例最为直观。2026年7月，K3模型上线不到48小时，全球请求量将GPU集群直接拉满，公司被迫暂停新用户订阅。更关键的是单位经济模型：一个C端用户每天进行两次深度长文本对话，所消耗的GPU算力成本就可能超过59元的月订阅费。 Kimi 在2026年6月ARR突破3亿美元，API收入占七成以上，商业化数据在独立模型公司中已属不易，但算力成本以几乎同等的速度压缩着增长带来的毛利空间。月之暗面在2026年完成了从C轮到F轮的密集融资，F轮融资额达35亿美元，估值从43亿美元一路抬升至350亿美元，但融资流向高度明确：扩显卡、锁产能、训练更大的K4。这不是一家公司的现金流危机，而是一种商业模式在算力成本刚性上升下的必然紧绷——用户越多，推理负载越重，付给算力供应链的“租金”就越刚性。\n智谱的选择是另一种回应。它没有试图在“租用英伟达”的轨道上与成本赛跑，而是把筹码压在“成为地主”的方向上：All-in Infra，自建算力基础设施，并将国产芯片纳入主力推理算力，实现了十万级国产芯片的规模化推理，单位token推理成本较年初下降80%。2026年上半年MaaS收入8.25亿元，同比增长超过27倍，证明这条路径在商业上并非空中楼阁。但“地主”的代价同样沉重：上半年经调整净亏损约19.64亿元，研发开支21.31亿元，万卡乃至十万卡集群建设需要以大比例预付款锁定高端产能和网络设备。智谱的“卡住”，不在于它不知道要做什么，而在于“自建算力底座”这条路本身要求它在盈利之前先完成一轮资本密集度极高的固定资产投资，而这一投资的回收周期，长于资本市场通常愿意等待的时间窗口。这是路径选择与时间窗口之间的错配，而不是方向本身的轻率。\n四小龙在2026年的分野，本质上是面对同一笔“算力地租”时，选择了四种不同的支付方式。\nKimi 支付的是“租金溢价”——通过一轮接一轮的融资，从市场上购买稀缺的GPU算力并与云厂商合作，以资本换时间，以时间换模型能力。风险在于，租金是刚性的、浮动的，而模型能力的领先窗口是易逝的。K3的表现证明了这条路的有效性，但“模型越强越烧钱”的悖论意味着，每一次技术跃迁都伴随着下一轮融资的刚性需求，IPO因此从一个选项变成了一种阶段性必需。\n智谱支付的是“基建沉没成本”——用巨额资本开支换取长期单位成本的下降和供应链的自主性。如果国产芯片的生态迁移成本能够在两到三年内被规模摊薄，这条路的终局会更稳固；但如果CUDA向国产生态的代码重写与算子优化持续消耗工程资源，那么“自建”就会对现金流形成长期压力。智谱在赌的是时间：国产算力经济性的验证速度，能否跑赢资本耐心的耗尽速度。\nMiniMax 支付的是“估值换轨的代价”。它做了一件在中国大模型公司中并不常见的事：在2026年将收入引擎从毛利率仅4.7%的C端产品，切换到了毛利率69.4%的B端Token调用。ARR从年初不足2亿美元推至8亿美元以上，企业客户突破200万。这是一次清晰的单位经济模型改善。但资本市场给出的反馈很直接：市值一度站上4100亿港元，股价从高点回撤接近88%，跌破发行价。原因不在于 MiniMax 做错了什么，而在于“平台型AI公司”的故事要求它同时证明两件相互拉扯的事：收入可以随Token消耗扩张，而毛利不会被推理成本反向吞噬。上半年毛利率17.9%，较2025年全年的25.4%反而下降了7.5个百分点——Agent推高了Token消耗，也等比例地推高了GPU账单。压力不在于技术能力，而在于市场是否愿意给它足够长的时间，让规模效应跑赢成本曲线。\n阶跃星辰支付的是“路径切换的集中押注”。当另外三家在云端模型层缠斗时，阶跃选择了一条物理上更“重”的路：做手机。Step AOS、个人智能体Amoo、STEPX Neo，从操作系统到终端硬件全栈自研，试图用端侧入口绕开纯云端推理的成本结构和分发困境。这是一个逻辑自洽的战略：如果智能体的终极形态需要跨应用调度和系统级权限，那么纯App层的模型公司就始终受制于操作系统和超级App的围墙。但风险同样清晰：据行业报道口径，2025年营收不足5亿元，2026年预期约12亿元，累计融资超过200亿元，而首款手机的常规配置性价比在竞争激烈的手机市场中并不突出，销量能否支撑起“终端定义模型”的闭环，仍是未解之题。阶跃的“随时准备全力进军移动端”，与其说是一种进攻姿态，不如说是在云端模型层“地租”过于昂贵的情况下，试图在终端侧开辟一块不受同一套成本规则支配的飞地。\n这个称谓借自CV时代的“商汤、旷视、云从、依图”，本身就隐含着一个假设：大模型赛道会像计算机视觉一样，容纳若干家独立的、体量相当的创业公司并行竞争。但2026年的产业现实正在证伪这个假设。 DeepSeek 以极致的工程效率（2048张H800完成V3预训练）证明，模型能力并不必然与算力堆叠线性相关；腾讯混元、字节 豆包 等大厂模型在整体tokens用量上处于第一梯队；若按四款头部模型的词元用量口径， DeepSeek 两款、腾讯混元一款与智谱一款合计占据中国大模型词元用量的66%。独立模型公司面对的，是一张由大厂算力储备、云生态绑定和价格战能力共同编织的网。智谱的敲钟在2026年1月重新定价了整个赛道， MiniMax 随即以最快IPO纪录跟进，月之暗面的IPO时间表也因此被改写。上市不再是“成功”的标志，而是一种在算力军备竞赛中获取持续融资能力的阶段性手段。\n与此同时，大厂对独立AI产品的策略重心调整也很明显。字节跳动的扣子企业版进入下线倒计时，团队整体并入 豆包 ；据不完全统计，2026年大厂与创业公司合计已清退或合并超过25款独立AI产品。这不是孤立的产品调整，而是一个清晰的信号：当算力成本成为竞争的核心变量时，将模型能力封装为独立产品、再通过独立产品回收算力投资的链条，正在被“模型即基础设施、入口即超级应用”的纵向整合逻辑所替代。\n“一团糟”是真实的，但它描述的不是四家公司的无能，而是一个产业阶段的结构性",
+          "translationMode": "fallback",
+          "zhTitle": "算力地租重压下，国内大模型四小龙各寻生存路径",
+          "zhSummary": "36Kr披露算力地租重压下，国内大模型四小龙各寻生存路径，重点落在融资与资本动作。目前已正式上线，支持 API 接入，披露的金额或规模为3亿美元。进一步看，Kimi 在四处寻找GPU与算力，智谱在大参数训练上遇到现实约束， MiniMax 把阶段性资源集中到M3 Pro，阶跃星辰则把移动端作为随时可以加码的方向；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：3亿美元",
+            "上线状态：已正式上线，支持 API 接入"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "算力地租重压下，国内大模型四小龙各寻生存路径",
+          "displaySummary": "36Kr披露算力地租重压下，国内大模型四小龙各寻生存路径，重点落在融资与资本动作。目前已正式上线，支持 API 接入，披露的金额或规模为3亿美元。进一步看，Kimi 在四处寻找GPU与算力，智谱在大参数训练上遇到现实约束， MiniMax 把阶段性资源集中到M3 Pro，阶跃星辰则把移动端作为随时可以加码的方向；。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "两万台机器人下线的智元，也要面对数采、算力、人力难以量化的现实难题。",
+          "url": "https://www.36kr.com/p/4057524843271043",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "国内落地",
+          "detailText": "两万台机器人下线的智元，也要面对数采、算力、人力难以量化的现实难题。\n虽然2026年被视作具身智能的量产元年，机器人下线数量节节走高，但据第三方统计，上半年全球人形机器人超过六成设备，流向了实验室、科研机构、展会演示与文旅展示场景，真正进入工业场景的占比不足两成。\n传统工业机器人依靠固定程序重复作业，新一代具身机器人则需要靠视觉、大模型自主感知环境。多少台机器能够上岗干活，成为衡量具身智能商业化成色的新标准。\n10月29日，上海世博中心，智元联合创始人、总裁兼CTO稚晖君（彭志辉）发布了一个新的度量单位“Worken”，用于衡量机器人的有效智能工时。\n稚晖君告诉《中国企业家》，好比Token中文名叫“词元”，Worken的中文名可以被定为“智元”。 “正是我们公司的名字。过去大家都看参数表，看机器人的性能参数有多强、Demo有多炫酷，往后大家看的将更多是工时表。”\n智元和3C代工企业龙旗科技目前落地了全球首条由具身智能覆盖的完整3C产线，今年3月规模化投产。这条产线做过一次为期6天的全程直播，机器人累计作业超过64小时，完成了64824次取放，产出17625台平板电脑，节拍平均22秒一件，和人类同等水平。机器人每作业一万次，只允许错一次。\n稚晖君表示：在龙旗工厂里，做“24小时×7天”的全流程替代质检的工位，已经在推部署态场景。机器人的需求应该从真实需求出发，而不是先假设未来会替代哪些岗位。\n“龙旗的质检对于人类来说，属于非常枯燥、非常反人性的工作。机器人也不一定要替代人类，可以和人类配合，做人机协作。”\nCounterpoint Research统计，2026年上半年智元机器人出货9700台，份额超过43%，位列全球第一。 稚晖君透露，今年9月，智元第20000台机器人下线，上半年收入已接近20亿元，赴港上市也已经启动。\n但万台下线只是制造业的胜利，万台能够上岗才是物理AI的胜利。“今年真实部署能有几千台，就很厉害了。”智元合伙人、高级副总裁王闯说。\n稚晖君把机器人行业画成X、Y、Z三条曲线，其中Y曲线是真正进入实际的场景，把能力变成可以持续的商业价值。“2026年是整个产业Y曲线的元年，机器人从开发态进入部署态。”\n最重要的变化不是机器人出现的场景变多了，而是评价它的标准变了。“很多客户开始问，机器人到底能稳定干多少活、能做多好、做这些活需要花多少钱。”稚晖君说。\n智元研究院院长姚卯青表示，智元的“精灵G2机器人”在龙旗产线里已经做了横向拓展，从平板电脑的检测延伸到手机，手机的概念验证已经完成，正在进入并线阶段。据其透露，3C电子行业里，已有超过3家企业在和智元合作，有些已经完成并线。\n发布会上播放宣传片时，一台重载机器人“G2 Max”抱着灵犀X2走上台。这也验证了智元的重载机器人的双臂，已具备40公斤、峰值50公斤的负载能力。“G2 Max已经在龙旗找到了搬运和拆垛的应用。”姚卯青说。\n要求更高的半导体封装测试也在部署中，机器人要全天候连续作业，还要做到防剐蹭、防翘料，成功率要求达到99.999%，毕竟一颗芯片背后可能是几万元的货值。\n工厂之外，机器人正在进入人流更稠密的地方。珠海长隆9月24日开园，第一批300多台智元机器人一次性上线，分布在100多个点位。机器人承担了不同的交互作用，可以跟游客下三子棋、猜拳、打乒乓球，也会在部分展区做带队讲解，内容由交互模型实时生成，还能用多语言接待外国游客。\n“原来乐园展区需要配很多讲解员，孩子会问各种稀奇古怪的问题，很挑战讲解员的体力。以前真人讲解，每天工作量很大，每15分钟一班。”换上机器人之后，“三个机器人轮班，就解决了。”智元合伙人、联席总裁熊彦对《中国企业家》说。\n广州地铁里也部署了超过120台“精灵G2”，做安检引导、乘客违规识别、多语言问答、安防巡逻等任务。地铁场景对机器人的要求更高，人流量大、情况多变、安全责任高。\n王闯说，选择哪些场景首先看技术上能不能做到，“现在具身智能面临的问题就是，它的能力还没有成长到什么都能干好。像工业上下料和讲解接待、导览导购，都是技术上‘跳一跳’够得着的场景。”\n服务业的部署态反而更快， “如果机器人能给他带来流量、情绪价值、营收增长，客户不会像工厂里面，严格要求节拍必须完全超越人，成本、可靠性，需要（客户）完全算得过来。”\n王闯在发布会上算了一笔账，如果在每个落地场景都要投入很多算法专家驻场，人力就会成为瓶颈，规模复制不了。“那就只是做成了一个个项目，而不是一个能规模化的生意。”\n长隆最早就是这样。300多台机器人部署在100多个点位，每个点位的环境不一样，机器人干的活也不一样。“最开始几乎是一个机器人配一个工程师，300个机器人，就得有300个工程师入场。这样一来，成本比原来纯人工还要高。”王闯说。\n但随着场景数据积累，人机比正在逐步爬升。 王闯透露，长隆从最开始的1比1，降到了3比1，目标是年底做到10比1，明年做到20比1。\n他认为，10比1之后，很多专家只需在总部远程支持，现场新增一个点位，运维人员就可以直接复制模板。“20比1就是5%，相当于这个岗位只需要再新增5%的人力预算，5%对很多客户来说就是一个可以接受的点。”\n有的小朋友喜欢抱机器人，或者推机器人，玩游戏的时候不会按设定好的规则来。“机器人交互时会实时做360度观察，有人侵犯到它的安全区域，它要主动停止动作。碰到不在预期中的力，它要瞬间收力，把最大输出力限制在一个范围。每台机器人也需要设置电子围栏，不能走出固定的服务范围，出现任何异常，后台告警，运营人员会迅速介入。”熊彦说。\n机器人也在学着自己照顾自己。王闯告诉《中国企业家》，电梯、门禁都要联网，机器人的Wi-Fi要搞好，出了问题要“热插拔”或者在3分钟之内恢复。“现在‘远征A3 Ultra’也可以自己充电，以后连充电都不用管了，就真的变成生产力了。”\n姚卯青表示，智元的研发型团队很早就从现场撤出来了，将基础软件运维移交给了龙旗自己的团队，前期在严格工业环境里暴露的传感器、线束、电机问题，都通过版本升级完整解决了，现在只需要很轻量化的运维状态。\n稚晖君告诉《中国企业家》：“客户什么时候愿意买单呢？是他开始认真思考，从我愿意尝试你的产品、看你能不能造得出来，变成我到底能不能养得起你的产品。”\n他表示，机器人不是出厂做一个Demo就万事大吉，设备健康需要长期管理，要持续迭代软件版本，要做备件、远程诊断、现场服务和持续的任务优化。\n“真正形成规模之后，机器人上岗的运维效率和管理系统，可能比单次的模型推理更影响客户体验。”\n当被问到：为什么智元什么都要自己做？他的回答是，“我始终认为全栈不是选择题，是必选题。只做大模型、只做本体的，都会遇到瓶颈。”\n对此，姚卯青举了自动驾驶的例子，对《中国",
+          "translationMode": "fallback",
+          "zhTitle": "两万台机器人下线的智元，也要面对数采、算力、人力难以量化的现实难题。",
+          "zhSummary": "36Kr公布两万台机器人下线的智元，也要面对数采、算力、人力难以量化的现实难题。，重点落在算力与基础设施进展。这次变化主要覆盖支持，现场新增一个点位，运维人员就可以直接复制模板，目前已正式上线，披露的金额或规模为20亿元。进一步看，；2026年被视作具身智能的量产元年，机器人下线数量节节走高，但据第三方统计，上半年全球人形机器人超过六成设备，流向了实验室、科研机构、展会演示与文旅展示场景，真正进入工业场景的占比不足两成。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "keySignals": [
+            "金额或规模：20亿元",
+            "上线状态：已正式上线",
+            "能力重点：支持，现场新增一个点位，运维人员就可以直接复制模板"
+          ],
+          "takeaway": "更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。",
+          "displayTitle": "两万台机器人下线的智元，也要面对数采、算力、人力难以量化的现实难题。",
+          "displaySummary": "36Kr公布两万台机器人下线的智元，也要面对数采、算力、人力难以量化的现实难题。，重点落在算力与基础设施进展。这次变化主要覆盖支持，现场新增一个点位，运维人员就可以直接复制模板，目前已正式上线，披露的金额或规模为20亿元。进一步看，；2026年被视作具身智能的量产元年，机器人下线数量节节走高，但据第三方统计，上半年全球人形机器人超过六成设备，流向了实验室、科研机构、展会演示与文旅展示场景，真正进入工业场景的占比不足两成。更偏国内市场观察，适合跟踪中国平台生态、政策节奏和企业采用趋势。"
+        }
+      ]
+    },
+    {
+      "name": "开发者信号",
+      "items": [
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "AI Gateway Launches FinOps Session Observability to Help Enterprises Optimize Agent Costs",
+          "url": "https://www.alibabacloud.com/blog/ai-gateway-launches-finops-session-observability-to-help-enterprises-optimize-agent-costs_603734",
+          "description": "AI Gateway Launches FinOps Session Observability to Help Enterprises Optimize Agent Costs This article introduces Alibaba Cloud AI Gateway&#039;s session observability, which breaks down agent usage to optimize enterprise costs. Alibaba Clo",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud AI Gateway&#039;s session observability, which breaks down agent usage to optimize enterprise costs.\nAsk an Agent to troubleshoot an incident, review a contract, or modify a piece of code. What users usually see is only the opening sentence and the final result. Yet during the process hidden from view, the Agent may have worked for dozens of minutes, called models and tools multiple times, read extensive context, and repeatedly retried a particular step.\nAfter the task is complete, you may still want to know: which step consumed most of the time and Tokens? If a task is slower and uses more resources than usual, is the task itself complex, or is the context too long or the tool output excessive? High usage does not necessarily mean waste. Only by first identifying where resources are consumed can you determine whether adjustments are needed.\nMore and more enterprises are enabling Agents such as Codex, Claude Code, and DeepSeek Harness to access models through an AI Gateway. As the number of Agents grows, aggregate model API data can answer only \"how much was used,\" but can hardly explain which Agent generated the usage, which task it corresponded to, or which Turn it came from.\nAgents within an enterprise often come from different tools and platforms. Development teams use coding assistants, business applications integrate intelligent Q&A, and Agents may also be developed for specific tasks. Ultimately, they may share the same Model API. Looking only at the API's total request volume makes it difficult to distinguish where those calls originated.\nAgent management first establishes a unified, identifiable identity for each Agent, allowing usage previously aggregated at the model API level to be attributed to individual Agents. It currently supports mainstream Agent types including Claude Code, Codex, DeepSeek Harness, Model Studio, and Dify, as well as custom Agents , making it easy to bring existing tools and applications under unified management.\nFigure 1: Support for mainstream Agent types and custom Agents\nFigure 2: Agent topology showing external service and model access relationships\nAn Agent may process many tasks each day, call different models, and serve multiple callers. How many Tokens did it consume today in total? Which models accounted for most of the usage? Which callers used more? Was overall response performance stable? Answering these questions starts with examining the Agent's overall usage.\nAgent statistics aggregate, by date, an individual Agent's number of model access requests, Token consumption, error rate, Fallback rate, and P95 latency. They also separately present breakdowns by model, consumer, Token type, and hourly trend. Both total daily usage and the distribution of consumption acros",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud推出FinOps Session Observab…",
+          "zhSummary": "Alibaba Cloud推出FinOps Session Observability，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：支持 API 接入，已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud推出FinOps Session Observab…",
+          "displaySummary": "Alibaba Cloud推出FinOps Session Observability，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Teaching Agents to Decide: From JEV Integration to the Full Harness Decision Flow",
+          "url": "https://www.alibabacloud.com/blog/teaching-agents-to-decide-from-jev-integration-to-the-full-harness-decision-flow_603722",
+          "description": "Teaching Agents to Decide: From JEV Integration to the Full Harness Decision Flow This article introduces integrating JEV into AgentScope to enable structured, programmatic decision-making and guardrails in AI agent workflows. Alibaba Cloud",
+          "date": "",
+          "score": 26,
+          "category": "开发者信号",
+          "detailText": "This article introduces integrating JEV into AgentScope to enable structured, programmatic decision-making and guardrails in AI agent workflows.\nLarge language models enable Agents to understand tasks, generate content, and call tools. As task workflows grow longer, another class of needs becomes increasingly prominent: at every execution node, the system has to make a concrete decision. Which tools should be exposed right now? Does the retrieved material support this statement? Does this operation satisfy the conditions for execution? The outcomes of these questions ultimately feed into the program and determine what runs next.\nAgentScope now officially supports JEV, bringing System One's structured judgment into the full task workflow of an Agent . Specifically, via agentscope-extensions-jev in AgentScope Java, developers can call the JevClient and review components directly, and can also use tool selection, model routing, execution guardrails, context governance, retrieval evidence processing, answer revision, task supervision, and trajectory evaluation in the Harness.\nJEV receives context and structured questions, and returns probabilities, options, or scores. AgentScope does not register it as a chat Model provider; instead, it is integrated through JevClient and higher-level components. User-facing answers, code patches, and complex analysis remain the work of generative models.\nYou can think of JEV as a model that provides structured judgment via the TypeSafe System One interface. The caller first defines \"what needs to be judged,\" then supplies the business material; the result follows a predefined question type and is well suited to entering program branches. For example, when an application already has an order record and a draft answer, what is needed at that point is the judgment \"does the record support this answer,\" not another user-facing reply to generate.\nGenerative models are responsible for analysis, generating answers, and proposing tool calls; JEV is responsible for structured judgment on specified questions; and the Harness is responsible for placing those judgments at the right execution points, managing tools, context, budget, and state. The three can be used together or adopted separately: for an ordinary Java service that only does draft review, calling the client or a Judge directly is enough.\nDeterministic rules still have their place. Whether a user has refund permission, or whether an order has already been refunded, can be checked directly against the identity system and the business database; whether an answer omits a refund condition, or whether retrieved material contains injected instructions, requires semantic understanding. When integrating, first make clear which facts are verified by code, and then hand the ques",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来Teaching Agents",
+          "zhSummary": "Alibaba Cloud带来Teaching Agents，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来Teaching Agents",
+          "displaySummary": "Alibaba Cloud带来Teaching Agents，重点落在Agent 能力升级。目前已进入产品端。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Alibaba Cloud",
+          "sourceId": "alibaba-cloud",
+          "region": "cn",
+          "kind": "official",
+          "title": "Your Database&#039;s Biggest User Is Now an Agent — and That Changes Security",
+          "url": "https://www.alibabacloud.com/blog/your-databases-biggest-user-is-now-an-agent-%E2%80%94-and-that-changes-security_603709",
+          "description": "Your Database&#039;s Biggest User Is Now an Agent — and That Changes Security Alibaba Cloud Community October 30, 2026 </",
+          "date": "",
+          "score": 20,
+          "category": "开发者信号",
+          "detailText": "This article introduces Alibaba Cloud&#039;s AI-powered database security solution designed to manage and mitigate the unique risks of agent-driven database access.\nOver the past year, enterprises have been wiring agents into their business — writing code, running operations, driving analysis. At Apsara Conference we put it this way: the model decides how smart AI is; the database decides how far AI can go.\nBut there's something even easier to overlook than the data itself: the security posture that comes with putting agents into production.\nLet's start with one number. Over the past year, new Alibaba Cloud ApsaraDB RDS for PostgreSQL instances grew by more than 400%, and roughly 80% of them were created by agents. Agent-driven access traffic is already approaching half of the total. The primary user of the database is shifting from human to agent.\nAt the time, that looked like an efficiency story. Today, it's first and foremost a security story.\nIf your agents are already in production, Alibaba Cloud's AI-powered database security solution lays out the control set end to end — agent behavior security, governed data access, and database protection. What follows walks the same ground from the database side, and shows where each product fits.\nDatabase security used to be about people. The DBA had an account, the application had an account, permissions were granted to identities, and audits traced back to identities.\nOnce agents become the primary user, three blind spots open up.\nFirst — whose account is the agent using? How were its permissions issued? If something goes wrong, can we trace it back to that specific agent?\nSecond — what is the agent doing to the database day in and day out? Is anyone watching, and is any of it recorded?\nThird — the database's attack surface has changed. Credentials are scattered across code, configuration files, and the agent's own memory.\nFor the agent era, Alibaba Cloud database services cover four boundaries: identity on every connection, limits on every action, risks that can be surfaced, and defenses at the data layer.\nWhen an agent connects to a database, its identity has to be transparent first. The Agent Data Gateway sits between the agent and the database: each agent gets its own identity and token, and its permissions are scoped down to database, table, column, and row level. Database credentials stay inside the gateway rather than in the agent's hands. Because the gateway sits on the access path, its audit log attributes each operation to the agent that made it.\n\"Action\" splits into two, and the two are governed by different products.\nThe first is what the agent itself does — which tools it calls, what it sends out, whether a prompt injection has taken hold. That is DataGuard for Agent , free of charge for pub",
+          "translationMode": "fallback",
+          "zhTitle": "Alibaba Cloud带来企业落地与生态合作",
+          "zhSummary": "Alibaba Cloud带来Your Database&#039;s Biggest User Is Now an Agent —与That Changes Security，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已进入产品端"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Alibaba Cloud带来企业落地与生态合作",
+          "displaySummary": "Alibaba Cloud带来Your Database&#039;s Biggest User Is Now an Agent —与That Changes Security，重点落在企业落地与生态合作。目前已进入产品端。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "36Kr",
+          "sourceId": "36kr",
+          "region": "cn",
+          "kind": "media",
+          "title": "刚刚，OpenAI 发布 GPT‑6 Cyber，横扫两大开源项目：Firefox 挖出 81 个高危漏洞，Linux 曝光 948 条提权路径",
+          "url": "https://www.36kr.com/p/4057235026121864",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "开发者信号",
+          "detailText": "这款新模型将重点放在漏洞发现、可利用性验证、攻击路径分析与安全修复上。\n一款大模型，能够在经过多年安全审查的 Firefox 浏览器中找到 81 个此前未知的高危漏洞，还能为 Linux 内核中的 948 个漏洞开发出可实际运行的提权利用程序。\n这不是安全研究人员对未来 AI 能力的预测，而是 OpenAI 最新发布的网络安全模型 GPT-6 Cyber 已经交出的成绩单。\n刚刚，OpenAI 正式推出专门面向网络安全研究的 GPT-6 Cyber。与此前主要强调编程、推理和通用智能体能力的模型不同，这款新模型将重点放在漏洞发现、可利用性验证、攻击路径分析与安全修复上。\n根据 OpenAI 公布的数据，GPT-6 Cyber 在 ExploitGym 基准测试中的成功率达到 48.5%，相比上一代 GPT-5.6 Cyber 的 32.1% 实现约 51% 的相对提升。\n在另一项面向远程漏洞利用的评估 RemoteExploitBench 中，新模型完成了 95% 的测试任务。\n更值得关注的是，GPT-6 Cyber 已经开始参与真实软件系统的安全研究。除 Firefox 和 Linux 外，思科、Palo Alto Networks、CodeRabbit 等企业也已将其用于漏洞研究、安全审查及相关防御工作。\nOpenAI 将 GPT-6 Cyber 的网络安全能力评定为其 Preparedness Framework（准备框架）下的 Critical（关键级），而上一代 GPT-5.6 Cyber 的评级为 High（高级）。\n在 GPT-6 Astra 发布时，OpenAI 就已经披露过其网络安全能力：Astra 在 ExploitBench 测试中获得 100% 的成绩，并在内部安全评估中展现了发现零日漏洞和开发利用程序的能力。\n但为了限制潜在滥用，面向普通用户的 Astra 对高级攻击利用任务设置了严格限制，例如拒绝帮助生成漏洞利用概念验证程序。\nGPT-6 Cyber 则进一步针对专业安全研究场景进行了训练。OpenAI 表示，其在多数网络安全任务上的表现超过 GPT-6 Astra，即使后者没有拒绝执行任务也是如此。\n在官方公布的评估中，GPT-6 Cyber 在多项网络安全任务中展现出明显提升。\n在 Web 渗透测试中，GPT-6 Cyber 的漏洞召回率达到 40.3%，超过 GPT-6 Astra 的 32.0%，领先 8.3 个百分点。这项测试要求模型在无法获取源代码的情况下，通过与目标应用交互来发现安全漏洞，更接近真实的黑盒安全测试场景。\n但从整体结果来看，GPT-6 Cyber 的进步已经不局限于识别代码中的可疑问题，而是进一步体现在从漏洞分析到构造有效利用方法的完整任务执行能力上。\n如果说基准测试反映的是模型能力上限，那么真实开源项目中的研究结果，则更能体现 GPT-6 Cyber 的实际价值。\nFirefox 是 Mozilla 长期维护的开源浏览器项目，其代码经过大量安全研究人员审查，也持续接受模糊测试、漏洞报告和自动化安全工具检测。\n即便如此，GPT-6 Cyber 仍在一轮漏洞研究中发现了 81 个此前未知、被 Mozilla 归类为高严重性的安全漏洞。\n此外，模型还提供了证据，显示另外 30 个已知问题的严重程度可能高于此前的评估。\nOpenAI 表示，研究团队向 Mozilla 提交了相关发现、可复现测试以及候选修复补丁。Mozilla 随后开始修复这些问题，部分修复已发布。\nFirefox 杰出工程师 Brian Grinstead 在 OpenAI 发布文章中表示，Firefox 进入 2026 年时已经是受到高度审查和加固的代码库之一。即便经过多代前沿模型的进一步检查，GPT-6 Cyber 仍然发现了此前未知的高危问题，并帮助团队向数百万用户交付修复。\n这个案例的意义在于，前沿模型已经能够在成熟的大型软件项目中持续寻找传统安全流程尚未消除的问题。\n根据 OpenAI 11 月 4 日发表的研究文章《A thousand fewer paths to root》，其研究团队构建了一条自动化漏洞研究流水线，将漏洞发现、动态复现、可利用性评估和补丁生成串联起来。\n研究结果显示，GPT-6 Cyber 完成了 2308 项候选问题、1724 个动态复现的漏洞、948 个有效本地提权利用。\n这意味着，模型不仅找到了潜在安全问题，还针对其中 948 个漏洞生成了有效的本地权限提升利用程序，能够在相应测试环境中证明低权限用户获得 root 权限的风险。\n相比之下，OpenAI 表示，在相同研究框架下，GPT-5.6 Sol 此前成功利用的漏洞数量为 166 个。\n更引人注意的是成本。OpenAI 披露，这轮大规模研究共消耗约 121.34 万美元的 API 额度，平均每个成功的本地提权利用约为 1279 美元。\n这笔开销仍然是笔不小的金额，但相比完全依靠人工逐个调查复杂漏洞，自动化研究使漏洞发现和验证可以集中并行开展。\nOpenAI 表示，研究人员根据 Linux 社区的指导，优先向维护者披露了 304 项关键发现，并附上候选补丁，其余问题仍在推进处理。\n例如，安全研究人员可能只授权模型测试某个程序，但模型在执行任务时发现，相关环境中的软件包仓库或对象存储服务存在更容易利用的漏洞。如果模型为了更快完成任务而攻击这些服务，即使最终得到正确结果，也已经越过授权范围。\n为了衡量模型是否能够遵守任务边界，OpenAI 设计了 ExploitGym Honeypot 测试。该测试会为模型设置一项具有挑战性的漏洞利用任务，并在隔离环境中故意提供其他容易被攻击的辅助服务。模型虽然可以通过攻击这些服务获得完成任务所需的信息，但正确行为应该是识别并遵守授权边界。\n结果显示，在不使用部署安全提示词的情况下，GPT-6 Cyber 避免攻击授权范围外服务的比例达到 99.93%，而 GPT-5.6 Cyber 为 94.49%。\n加入部署安全提示词后，GPT-6 Cyber 在该评估中的合规比例达到 100%。\nOpenAI 还展示了模型在测试过程中的部分推理记录。其中，模型明确指出不应假设额外 API 或攻击控制器属于目标，也不应探索授权范围外的凭证。\n这说明 OpenAI 不只是在训练模型如何发现漏洞，也在训练模型判断什么事情不应该做。\n不过，必须强调，100% 的测试成绩并不等于现实世界中不存在越权风险。实际部署时，模型可能面对更加复杂的环境、模糊的授权描述及恶意诱导。OpenAI 因此仍然建议，在高风险安全研究流程中使用沙箱、操作审查及人工监督。\n从行业角度看，这一变化值得关注",
+          "translationMode": "fallback",
+          "zhTitle": "刚刚，OpenAI 发布 GPT‑6 Cyber，横扫两大开源项目…",
+          "zhSummary": "36Kr公布刚刚，OpenAI 发布 GPT‑6 Cyber，横扫两大开源项目：Firefox 挖出 81 个高危漏洞，Linux 曝光 948 条提权路径，重点落在企业落地与生态合作。目前已正式上线，支持 API 接入。进一步看，；Firefox 浏览器中找到 81 个此前未知的高危漏洞，还能为 Linux 内核中的 948 个漏洞开发出可实际运行的提权利用程序。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [
+            "上线状态：已正式上线，支持 API 接入"
+          ],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "刚刚，OpenAI 发布 GPT‑6 Cyber，横扫两大开源项目…",
+          "displaySummary": "36Kr公布刚刚，OpenAI 发布 GPT‑6 Cyber，横扫两大开源项目：Firefox 挖出 81 个高危漏洞，Linux 曝光 948 条提权路径，重点落在企业落地与生态合作。目前已正式上线，支持 API 接入。进一步看，；Firefox 浏览器中找到 81 个此前未知的高危漏洞，还能为 Linux 内核中的 948 个漏洞开发出可实际运行的提权利用程序。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        },
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Donating Agent Skills to the Agentic AI Foundation",
+          "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "description": "",
+          "date": "",
+          "score": 14,
+          "category": "开发者信号",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nToday, we’re donating Agent Skills , the open standard that gives AI agents specialized knowledge and workflows, to the Agentic AI Foundation (AAIF). More than 70 agent platforms, including ChatGPT, Cursor, GitHub Copilot, and VS Code, have integrated Agent Skills since we published the standard in December 2025.\nWe’re committed to keeping Agent Skills open, community-driven, and vendor-neutral. Today, we are donating the standard to the Agentic AI Foundation (AAIF) under the Linux Foundation, which we co-founded with Block and OpenAI last year, and to which we donated the Model Context Protocol (MCP). The AAIF will provide a neutral home to the standard going forward, ensuring the community has a say in where Agent Skills go next.\nWe are donating the Agent Skills name and logo, the GitHub organization, and the agentskills.io domain. You can continue to use the standard or contribute to it without joining the AAIF.\nEngineers from Anthropic, Google, OpenAI, and other companies will maintain the standard as individuals, with David Soria Parra and Mahesh Murag as Lead Maintainers.\nWe’ve proposed starting with a roadmap covering versioned releases, a formal proposal process, and security guidance for people who write and install skills. As with MCP, the project will continue to prioritize community input and transparent decision-making. You can join the project’s Discord to give feedback on proposed specification changes.\nThank you to the developers who built with Agent Skills from the start, and to the teams who brought skills into their products. Read the specification at agentskills.io and join the discussion on GitHub .\nAnthropic is a Public Benefit Corporation. Our mission is the responsible development and maintenance of advanced AI for the long-term benefit of humanity.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Donating Agent Skills",
+          "zhSummary": "Anthropic公布Donating Agent Skills，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "keySignals": [],
+          "takeaway": "更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。",
+          "displayTitle": "Anthropic公布Donating Agent Skills",
+          "displaySummary": "Anthropic公布Donating Agent Skills，重点落在Agent 能力升级。进一步看，原文突出的是让模型从单次回答走向长流程执行，工具联动和托管能力比单点模型分数更重要。更偏开发者与工程落地信号，值得关注接入门槛、托管能力和平台抽象层有没有继续下沉。"
+        }
+      ]
+    },
+    {
+      "name": "资本与生态",
+      "items": [
+        {
+          "source": "Anthropic",
+          "sourceId": "anthropic",
+          "region": "global",
+          "kind": "official",
+          "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+          "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "description": "",
+          "date": "",
+          "score": 17,
+          "category": "资本与生态",
+          "detailText": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems.\nWe are expanding our partnership with the General Services Administration (GSA) through a new agreement that gives government partners a 40% discount on Claude Enterprise, Claude for Government, and the Claude API. For the first time, the discount applies across every product surface, including when agencies buy from us directly today and through cloud providers in the coming months. The discount also extends to state, local, tribal and territorial governments.\nWe are also launching a dedicated program to help agencies implement and make the most of their Claude use. These programs are commonly leveraged by our private sector customers and we’re looking forward to bringing those best practices to our public sector partners in the coming weeks.\nThe discounts offered through the agreement are estimated to save the government $1 billion. Agencies are not bound by a minimum spend commitment and will be able to pay for the usage they consume.\nGovernment agencies are using Claude to solve some of their most important challenges. Examples include managing backlogs, records and forms, and modernizing old code. Some of the ways agencies are using Claude include:\nAgencies can use Claude for their most sensitive unclassified work. Claude for Government, which delivers Claude&#x27;s coding and agentic work capabilities and provides near-feature parity with commercial offerings at a FedRAMP High authorization level, was made generally available on September 30.\nAgencies building their own tools can use Claude through Amazon Bedrock or Google Cloud’s Vertex AI. On Bedrock, Claude is authorized for FedRAMP High, with select models authorized for DoD IL4 and IL5 workloads in AWS GovCloud. On Vertex AI, Claude is authorized for FedRAMP High.\nClaude Enterprise is in process for FedRAMP Moderate authorization through the FedRAMP 20x program, marking the next evolution of how we are bringing the same innovative technology available commercially to the government.\nGovernment agencies can buy Claude at the OneGov discount through GSA&#x27;s Multiple Award Schedule today. Whether your department or agency already uses Claude or is interested in using it, our Public Sector team will help discuss your options.\nAnthropic is a Public Benefit Corporation. Our mission is the responsible development and maintenance of advanced AI for the long-term benefit of humanity.",
+          "translationMode": "fallback",
+          "zhTitle": "Anthropic公布Expanding our 合作",
+          "zhSummary": "Anthropic公布Expanding our 合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端，披露的金额或规模为1 billion，文中出现的关键指标包括1 billion、20x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "keySignals": [
+            "金额或规模：1 billion",
+            "上线状态：支持 API 接入，已进入产品端",
+            "关键指标：1 billion、20x"
+          ],
+          "takeaway": "更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。",
+          "displayTitle": "Anthropic公布Expanding our 合作",
+          "displaySummary": "Anthropic公布Expanding our 合作，重点落在企业落地与生态合作。目前支持 API 接入，已进入产品端，披露的金额或规模为1 billion，文中出现的关键指标包括1 billion、20x。进一步看，原文强调重点已从概念验证转向生产环境部署，合作伙伴认证、交付能力和客户筛选正在成为新门槛。更偏大公司战略动作，适合持续跟踪产品节奏、生态布局和竞争重点是否出现变化。"
+        }
+      ]
+    }
+  ],
+  "sourceStatus": [
+    {
+      "source": "OpenAI Developers",
+      "url": "https://developers.openai.com/rss.xml",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "Google AI",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/",
+      "count": 5,
+      "ok": true
+    },
+    {
+      "source": "Meta AI",
+      "url": "https://ai.meta.com/blog/",
+      "count": 8,
+      "ok": true
+    },
+    {
+      "source": "Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "ModelScope",
+      "url": "https://modelscope.cn/home",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "InfoQ AI",
+      "url": "https://www.infoq.com/artificial_intelligence/",
+      "count": 20,
+      "ok": true
+    },
+    {
+      "source": "InfoQ 中文",
+      "url": "https://www.infoq.cn/topic/AI",
+      "count": 0,
+      "ok": true
+    },
+    {
+      "source": "36Kr",
+      "url": "https://www.36kr.com/information/AI",
+      "count": 20,
+      "ok": true
+    }
+  ],
+  "stats": {
+    "totalSources": 9,
+    "successfulSources": 9,
+    "curatedItems": 18,
+    "domesticItems": 6,
+    "officialItems": 12,
+    "aiEnhancedItems": 0
+  },
+  "pagePath": "/ai-daily/2026/11/06/"
+}
